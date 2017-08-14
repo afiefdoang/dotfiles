@@ -99,17 +99,6 @@ alias fireprox="proxychains env GTK_THEME=Adwaita firefox"
 # BACKUP ENTIRE SYSTEM
 alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt / /run/media/bandithijo/BANDITHIJO-EXT4/BANDITHIJO-ARCH"
 
-# RESTORE
-alias marina!-home="rsync -aAXvP /run/media/root/BANDITHIJO-EXT4/BANDITHIJO-ARCH/home/bandithijo /home/bandithijo"
-
-alias marina!-root="rsync -aAXvP /run/media/root/BANDITHIJO-EXT4/BANDITHIJO-ARCH/root /root"
-
-alias marina!-usr="rsync -aAXvP /run/media/root/BANDITHIJO-EXT4/BANDITHIJO-ARCH/usr /usr"
-
-alias marina!-opt="rsync -aAXvP /run/media/root/BANDITHIJO-EXT4/BANDITHIJO-ARCH/opt /opt"
-
-alias marina!-var="rsync -aAXvP /run/media/root/BANDITHIJO-EXT4/BANDITHIJO-ARCH/var /var"
-
 # tty-clock
 alias clock="tty-clock -nscC 7"
 
@@ -118,9 +107,6 @@ alias screenfetch="screenfetch -c 7,7"
 
 # Enabling Menu Item Gnome
 alias menuitem-enable="gsettings set org.gnome.settings-daemon.plugins.xsettings overrides \"{'Gtk/ButtonImages': <1>, 'Gtk/MenuImages': <1>}\""
-
-# Tmux Session
-# alias tmuX="tmux new -s ARCHLINUX"
 
 # POWERLINE ARCH
 if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
@@ -140,5 +126,6 @@ eval "$(rbenv init -)"
 
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 # export PATH="/home/bandithijo/.gem/ruby/2.4.0/bin:$PATH"
+
 
 
