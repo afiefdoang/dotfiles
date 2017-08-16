@@ -43,7 +43,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'Lokaltog/powerline'
 Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/sgmlendtag'
-" Plug 'Raimondi/delimitMate'
+"Plug 'Raimondi/delimitMate'
 
 
 call plug#end()
