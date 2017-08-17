@@ -19,8 +19,6 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'ervandew/supertab'
 Plug 'acoustichero/goldenrod.vim'
 Plug 'easymotion/vim-easymotion'
-"Plug 'jiangmiao/auto-pairs'
-"Plug 'majutsushi/tagbar'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'hwartig/vim-seeing-is-believing'
 Plug 'dikiaap/minimalist'
@@ -32,7 +30,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-ragtag'
-
+"Plug 'majutsushi/tagbar'
+"Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-dispatch'
@@ -44,7 +43,6 @@ Plug 'Lokaltog/powerline'
 Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/sgmlendtag'
 "Plug 'Raimondi/delimitMate'
-
 
 call plug#end()
 
