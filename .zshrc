@@ -10,15 +10,6 @@ export ZSH=/home/bandithijo/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
-# ZSH_THEME="powerlevel9k/powerlevel9k"
-
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context dir vcs)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(dir_writable status time)
-#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
-# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-# POWERLEVEL9K_STATUS_VERBOSE=false
-# POWERLEVEL9K_TIME_FORMAT="%D{%H:%M \uf073  %d.%m.%y}"
-# export DEFAULT_USER="$USER"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
