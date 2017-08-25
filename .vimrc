@@ -61,7 +61,7 @@ set directory=~/.vim/tmp/swap " directory to place swap files in
 set undodir=~/.vim/tmp/undo " directory to place undo files in
 set clipboard=unnamedplus " share clipboard
 set hidden " you can change buffers without saving
-"set mouse=a " use mouse everywhere
+set mouse=a " use mouse everywhere
 set noerrorbells " don't make noise
 set wildmenu " turn on command line completion wild style
 set wildmode=full
