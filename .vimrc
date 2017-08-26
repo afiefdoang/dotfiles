@@ -65,10 +65,11 @@ set mouse=a " use mouse everywhere
 set noerrorbells " don't make noise
 set wildmenu " turn on command line completion wild style
 set wildmode=full
-set ttyfast " I have a fast terminal
+set ttyfast " i have a fast terminal
 set undofile " make undo possible after the file is closed and reopened
 set gdefault " global substitutions are default s/a/b/g
-set ttimeoutlen=50  " Make Esc work faster
+set ttimeoutlen=50  " make Esc work faster
+set autoread " make vim monitor realtime changes to a file
 
 
 " ########## VIM User Interface
@@ -89,16 +90,16 @@ set novisualbell " don't blink
 set relativenumber " turn on line numbers
 set nu " turn on line number on selected line
 set report=0 " tell us when anything is changed
-set ruler " Always show current positions along the bottom
+set ruler " always show current positions along the bottom
 set shortmess=atToOI " shortens messages to avoid 'press a key' prompt
 set showcmd " show the command being typed
 set showmode " show current mode
 set showmatch " show matching brackets
-set scrolloff=5 " Keep 10 lines (top/bottom) for scope
-set sidescrolloff=10 " Keep 5 lines at the size
+set scrolloff=5 " keep 10 lines (top/bottom) for scope
+set sidescrolloff=10 " keep 5 lines at the size
 set cursorline " visually mark current line
 set showbreak=↪ " indicate wrapped line
-hi clear ModeMsg " Disable Color StatusLine on Insert Mode and Visual Mode
+hi clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
 
 
 " ########## Text Formatting/Layout
