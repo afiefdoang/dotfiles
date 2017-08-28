@@ -95,11 +95,11 @@ set shortmess=atToOI " shortens messages to avoid 'press a key' prompt
 set showcmd " show the command being typed
 set showmode " show current mode
 set showmatch " show matching brackets
-set scrolloff=5 " keep 10 lines (top/bottom) for scope
-set sidescrolloff=10 " keep 5 lines at the size
+"set scrolloff=5 " keep 10 lines (top/bottom) for scope
+"set sidescrolloff=10 " keep 5 lines at the size
 set cursorline " visually mark current line
 set showbreak=↪ " indicate wrapped line
-hi clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
+hi  clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
 
 
 " ########## Text Formatting/Layout
@@ -226,7 +226,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 "let g:airline_theme = 'molokai'
-let g:airline_theme = 'minimalist'
+" let g:airline_theme = 'minimalist'
+let g:airline_theme = 'ravenpower'
 
 " Rubycomplete
 let g:rubycomplete_rails=1
