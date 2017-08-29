@@ -73,7 +73,7 @@ set autoread " make vim monitor realtime changes to a file
 
 
 " ########## VIM User Interface
-colorscheme Monokai-Bandit
+colorscheme Tomorrow-Night-Bandit
 set background=dark
 set t_Co=256 " set terminal 256 color
 set incsearch " incremental search aka search as you type
@@ -116,21 +116,12 @@ set tabstop=4 " real tabs should be 4, and they will show with set list on
 set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
-
 autocmd Filetype php setlocal shiftwidth=4 tabstop=4
 
 
 " ########## Mappings
 " my leader key is comma
 let mapleader = ","
-
-" another way to esc mode
-imap jj <Esc>
-
-" I hit F1 too often when reaching for esc
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
 
 " for edit my .vimrc
 nmap <Leader>ev :e $MYVIMRC<cr>
@@ -140,11 +131,20 @@ nmap <Leader>n :bn<cr>
 nmap <Leader>p :bp<cr>
 nmap <Leader>d :bd<cr>
 
-" for move to each split on NerdTree
-nmap <C-h> <C-w><C-h>
-nmap <C-j> <C-w><C-j>
-nmap <C-k> <C-w><C-k>
-nmap <C-l> <C-w><C-l>
+" this key combination gets rid of the search highlights
+nmap <leader><space> :noh<cr>
+
+" for clear highlight search
+nmap <Leader><space> :nohlsearch<cr>
+
+" Ctags
+nmap <Leader>g <C-]>
+
+" strip all trailing whitespace in the current file
+nmap <Leader>W :StripWhitespace<cr>
+
+" open vertical split and switch to it
+nnoremap <leader>w <C-w>v<C-w>l
 
 " for search
 nnoremap / /\v
@@ -154,8 +154,19 @@ vnoremap / /\v
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
-" this key combination gets rid of the search highlights
-nmap <leader><space> :noh<cr>
+" another way to esc mode
+imap jj <Esc>
+
+" I hit F1 too often when reaching esc button
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" for move to each split on NerdTree
+nmap <C-h> <C-w><C-h>
+nmap <C-j> <C-w><C-j>
+nmap <C-k> <C-w><C-k>
+nmap <C-l> <C-w><C-l>
 
 " sudo save
 cmap w!! w !sudo tee % >/dev/null
@@ -164,27 +175,14 @@ cmap w!! w !sudo tee % >/dev/null
 noremap <c-u> <c-u>zz
 noremap <c-d> <c-d>zz
 
-" Ctags
-nmap <Leader>g <C-]>
-
-" for clear highlight search
-nmap <Leader><space> :nohlsearch<cr>
-
 " toggle Tagbar plugin
 nmap <F8> :TagbarToggle<cr>
 
 " toggle NerdTree plugin
 nmap <F12> :NERDTreeToggle<cr>
-"nmap <Leader>n :NERDTreeFind<cr>
-
-" open vertical split and switch to it
-nnoremap <leader>w <C-w>v<C-w>l
 
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-
-" strip all trailing whitespace in the current file
-nmap <Leader>W :StripWhitespace<cr>
 
 " enable seeing-is-believing mappings only for Ruby
 augroup seeingIsBelievingSettings
@@ -201,7 +199,7 @@ augroup seeingIsBelievingSettings
   autocmd FileType ruby imap <buffer> <F5> <Plug>(seeing-is-believing-run)
 augroup END
 
-" disable arrow keys on insert mode and make up & down arrow as super
+" disable arrow keys on insert mode and make up & down arrow as special
 no <down> ddp
 no <left> <Nop>
 no <right> <Nop>
@@ -225,8 +223,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
-"let g:airline_theme = 'molokai'
-" let g:airline_theme = 'minimalist'
+"let g:airline_theme = 'minimalist'
 let g:airline_theme = 'ravenpower'
 
 " Rubycomplete
