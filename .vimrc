@@ -42,6 +42,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'Lokaltog/powerline'
 Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/sgmlendtag'
+Plug 'tpope/vim-unimpaired'
 "Plug 'Raimondi/delimitMate'
 
 call plug#end()
@@ -199,11 +200,13 @@ augroup seeingIsBelievingSettings
   autocmd FileType ruby imap <buffer> <F5> <Plug>(seeing-is-believing-run)
 augroup END
 
-" disable arrow keys on insert mode and make up & down arrow as special
-no <down> ddp
+" disable arrow keys on insert mode and make up & down arrow as line bubbling
+"no <down> ddp
+nmap <down> ]e " handled by vim-unimpaired
 no <left> <Nop>
 no <right> <Nop>
-no <up> ddkP
+"no <up> ddkP
+nmap <up> [e " handled by vim-unimpaired
 ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
@@ -244,5 +247,3 @@ let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
 " Greplace
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
-
-
