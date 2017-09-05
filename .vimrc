@@ -19,7 +19,8 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'ervandew/supertab'
 Plug 'acoustichero/goldenrod.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'nathanaelkane/vim-indent-guides'
+"Plug 'nathanaelkane/vim-indent-guides'
+Plug 'andersoncustodio/vim-enter-indent'
 Plug 'hwartig/vim-seeing-is-believing'
 Plug 'dikiaap/minimalist'
 Plug 'tpope/vim-fugitive'
@@ -48,6 +49,7 @@ Plug 'tpope/vim-unimpaired'
 call plug#end()
 
 filetype plugin indent on
+
 
 " ########## Basic
 syntax enable
@@ -216,6 +218,8 @@ vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
 
+" emmet-vim trigger key remap
+let g:user_emmet_leader_key='<C-space>' " then press , (comma) to do magic !
 
 " ########## Plugins Settings
 " NerdTree
