@@ -26,7 +26,7 @@ xftalpha 0.1
 update_interval 1
 total_run_times 0
 own_window yes #no for i3wm, yes for DE GNOME, XFCE
-own_window_type desktop # override for i3wm, normal for GNOME, XFCE, or desktop 
+own_window_type desktop # override for i3wm, normal for GNOME, XFCE, or desktop
 own_window_transparent yes
 own_window_class conky
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
@@ -81,7 +81,7 @@ Thread3 ${cpu cpu3}% ${cpubar cpu3}
 Thread4 ${cpu cpu4}% ${cpubar cpu4}
 
 # ${font Ubuntu:bold:size=10}${color WHITE}TEMPERATURES ${color DIMGRAY}${hr 1}
-# $font${color DIMGRAY}${color DIMGRAY}Temp1 Temp$alignr${hwmon 1 temp 1}°C 
+# $font${color DIMGRAY}${color DIMGRAY}Temp1 Temp$alignr${hwmon 1 temp 1}°C
 ${font Ubuntu:bold:size=10}${color WHITE}MEMORY ${color DIMGRAY} ${hr 1}
 $font${color DIMGRAY}MEM $alignc $mem / $memmax $alignr $memperc%
 $membar
@@ -124,12 +124,9 @@ Uploaded: $alignr ${totalup enp0s31f6}
 ${color DIMGRAY}${downspeedgraph enp0s31f6 20,90 DIMGRAY DIMGRAY}   ${color DIMGRAY}${upspeedgraph enp0s31f6 20,90 DIMGRAY DIMGRAY}
 
 ${font Ubuntu:bold:size=10}${color WHITE}NUCLEAR + ${color DIMGRAY}${hr 1}
-$font${color DIMGRAY}Battery 0 : ${battery_time BAT0} $alignr ${battery_percent BAT0}%
+$font${color DIMGRAY}Reactor 0  ${battery_time BAT0} $alignr ${battery_percent BAT0}%
 ${battery_bar BAT0}
 
-$font${color DIMGRAY}Battery 1 : ${battery_time BAT1} $alignr ${battery_percent BAT1}%
+$font${color DIMGRAY}Reactor 1  ${battery_time BAT1} $alignr ${battery_percent BAT1}%
 ${battery_bar BAT1}
-
-
-
 
