@@ -25,7 +25,7 @@ style "xfdesktop-icon-view" {
     base[NORMAL] = "#000000"
     base[SELECTED] = "#71B9FF"
     base[ACTIVE] = "#71B9FF"
-    fg[NORMAL] = "#000000"
+    fg[NORMAL] = "#ffffff"
     fg[SELECTED] = "#ffffff"
     fg[ACTIVE] = "#ffffff"
 }

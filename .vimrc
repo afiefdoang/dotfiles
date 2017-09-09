@@ -44,6 +44,7 @@ Plug 'Lokaltog/powerline'
 Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/sgmlendtag'
 Plug 'tpope/vim-unimpaired'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 "Plug 'Raimondi/delimitMate'
 
 call plug#end()
@@ -73,6 +74,8 @@ set undofile " make undo possible after the file is closed and reopened
 set gdefault " global substitutions are default s/a/b/g
 set ttimeoutlen=50  " make Esc work faster
 set autoread " make vim monitor realtime changes to a file
+au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving
+au FocusGained,BufEnter * :checktime " auto update trigger on buffer change or terminal focus
 
 
 " ########## VIM User Interface
