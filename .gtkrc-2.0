@@ -22,11 +22,11 @@ gtk-modules="canberra-gtk-module"
 # Desktop icon properties
 style "xfdesktop-icon-view" {
     XfdesktopIconView::label-alpha = 10
-    base[NORMAL] = "#000000"
+    base[NORMAL]   = "#000000"
     base[SELECTED] = "#71B9FF"
-    base[ACTIVE] = "#71B9FF"
-    fg[NORMAL] = "#ffffff"
-    fg[SELECTED] = "#ffffff"
-    fg[ACTIVE] = "#ffffff"
+    base[ACTIVE]   = "#71B9FF"
+    fg[NORMAL]     = "#000000"
+    fg[SELECTED]   = "#000000"
+    fg[ACTIVE]     = "#ffffff"
 }
 widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"

@@ -49,11 +49,10 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 
 call plug#end()
 
-filetype plugin indent on
-
 
 " ########## Basic
 syntax enable
+filetype plugin indent on
 set encoding=utf-8
 
 
