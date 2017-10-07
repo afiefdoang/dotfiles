@@ -5,7 +5,7 @@ include "/home/bandithijo/.gtkrc-2.0.mine"
 gtk-theme-name="Adwaita-dark"
 gtk-icon-theme-name="buuf-3.20-1a"
 gtk-font-name="Ubuntu 9"
-gtk-cursor-theme-name="ComixCursors-Black"
+gtk-cursor-theme-name="ComixCursors-Opaque-White"
 gtk-cursor-theme-size=24
 gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR

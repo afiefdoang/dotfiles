@@ -99,11 +99,19 @@ alias fireprox="proxychains env GTK_THEME=Adwaita firefox"
 # BACKUP ENTIRE SYSTEM
 alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt / /run/media/bandithijo/BANDITHIJO-EXT4/BANDITHIJO-ARCH"
 
+#alias marina!="sudo rsync -aAXvP --delete /run/media/bandithijo/BANDITHIJO-EXT4/BANDITHIJO-ARCH /home/bandithijo"
+
 # tty-clock
 alias clock="tty-clock -nscC 7"
 
 # screenfetch alias
-alias screenfetch="screenfetch -c 15,7"
+# alias screenfetch="screenfetch -c 15,7"
+
+# neovim
+alias vim="nvim"
+
+# vimdif
+alias vimdiff="vim -d"
 
 # Enabling Menu Item Gnome
 alias menuitem-enable="gsettings set org.gnome.settings-daemon.plugins.xsettings overrides \"{'Gtk/ButtonImages': <1>, 'Gtk/MenuImages': <1>}\""
@@ -115,9 +123,12 @@ fi
 
 # PKGBUILD YAOURT
 export VISUAL="vim"
+export VISUAL="nvim"
 
 # JAVA_HOME
-export JAVA_HOME="/usr/lib/jvm/java-8-jdk/"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
+#export JAVA_HOME="/usr/lib/jvm/java-8-jdk/"
+#export JAVA_HOME="/usr/lib/jvm/java-9-jdk/"
 export PATH=$JAVA_HOME/bin:$PATH
 
 # RBENV

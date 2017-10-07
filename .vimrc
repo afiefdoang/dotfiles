@@ -61,7 +61,7 @@ set backspace=indent,eol,start " make backspace a more flexible
 set backup " make backup files
 set backupdir=~/.vim/tmp/backup " where to put backup files
 set directory=~/.vim/tmp/swap " directory to place swap files in
-set undodir=~/.vim/tmp/undo " directory to place undo files in
+"set undodir=~/.vim/tmp/undo " directory to place undo files in
 set clipboard=unnamedplus " share clipboard
 set hidden " you can change buffers without saving
 set mouse=a " use mouse everywhere
@@ -105,6 +105,9 @@ set showmatch " show matching brackets
 set cursorline " visually mark current line
 set showbreak=↪ " indicate wrapped line
 hi  clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
+if &diff " change colorscheme when using vimdiff
+    colorscheme evening
+endif
 
 
 " ########## Text Formatting/Layout
@@ -121,7 +124,7 @@ set tabstop=2 " real tabs should be 4, and they will show with set list on
 set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
-autocmd Filetype php setlocal shiftwidth=4 tabstop=4
+autocmd Filetype php, html, javascript, Python, Ruby, Go setlocal shiftwidth=2 tabstop=2
 
 
 " ########## Mappings
@@ -129,7 +132,8 @@ autocmd Filetype php setlocal shiftwidth=4 tabstop=4
 let mapleader = ","
 
 " for edit my .vimrc
-nmap <Leader>ev :e $MYVIMRC<cr>
+"nmap <Leader>ev :e $MYVIMRC<cr>
+nmap <Leader>ev :e ~/.vimrc<cr>
 
 " for move & delete buffer
 nmap <Leader>n :bn<cr>
@@ -206,11 +210,13 @@ augroup END
 
 " disable arrow keys on insert mode and make up & down arrow as line bubbling
 "no <down> ddp
-nmap <down> ]e " handled by vim-unimpaired
+"nmap <down> ]e " handled by vim-unimpaired
+no <down> <Nop>
 no <left> <Nop>
 no <right> <Nop>
+no <up> <Nop>
 "no <up> ddkP
-nmap <up> [e " handled by vim-unimpaired
+"nmap <up> [e " handled by vim-unimpaired
 ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
@@ -233,6 +239,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 "let g:airline_theme = 'minimalist'
+"let g:airline_theme = 'tomorrow'
 let g:airline_theme = 'ravenpower'
 
 " Rubycomplete
