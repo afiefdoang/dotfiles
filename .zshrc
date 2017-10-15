@@ -105,7 +105,7 @@ alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude
 alias clock="tty-clock -nscC 7"
 
 # screenfetch alias
-# alias screenfetch="screenfetch -c 15,7"
+alias screenfetch="screenfetch -c 15,7"
 
 # neovim
 alias vim="nvim"
