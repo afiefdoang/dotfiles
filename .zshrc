@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 alias fireprox="proxychains env GTK_THEME=Adwaita firefox"
 
 # BACKUP ENTIRE SYSTEM
-alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt / /run/media/bandithijo/BANDITHIJO-EXT4/BANDITHIJO-ARCH"
+alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BANDITHIJO-EXT4/BANDITHIJO-ARCH"
 
 #alias marina!="sudo rsync -aAXvP --delete /run/media/bandithijo/BANDITHIJO-EXT4/BANDITHIJO-ARCH /home/bandithijo"
 
