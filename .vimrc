@@ -61,7 +61,7 @@ set backspace=indent,eol,start " make backspace a more flexible
 set backup " make backup files
 set backupdir=~/.vim/tmp/backup " where to put backup files
 set directory=~/.vim/tmp/swap " directory to place swap files in
-"set undodir=~/.vim/tmp/undo " directory to place undo files in
+set undodir=~/.vim/tmp/undo " directory to place undo files in
 set clipboard=unnamedplus " share clipboard
 set hidden " you can change buffers without saving
 set mouse=a " use mouse everywhere
@@ -238,6 +238,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:powerline_pycmd = 'py3'
 "let g:airline_theme = 'minimalist'
 "let g:airline_theme = 'tomorrow'
 let g:airline_theme = 'ravenpower'

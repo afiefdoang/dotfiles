@@ -23,8 +23,8 @@ default_color e0e0e0
 default_shade_color black
 default_outline_color green
 alignment top_left
-gap_x 30
-gap_y 40
+gap_x 20
+gap_y 30
 no_buffers yes
 uppercase no
 cpu_avg_samples 2
@@ -38,7 +38,7 @@ ${voffset 10}${color #dddddd}${font Boston Traffic:pixelsize=120}${time %H.%M}${
 ${voffset 8}${offset 0}${font Boston Traffic:pixelsize=50}${time %A}${font}
 ${voffset 5}${offset 0}${color #dddddd}${font Boston Traffic:pixelsize=50}${time %d}${voffset -15}${color #dddddd}${font Boston Traffic:pixelsize=30} ${time  %B} ${time %Y}${font}
 ${voffset 8}${offset 100}${font Ubuntu Mono:size=13}${color #7a7a7a}
-> alert("${font Ubuntu:bold:size=13}Don't be Stupid ! Learn Ruby Today !${font DejaVu Sans:size=11}");
+> alert("${font Ubuntu:bold:size=11}Don't be Stupid ! Learn JAVASCRIPT today !");
 
 
 #COLOR BAKCUP
