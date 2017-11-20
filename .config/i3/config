@@ -162,6 +162,7 @@ for_window [class="Modem-manager-gui"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Electrum"] floating enable
 for_window [class="Gpick"] floating enable
+#for_window [class="calibre-ebook-viewer"] floating enable
 #for_window [class="vokoscreen"] floating enable
 #for_window [class="Corebird"] floating enable
 #for_window [class="DTA"] floating enable
@@ -340,7 +341,7 @@ exec killall xfce4-power-manager ; xfce4-power-manager
 exec killall firewall-applet ; firewall-applet
 
 # Enpass
-# sudah dihandle oleh autostart script
+# sudah dihandle oleh ~/.config/autostart script
 #exec_always --no-startup-id enpass &
 #exec_always --no-startup-id enpass %U
 #exec_always killall runenpass.sh ; /opt/Enpass/bin/runenpass.sh startWithTray
@@ -356,7 +357,7 @@ exec killall firewall-applet ; firewall-applet
 #exec_always --no-startup-id /etc/pm/power.d/performance
 
 # Disable TouchPad
-# sudah dihandle oleh autostart script
+# sudah dihandle oleh ~/.config/autostart script
 #exec_always --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 
 # Enable Tap to Click
@@ -375,19 +376,22 @@ bindsym $mod+F8 exec --no-startup-id pavucontrol
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Disable Middle Mouse Paste
-bindsym button2 nop
+# sudah dihandle oleh ~/.config/autostart script
+#bindsym button2 nop
+#xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
 
 # i3-msg border none
 exec --no-startup-id i3-msg border none
 
 # Enable Compton for compositor
-#exec_always killall compton; compton --config ~/.config/i3/compton.conf
-#exec_always --no-startup-id compton
+#exec_always killall compton; compton --config ~/.config/i3/compton2.conf
+#exec_always --no-startup-id compton --config ~/.config/i3/compton2.conf -b
+exec_always --no-startup-id compton --config ~/.config/i3/compton1.conf -b
 
 # Enable Xcompmgr for compositor
-exec_always --no-startup-id xcompmgr
+#exec_always --no-startup-id xcompmgr
 
 # Enable notification
-# sudah dihandle oleh xfce4-notify
+# sudah dihandle oleh ~/.config/autostart script
 #exec_always gnome-settings-daemon
 #exec --no-startup-id dunst -config .config/i3/dunstrc
