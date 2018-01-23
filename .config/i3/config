@@ -47,7 +47,8 @@ bindsym $mod+Shift+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#215D9C' -fn 'DejaVu Sans Mono-11'"
+#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#215D9C' -fn 'DejaVu Sans Mono-11'"
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#111111' -fn 'DejaVu Sans Mono-11'"
 
 # Start rofi (a program launcher)
 #bindsym $mod+d exec rofi -show run -lines 3 -bw 1 -font "Liberation Sans 10" -width 600 -m -1 -hide-scrollbar
@@ -109,17 +110,21 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 set $workspace1 "1"
+set $workspace2 "2"
 #set $workspace2 "2: "
-set $workspace2 "2: "
-set $workspace3 "3: "
-set $workspace4 "4: "
+#set $workspace2 "2: "
+set $workspace3 "3"
+#set $workspace3 "3: "
+set $workspace4 "4"
+#set $workspace4 "4: "
 set $workspace5 "5"
 set $workspace6 "6"
-set $workspace7 "7: "
+set $workspace7 "7"
+#set $workspace7 "7: "
 set $workspace8 "8"
-set $workspace9 "9: "
+set $workspace9 "9"
+#set $workspace9 "9: "
 set $workspace10 "10"
-
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -206,11 +211,11 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 #set $bg-color 	      		#285577
-set $bg-color 	      		#215D9C
-set $border-color			    #000000
-set $inactive-bg-color   	#3a3a3a
-set $text-color          	#ffffff
-set $inactive-text-color 	#888888
+set $bg-color 	      		#111111
+set $border-color			    #111111
+set $inactive-bg-color   	#111111
+set $text-color          	#E4E4E4
+set $inactive-text-color 	#666666
 set $urgent-bg-color     	#ffaf00
 set $urgent-text-color		#000000
 
@@ -230,70 +235,51 @@ bindsym $mod+Shift+t border normal 1
 bindsym $mod+y border none
 bindsym $mod+Shift+y border pixel 1
 new_window pixel 1
-#new_float normal 0
+#new_float normal 1
 new_float pixel 1
 
-#gaps
+# gaps
 #gaps inner 0
 
 bar {
 		id bar-1
+		#tray_output primary
 		tray_output primary
-    tray_padding 2
+    #tray_padding 2
 		#output eDP1
 		position top
-		status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title spacer2 spacer3 brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="0%u%y%m%d%H%M" -t gruvbox-powerline-bandit
+		#status_command polybar Bar
+		#status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title spacer2 spacer3 brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="0%u%y%m%d%H%M" -t gruvbox-powerline-bandit-blue
+		status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-black
     font pango:dejavu sans book 9
     bindsym button1 nop
 
-
 		colors {
-			background  #1a1a1a
-			separator   #666666
-			statusline  #ffffff
+			#background  #1a1a1a
+			background  #111111
+			separator   #E4E4E4
+			statusline  #E4E4E4
 
-			#		              	  border              background         	text
-			focused_workspace  		$bg-color  				  $bg-color          	$text-color
-			inactive_workspace 		#3a3a3a				 	    #2a2a2a				      #999999
-			urgent_workspace   		$urgent-bg-color 		$urgent-bg-color 	  $urgent-text-color
-			#binding_mode       	#2f343a 		        #900000         	  #ffffff
-
-            #default color
-            #focused_workspace  #4c7899 #285577 #ffffff
-            #active_workspace   #333333 #5f676a #ffffff
-            #inactive_workspace #333333 #222222 #888888
-            #urgent_workspace   #2f343a #900000 #ffffff
-            #binding_mode       #2f343a #900000 #ffffff
+			#		              	  border                background         	text
+			focused_workspace  		$text-color  				  $text-color         #111111
+      active_workspace      #555555               #555555             #111111
+			inactive_workspace 		#555555				 	      #111111				      $text-color
+			urgent_workspace   		$urgent-bg-color      $urgent-bg-color    #111111
+			#binding_mode       	#2f343a 		          #900000         	  #E4E4E4
 			}
+
 }
 
-# bar {
-#        id bar-2
-#        position bottom
-#        # i3bar_command i3pystatus
-#        status_command ~/.config/i3/conkybar/conkybar
-#        # output eDP1
-#        font pango:DejaVu Sans 9
-#        workspace_buttons no
-#        tray_output no
-#
-#        colors {
-#            background  #2a2a2a
-#            separator   #666666
-#            statusline  #ffffff
-#        }
-# }
 
-## ADDING BY BANDITHIJO
+## DITAMBAHKAN OLEH BANDITHIJO
 
 # Background Wallpaper
-#exec_always --no-startup-id xsetroot -solid "#FFFFFF"
-#exec xsetroot -solid "#111111"
-exec_always feh --bg-max -Z /home/bandithijo/Pictures/Wallpaper/archWallpaper/Arch-Wallpaper-11.png
+exec_always feh --bg-max -Z /home/bandithijo/Pictures/Wallpapers/archWallpaper/Arch-Wallpaper-11.png
 
 # i3lock lockscreen
-bindsym $mod+Shift+x exec --no-startup-id i3lock -u --beep --color 000000 -i /home/bandithijo/Pictures/Wallpaper/archWallpaper/Arch-Wallpaper-11L.png
-exec_always killall xautolock ; xautolock -time 15 -locker "i3lock -u --beep --color 000000 -i /home/bandithijo/Pictures/Wallpaper/archWallpaper/Arch-Wallpaper-11L.png" && systemctl suspend
+bindsym $mod+Shift+x exec --no-startup-id i3lock -u --beep --color 000000 -t -i /home/bandithijo/Pictures/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png
+
+exec_always killall xautolock ; xautolock -time 15 -locker "i3lock -u --beep --color 000000 -i /home/bandithijo/Pictures/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png" && systemctl suspend
 
 set $Locker i3lock -u --beep --color 000000 -i /home/bandithijo/Pictures/Wallpaper/archWallpaper/Arch-Wallpaper-11L.png && systemctl suspend
 
@@ -313,38 +299,31 @@ mode "$mode_system" {
 bindsym $mod+End mode "$mode_system"
 
 # Pulse Audio controls
-#exec --no-startup-id volumeicon
-#bindsym XF86AudioRaiseVolume exec "pamixer --increase 2; notify-send 'volume up'" #increase sound volume
-#bindsym XF86AudioLowerVolume exec "pamixer --decrease 2; notify-send 'volume down'" #decrease sound volume
-#bindsym XF86AudioMute exec "pamixer --toggle-mute; notify-send 'volume mute'" # mute sound
-bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 2 #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 2 #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 2 # increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 2 # decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute       # mute sound
 #bindsym XF86AudioMicMute exec pamixer --toggle-mute # mute input sound
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2 # increase screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2   # increase screen brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2 # decrease screen brightness
-#bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-#bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+
+# Brightness
+#exec_always --no-startup-id /etc/pm/power.d/performance
 
 # Network Manager Applet
-#exec_always --no-startup-id network-manager-applet
 #exec_always killall nm-applet ; nm-applet
-exec killall nm-applet ; nm-applet
+exec killall nm-applet ; env GTK_THEME=Adwaita-dark nm-applet
 
 # XFCE4-power-manager
 exec killall xfce4-power-manager ; xfce4-power-manager
 
 # Firewalld
-#exec_always killall firewall-applet ; firewall-applet
 exec killall firewall-applet ; firewall-applet
 
 # Enpass
-# sudah dihandle oleh ~/.config/autostart script
-#exec_always --no-startup-id enpass &
-#exec_always --no-startup-id enpass %U
-#exec_always killall runenpass.sh ; /opt/Enpass/bin/runenpass.sh startWithTray
+# sudah dihandle oleh ~/.config/autostart script (i3-GNOME)
+exec killall runenpass.sh ; /opt/Enpass/bin/runenpass.sh
 
 # Blueman Applet
 #exec_always killall blueman-applet ; blueman-applet
@@ -353,12 +332,9 @@ exec killall firewall-applet ; firewall-applet
 #bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 #bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
-# Brightness
-#exec_always --no-startup-id /etc/pm/power.d/performance
-
 # Disable TouchPad
-# sudah dihandle oleh ~/.config/autostart script
-#exec_always --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
+# sudah dihandle oleh ~/.config/autostart script (i3-GNOME)
+exec_always --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 
 # Enable Tap to Click
 exec_always --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
@@ -376,22 +352,19 @@ bindsym $mod+F8 exec --no-startup-id pavucontrol
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # Disable Middle Mouse Paste
-# sudah dihandle oleh ~/.config/autostart script
-#bindsym button2 nop
-#xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
+# sudah dihandle oleh ~/.config/autostart script (i3-GNOME)
+exec --no-startup-id xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
 
 # i3-msg border none
 exec --no-startup-id i3-msg border none
 
+# Start Conky
+exec killall conky; conky -c .conky/Arch/conky.conf.i3wm+clock
+
 # Enable Compton for compositor
-#exec_always killall compton; compton --config ~/.config/i3/compton2.conf
-#exec_always --no-startup-id compton --config ~/.config/i3/compton2.conf -b
-exec_always --no-startup-id compton --config ~/.config/i3/compton1.conf -b
+exec_always --no-startup-id compton --config ~/.config/i3/compton.conf -b
 
 # Enable Xcompmgr for compositor
 #exec_always --no-startup-id xcompmgr
 
-# Enable notification
-# sudah dihandle oleh ~/.config/autostart script
-#exec_always gnome-settings-daemon
-#exec --no-startup-id dunst -config .config/i3/dunstrc
+

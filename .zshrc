@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 alias fireprox="proxychains env GTK_THEME=Adwaita firefox"
 
 # BACKUP ENTIRE SYSTEM
-alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BANDITHIJO-EXT4/BANDITHIJO-ARCH"
+alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BANDITHIJO-X260/BANDITHIJO-ARCH"
 
 #alias marina!="sudo rsync -aAXvP --delete /run/media/bandithijo/BANDITHIJO-EXT4/BANDITHIJO-ARCH /home/bandithijo"
 
@@ -108,13 +108,19 @@ alias clock="tty-clock -nscC 7"
 alias screenfetch="screenfetch -c 15,7"
 
 # neovim
-alias vim="nvim"
+#alias vim="nvim"
 
-# vimdif
+# vimdiff
 alias vimdiff="vim -d"
 
 # Enabling Menu Item Gnome
 alias menuitem-enable="gsettings set org.gnome.settings-daemon.plugins.xsettings overrides \"{'Gtk/ButtonImages': <1>, 'Gtk/MenuImages': <1>}\""
+
+# Upgrade all packages PIP
+alias pip-superupgrade="pip freeze > list && sudo pip install -r list -U && rm list"
+
+# XAMPP
+alias lampp="sudo /opt/lampp/lampp"
 
 # POWERLINE ARCH
 if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
@@ -124,12 +130,6 @@ fi
 # PKGBUILD YAOURT
 export VISUAL="vim"
 export VISUAL="nvim"
-
-# JAVA_HOME
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
-#export JAVA_HOME="/usr/lib/jvm/java-8-jdk/"
-#export JAVA_HOME="/usr/lib/jvm/java-9-jdk/"
-export PATH=$JAVA_HOME/bin:$PATH
 
 # RBENV
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -145,7 +145,10 @@ PERL_LOCAL_LIB_ROOT="/home/bandithijo/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_
 PERL_MB_OPT="--install_base \"/home/bandithijo/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/bandithijo/perl5"; export PERL_MM_OPT;
 
-# BASH-INSULTER
-if [ -f /etc/zsh.command-not-found ]; then
-    . /etc/zsh.command-not-found
-fi
+# JAVA_HOME
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
+#export JAVA_HOME="/usr/lib/jvm/java-9-openjdk/"
+#export JAVA_HOME="/usr/lib/jvm/java-8-jdk/"
+#export JAVA_HOME="/usr/lib/jvm/java-9-jdk/"
+export PATH=$JAVA_HOME/bin:$PATH
+

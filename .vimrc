@@ -45,6 +45,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/sgmlendtag'
 Plug 'tpope/vim-unimpaired'
 Plug 'tmux-plugins/vim-tmux-focus-events'
+"Plug 'python-mode/python-mode'
 "Plug 'Raimondi/delimitMate'
 
 call plug#end()
@@ -124,7 +125,7 @@ set tabstop=2 " real tabs should be 4, and they will show with set list on
 set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
-autocmd Filetype php, html, javascript, Python, Ruby, Go setlocal shiftwidth=2 tabstop=2
+autocmd Filetype php setlocal shiftwidth=4 tabstop=4
 
 
 " ########## Mappings
@@ -229,6 +230,7 @@ vno <up> <Nop>
 " emmet-vim trigger key remap
 let g:user_emmet_leader_key='<C-space>' " then press , (comma) to do magic !
 
+
 " ########## Plugins Settings
 " NerdTree
 let NERDTreeHijackNetrw = 0
@@ -261,3 +263,11 @@ let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
 " Greplace
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
+
+" pylint
+let g:syntastic_python_checkers = ['pylint']  "" or ['flake8', 'pylint'], etc
+let g:syntastic_python_pylint_args = '-E'
+"" to show it accepts a string of args, also:
+let g:syntastic_python_pylint_args = '--rcfile=/path/to/rc -E'
+
+

@@ -4,11 +4,13 @@
 " Hex colour conversion functions borrowed from the theme "Desert256""
 
 " Default GUI Colours
-let s:foreground = "c5c8c6"
+" let s:foreground = "c5c8c6"
+let s:foreground = "e2e4e3"
 let s:background = "1d1f21"
 let s:selection = "373b41"
 let s:line = "282a2e"
-let s:comment = "969896"
+" let s:comment = "969896"
+let s:comment = "777777"
 let s:red = "cc6666"
 let s:orange = "de935f"
 let s:yellow = "f0c674"
@@ -256,7 +258,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("MoreMsg", s:green, "", "")
 	call <SID>X("Question", s:green, "", "")
 	call <SID>X("WarningMsg", s:red, "", "")
-	call <SID>X("MatchParen", "", s:selection, "bold")
+	"call <SID>X("MatchParen", "", s:selection, "bold")
+	call <SID>X("MatchParen", s:selection, s:yellow, "bold")
 	call <SID>X("Folded", s:comment, s:background, "")
 	call <SID>X("FoldColumn", "", s:background, "")
 	if version >= 700
@@ -273,7 +276,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Standard Highlighting
 	call <SID>X("Comment", s:comment, "", "")
 	call <SID>X("Todo", s:comment, s:background, "")
-	call <SID>X("Title", s:comment, "", "")
+	" call <SID>X("Title", s:comment, "", "")
+	call <SID>X("Title", s:foreground, "", "")
 	call <SID>X("Identifier", s:red, "", "none")
 	call <SID>X("Statement", s:foreground, "", "")
 	call <SID>X("Conditional", s:foreground, "", "")

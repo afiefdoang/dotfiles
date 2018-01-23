@@ -1,0 +1,7 @@
+pane	ARCH	0	:..ails/database	0	:	0	:/home/bandithijo/Documents/Belajar/belajar-rails/database	1	zsh	:
+pane	ARCH	1	:vim	0	:-	0	:/home/bandithijo/Documents/Belajar/belajar-rails/database	1	vim	:vim
+pane	ARCH	2	:rails	1	:*	0	:/home/bandithijo/Documents/Belajar/belajar-rails/database	1	ruby	:/home/bandithijo/.rbenv/versions/2.4.1/bin/ruby bin/rails c
+window	ARCH	0	0	:	be3e,117x44,0,0,1
+window	ARCH	1	0	:-	be3f,117x44,0,0,2
+window	ARCH	2	1	:*	be40,117x44,0,0,3
+state	ARCH	

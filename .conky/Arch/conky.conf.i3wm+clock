@@ -39,14 +39,14 @@ maximum_width 400
 draw_shades no
 draw_outline no
 draw_borders no
-draw_graph_borders yes
+draw_graph_borders no
 default_color gray
 default_shade_color red
 default_outline_color green
 alignment top_left
 
 gap_x 20
-gap_y 20
+gap_y 5
 
 stippled_borders 0
 border_inner_margin 0
@@ -62,52 +62,47 @@ text_buffer_size 256
 
 own_window_color 000000
 TEXT
-${voffset 30}${color #dddddd}${font Boston Traffic:pixelsize=120}${time %H.%M}${font}
+${voffset 50}${color #dddddd}${font Boston Traffic:pixelsize=150}${time %H.%M}${font}
 ${voffset 8}${font Boston Traffic:pixelsize=50}${time %A}${font}
 ${voffset 5}${color #dddddd}${font Boston Traffic:pixelsize=50}${time %d}${voffset -15}${color #dddddd}${font Boston Traffic:pixelsize=30} ${time  %B} ${time %Y}${font}
-${voffset 2}${font Ubuntu Mono:size=13}${color #7a7a7a}
-> alert ${font Ubuntu:bold:size=11}Don't be Stupid ! Learn JAVASCRIPT today !
-
-#${voffset 280}
-#${font Ubuntu:bold:size=19}${color #dddddd}BanditHijo-X260
-
-${voffset -40}
+#${voffset 10}${font Ubuntu Mono:size=13}${color #7a7a7a}
+#> alert ${font Ubuntu:bold:size=11}Don't be Stupid ! Learn PYTHON today !
+${voffset 5}
+${color #000000}--------------------------------------------------------------------------------
 ${font Ubuntu:bold:size=8}${color #dddddd}SYSTEM INFO ${color #4a4a4a}
-$font${color #4a4a4a}$sysname $kernel ${alignr 195} $machine
-Intel CORE i5-6300 ${alignr 195} ${freq_g cpu0}Ghz
-Uptime ${alignr 195} ${uptime}
-File System ${alignr 195} ${fs_type}
+$font${color #4a4a4a}$sysname $kernel ${alignr 204} $machine
+Intel CORE i5-6300 ${alignr 204} ${freq_g cpu0}Ghz
+Uptime ${alignr 204} ${uptime}
+File System ${alignr 204} ${fs_type}
 
 ${font Ubuntu:bold:size=8}${color #dddddd}MEMORY ${color #4a4a4a}
-$font${color #4a4a4a}MEM $mem / $memmax ${alignr 195} $memperc%
+$font${color #4a4a4a}MEM $mem / $memmax ${alignr 204} $memperc%
 ${membar 5,195}
 
 ${font Ubuntu:bold:size=8}${color #dddddd}HDD ${color #4a4a4a}
-$font${color #4a4a4a}/ ${fs_used /} / ${fs_size /} ${alignr 195} ${fs_free_perc /}%
+$font${color #4a4a4a}/ ${fs_used /} / ${fs_size /} ${alignr 204} ${fs_free_perc /}%
 ${fs_bar 5,195 /}
 
-#${font Ubuntu:bold:size=8}${color #dddddd}NUCLEAR+ ${color #4a4a4a}
-#$font${color #4a4a4a}Reactor 0 : ${battery_time BAT0} ${alignr 195} ${battery_percent BAT0}%
-#${battery_bar 5,195 BAT0}
-#
-#$font${color #4a4a4a}Reactor 1 : ${battery_time BAT1} ${alignr 195} ${battery_percent BAT1}%
-#${battery_bar 5,195 BAT1}
+${font Ubuntu:bold:size=8}${color #dddddd}NETWORKS ${color #4a4a4a}
+$font${color #4a4a4a}IP on enp0s31f6 ${alignr 204} ${addr enp0s31f6}
+Down ${alignr 204} ${downspeed enp0s31f6} kb/s
+Up ${alignr 204} ${upspeed enp0s31f6} kb/s
 
-${font Ubuntu:bold:size=8}${color #dddddd}NETWORK ${color #4a4a4a}
-$font${color #4a4a4a}IP on wlp4s0 ${alignr 195} ${addr wlp4s0}
-Down ${alignr 195} ${downspeed wlp4s0} kb/s
-Up ${alignr 195} ${upspeed wlp4s0} kb/s
-
-Downloaded: ${alignr 195} ${totaldown wlp4s0}
-Uploaded: ${alignr 195} ${totalup wlp4s0}
-${color #4a4a4a}${downspeedgraph wlp4s0 20,95 #4a4a4a #4a4a4a} ${color #4a4a4a}${upspeedgraph wlp4s0 20,95 #4a4a4a #4a4a4a}
-#${hr 1}
-$font${color #4a4a4a}IP on enp0s31f6 ${alignr 195} ${addr enp0s31f6}
-Down ${alignr 195} ${downspeed enp0s31f6} kb/s
-Up ${alignr 195} ${upspeed enp0s31f6} kb/s
-
-Downloaded: ${alignr 195} ${totaldown enp0s31f6}
-Uploaded: ${alignr 195} ${totalup enp0s31f6}
+Downloaded: ${alignr 204} ${totaldown enp0s31f6}
+Uploaded: ${alignr 204} ${totalup enp0s31f6}
 ${color #4a4a4a}${downspeedgraph enp0s31f6 20,95 #4a4a4a #4a4a4a} ${color #4a4a4a}${upspeedgraph enp0s31f6 20,95 #4a4a4a #4a4a4a}
+$font${color #4a4a4a}IP on wlp4s0 ${alignr 204} ${addr wlp4s0}
+Down ${alignr 204} ${downspeed wlp4s0} kb/s
+Up ${alignr 204} ${upspeed wlp4s0} kb/s
 
+Downloaded: ${alignr 204} ${totaldown wlp4s0}
+Uploaded: ${alignr 204} ${totalup wlp4s0}
+${downspeedgraph wlp4s0 20,95 #4a4a4a #4a4a4a} ${upspeedgraph wlp4s0 20,95 #4a4a4a #4a4a4a}
+---------------------------------------
+
+# ${font Ubuntu:bold:size=8}${color #dddddd}NUCLEAR+ ${color #4a4a4a}
+# $font${color #4a4a4a}Reactor 0 : ${battery_time BAT0} ${alignr 204} ${battery_percent BAT0}%
+# ${battery_bar 5,195 BAT0}
+# $font${color #4a4a4a}Reactor 1 : ${battery_time BAT1} ${alignr 204} ${battery_percent BAT1}%
+# ${battery_bar 5,195 BAT1}
 

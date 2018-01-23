@@ -2,13 +2,13 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/bandithijo/.gtkrc-2.0.mine"
-gtk-theme-name="Adwaita-dark"
-gtk-icon-theme-name="buuf-3.20-1a"
-gtk-font-name="Ubuntu 9"
+gtk-theme-name="Adwaita"
+gtk-icon-theme-name="Flat Remix"
+gtk-font-name="Ubuntu Semi-Bold 9"
 gtk-cursor-theme-name="ComixCursors-Opaque-White"
 gtk-cursor-theme-size=24
-gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
-gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+gtk-toolbar-style=GTK_TOOLBAR_ICONS
+gtk-toolbar-icon-size=GTK_ICON_SIZE_SMALL_TOOLBAR
 gtk-button-images=0
 gtk-menu-images=1
 gtk-enable-event-sounds=1
@@ -18,15 +18,3 @@ gtk-xft-hinting=1
 gtk-xft-hintstyle="hintfull"
 gtk-xft-rgba="rgb"
 gtk-modules="canberra-gtk-module"
-
-# Desktop icon properties
-style "xfdesktop-icon-view" {
-    XfdesktopIconView::label-alpha = 10
-    base[NORMAL]   = "#000000"
-    base[SELECTED] = "#71B9FF"
-    base[ACTIVE]   = "#71B9FF"
-    fg[NORMAL]     = "#000000"
-    fg[SELECTED]   = "#000000"
-    fg[ACTIVE]     = "#ffffff"
-}
-widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
