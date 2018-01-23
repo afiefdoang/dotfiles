@@ -167,6 +167,7 @@ for_window [class="Modem-manager-gui"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Electrum"] floating enable
 for_window [class="Gpick"] floating enable
+for_window [class="TeamViewer"] floating enable
 #for_window [class="calibre-ebook-viewer"] floating enable
 #for_window [class="vokoscreen"] floating enable
 #for_window [class="Corebird"] floating enable
