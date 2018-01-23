@@ -1,0 +1,154 @@
+{
+	"icons": [ "paxy97", "awesome-fonts-bandit" ],
+	"defaults": {
+		"warning": {
+			"fg": "#ffffff",
+			"bg": "#3a3a3a"
+		},
+		"critical": {
+			"fg": "#ffffff",
+			"bg": "#3a3a3a"
+		},
+		"default-separators": false,
+		"separator-block-width": 0
+	},
+	"cycle": [
+		{
+			"fg": "#ffffff",
+			"bg": "#585858"
+		},
+		{
+			"fg": "#ffffff",
+			"bg": "#585858"
+		}
+	],
+	"dnf": {
+		"good": {
+			"fg": "#002b36",
+			"bg": "#859900"
+		}
+	},
+	"battery0": {
+		"fg": "#000000",
+		"bg": "#afd700",
+
+		"charged": {
+			"fg": "#000000",
+			"bg": "#afd700"
+		},
+		"charging": {
+			"fg": "#000000",
+			"bg": "#afd700"
+		},
+		"AC": {
+			"fg": "#ffffff",
+			"bg": "#afd700"
+		},
+		"warning": {
+			"fg": "#ffffff",
+			"bg": "#FF0F00"
+		},
+		"critical": {
+			"fg": "#ffffff",
+			"bg": "#FF0F00"
+		}
+	},
+	"battery1": {
+		"fg": "#000000",
+		"bg": "#afd700",
+
+		"charged": {
+			"fg": "#000000",
+			"bg": "#afd700"
+		},
+		"charging": {
+			"fg": "#000000",
+			"bg": "#afd700"
+		},
+		"AC": {
+			"fg": "#ffffff",
+			"bg": "#afd700"
+		},
+		"warning": {
+			"fg": "#ffffff",
+			"bg": "#FF0F00"
+		},
+		"critical": {
+			"fg": "#ffffff",
+			"bg": "#FF0F00"
+		}
+	},
+    "cpu": {
+        "warning": {
+            "fg": "#000000",
+            "bg": "#FFAF00"
+        },
+        "critical": {
+            "fg": "#000000",
+            "bg": "#FF0F00"
+        }
+    },
+    "sensors": {
+        "warning": {
+            "fg": "#000000",
+            "bg": "#FFAF00"
+        },
+        "critical": {
+            "fg": "#000000",
+            "bg": "#FF0F00"
+        }
+    },
+    "memory": {
+        "warning": {
+            "fg": "#000000",
+            "bg": "#FFAF00"
+        },
+        "critical": {
+            "fg": "#000000",
+            "bg": "#FFAF00"
+        }
+    },
+	"nic": {
+		"fg": "#ffffff"
+	},
+	"profile": {
+		"fg": "#ffffff",
+		"bg": "#215D9C"
+	},
+	"time": {
+		"fg": "#ffffff",
+		"bg": "#0087AF"
+	},
+	"date": {
+		"fg": "#000000",
+		"bg": "#ffffff"
+	},
+	"brightness": {
+		"fg": "#ffffff"
+	},
+	"kernel": {
+		"fg": "#ffffff",
+		"bg": "#2a2a2a"
+	},
+	"spacer": {
+		"bg": "#585858"
+	},
+	"spacer2": {
+		"bg": "#215D9C"
+	},
+    "spacer3": {
+		"bg": "#0087AF"
+	},
+    "spacer4": {
+		"bg": "#2a2a2a"
+	},
+    "spacer5": {
+		"bg": "#1a1a1a"
+	},
+	"spacerLong": {
+		"bg": "#2a2a2a"
+	},
+  "title": {
+    "bg": "#1a1a1a"
+  }
+}
