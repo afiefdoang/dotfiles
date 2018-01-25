@@ -33,11 +33,12 @@ class Module(bumblebee.engine.Module):
     @property
     def _format(self):
         if bumblebee.util.asbool(self.parameter("usedonly", False)):
+        #if bumblebee.util.asbool(self.parameter("usedonly", True)):
             return "{used}"
         else:
             #return self.parameter("format", "{used}/{total} ({percent:05.02f}%)")
             return self.parameter("format", "{percent:05.02f}%")
-            #return self.parameter("format", "{used}")
+            #return self.parameter("format", "{usedonly}")
 
     def memory_usage(self, widget):
         return self._format.format(**self._mem)
