@@ -251,7 +251,7 @@ bar {
 		position top
 		#status_command polybar Bar
 		#status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title spacer2 spacer3 brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="0%u%y%m%d%H%M" -t gruvbox-powerline-bandit-blue
-		status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-black
+		status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-black
     font pango:dejavu sans book 9
     bindsym button1 nop
 

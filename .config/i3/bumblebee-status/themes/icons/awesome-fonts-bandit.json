@@ -1,6 +1,6 @@
 {
 	"defaults": {
-		"separator": "", "padding": " ",
+		"separator": " ", "padding": " ",
 		"unknown": { "prefix": "" }
 	},
 	"date": { "prefix": ""	},
