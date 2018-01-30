@@ -118,6 +118,7 @@ alias menuitem-enable="gsettings set org.gnome.settings-daemon.plugins.xsettings
 
 # Upgrade all packages PIP
 alias pip-superupgrade="pip freeze > list && sudo pip install -r list -U && rm list"
+alias pip-upgrade="pip freeze > list && pip install -r list -U && rm list"
 
 # XAMPP
 alias lampp="sudo /opt/lampp/lampp"

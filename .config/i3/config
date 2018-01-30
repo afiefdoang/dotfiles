@@ -48,7 +48,7 @@ bindsym $mod+Shift+q kill
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#215D9C' -fn 'DejaVu Sans Mono-11'"
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#111111' -fn 'DejaVu Sans Mono-11'"
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'DejaVu Sans Mono-11'"
 
 # Start rofi (a program launcher)
 #bindsym $mod+d exec rofi -show run -lines 3 -bw 1 -font "Liberation Sans 10" -width 600 -m -1 -hide-scrollbar
@@ -168,6 +168,7 @@ for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Electrum"] floating enable
 for_window [class="Gpick"] floating enable
 for_window [class="TeamViewer"] floating enable
+for_window [class="Gnome-calendar"] floating enable
 #for_window [class="calibre-ebook-viewer"] floating enable
 #for_window [class="vokoscreen"] floating enable
 #for_window [class="Corebird"] floating enable
@@ -212,13 +213,16 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 #set $bg-color 	      		#285577
-set $bg-color 	      		#111111
-set $border-color			    #111111
-set $inactive-bg-color   	#111111
+set $bg-color 	      		#002B36
+set $border-color			    #002B36
+set $inactive-bg-color   	#002B36
 set $text-color          	#E4E4E4
-set $inactive-text-color 	#666666
-set $urgent-bg-color     	#ffaf00
-set $urgent-text-color		#000000
+#set $inactive-text-color 	#666666
+set $inactive-text-color  #576D74
+#set $urgent-bg-color     	#ffaf00
+set $urgent-bg-color      #859900
+#set $urgent-text-color		#000000
+set $urgent-text-color		#E4E4E4
 
 # window colors
 #                       border              background         text                 indicator
@@ -251,21 +255,20 @@ bar {
 		position top
 		#status_command polybar Bar
 		#status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title spacer2 spacer3 brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="0%u%y%m%d%H%M" -t gruvbox-powerline-bandit-blue
-		status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-black
+		status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-solarized
     font pango:dejavu sans book 9
     bindsym button1 nop
 
 		colors {
-			#background  #1a1a1a
-			background  #111111
+			background  #002B36
 			separator   #E4E4E4
 			statusline  #E4E4E4
 
 			#		              	  border                background         	text
-			focused_workspace  		$text-color  				  $text-color         #111111
-      active_workspace      #555555               #555555             #111111
-			inactive_workspace 		#555555				 	      #111111				      $text-color
-			urgent_workspace   		$urgent-bg-color      $urgent-bg-color    #111111
+			focused_workspace  		$text-color  				  $text-color         #002B36
+      active_workspace      #829395               #829395             #002B36
+			inactive_workspace 		#829395				 	      #002B36				      $text-color
+			urgent_workspace   		$urgent-bg-color      $urgent-bg-color    $text-color
 			#binding_mode       	#2f343a 		          #900000         	  #E4E4E4
 			}
 
@@ -300,21 +303,21 @@ mode "$mode_system" {
 bindsym $mod+End mode "$mode_system"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 2 # increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 2 # decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute       # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pamixer --increase 2; notify-send ' Volume Up'"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pamixer --decrease 2; notify-send ' Volume Down'"
+bindsym XF86AudioMute exec --no-startup-id "pamixer --toggle-mute; notify-send ' Volume Out Muted'"
 #bindsym XF86AudioMicMute exec pamixer --toggle-mute # mute input sound
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2   # increase screen brightness
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 2; notify-send ' Brightness Increase'"
+bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 2; notify-send ' Brightness Decrease'"
 
 # Brightness
 #exec_always --no-startup-id /etc/pm/power.d/performance
 
 # Network Manager Applet
-#exec_always killall nm-applet ; nm-applet
-exec killall nm-applet ; env GTK_THEME=Adwaita-dark nm-applet
+exec killall nm-applet ; nm-applet
+#exec killall nm-applet ; env GTK_THEME=Adwaita-dark nm-applet
 
 # XFCE4-power-manager
 exec killall xfce4-power-manager ; xfce4-power-manager
@@ -324,7 +327,7 @@ exec killall firewall-applet ; firewall-applet
 
 # Enpass
 # sudah dihandle oleh ~/.config/autostart script (i3-GNOME)
-exec killall runenpass.sh ; /opt/Enpass/bin/runenpass.sh
+exec killall runenpass.sh ; /opt/Enpass/bin/runenpass.sh startWithTray
 
 # Blueman Applet
 #exec_always killall blueman-applet ; blueman-applet
@@ -335,10 +338,10 @@ exec killall runenpass.sh ; /opt/Enpass/bin/runenpass.sh
 
 # Disable TouchPad
 # sudah dihandle oleh ~/.config/autostart script (i3-GNOME)
-exec_always --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
+exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 
 # Enable Tap to Click
-exec_always --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
 # Disable F1 Help Button
 bindsym F1 exec --no-startup-id echo "help" > /dev/null
@@ -363,9 +366,11 @@ exec --no-startup-id i3-msg border none
 exec killall conky; conky -c .conky/Arch/conky.conf.i3wm+clock
 
 # Enable Compton for compositor
-exec_always --no-startup-id compton --config ~/.config/i3/compton.conf -b
+exec killall compton; compton --config ~/.config/i3/compton.conf -b
 
 # Enable Xcompmgr for compositor
 #exec_always --no-startup-id xcompmgr
 
+# Enable Dunst
+exec_always killall dunst; dunst -config '/home/bandithijo/.config/i3/dunstrc'
 

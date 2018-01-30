@@ -79,7 +79,8 @@ au FocusGained,BufEnter * :checktime " auto update trigger on buffer change or t
 
 
 " ########## VIM User Interface
-colorscheme Tomorrow-Night-Bandit
+"colorscheme Tomorrow-Night-Bandit
+colorscheme solarized-bandit
 set background=dark
 set t_Co=256 " set terminal 256 color
 set incsearch " incremental search aka search as you type
@@ -241,9 +242,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:powerline_pycmd = 'py3'
-"let g:airline_theme = 'minimalist'
-"let g:airline_theme = 'tomorrow'
-let g:airline_theme = 'ravenpower'
+"let g:airline_theme = 'ravenpower'
+"let g:airline_theme = 'solarized'
+let g:airline_theme = 'atomic'
 
 " Rubycomplete
 let g:rubycomplete_rails=1
