@@ -9,7 +9,8 @@ export ZSH=/home/bandithijo/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="avit"
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context dir vcs)
@@ -62,7 +63,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git bundler dotenv rake rbenv ruby rails django)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,6 +86,16 @@ source $ZSH/oh-my-zsh.sh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# For Remove username on oh-my-zsh
+#prompt_context() {}
+
+# For Remove Location
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -123,10 +134,13 @@ alias pip-upgrade="pip freeze > list && pip install -r list -U && rm list"
 # XAMPP
 alias lampp="sudo /opt/lampp/lampp"
 
+# POSTBANNER
+alias postbanner="postbanner -t '-f 3d.flf' -l '-p 10'"
+
 # POWERLINE ARCH
-if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-    source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
-fi
+#if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
+#    source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+#fi
 
 # PKGBUILD YAOURT
 export VISUAL="vim"
