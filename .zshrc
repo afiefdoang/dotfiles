@@ -63,7 +63,7 @@ ZSH_THEME="avit"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler dotenv rake rbenv ruby rails django)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -147,10 +147,10 @@ export VISUAL="vim"
 export VISUAL="nvim"
 
 # RBENV
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+# export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 # export PATH="/home/bandithijo/.gem/ruby/2.4.0/bin:$PATH"
 
 # PERL5
@@ -166,4 +166,9 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
 #export JAVA_HOME="/usr/lib/jvm/java-8-jdk/"
 #export JAVA_HOME="/usr/lib/jvm/java-9-jdk/"
 export PATH=$JAVA_HOME/bin:$PATH
+
+# NPM Environment
+PATH="$HOME/.node_modules/bin:$PATH"
+export npm_config_prefix=~/.node_modules
+
 

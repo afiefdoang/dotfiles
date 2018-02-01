@@ -247,30 +247,29 @@ new_float pixel 1
 #gaps inner 0
 
 bar {
-		id bar-1
-		#tray_output primary
-		tray_output primary
-    #tray_padding 2
-		#output eDP1
-		position top
-		#status_command polybar Bar
-		#status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title spacer2 spacer3 brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="0%u%y%m%d%H%M" -t gruvbox-powerline-bandit-blue
-		status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-solarized
-    font pango:dejavu sans book 9
-    bindsym button1 nop
+  id bar-1
+  tray_output primary
+#tray_padding 2
+  #output eDP1
+  position top
+  #status_command polybar Bar
+  #status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title spacer2 spacer3 brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="0%u%y%m%d%H%M" -t gruvbox-powerline-bandit-blue
+  status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile spacer5 -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-solarized
+  font pango:dejavu sans book 9
+  bindsym button1 nop
 
-		colors {
-			background  #002B36
-			separator   #E4E4E4
-			statusline  #E4E4E4
+  colors {
+    background  #002B36
+    separator   #E4E4E4
+    statusline  #E4E4E4
 
-			#		              	  border                background         	text
-			focused_workspace  		$text-color  				  $text-color         #002B36
-      active_workspace      #829395               #829395             #002B36
-			inactive_workspace 		#829395				 	      #002B36				      $text-color
-			urgent_workspace   		$urgent-bg-color      $urgent-bg-color    $text-color
-			#binding_mode       	#2f343a 		          #900000         	  #E4E4E4
-			}
+    #		              	  border                background         	text
+    focused_workspace  		$text-color  				  $text-color         #002B36
+    active_workspace      #829395               #829395             #002B36
+    inactive_workspace 		#829395				 	      #002B36				      $text-color
+    urgent_workspace   		$urgent-bg-color      $urgent-bg-color    $text-color
+    #binding_mode       	#2f343a 		          #900000         	  #E4E4E4
+    }
 
 }
 
@@ -289,28 +288,28 @@ set $Locker i3lock -u --beep --color 000000 -i /home/bandithijo/Pictures/Wallpap
 
 set $mode_system System (x) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym x exec --no-startup-id $Locker, mode "default"
-    bindsym e exec --no-startup-id i3-msg exit, mode "default"
-    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
-    bindsym r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+  bindsym x exec --no-startup-id $Locker, mode "default"
+  bindsym e exec --no-startup-id i3-msg exit, mode "default"
+  bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+  bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+  bindsym r exec --no-startup-id systemctl reboot, mode "default"
+  bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
-    # back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+  # back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 bindsym $mod+End mode "$mode_system"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pamixer --increase 2; notify-send ' Volume Up'"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pamixer --decrease 2; notify-send ' Volume Down'"
-bindsym XF86AudioMute exec --no-startup-id "pamixer --toggle-mute; notify-send ' Volume Out Muted'"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pamixer --increase 2; notify-send ' Volume Up [+]'"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pamixer --decrease 2; notify-send ' Volume Down [-]'"
+bindsym XF86AudioMute exec --no-startup-id "pamixer --toggle-mute"
 #bindsym XF86AudioMicMute exec pamixer --toggle-mute # mute input sound
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 2; notify-send ' Brightness Increase'"
-bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 2; notify-send ' Brightness Decrease'"
+bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 2; notify-send ' Brightness Increase [+]'"
+bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 2; notify-send ' Brightness Decrease [-]'"
 
 # Brightness
 #exec_always --no-startup-id /etc/pm/power.d/performance
