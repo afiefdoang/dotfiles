@@ -254,7 +254,7 @@ bar {
     inactive_workspace 		#829395				 	      #002B36				      $text-color
     urgent_workspace   		$urgent-bg-color      $urgent-bg-color    $text-color
     #binding_mode       	#2f343a 		          #900000         	  #E4E4E4
-    }
+  }
 
 }
 
@@ -288,14 +288,14 @@ mode "$mode_system" {
 bindsym $mod+End mode "$mode_system"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pamixer --increase 2; notify-send ' Volume Up [+]'"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pamixer --decrease 2; notify-send ' Volume Down [-]'"
-bindsym XF86AudioMute exec --no-startup-id "pamixer --toggle-mute"
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 2
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 2
+bindsym XF86AudioMute exec --no-startup-id pamixer --toggle-mute
 #bindsym XF86AudioMicMute exec pamixer --toggle-mute # mute input sound
 
 # Screen Brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 2; notify-send ' Brightness Increase [+]'"
-bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 2; notify-send ' Brightness Decrease [-]'"
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2
 
 # Brightness Power controls
 #exec_always --no-startup-id /etc/pm/power.d/performance
@@ -304,7 +304,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 2; notify-se
 exec killall nm-applet ; nm-applet
 
 # XFCE4-power-manager
-exec killall xfce4-power-manager ; xfce4-power-manager
+#exec killall xfce4-power-manager ; xfce4-power-manager
 
 # Firewalld
 exec killall firewall-applet ; firewall-applet
@@ -344,14 +344,13 @@ exec --no-startup-id xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
 exec --no-startup-id i3-msg border none
 
 # Start Conky
-exec killall conky; conky -c .conky/Arch/conky.conf.i3wm+clock
+exec killall conky ; conky -c .conky/arch/conky-i3wm+clock.conf
 
 # Enable Compton for compositor
-exec killall compton; compton --config ~/.config/i3/compton.conf -b
+exec killall compton ; compton --config ~/.config/i3/compton.conf -b
 
 # Enable Xcompmgr for compositor
 #exec_always --no-startup-id xcompmgr
 
 # Enable Dunst Notifications
-exec_always killall dunst; dunst -config '/home/bandithijo/.config/i3/dunstrc'
-
+exec_always killall dunst ; dunst -config '/home/bandithijo/.config/i3/dunstrc'
