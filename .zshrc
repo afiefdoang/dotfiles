@@ -9,17 +9,7 @@ export ZSH=/home/bandithijo/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="agnoster"
 ZSH_THEME="avit"
-# ZSH_THEME="powerlevel9k/powerlevel9k"
-
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator context dir vcs)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(dir_writable status time)
-#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time time)
-# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-# POWERLEVEL9K_STATUS_VERBOSE=false
-# POWERLEVEL9K_TIME_FORMAT="%D{%H:%M \uf073  %d.%m.%y}"
-# export DEFAULT_USER="$USER"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -110,8 +100,6 @@ alias fireprox="proxychains env GTK_THEME=Adwaita firefox"
 # BACKUP ENTIRE SYSTEM
 alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BANDITHIJO-X260/BANDITHIJO-ARCH"
 
-#alias marina!="sudo rsync -aAXvP --delete /run/media/bandithijo/BANDITHIJO-EXT4/BANDITHIJO-ARCH /home/bandithijo"
-
 # tty-clock
 alias clock="tty-clock -nscC 7"
 
@@ -147,11 +135,10 @@ export VISUAL="vim"
 export VISUAL="nvim"
 
 # RBENV
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
-
-# export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-# export PATH="/home/bandithijo/.gem/ruby/2.4.0/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.gem/ruby/2.4.0/bin:$PATH"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
 # PERL5
 PATH="/home/bandithijo/perl5/bin${PATH:+:${PATH}}"; export PATH;

@@ -1,5 +1,0 @@
-pane	ARCH	0	:rails	0	:-	0	:/home/bandithijo/Documents/Belajar/belajar-rails/intro	1	puma	:puma 3.10.0 (tcp://0.0.0.0:3000) [intro]
-pane	ARCH	1	:vim	1	:*	0	:/home/bandithijo/Documents/Belajar/belajar-rails/intro	1	nvim	:nvim
-window	ARCH	0	0	:-	be3d,117x44,0,0,0
-window	ARCH	1	1	:*	be3e,117x44,0,0,1
-state	ARCH	
