@@ -304,7 +304,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2
 exec killall nm-applet ; nm-applet
 
 # XFCE4-power-manager
-#exec killall xfce4-power-manager ; xfce4-power-manager
+exec killall xfce4-power-manager ; xfce4-power-manager
 
 # Firewalld
 exec killall firewall-applet ; firewall-applet
