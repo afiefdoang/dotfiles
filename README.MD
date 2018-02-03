@@ -5,6 +5,8 @@ Hi, nama  saya Rizqi. Kamu sedang berada di repository dotfiles milik saya. Untu
 
 Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi ke sini, repositori ini sudah lebih baik.
 
+![desktop.png](https://raw.githubusercontent.com/bandithijo/dotfiles/master/screenshot/desktop.png)
+
 ## Details
 | Item | Value |
 | ---- | ----- |
