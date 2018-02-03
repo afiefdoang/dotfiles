@@ -3,7 +3,7 @@
 Hi, nama  saya Rizqi. Kamu sedang berada di repository dotfiles milik saya. Untuk saat ini, saya hanya dapat membuat dokumentasi README yang mungkin sedikit sulit dipahami.
 >Mengerti diriku memang rumit, kamu mungkin tak kan sanggup. Biar aku saja yang mengerti kamu. - Dylan KW
 
-Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi ke sini, repositori ini sudah lebih baik.
+Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini sudah lebih baik.
 
 ![desktop.png](https://raw.githubusercontent.com/bandithijo/dotfiles/master/screenshot/desktop.png)
 
