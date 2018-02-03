@@ -17,7 +17,7 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi ke sini, repositori 
 | WM | [i3wm](https://wiki.archlinux.org/index.php/I3) |
 | GTK Theme | [NumixSolarizedDarkGreen](https://github.com/Ferdi265/numix-solarized-gtk-theme) [GTK2/3] |
 | Icon | [Flat Remix](https://github.com/daniruiz/Flat-Remix) |
-| Font | [Ubuntu Semi-Bold](https://design.ubuntu.com/font/), Size: 9 |
+| Font | Ubuntu, Hack, DeJavuSans, DeJavuSansMono |
 
 ## RC/Conf Location
 | RC/Conf File | Original Location |
