@@ -44,22 +44,26 @@ URxvt*boldFont: xft:hack:bold:pixelsize=13.5
 URxvt*letterSpace: -1
 
 ! Scrollbar
-URxvt.scrollStyle:          rxvt
-URxvt.scrollBar:            false
+URxvt.scrollStyle:            rxvt
+URxvt.scrollBar:              false
 
 ! Perl extensions
-URxvt.perl-ext-common:      default,matcher
-URxvt.matcher.button:       1
-! URxvt.urlLauncher:          firefox
-URxvt.urlLauncher:          google-chrome-stable
+URxvt.perl-ext-common:        default,matcher,url-select,clipboard
+URxvt.matcher.button:         1
+URxvt.urlLauncher:            google-chrome-stable
+URxvt.keysym.M-u:             perl:url-select:select_next
+URxvt.url-select.launcher:    /usr/bin/xdg-open
+URxvt.url-select.underline:   true
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755:               False
 
 ! Cursor
-URxvt.cursorBlink:          true
-URxvt.cursorColor:          #657b83
-URxvt.cursorUnderline:      false
+URxvt.cursorBlink:            true
+URxvt.cursorColor:            #657b83
+URxvt.cursorUnderline:        false
 
 ! Pointer
-URxvt.pointerBlank:         true
+URxvt.pointerBlank:           true
 
 !!Source http://github.com/altercation/solarized
 

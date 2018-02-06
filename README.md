@@ -33,14 +33,14 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | i3wm| config | ~/.config/i3/config |
 | Dunst | dunstrc | ~/.config/i3/dunstrc |
 | Compton | compton.conf | ~/.config/i3/compton.conf |
+| X | .Xresources | ~/.Xresources |
 | - | .profile | ~/.profile |
-| - | .Xresources | ~/.Xresources |
 
 ## Apps Relation with i3wm Config
 | Function | App |
 | -------- | --- |
 | Application Launcher | [j4-dmenu-desktop](https://aur.archlinux.org/packages/j4-dmenu-desktop/) |
-| Terminal | [gnome-terminal-transparency](https://aur.archlinux.org/packages/gnome-terminal-transparency/) |
+| Terminal | [urxvt](https://www.archlinux.org/packages/community/x86_64/rxvt-unicode/) |
 | Bar | [Bumblebee-Status ](https://github.com/tobi-wan-kenobi/bumblebee-status) |
 | Wallpaper | [feh](https://www.archlinux.org/packages/extra/x86_64/feh/) |
 | Lock Screen | [i3lock](https://www.archlinux.org/packages/community/x86_64/i3lock/) |
