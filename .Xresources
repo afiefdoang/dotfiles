@@ -23,22 +23,28 @@ Xcursor.size:16
 ! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 !-------------------------------------------------------------------------------
 
-! URxvt.depth:                32
+URxvt.depth:                32
 URxvt.geometry:             100x32
-! URxvt.transparent:          false
+! URxvt.transparent:          true
 ! URxvt.fading:               0
+! URxvt.shading:              20
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
 URxvt.saveLines:            50
-URxvt.internalBorder:       3
-URxvt.lineSpace:            0
+URxvt.internalBorder:       0
+URxvt*buffered:             true
+urxvt*saveLines:            100000
 
 ! Fonts
-URxvt.allow_bold:           false
-/* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
-URxvt*font: xft:hack:pixelsize=13.5
-URxvt*boldFont: xft:hack:bold:pixelsize=13.5
+URxvt.allow_bold:           true
+/* URxvt.font:               -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
+URxvt*font:                 xft:hack:pixelsize=13.5
+URxvt*boldFont:             xft:hack:bold:pixelsize=13.5
+
+! Text
+URxvt*colorUL:                yellow
+URxvt.lineSpace:              0
 
 ! Fix font space
 URxvt*letterSpace: -1
@@ -46,9 +52,19 @@ URxvt*letterSpace: -1
 ! Scrollbar
 URxvt.scrollStyle:            rxvt
 URxvt.scrollBar:              false
+URxvt.keysym.Shift-Up:        command:\033]720;1\007
+URxvt.keysym.Shift-Down:      command:\033]721;1\007
+! do not scroll with output
+URxvt*scrollTtyOutput:        false
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer:       true
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress:      true
+
 
 ! Perl extensions
-URxvt.perl-ext-common:        default,matcher,url-select,clipboard
+URxvt*perl-lib:               ~/.urxvt/ext
+URxvt.perl-ext-common:        default,matcher,url-select,clipboard,resize-font,unichr
 URxvt.matcher.button:         1
 URxvt.urlLauncher:            google-chrome-stable
 URxvt.keysym.M-u:             perl:url-select:select_next
