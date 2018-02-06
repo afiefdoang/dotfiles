@@ -152,10 +152,10 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
 #export JAVA_HOME="/usr/lib/jvm/java-9-openjdk/"
 #export JAVA_HOME="/usr/lib/jvm/java-8-jdk/"
 #export JAVA_HOME="/usr/lib/jvm/java-9-jdk/"
-export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$JAVA_HOME/bin:$PATH"
 
 # NPM Environment
 PATH="$HOME/.node_modules/bin:$PATH"
-export npm_config_prefix=~/.node_modules
+export npm_config_prefix="$HOME/.node_modules"
 
 

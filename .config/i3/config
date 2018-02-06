@@ -31,7 +31,8 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec --no-startup-id gnome-terminal
+#bindsym $mod+Return exec --no-startup-id gnome-terminal
+bindsym $mod+Return exec --no-startup-id urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -313,7 +314,7 @@ exec killall firewall-applet ; firewall-applet
 exec killall runenpass.sh ; /opt/Enpass/bin/runenpass.sh startWithTray
 
 # Blueman Applet
-#exec_always killall blueman-applet ; blueman-applet
+# exec_always killall blueman-applet ; blueman-applet
 
 # i3Blocks
 #bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
@@ -336,6 +337,8 @@ bindsym $mod+F8 exec --no-startup-id pavucontrol
 
 # Polkit-GNOME
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+# Polkit-lxsession
+# exec --no-startup-id /usr/bin/lxsession
 
 # Disable Middle Mouse Paste
 exec --no-startup-id xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
