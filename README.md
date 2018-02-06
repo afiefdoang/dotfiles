@@ -29,11 +29,11 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | Vim | .vimrc | ~/.vimrc |
 | NeoVim | init.vim | ~/.config/nvim/init.vim |
 |GTK+2.0 | .gtkrc-2.0 | ~/.gtkrc-2.0 |
-| Tmux | .tmux.conf | ~/.tmux.conf |
+| tmux | .tmux.conf | ~/.tmux.conf |
 | i3wm| config | ~/.config/i3/config |
 | Dunst | dunstrc | ~/.config/i3/dunstrc |
 | Compton | compton.conf | ~/.config/i3/compton.conf |
-| X | .Xresources | ~/.Xresources |
+| urxvt | .Xresources | ~/.Xresources |
 | - | .profile | ~/.profile |
 
 ## Apps Relation with i3wm Config
