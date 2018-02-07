@@ -1,4 +1,6 @@
 !-------------------------------------------------------------------------------
+! UXVRT PREFERENCES
+!-------------------------------------------------------------------------------
 ! cursor
 !-------------------------------------------------------------------------------
 Xcursor.theme: ComixCursorsURxvt.transparent: true
@@ -114,3 +116,27 @@ URxvt.pointerBlank:           true
 !! white dark/light
 *color7: #eee8d5
 *color15: #fdf6e3
+!-------------------------------------------------------------------------------
+
+
+
+!-------------------------------------------------------------------------------
+! XTERM PREFERENCES
+!-------------------------------------------------------------------------------
+XTerm.termName:               xterm-256color
+XTerm.vt100.locale:           true
+XTerm.vt100.metaSendsEscape:  true
+XTerm.vt100.backarrowKey:     false
+XTerm.ttyModes:               erase ^?
+XTerm.vt100.saveLines:        4096
+XTerm.vt100.geometry:         100x32
+XTerm.vt100.faceName:         hack:size=10:antialias=true
+XTerm.vt100.boldFont:         hack:size=10:antialias=true
+Xterm*Border:                 off
+xterm*BorderWidth:            0
+xterm*LoginShell:             true
+XTerm*multiScroll:            on
+
+!-------------------------------------------------------------------------------
+
+
