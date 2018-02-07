@@ -23,7 +23,7 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | Notification | [dunst](https://www.archlinux.org/packages/community/x86_64/dunst/) |
 | Terminal | [urxvt](https://www.archlinux.org/packages/community/x86_64/rxvt-unicode/) |
 | Application Launcher | [j4-dmenu-desktop](https://aur.archlinux.org/packages/j4-dmenu-desktop/) |
-| Bar | [Bumblebee-Status ](https://github.com/tobi-wan-kenobi/bumblebee-status) |
+| Bar | [bumblebee-status ](https://github.com/tobi-wan-kenobi/bumblebee-status) |
 | Wallpaper | [feh](https://www.archlinux.org/packages/extra/x86_64/feh/) |
 | Lock Screen | [i3lock](https://www.archlinux.org/packages/community/x86_64/i3lock/) |
 | Auto Lock Screen | [xautolock](https://www.archlinux.org/packages/community/x86_64/xautolock/) |
