@@ -112,6 +112,8 @@ alias screenfetch="screenfetch -c 15,7"
 # vimdiff
 alias vimdiff="vim -d"
 
+alias cal="cal -m"
+
 # Enabling Menu Item Gnome
 alias menuitem-enable="gsettings set org.gnome.settings-daemon.plugins.xsettings overrides \"{'Gtk/ButtonImages': <1>, 'Gtk/MenuImages': <1>}\""
 
