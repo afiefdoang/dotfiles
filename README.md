@@ -25,6 +25,7 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | Application Launcher | [j4-dmenu-desktop](https://aur.archlinux.org/packages/j4-dmenu-desktop/) |
 | Bar | [bumblebee-status ](https://github.com/tobi-wan-kenobi/bumblebee-status) |
 | Wallpaper | [feh](https://www.archlinux.org/packages/extra/x86_64/feh/) |
+| Login Manager | [lightdm](https://www.archlinux.org/packages/extra/x86_64/lightdm/) [(lightdm-slick-greeter)](https://aur.archlinux.org/packages/lightdm-slick-greeter) |
 | Lock Screen | [i3lock](https://www.archlinux.org/packages/community/x86_64/i3lock/) |
 | Auto Lock Screen | [xautolock](https://www.archlinux.org/packages/community/x86_64/xautolock/) |
 | Conky | [conky](https://www.archlinux.org/packages/extra/x86_64/conky/) |
@@ -44,7 +45,7 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | ZSH Shell | [.zshrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.zshrc) | ~/.zshrc |
 | Vim | [.vimrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.vimrc) | ~/.vimrc |
 | NeoVim | [init.vim](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/nvim/init.vim) | ~/.config/nvim/init.vim |
-|GTK+2.0 | [.gtkrc-2.0](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.gtkrc-2.0) | ~/.gtkrc-2.0 |
+| GTK+2.0 | [.gtkrc-2.0](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.gtkrc-2.0) | ~/.gtkrc-2.0 |
 | tmux | [.tmux.conf](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.tmux.conf) | ~/.tmux.conf |
 | i3wm| [config](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/config) | ~/.config/i3/config |
 | Dunst | [dunstrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/dunstrc) | ~/.config/i3/dunstrc |

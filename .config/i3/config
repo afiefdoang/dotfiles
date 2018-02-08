@@ -241,7 +241,7 @@ bar {
   #output eDP1
   position top
   status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-solarized
-  font pango:dejavu sans book 9
+  font pango:dejavu sans 9
   bindsym button1 nop
 
   colors {
@@ -356,4 +356,4 @@ exec killall compton ; compton --config ~/.config/i3/compton.conf -b
 #exec_always --no-startup-id xcompmgr
 
 # Enable Dunst Notifications
-exec_always killall dunst ; dunst -config '/home/bandithijo/.config/i3/dunstrc'
+exec killall dunst ; dunst -config '/home/bandithijo/.config/i3/dunstrc'
