@@ -25,6 +25,7 @@ Xcursor.size:16
 ! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 !-------------------------------------------------------------------------------
 
+URxvt*termName:             rxvt-256color
 URxvt.depth:                32
 URxvt.geometry:             100x32
 ! URxvt.transparent:          true
@@ -41,8 +42,8 @@ urxvt*saveLines:            100000
 ! Fonts
 URxvt.allow_bold:           true
 /* URxvt.font:               -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
-URxvt*font:                 xft:hack:pixelsize=13.5
-URxvt*boldFont:             xft:hack:bold:pixelsize=13.5
+URxvt*font:                 xft:hack:pixelsize=13.5:regular,xft:"Font Awesome":antialias=true:size=13.5
+URxvt*boldFont:             xft:hack:pixelsize=13.5:bold
 
 ! Text
 URxvt*colorUL:                yellow

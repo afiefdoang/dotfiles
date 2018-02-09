@@ -23,7 +23,6 @@ import bumblebee.engine
 
 from bumblebee.output import scrollable
 
-#no_title = "n/a"
 no_title = ""
 
 class Module(bumblebee.engine.Module):
@@ -49,11 +48,9 @@ class Module(bumblebee.engine.Module):
 
     def focused_title(self, widget):
         title = self._full_title[0:self.parameter("max", 60)]
-        #title = self._full_title[0:self.parameter("max", 45)]
         placeholder = self.parameter("placeholder", "...")
         if title != self._full_title:
             title = self._full_title[0:self.parameter("max", 60) - len(placeholder)]
-            #title = self._full_title[0:self.parameter("max", 45) - len(placeholder)]
             title = " {}{} ".format(title, placeholder)
 
         return title

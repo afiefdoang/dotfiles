@@ -126,8 +126,8 @@
     "prefix": ""
   },
   "traffic":{
-	  "rx": { "prefix": "" },
-	  "tx": { "prefix": "" }
+    "rx": { "prefix": "" },
+    "tx": { "prefix": "" }
   },
   "mpd": {
 		"playing": { "prefix": "" },
@@ -141,13 +141,13 @@
 		"repeat-off": { "prefix": "" }
 	},
   "github": {
-	  "prefix": "  "
+    "prefix": "  "
   },
   "spotify": {
-	  "prefix": "  "
+    "prefix": "  "
   },
   "publicip": {
-	  "prefix": "  "
+    "prefix": "  "
   },
   "weather": {
     "clouds": { "prefix": "" },

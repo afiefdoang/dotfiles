@@ -234,12 +234,25 @@ new_float pixel 1
 # i3gaps
 #gaps inner 0
 
+# Toggle between hide state and show state
+bindsym $mod+Shift+b bar hidden_state toggle
+
+# Toggle between dock mode and hide mode
+#bindsym $mod+Shift+b bar mode toggle
+
+# Set the bar instance with id 'bar-1' to switch to hide mode
+#bindsym $mod+Shift+b bar mode hide bar-1
+
+# Set the bar instance with id 'bar-1' to always stay hidden
+#bindsym $mod+Shift+b bar mode invisible bar-1
+
 bar {
   id bar-1
   tray_output primary
   #tray_padding 2
   #output eDP1
   position top
+  #status_command i3blocks
   status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-solarized
   font pango:dejavu sans 9
   bindsym button1 nop
@@ -250,9 +263,9 @@ bar {
     statusline  #E4E4E4
 
     #		              	  border                background         	text
-    focused_workspace  		$text-color  				  $text-color         #002B36
-    active_workspace      #829395               #829395             #002B36
-    inactive_workspace 		#829395				 	      #002B36				      $text-color
+    focused_workspace  		$text-color  				  #002B36             $text-color
+    active_workspace      #829395               #002B36             $text-color
+    inactive_workspace 		#002B36				 	      #002B36				      $text-color
     urgent_workspace   		$urgent-bg-color      $urgent-bg-color    $text-color
     #binding_mode       	#2f343a 		          #900000         	  #E4E4E4
   }
@@ -350,10 +363,13 @@ exec --no-startup-id i3-msg border none
 exec killall conky ; conky -c .conky/arch/conky-i3wm+clock.conf
 
 # Enable Compton for compositor
-exec killall compton ; compton --config ~/.config/i3/compton.conf -b
+exec_always killall compton ; compton --config ~/.config/i3/compton.conf -b
 
 # Enable Xcompmgr for compositor
 #exec_always --no-startup-id xcompmgr
 
 # Enable Dunst Notifications
 exec killall dunst ; dunst -config '/home/bandithijo/.config/i3/dunstrc'
+
+# Enable Polybar
+#exec_always killall polybar ; polybar example
