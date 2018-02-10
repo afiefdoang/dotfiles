@@ -7,6 +7,7 @@ Xcursor.theme: ComixCursorsURxvt.transparent: true
 Xcursor.size:16
 ! Xcursor.size:48
 
+
 !-------------------------------------------------------------------------------
 ! Xft settings
 !-------------------------------------------------------------------------------
@@ -117,6 +118,12 @@ URxvt.pointerBlank:           true
 !! white dark/light
 *color7: #eee8d5
 *color15: #fdf6e3
+
+!! CTRL+Arrow Key for Moving
+URxvt.keysym.Control-Up:       \033[1;5A
+URxvt.keysym.Control-Down:     \033[1;5B
+URxvt.keysym.Control-Left:     \033[1;5D
+URxvt.keysym.Control-Right:    \033[1;5C
 !-------------------------------------------------------------------------------
 
 
