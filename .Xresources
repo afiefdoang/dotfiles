@@ -88,7 +88,7 @@ URxvt.pointerBlank:           true
 
 !!Source http://github.com/altercation/solarized
 
-*background:                  [98]#002B36
+URxvt*background:                  [98]#002B36
 *foreground:                  #728A92
 !*fading: 40
 *fadeColor:                   #002b36
@@ -141,10 +141,11 @@ XTerm.vt100.saveLines:        4096
 XTerm.vt100.geometry:         100x32
 XTerm.vt100.faceName:         hack:size=10:antialias=true
 XTerm.vt100.boldFont:         hack:size=10:antialias=true
-Xterm*Border:                 off
-xterm*BorderWidth:            0
-xterm*LoginShell:             true
+XTerm*Border:                 off
+xTerm*BorderWidth:            0
+xTerm*LoginShell:             true
 XTerm*multiScroll:            on
+XTerm*background:             #002B36
 !-------------------------------------------------------------------------------
 
 
