@@ -250,7 +250,6 @@ networkmanager-vpnc
 nftables
 nmap
 nmon
-nodejs-gitbook
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
@@ -271,8 +270,6 @@ packettracer
 pacman
 pamac-aur
 pamixer
-pandoc
-pandoc-citeproc
 paper-icon-theme-git
 pavucontrol
 pciutils
@@ -288,6 +285,7 @@ perl-path-class
 pgadmin4
 phonon-qt4-vlc
 php
+pinta
 plasma-framework
 plasma-integration
 plasma-theme-archlinux
