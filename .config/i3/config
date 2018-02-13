@@ -47,7 +47,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#215D9C' -fn 'DejaVu Sans Mono-11'"
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'DejaVu Sans Mono-11'"
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'Ubuntu-11'"
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'Ubuntu-12'"
 
 # Start rofi (a program launcher)
 #bindsym $mod+d exec rofi -show run -lines 3 -bw 1 -font "Liberation Sans 10" -width 600 -m -1 -hide-scrollbar
@@ -252,7 +252,7 @@ bar {
     #		              	  border                background         	text
     focused_workspace  		$text-color  				  #002B36             $text-color
     active_workspace      #829395               #002B36             $text-color
-    inactive_workspace 		#002B36				 	      #002B36				      $text-color
+    inactive_workspace 		#41565D				 	      #002B36				      $text-color
     urgent_workspace   		$urgent-bg-color      $urgent-bg-color    $text-color
     #binding_mode       	#2f343a 		          #900000         	  #E4E4E4
   }
