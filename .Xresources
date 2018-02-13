@@ -1,24 +1,26 @@
 !-------------------------------------------------------------------------------
-! UXVRT PREFERENCES
-!-------------------------------------------------------------------------------
 ! cursor
 !-------------------------------------------------------------------------------
 Xcursor.theme: ComixCursorsURxvt.transparent: true
 Xcursor.size:16
 ! Xcursor.size:48
+!-------------------------------------------------------------------------------
 
 
 !-------------------------------------------------------------------------------
 ! Xft settings
 !-------------------------------------------------------------------------------
-
 ! Xft.dpi:                    96
 ! Xft.antialias:              false
 ! Xft.rgba:                   rgb
 ! Xft.hinting:                true
 ! Xft.hintstyle:              hintslight
 ! Xft.hintstyle:              full
+!-------------------------------------------------------------------------------
 
+
+!-------------------------------------------------------------------------------
+! UXVRT PREFERENCES
 !-------------------------------------------------------------------------------
 ! URxvt settings
 ! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
@@ -31,7 +33,7 @@ URxvt.depth:                32
 URxvt.geometry:             100x32
 ! URxvt.transparent:          true
 ! URxvt.fading:               0
-! URxvt.shading:              20
+! URxvt.shading:              15
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
@@ -42,7 +44,6 @@ urxvt*saveLines:            100000
 
 ! Fonts
 URxvt.allow_bold:           true
-/* URxvt.font:               -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
 URxvt*font:                 xft:hack:pixelsize=13.5:regular,xft:"Font Awesome":antialias=true:size=13.5
 URxvt*boldFont:             xft:hack:pixelsize=13.5:bold
 
@@ -87,43 +88,43 @@ URxvt.pointerBlank:           true
 
 !!Source http://github.com/altercation/solarized
 
-*background: #002b36
-*foreground: #728A92
-!!*fading: 40
-*fadeColor: #002b36
-*cursorColor: #93a1a1
-*pointerColorBackground: #586e75
-*pointerColorForeground: #93a1a1
+*background:                  [98]#002B36
+*foreground:                  #728A92
+!*fading: 40
+*fadeColor:                   #002b36
+*cursorColor:                 #93a1a1
+*pointerColorBackground:      #586e75
+*pointerColorForeground:      #93a1a1
 !! black dark/light
-*color0: #073642
-*color8: #002b36
+*color0:                      #073642
+*color8:                      #002b36
 !! red dark/light
-*color1: #dc322f
-*color9: #cb4b16
+*color1:                      #dc322f
+*color9:                      #cb4b16
 !! green dark/light
-*color2: #859900
-*color10: #586e75
+*color2:                      #859900
+*color10:                     #586e75
 !! yellow dark/light
-*color3: #b58900
-*color11: #657b83
+*color3:                      #b58900
+*color11:                     #657b83
 !! blue dark/light
-*color4: #268bd2
-*color12: #839496
+*color4:                      #268bd2
+*color12:                     #839496
 !! magenta dark/light
-*color5: #d33682
-*color13: #6c71c4
+*color5:                      #d33682
+*color13:                     #6c71c4
 !! cyan dark/light
-*color6: #2aa198
-*color14: #93a1a1
+*color6:                      #2aa198
+*color14:                     #93a1a1
 !! white dark/light
-*color7: #eee8d5
-*color15: #fdf6e3
+*color7:                      #eee8d5
+*color15:                     #fdf6e3
 
 !! CTRL+Arrow Key for Moving
-URxvt.keysym.Control-Up:       \033[1;5A
-URxvt.keysym.Control-Down:     \033[1;5B
-URxvt.keysym.Control-Left:     \033[1;5D
-URxvt.keysym.Control-Right:    \033[1;5C
+URxvt.keysym.Control-Up:      \033[1;5A
+URxvt.keysym.Control-Down:    \033[1;5B
+URxvt.keysym.Control-Left:    \033[1;5D
+URxvt.keysym.Control-Right:   \033[1;5C
 !-------------------------------------------------------------------------------
 
 
@@ -144,7 +145,6 @@ Xterm*Border:                 off
 xterm*BorderWidth:            0
 xterm*LoginShell:             true
 XTerm*multiScroll:            on
-
 !-------------------------------------------------------------------------------
 
 
