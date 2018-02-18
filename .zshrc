@@ -112,7 +112,7 @@ alias screenfetch="screenfetch -c 15,7"
 # vimdiff
 alias vimdiff="vim -d"
 
-alias cal="cal -m"
+alias cal="cal -y"
 
 # Enabling Menu Item Gnome
 alias menuitem-enable="gsettings set org.gnome.settings-daemon.plugins.xsettings overrides \"{'Gtk/ButtonImages': <1>, 'Gtk/MenuImages': <1>}\""
@@ -160,4 +160,10 @@ export PATH="$JAVA_HOME/bin:$PATH"
 PATH="$HOME/.node_modules/bin:$PATH"
 export npm_config_prefix="$HOME/.node_modules"
 
+# URXVT Environment
+export TERM=rxvt-unicode
+
+# Local /bin
+#PATH="$HOME/bin:$HOME/src:$HOME/.local/bin:$PATH"
+#export PATH
 
