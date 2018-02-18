@@ -51,6 +51,7 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | Dunst | [dunstrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/dunstrc) | ~/.config/i3/dunstrc |
 | Compton | [compton.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/i3/compton.conf) | ~/.config/i3/compton.conf |
 | urxvt, xterm | [.Xresources](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.Xresources) | ~/.Xresources |
+| startx | [.xinitrc](https://wiki.archlinux.org/index.php/Xinit)
 | - | [.profile](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.profile) | ~/.profile |
 
 ## Wallpaper Location
