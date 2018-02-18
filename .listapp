@@ -75,7 +75,6 @@ ffmulticonverter
 file
 file-roller
 filesystem
-filezilla
 findutils
 firefox
 firewalld
@@ -362,7 +361,6 @@ seahorse
 sed
 seexpr-doc
 shadow
-shotcut
 shotwell
 shutter
 simple-scan-3.12
