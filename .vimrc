@@ -1,5 +1,16 @@
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" BanditHijo's .vimrc
+" dotfiles : https://github.com/bandithijo/dotfiles
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Manager : vim-plug
+" Source : https://github.com/junegunn/vim-plug
 
 call plug#begin('~/.vim/plugged')
 
@@ -51,15 +62,21 @@ Plug 'iamcco/markdown-preview.vim'
 "Plug 'Raimondi/delimitMate'
 
 call plug#end()
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ########## Basic
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 filetype plugin indent on
 set encoding=utf-8
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ######### General
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set backspace=indent,eol,start " make backspace a more flexible
 set backup " make backup files
 set backupdir=~/.vim/tmp/backup " where to put backup files
@@ -78,10 +95,12 @@ set ttimeoutlen=50  " make Esc work faster
 set autoread " make vim monitor realtime changes to a file
 au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving
 au FocusGained,BufEnter * :checktime " auto update trigger on buffer change or terminal focus
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ########## VIM User Interface
-"colorscheme Tomorrow-Night-Bandit
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme solarized-bandit
 set background=dark
 set t_Co=256 " set terminal 256 color
@@ -112,12 +131,15 @@ hi  clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
 if &diff " change colorscheme when using vimdiff
     colorscheme evening
 endif
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ########## Text Formatting/Layout
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set wrap " wrap text
-"set textwidth=90 " to 79 characters
-"set colorcolumn=85 " and warn me if my line gets over 85 characters
+"set textwidth=79 " to 79 characters
+"set colorcolumn=79 " and warn me if my line gets over 85 characters
 set formatoptions=cqt " see :help fo-table
 set infercase " case inferred by default
 set shiftround " round the indent to shiftwidth (when at 3 spaces, and I hit > go to 4, n    ot 5)
@@ -129,14 +151,16 @@ set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
 autocmd Filetype php setlocal shiftwidth=4 tabstop=4
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-" ########## Mappings
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ########## Keyboard Mappings
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " my leader key is comma
 let mapleader = ","
 
 " for edit my .vimrc
-"nmap <Leader>ev :e $MYVIMRC<cr>
 nmap <Leader>ev :e ~/.vimrc<cr>
 
 " for move & delete buffer
@@ -229,51 +253,71 @@ vno <down> <Nop>
 vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ########## Plugins Settings
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" NerdTree
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let NERDTreeHijackNetrw = 0
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " emmet-vim trigger key remap
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:user_emmet_leader_key='<C-space>' " then press , (comma) to do magic !
-
-
-" ########## Plugins Settings
-" NerdTree
-let NERDTreeHijackNetrw = 0
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Vim-Airline
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:powerline_pycmd = 'py3'
-"let g:airline_theme = 'ravenpower'
-"let g:airline_theme = 'solarized'
 let g:airline_theme = 'atomic'
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Rubycomplete
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:rubycomplete_rails=1
 let g:rubycomplete_classes_in_global=1
 let g:rubycomplete_buffer_loading=1
 let g:rubycomplete_include_object=1
 let g:rubycomplete_include_objectspace=1
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " CtrlP
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>r :CtrlPMRUFiles<cr>
 nmap <leader>b :CtrlPBuffer<cr>
 let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Vim-Snipmate
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:snipMateTrigger = '<c-space>'
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Greplace
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " pylint
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_python_checkers = ['pylint']  "" or ['flake8', 'pylint'], etc
 let g:syntastic_python_pylint_args = '-E'
 "" to show it accepts a string of args, also:
 let g:syntastic_python_pylint_args = '--rcfile=/path/to/rc -E'
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Markdown Preview
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:mkdp_path_to_chrome = "/usr/bin/google-chrome-stable"
 " path to the chrome or the command to open chrome(or other modern browsers)
 " if set, g:mkdp_browserfunc would be ignored
@@ -302,7 +346,10 @@ let g:mkdp_command_for_global = 0
 " set to 1, the MarkdownPreview command can be use for all files,
 " by default it just can be use in markdown file
 
+" Mapping for markdown-preview
 nmap <silent> <F8> <Plug>MarkdownPreview        " for normal mode
 imap <silent> <F8> <Plug>MarkdownPreview        " for insert mode
 nmap <silent> <F9> <Plug>StopMarkdownPreview    " for normal mode
 imap <silent> <F9> <Plug>StopMarkdownPreview    " for insert mode
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
