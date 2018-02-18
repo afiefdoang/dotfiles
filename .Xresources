@@ -141,12 +141,14 @@ XTerm.vt100.saveLines:        4096
 XTerm.vt100.geometry:         100x32
 XTerm.vt100.faceName:         hack:size=10:antialias=true
 XTerm.vt100.boldFont:         hack:size=10:antialias=true
+XTerm.vt100.allowTitleOps:    true
 XTerm*Border:                 off
 xTerm*BorderWidth:            0
 xTerm*LoginShell:             true
 XTerm*multiScroll:            on
 XTerm*background:             #002B36
 !-------------------------------------------------------------------------------
+
 
 
 !-------------------------------------------------------------------------------
