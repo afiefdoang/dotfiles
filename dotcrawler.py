@@ -96,11 +96,11 @@ cp ~/.config/i3/bumblebee-status/themes/icons/awesome-fonts-bandit.json {configD
 # ----------------------------------------------------------------------------
 
 # From Wallpaper -------------------------------------------------------------
-mkdir -p {wallpDir}
-cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.xcf {wallpDir}
-cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png {wallpDir}
-cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png {wallpDir}
-cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11LL.png {wallpDir}
+#mkdir -p {wallpDir}
+#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.xcf {wallpDir}
+#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png {wallpDir}
+#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png {wallpDir}
+#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11LL.png {wallpDir}
 # ----------------------------------------------------------------------------
 
 # Update List of arch Packages ------------------------------------------------
