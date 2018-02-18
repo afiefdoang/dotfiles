@@ -15,10 +15,11 @@ wallpDir  = '~/GitHub/dotfiles/wallpaper'
 
 # Proces Copy to GitHub Directory
 os.system(f'''
-# Make main Directory ---------------------------------------------------------
+# Make main Directory --------------------------------------------------------
 mkdir -p {mainDir}
+# ----------------------------------------------------------------------------
 
-# From $HOME Directory --------------------------------------------------------
+# From $HOME Directory -------------------------------------------------------
 cp ~/.gtkrc-2.0 {mainDir}
 cp ~/.profile {mainDir}
 cp ~/.tmux.conf {mainDir}
@@ -26,8 +27,9 @@ cp ~/.vimrc {mainDir}
 cp ~/.Xresources {mainDir}
 cp ~/.xinitrc {mainDir}
 cp ~/.zshrc {mainDir}
+# ----------------------------------------------------------------------------
 
-# From /etc Directory ---------------------------------------------------------
+# From /etc Directory --------------------------------------------------------
 mkdir -p {etcDir}/lightdm
 cp /etc/lightdm/lightdm.conf {etcDir}/lightdm
 cp /etc/lightdm/slick-greeter.conf {etcDir}/lightdm
@@ -39,8 +41,9 @@ cp /etc/pam.d/sudo {etcDir}/pam.d
 
 mkdir -p {etcDir}/X11/xorg.conf.d
 cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
+# ----------------------------------------------------------------------------
 
-# From .config Directory ------------------------------------------------------
+# From .config Directory -----------------------------------------------------
 mkdir -p {configDir}/gtk-3.0
 cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
 
@@ -51,10 +54,14 @@ cp ~/.config/i3/dunstrc {configDir}/i3
 
 cp -r ~/.config/nvim {configDir}
 
-# From .conky Directory -------------------------------------------------------
-cp -r ~/.conky {mainDir}
+cp ~/.config/user-dirs.dirs {configDir}
+# ----------------------------------------------------------------------------
 
-# From .vim Directory ---------------------------------------------------------
+# From .conky Directory ------------------------------------------------------
+cp -r ~/.conky {mainDir}
+# ----------------------------------------------------------------------------
+
+# From .vim Directory --------------------------------------------------------
 mkdir -p {vimDir}
 cp -r ~/.vim/autoload {vimDir}
 
@@ -62,12 +69,14 @@ mkdir -p {vimDir}/colors
 cp ~/.vim/colors/Monokai-Bandit.vim {vimDir}/colors
 cp ~/.vim/colors/solarized-bandit.vim {vimDir}/colors
 cp ~/.vim/colors/Tomorrow-Night-Bandit.vim {vimDir}/colors
+# ----------------------------------------------------------------------------
 
-# From .urxvt Directory -------------------------------------------------------
+# From .urxvt Directory ------------------------------------------------------
 mkdir -p {urxvtDir}
 cp -r ~/.urxvt/ext {urxvtDir}
+# ----------------------------------------------------------------------------
 
-# From bumblebee-status Directory ---------------------------------------------
+# From bumblebee-status Directory --------------------------------------------
 mkdir -p {configDir}/i3/bumblebee-status/bumblebee/modules
 cp ~/.config/i3/bumblebee-status/bumblebee/modules/brightness.py {configDir}/i3/bumblebee-status/bumblebee/modules
 cp ~/.config/i3/bumblebee-status/bumblebee/modules/title.py {configDir}/i3/bumblebee-status/bumblebee/modules
@@ -84,16 +93,19 @@ cp ~/.config/i3/bumblebee-status/themes/gruvbox-powerline-bandit-solarized.json 
 
 mkdir -p {configDir}/i3/bumblebee-status/themes/icons
 cp ~/.config/i3/bumblebee-status/themes/icons/awesome-fonts-bandit.json {configDir}/i3/bumblebee-status/themes/icons
+# ----------------------------------------------------------------------------
 
-# From Wallpaper --------------------------------------------------------------
+# From Wallpaper -------------------------------------------------------------
 mkdir -p {wallpDir}
 cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.xcf {wallpDir}
 cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png {wallpDir}
 cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png {wallpDir}
 cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11LL.png {wallpDir}
+# ----------------------------------------------------------------------------
 
 # Update List of arch Packages ------------------------------------------------
 pacman -Qqe > .listapp
+# ----------------------------------------------------------------------------
 ''')
 
 
