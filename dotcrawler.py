@@ -36,6 +36,7 @@ cp /etc/lightdm/slick-greeter.conf {etcDir}/lightdm
 
 mkdir -p {etcDir}/pam.d
 cp /etc/pam.d/i3lock {etcDir}/pam.d
+cp /etc/pam.d/login {etcDir}/pam.d
 cp /etc/pam.d/polkit-1 {etcDir}/pam.d
 cp /etc/pam.d/sudo {etcDir}/pam.d
 
@@ -44,17 +45,19 @@ cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
 # ----------------------------------------------------------------------------
 
 # From .config Directory -----------------------------------------------------
+cp ~/.config/user-dirs.dirs {configDir}
+cp ~/.config/user-dirs.conf {configDir}
+
+cp -r ~/.config/nvim {configDir}
+
 mkdir -p {configDir}/gtk-3.0
+cp ~/.config/gtk-3.0/bookmarks {configDir}/gtk-3.0
 cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
 
 mkdir -p {configDir}/i3
 cp ~/.config/i3/compton.conf {configDir}/i3
 cp ~/.config/i3/config {configDir}/i3
 cp ~/.config/i3/dunstrc {configDir}/i3
-
-cp -r ~/.config/nvim {configDir}
-
-cp ~/.config/user-dirs.dirs {configDir}
 # ----------------------------------------------------------------------------
 
 # From .conky Directory ------------------------------------------------------
