@@ -38,7 +38,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'Ubuntu-12'"
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'Ubuntu-11'"
 
 # start rofi (a program launcher)
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 6 -width 500 -i'
@@ -296,7 +296,7 @@ exec killall xfce4-power-manager ; xfce4-power-manager
 exec killall firewall-applet ; firewall-applet
 
 # Enpass
-exec killall runenpass.sh ; /opt/Enpass/bin/runenpass.sh startWithTray
+exec killall runenpass.sh ; env GTK_THEME=Adwaita /opt/Enpass/bin/runenpass.sh startWithTray
 
 # Blueman Applet
 # exec_always killall blueman-applet ; blueman-applet
