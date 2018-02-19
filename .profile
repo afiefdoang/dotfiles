@@ -7,4 +7,4 @@ export QT_SCALE_FACTOR=1
 
 # URXVT Environment
 export TERM=rxvt-unicode
-alias xterm='urxvt'
+alias xterm="urxvt"
