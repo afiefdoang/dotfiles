@@ -276,6 +276,9 @@ mode "$mode_system" {
 }
 bindsym $mod+End mode "$mode_system"
 
+# Gnome Screenshot
+bindsym $mod+Print exec gnome-screenshot -i
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 2
 bindsym XF86AudioLowerVolume exec --no-startup-id pamixer --decrease 2
@@ -297,6 +300,10 @@ exec killall firewall-applet ; firewall-applet
 
 # Enpass
 exec killall runenpass.sh ; env GTK_THEME=Adwaita /opt/Enpass/bin/runenpass.sh startWithTray
+
+# clipmenu
+exec killall clipmenud ; clipmenud
+bindsym $mod+p exec --no-startup-id clipmenu -i -fn Ubuntu:size=11 -nb '#002B36' -nf '#839496' -sb '#E4E4E4' -sf '#002B36'
 
 # Blueman Applet
 # exec_always killall blueman-applet ; blueman-applet
