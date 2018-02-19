@@ -10,7 +10,7 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 
 ## Details
 | Item | Value |
-| ---- | ----- |
+| :--- | :---- |
 | OS  | [Arch Linux](https://www.archlinux.org/)
 | Shell | [ZSH](https://wiki.archlinux.org/index.php/Zsh) |
 | Shell Theme | [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh) |
@@ -38,10 +38,14 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | Disable Touchpad; Middle Click Paste | [xinput](https://www.archlinux.org/packages/extra/x86_64/xorg-xinput/) (xorg-xinput) |
 | Multiple Screen Control | [arandr](https://www.archlinux.org/packages/community/any/arandr/) |
 | Polkit | [polkit-gnome-authentication-agent-1](https://www.archlinux.org/packages/community/x86_64/polkit-gnome/) |
+| Clipboard | [xsel](https://www.archlinux.org/packages/community/x86_64/xsel/) |
+| Clipboard Launcher | [clipmenu](https://github.com/cdown/clipmenu) |
+| Text Editor | [neovim](https://www.archlinux.org/packages/community/x86_64/neovim/) |
+| Vim Pluggin Manager | [vim-plug](https://github.com/junegunn/vim-plug) |
 
 ## RC/Conf Location
 | App | RC/Conf File | Location |
-| --- | ------------ | -------- |
+| :-- | :----------- | :------- |
 | ZSH Shell | [.zshrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.zshrc) | ~/.zshrc |
 | Vim | [.vimrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.vimrc) | ~/.vimrc |
 | NeoVim | [init.vim](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/nvim/init.vim) | ~/.config/nvim/init.vim |
@@ -54,10 +58,4 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | startx | [.xinitrc](https://wiki.archlinux.org/index.php/Xinit)
 | - | [.profile](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.profile) | ~/.profile |
 
-## Wallpaper Location
-| File | Function |
-| ---- | -------- |
-| Arch-Wallpaper-11.png | Background |
-| Arch-Wallpaper-11L.png | i3lock |
-| Arch-Wallpaper-11LL.png | LightDM Background |
 
