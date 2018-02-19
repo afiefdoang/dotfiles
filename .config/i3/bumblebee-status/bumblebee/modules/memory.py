@@ -33,12 +33,11 @@ class Module(bumblebee.engine.Module):
     @property
     def _format(self):
         if bumblebee.util.asbool(self.parameter("usedonly", False)):
-        #if bumblebee.util.asbool(self.parameter("usedonly", True)):
             return "{used}"
         else:
             #return self.parameter("format", "{used}/{total} ({percent:05.02f}%)")
             return self.parameter("format", "{percent:05.02f}%")
-            #return self.parameter("format", "{usedonly}")
+            #return self.parameter("format", "{used}")
 
     def memory_usage(self, widget):
         return self._format.format(**self._mem)
@@ -53,12 +52,13 @@ class Module(bumblebee.engine.Module):
                 if tmp[2] == "mB": value = value*1024*1024
                 if tmp[2] == "gB": value = value*1024*1024*1024
                 data[tmp[0]] = value
+        used = data["MemTotal"] - data["MemFree"] - data["Buffers"] - data["Cached"] - data["Slab"]
         self._mem = {
             "total": bumblebee.util.bytefmt(data["MemTotal"]),
             "available": bumblebee.util.bytefmt(data["MemAvailable"]),
             "free": bumblebee.util.bytefmt(data["MemFree"]),
-            "used": bumblebee.util.bytefmt(data["MemTotal"] - data["MemFree"] - data["Buffers"] - data["Cached"] - data["Slab"]),
-            "percent": (float(data["MemTotal"] - data["MemAvailable"])/data["MemTotal"])*100
+            "used": bumblebee.util.bytefmt(used),
+            "percent": float(used)/float(data["MemTotal"])*100.0
         }
 
     def state(self, widget):
