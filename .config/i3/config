@@ -261,7 +261,7 @@ exec_always killall xautolock ; xautolock -time 15 -locker "i3lock -u --beep --c
 
 set $Locker i3lock -u --beep --color 000000 -i /home/bandithijo/pix/Wallpaper/archWallpaper/Arch-Wallpaper-11L.png && systemctl suspend
 
-set $mode_system System (x) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+set $mode_system System [X] lock, [E] logout, [S] suspend, [H] hibernate, [R] reboot, [Shift+S] shutdown
 mode "$mode_system" {
   bindsym x exec --no-startup-id $Locker, mode "default"
   bindsym e exec --no-startup-id i3-msg exit, mode "default"
