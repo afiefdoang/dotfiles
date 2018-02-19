@@ -6,7 +6,9 @@
 xrdb -load ~/.Xresources
 
 # Start GNOME Keyring
+dbus-update-activation-environment --systemd DISPLAY
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
 
 # Launch i3 window manager
 eval $(dbus-launch --sh-syntax)
