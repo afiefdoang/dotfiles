@@ -203,7 +203,6 @@ libreoffice-still
 licenses
 lightdm
 lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 lightdm-slick-greeter
 linux
 linux-headers
@@ -372,6 +371,7 @@ soundconverter
 speedtest-cli
 spotify
 sqlitebrowser
+stalonetray
 sublime-text-dev
 sudo
 sushi
@@ -464,6 +464,7 @@ xorg-luit
 xorg-mkfontdir
 xorg-mkfontscale
 xorg-server
+xorg-server-xephyr
 xorg-sessreg
 xorg-setxkbmap
 xorg-smproxy
