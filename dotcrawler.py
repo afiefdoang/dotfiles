@@ -40,9 +40,6 @@ cp /etc/pam.d/login {etcDir}/pam.d
 cp /etc/pam.d/polkit-1 {etcDir}/pam.d
 cp /etc/pam.d/sudo {etcDir}/pam.d
 
-mkdir -p {etcDir}/systemd/system
-cp /etc/systemd/system/clipmenud.service {etcDir}/systemd/system
-
 mkdir -p {etcDir}/X11/xorg.conf.d
 cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
 # ----------------------------------------------------------------------------
