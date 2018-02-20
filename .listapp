@@ -27,7 +27,6 @@ chromium
 clamav
 clamtk
 cli-visualizer
-clipmenu
 cmus
 color-icc-srgb
 composer
@@ -432,6 +431,7 @@ visual-studio-code-bin
 vlc
 vulkan-headers
 vulkan-intel
+w3m
 wd719x-firmware
 wget
 whatsie
