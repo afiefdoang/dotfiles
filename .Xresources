@@ -30,7 +30,7 @@ Xcursor.size:16
 
 URxvt*termName:             rxvt-256color
 URxvt.depth:                32
-URxvt.geometry:             100x32
+URxvt.geometry:             120x40
 ! URxvt.transparent:          true
 ! URxvt.fading:               0
 ! URxvt.shading:              15
@@ -147,6 +147,28 @@ xTerm*BorderWidth:            0
 xTerm*LoginShell:             true
 XTerm*multiScroll:            on
 XTerm*background:             #002B36
+!------------------------------------------------------------------------------
+
+
+
+!------------------------------------------------------------------------------
+! UXTERM PREFERENCES
+!------------------------------------------------------------------------------
+UXTerm.termName:               xterm-256color
+UXTerm.vt100.locale:           true
+UXTerm.vt100.metaSendsEscape:  true
+UXTerm.vt100.backarrowKey:     false
+UXTerm.ttyModes:               erase ^?
+UXTerm.vt100.saveLines:        4096
+UXTerm.vt100.geometry:         100x32
+UXTerm.vt100.faceName:         hack:size=10:antialias=true
+UXTerm.vt100.boldFont:         hack:size=10:antialias=true
+UXTerm.vt100.allowTitleOps:    true
+UXTerm*Border:                 off
+UXTerm*BorderWidth:            0
+UXTerm*LoginShell:             true
+UXTerm*multiScroll:            on
+UXTerm*background:             #002B36
 !------------------------------------------------------------------------------
 
 
