@@ -302,8 +302,7 @@ exec killall firewall-applet ; firewall-applet
 exec killall runenpass.sh ; env GTK_THEME=Adwaita /opt/Enpass/bin/runenpass.sh startWithTray
 
 # clipmenu
-exec killall clipmenud ; clipmenud
-bindsym $mod+p exec --no-startup-id clipmenu -i -fn Ubuntu:size=11 -nb '#002B36' -nf '#839496' -sb '#E4E4E4' -sf '#002B36'
+#bindsym $mod+p exec --no-startup-id clipmenu -i -fn Ubuntu:size=11 -nb '#002B36' -nf '#839496' -sb '#E4E4E4' -sf '#002B36'
 
 # Blueman Applet
 # exec_always killall blueman-applet ; blueman-applet
