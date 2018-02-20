@@ -22,6 +22,7 @@ bluez-utils
 breeze-gtk
 bzip2
 calibre
+catfish
 cheese
 chromium
 clamav
@@ -128,7 +129,6 @@ gnome-usage-git
 gnome-user-share
 gnome-video-effects
 gnome-weather
-gnucash-gtk3-git
 google-chrome
 gparted
 gpick
@@ -364,6 +364,7 @@ shotwell
 shutter
 simple-scan-3.12
 simplescreenrecorder
+skrooge
 skypeforlinux-bin
 smartmontools
 sniffit
@@ -384,7 +385,6 @@ terminus-font
 texinfo
 texlive-core
 thunderbird
-timeshift
 tlp
 tlp-rdw
 tmux
