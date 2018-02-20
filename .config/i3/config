@@ -68,10 +68,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+bindsym $mod+b split h;exec notify-send 'Horizontal Split'
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+v split v;exec notify-send 'Vertical Split'
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -209,9 +209,6 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-colo
 # Hiding edge border indicator
 hide_edge_borders both
 
-# Toggle between dock mode and hide mode
-bindsym $mod+F11 bar mode toggle
-
 # Window Border Settings
 bindsym $mod+t border normal 0
 bindsym $mod+Shift+t border normal 1
@@ -220,8 +217,8 @@ bindsym $mod+Shift+y border pixel 1
 new_window pixel 1
 new_float pixel 1
 
-# i3gaps
-#gaps inner 0
+# i3bar Toggle between dock mode and hide mode
+bindsym $mod+F11 bar mode toggle
 
 bar {
   id bar-1
