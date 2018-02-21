@@ -19,7 +19,6 @@ blender
 blueman
 bluez
 bluez-utils
-breeze-gtk
 bzip2
 calibre
 catfish
@@ -284,9 +283,6 @@ pgadmin4
 phonon-qt4-vlc
 php
 pinta
-plasma-framework
-plasma-integration
-plasma-theme-archlinux
 png++
 polkit-gnome
 polybar
@@ -350,6 +346,7 @@ ranger
 rar
 reiserfsprogs
 rhythmbox
+rkhunter
 rofi
 rpmextract
 rxvt-unicode
@@ -364,7 +361,6 @@ shotwell
 shutter
 simple-scan-3.12
 simplescreenrecorder
-skrooge
 skypeforlinux-bin
 smartmontools
 sniffit
@@ -385,6 +381,7 @@ terminus-font
 texinfo
 texlive-core
 thunderbird
+tiger
 tlp
 tlp-rdw
 tmux
