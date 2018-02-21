@@ -125,7 +125,7 @@ alias pip-upgrade="pip freeze > list && pip install -r list -U && rm list"
 alias lampp="sudo /opt/lampp/lampp"
 
 # POSTBANNER
-alias postbanner="postbanner -t '-f 3d.flf' -l '-p 10'"
+alias lolban="postbanner -t '-f 3d.flf' -l '-p 10'"
 
 # POWERLINE ARCH
 #if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
@@ -164,6 +164,6 @@ export npm_config_prefix="$HOME/.node_modules"
 export TERM=rxvt-unicode
 
 # Local /bin
-#PATH="$HOME/bin:$HOME/src:$HOME/.local/bin:$PATH"
-#export PATH
+PATH="$HOME/bin:$HOME/src:$HOME/.local/bin:$PATH"
+export PATH
 
