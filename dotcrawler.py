@@ -11,15 +11,16 @@ etcDir    = '~/GitHub/dotfiles/etc'
 configDir = '~/GitHub/dotfiles/.config'
 vimDir    = '~/GitHub/dotfiles/.vim'
 urxvtDir  = '~/GitHub/dotfiles/.urxvt'
-wallpDir  = '~/GitHub/dotfiles/wallpaper'
+imageDir  = '~/GitHub/dotfiles/images'
+usrDir    = '~/GitHub/dotfiles/usr'
 
 # Proces Copy to GitHub Directory
 os.system(f'''
-# Make main Directory --------------------------------------------------------
+# Make main Directory ---------------------------------------------------------
 mkdir -p {mainDir}
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# From $HOME Directory -------------------------------------------------------
+# From $HOME Directory --------------------------------------------------------
 cp ~/.gtkrc-2.0 {mainDir}
 cp ~/.profile {mainDir}
 cp ~/.tmux.conf {mainDir}
@@ -27,9 +28,9 @@ cp ~/.vimrc {mainDir}
 cp ~/.Xresources {mainDir}
 cp ~/.xinitrc {mainDir}
 cp ~/.zshrc {mainDir}
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# From /etc Directory --------------------------------------------------------
+# From /etc Directory ---------------------------------------------------------
 mkdir -p {etcDir}/lightdm
 cp /etc/lightdm/lightdm.conf {etcDir}/lightdm
 cp /etc/lightdm/slick-greeter.conf {etcDir}/lightdm
@@ -42,9 +43,9 @@ cp /etc/pam.d/sudo {etcDir}/pam.d
 
 mkdir -p {etcDir}/X11/xorg.conf.d
 cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# From .config Directory -----------------------------------------------------
+# From .config Directory ------------------------------------------------------
 cp ~/.config/user-dirs.dirs {configDir}
 cp ~/.config/user-dirs.conf {configDir}
 
@@ -58,13 +59,13 @@ mkdir -p {configDir}/i3
 cp ~/.config/i3/compton.conf {configDir}/i3
 cp ~/.config/i3/config {configDir}/i3
 cp ~/.config/i3/dunstrc {configDir}/i3
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# From .conky Directory ------------------------------------------------------
+# From .conky Directory -------------------------------------------------------
 cp -r ~/.conky {mainDir}
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# From .vim Directory --------------------------------------------------------
+# From .vim Directory ---------------------------------------------------------
 mkdir -p {vimDir}
 cp -r ~/.vim/autoload {vimDir}
 
@@ -72,14 +73,14 @@ mkdir -p {vimDir}/colors
 cp ~/.vim/colors/Monokai-Bandit.vim {vimDir}/colors
 cp ~/.vim/colors/solarized-bandit.vim {vimDir}/colors
 cp ~/.vim/colors/Tomorrow-Night-Bandit.vim {vimDir}/colors
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# From .urxvt Directory ------------------------------------------------------
+# From .urxvt Directory -------------------------------------------------------
 mkdir -p {urxvtDir}
 cp -r ~/.urxvt/ext {urxvtDir}
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# From bumblebee-status Directory --------------------------------------------
+# From bumblebee-status Directory ---------------------------------------------
 mkdir -p {configDir}/i3/bumblebee-status/bumblebee/modules
 cp ~/.config/i3/bumblebee-status/bumblebee/modules/brightness.py {configDir}/i3/bumblebee-status/bumblebee/modules
 cp ~/.config/i3/bumblebee-status/bumblebee/modules/title.py {configDir}/i3/bumblebee-status/bumblebee/modules
@@ -96,22 +97,28 @@ cp ~/.config/i3/bumblebee-status/themes/gruvbox-powerline-bandit-solarized.json 
 
 mkdir -p {configDir}/i3/bumblebee-status/themes/icons
 cp ~/.config/i3/bumblebee-status/themes/icons/awesome-fonts-bandit.json {configDir}/i3/bumblebee-status/themes/icons
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 
-# From Wallpaper -------------------------------------------------------------
-#mkdir -p {wallpDir}
-#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.xcf {wallpDir}
-#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png {wallpDir}
-#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png {wallpDir}
-#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11LL.png {wallpDir}
-# ----------------------------------------------------------------------------
+# From Wallpaper --------------------------------------------------------------
+#mkdir -p {imageDir}
+#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.xcf {imageDir}
+#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png {imageDir}
+#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png {imageDir}
+#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11LL.png {imageDir}
+# -----------------------------------------------------------------------------
+
+# From /usr Directory ---------------------------------------------------------
+mkdir -p {usrDir}/lib/libreoffice/program
+sudo cp /usr/lib/libreoffice/program/intro.png {imageDir}
+sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
+# -----------------------------------------------------------------------------
 
 # Update List of arch Packages ------------------------------------------------
 pacman -Qqe > .listapp
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 ''')
 
 
 # Print Output ----------------------------------------------------------------
-print('PROCESS COMPLETED !!')
+print('CRAWLING PROCESS COMPLETED !!')
 
