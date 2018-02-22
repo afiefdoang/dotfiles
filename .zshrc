@@ -93,8 +93,6 @@ prompt_context() {
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fireprox="proxychains env GTK_THEME=Adwaita firefox"
 
 # BACKUP ENTIRE SYSTEM
@@ -102,12 +100,6 @@ alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude
 
 # tty-clock
 alias clock="tty-clock -nscC 7"
-
-# screenfetch alias
-alias screenfetch="screenfetch -c 15,7"
-
-# neovim
-#alias vim="nvim"
 
 # vimdiff
 alias vimdiff="vim -d"
@@ -134,7 +126,6 @@ alias lolban="postbanner -t '-f 3d.flf' -l '-p 10'"
 
 # PKGBUILD YAOURT
 export VISUAL="vim"
-export VISUAL="nvim"
 
 # RBENV
 export PATH="$HOME/.rbenv/bin:$PATH"
