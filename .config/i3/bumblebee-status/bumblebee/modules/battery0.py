@@ -66,7 +66,7 @@ class Module(bumblebee.engine.Module):
             if charge == "Discharging":
                 state.append("discharging-{}".format(min([10, 25, 50, 80, 100] , key=lambda i:abs(i-self._capacity))))
             else:
-                if self._capacity > 80:
+                if self._capacity > 70:
                     state.append("charged")
                 else:
                     state.append("charging")
