@@ -129,7 +129,7 @@ set cursorline " visually mark current line
 set showbreak=↪ " indicate wrapped line
 hi  clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
 if &diff " change colorscheme when using vimdiff
-    colorscheme evening
+  colorscheme solarized-bandit
 endif
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
