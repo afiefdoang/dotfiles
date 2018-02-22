@@ -50,7 +50,7 @@
     "unmuted": { "prefix": "" }
   },
   "kernel": {
-    "prefix": "\uf17c"
+    "prefix": ""
   },
   "nic": {
     "wireless-": { "prefix": "" },
