@@ -39,6 +39,7 @@ cpio
 cryptsetup
 darkstat
 darktable
+davinci-resolve
 dconf-editor
 deadbeef
 devhelp
@@ -198,7 +199,7 @@ lib32-vulkan-intel
 libgnome-games-support
 libpng14
 libpng15
-libreoffice-still
+libreoffice-fresh
 licenses
 lightdm
 lightdm-gtk-greeter
@@ -292,7 +293,6 @@ postgresql
 powerline
 powerline-common
 powerline-fonts
-powerline-vim
 powertop
 print-manager
 procps-ng
@@ -303,7 +303,7 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 putty
 pwgen
-pycharm-community
+pycharm-community-edition
 python
 python-astroid
 python-cognitive_face
@@ -500,7 +500,6 @@ xorgproto
 xsel
 xterm
 xtitle-git
-xxd-standalone
 xzoom
 yaourt
 yarn
