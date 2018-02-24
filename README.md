@@ -39,7 +39,6 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | Multiple Screen Control | [arandr](https://www.archlinux.org/packages/community/any/arandr/) |
 | Polkit | [polkit-gnome-authentication-agent-1](https://www.archlinux.org/packages/community/x86_64/polkit-gnome/) |
 | Clipboard | [xsel](https://www.archlinux.org/packages/community/x86_64/xsel/) |
-| Clipboard Launcher | [clipmenu](https://github.com/cdown/clipmenu) |
 | Text Editor | [neovim](https://www.archlinux.org/packages/community/x86_64/neovim/) |
 | Vim Pluggin Manager | [vim-plug](https://github.com/junegunn/vim-plug) |
 
