@@ -211,7 +211,6 @@ lolcat
 lsb-release
 lshw
 lvm2
-lwks
 lxappearance
 lxsession-gtk3
 lynis
@@ -330,6 +329,7 @@ python-pyqtgraph
 python-pyudev
 python-virtualenv
 python-wrapt
+python-xlib
 python-yaml
 python2-cognitive_face
 python2-dlib
@@ -408,6 +408,7 @@ ttf-roboto
 ttf-roboto-slab
 ttf-sazanami
 ttf-ubuntu-font-family
+ttf-unifont
 ttf-wps-fonts
 tty-clock
 ufw
