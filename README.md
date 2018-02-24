@@ -18,7 +18,7 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | WM | [i3wm](https://wiki.archlinux.org/index.php/I3) |
 | GTK Theme | [NumixSolarizedDarkGreen](https://github.com/Ferdi265/numix-solarized-gtk-theme) [GTK2/3] |
 | Icon | [Flat Remix](https://github.com/daniruiz/Flat-Remix) |
-| Font | Ubuntu, Hack, DeJavuSans, DeJavuSansMono |
+| Font | Ubuntu, Hack, DeJavuSans, DeJavuSansMono, FontAwesome |
 | Window Compositor | [compton](https://www.archlinux.org/packages/community/x86_64/compton/) |
 | Notification | [dunst](https://www.archlinux.org/packages/community/x86_64/dunst/) |
 | Terminal | [urxvt](https://www.archlinux.org/packages/community/x86_64/rxvt-unicode/) |
