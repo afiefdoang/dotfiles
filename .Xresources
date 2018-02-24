@@ -44,7 +44,10 @@ urxvt*saveLines:            100000
 
 ! Fonts
 URxvt.allow_bold:           true
-URxvt*font:                 xft:hack:pixelsize=13.5:regular,xft:"Font Awesome":antialias=true:size=13.5
+URxvt*font:                 xft:hack:pixelsize=13.5:regular, \
+                            xft:Font\ Awesome:antialias=true:size=13, \
+                            xft:unifont:style=Medium:antialias=false, \
+                            xft:FreeSerif:style=Regular
 URxvt*boldFont:             xft:hack:pixelsize=13.5:bold
 
 ! Text
