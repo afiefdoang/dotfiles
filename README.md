@@ -22,7 +22,7 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | Window Compositor | [compton](https://www.archlinux.org/packages/community/x86_64/compton/) |
 | Notification | [dunst](https://www.archlinux.org/packages/community/x86_64/dunst/) |
 | Terminal | [urxvt](https://www.archlinux.org/packages/community/x86_64/rxvt-unicode/) |
-| Application Launcher | [j4-dmenu-desktop](https://aur.archlinux.org/packages/j4-dmenu-desktop/) |
+| Application Launcher | [j4-dmenu-desktop](https://aur.archlinux.org/packages/j4-dmenu-desktop/) ; [rofi](https://www.archlinux.org/packages/community/x86_64/rofi/) |
 | Bar | [bumblebee-status ](https://github.com/tobi-wan-kenobi/bumblebee-status) |
 | Wallpaper | [feh](https://www.archlinux.org/packages/extra/x86_64/feh/) |
 | Login Manager | [lightdm](https://www.archlinux.org/packages/extra/x86_64/lightdm/) [(lightdm-slick-greeter)](https://aur.archlinux.org/packages/lightdm-slick-greeter) |
