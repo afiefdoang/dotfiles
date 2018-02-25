@@ -8,11 +8,12 @@ import os
 # Deklarasi Variabel Directory
 mainDir   = '~/GitHub/dotfiles'
 etcDir    = '~/GitHub/dotfiles/etc'
-configDir = '~/GitHub/dotfiles/.config'
-vimDir    = '~/GitHub/dotfiles/.vim'
-urxvtDir  = '~/GitHub/dotfiles/.urxvt'
-imageDir  = '~/GitHub/dotfiles/images'
 usrDir    = '~/GitHub/dotfiles/usr'
+configDir = '~/GitHub/dotfiles/.config'
+localDir  = '~/GitHub/dotfiles/.local'
+urxvtDir  = '~/GitHub/dotfiles/.urxvt'
+vimDir    = '~/GitHub/dotfiles/.vim'
+imageDir  = '~/GitHub/dotfiles/images'
 
 # Proces Copy to GitHub Directory
 os.system(f'''
@@ -55,6 +56,15 @@ cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
 
 
 # -----------------------------------------------------------------------------
+##### From /usr Directory
+# -----------------------------------------------------------------------------
+mkdir -p {usrDir}/lib/libreoffice/program
+sudo cp /usr/lib/libreoffice/program/intro.png {usrDir}/lib/libreoffice/program
+sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
+# -----------------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------------
 ##### From .config Directory
 # -----------------------------------------------------------------------------
 mkdir -p {configDir}
@@ -65,6 +75,7 @@ cp ~/.config/user-dirs.conf {configDir}
 cp -r ~/.config/compton {configDir}
 cp -r ~/.config/dunst {configDir}
 cp -r ~/.config/i3 {configDir}
+cp -r ~/.config/rofi-power {configDir}
 cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/rofi {configDir}
 cp -r ~/.config/urxvt {configDir}
@@ -79,6 +90,14 @@ cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
 ##### From .conky Directory
 # -----------------------------------------------------------------------------
 cp -r ~/.conky {mainDir}
+# -----------------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------------
+##### From .local Directory
+# -----------------------------------------------------------------------------
+mkdir -p {localDir}/bin
+cp ~/.local/bin/rofi-power {localDir}/bin
 # -----------------------------------------------------------------------------
 
 
@@ -114,15 +133,6 @@ cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-solarized.json {co
 
 mkdir -p {configDir}/bumblebee-status/themes/icons
 cp ~/.config/bumblebee-status/themes/icons/awesome-fonts-bandit.json {configDir}/bumblebee-status/themes/icons
-# -----------------------------------------------------------------------------
-
-
-# -----------------------------------------------------------------------------
-##### From /usr Directory
-# -----------------------------------------------------------------------------
-#mkdir -p {usrDir}/lib/libreoffice/program
-#sudo cp /usr/lib/libreoffice/program/intro.png {imageDir}
-#sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
 # -----------------------------------------------------------------------------
 
 
