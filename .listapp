@@ -1,10 +1,12 @@
 acpi_call
+acpi_call-lts
 adwaita-icon-theme
 adwaita-qt4
 adwaita-qt5
 adwaita-x-dark-and-light-theme
 aic94xx-firmware
 alsa-utils
+android-sdk-platform-tools
 arandr
 asciinema
 atom
@@ -67,6 +69,7 @@ eog
 ethtool
 ettercap
 evince
+extundelete
 fakeroot
 feh
 fetchmirrors
@@ -206,6 +209,9 @@ lightdm-gtk-greeter
 lightdm-slick-greeter
 linux
 linux-headers
+linux-lts
+linux-lts-docs
+linux-lts-headers
 logrotate
 lolcat
 lsb-release
@@ -301,6 +307,7 @@ pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
 putty
+pv
 pwgen
 pycharm-community-edition
 python
@@ -378,6 +385,7 @@ system-config-printer
 systemd-sysvcompat
 tar
 terminus-font
+testdisk
 texinfo
 texlive-core
 thunderbird
