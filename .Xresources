@@ -71,7 +71,7 @@ URxvt*scrollTtyKeypress:      true
 
 
 ! Perl extensions
-URxvt*perl-lib:               ~/.urxvt/ext
+URxvt*perl-lib:               ~/config/urxvt/ext
 URxvt.perl-ext-common:        default,matcher,url-select,clipboard,resize-font,unichr
 URxvt.matcher.button:         1
 URxvt.urlLauncher:            google-chrome-stable
@@ -174,13 +174,3 @@ UXTerm*multiScroll:            on
 UXTerm*background:             #002B36
 !------------------------------------------------------------------------------
 
-
-
-!------------------------------------------------------------------------------
-! ROFI PREFERENCES
-!------------------------------------------------------------------------------
-! rofi.combi-modi:    window,drun,ssh
-! rofi.theme:         solarized
-! rofi.font:          Ubuntu 10
-! rofi.modi:          combi
-!------------------------------------------------------------------------------
