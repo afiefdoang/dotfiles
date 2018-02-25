@@ -67,6 +67,7 @@ cp -r ~/.config/dunst {configDir}
 cp -r ~/.config/i3 {configDir}
 cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/rofi {configDir}
+cp -r ~/.config/urxvt {configDir}
 
 mkdir -p {configDir}/gtk-3.0
 cp ~/.config/gtk-3.0/bookmarks {configDir}/gtk-3.0
@@ -95,14 +96,6 @@ cp ~/.vim/colors/Tomorrow-Night-Bandit.vim {vimDir}/colors
 
 
 # -----------------------------------------------------------------------------
-##### From .urxvt Directory
-# -----------------------------------------------------------------------------
-mkdir -p {urxvtDir}
-cp -r ~/.urxvt/ext {urxvtDir}
-# -----------------------------------------------------------------------------
-
-
-# -----------------------------------------------------------------------------
 ##### From bumblebee-status Directory
 # -----------------------------------------------------------------------------
 mkdir -p {configDir}/bumblebee-status/bumblebee/modules
@@ -121,17 +114,6 @@ cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-solarized.json {co
 
 mkdir -p {configDir}/bumblebee-status/themes/icons
 cp ~/.config/bumblebee-status/themes/icons/awesome-fonts-bandit.json {configDir}/bumblebee-status/themes/icons
-# -----------------------------------------------------------------------------
-
-
-# -----------------------------------------------------------------------------
-##### From Wallpaper
-# -----------------------------------------------------------------------------
-#mkdir -p {imageDir}
-#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.xcf {imageDir}
-#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png {imageDir}
-#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png {imageDir}
-#cp ~/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11LL.png {imageDir}
 # -----------------------------------------------------------------------------
 
 
