@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Ubuntu 9
+font pango:hack 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).let g:airline_theme='powelet g:airline_theme='powerlineish'
@@ -38,7 +38,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'Ubuntu-11'"
+#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'hack-10'"
 
 # start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 8 -width 500 -i -sort'
@@ -226,7 +226,7 @@ bar {
   position top
   # Bumblebee-Status on GitHub https://github.com/tobi-wan-kenobi/bumblebee-status
   status_command ~/.config/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="0%w%y%m%d%H%M" -t gruvbox-powerline-bandit-solarized
-  font pango:Ubuntu 9
+  font pango:hack 9
   bindsym button1 nop
 
   colors {
@@ -299,7 +299,7 @@ exec killall firewall-applet ; firewall-applet
 exec killall runenpass.sh ; env GTK_THEME=Adwaita /opt/Enpass/bin/runenpass.sh startWithTray
 
 # clipmenu
-#bindsym $mod+p exec --no-startup-id clipmenu -i -fn Ubuntu:size=11 -nb '#002B36' -nf '#839496' -sb '#E4E4E4' -sf '#002B36'
+#bindsym $mod+p exec --no-startup-id clipmenu -i -fn hack:size=10 -nb '#002B36' -nf '#839496' -sb '#E4E4E4' -sf '#002B36'
 
 # Blueman Applet
 # exec_always killall blueman-applet ; blueman-applet
@@ -317,7 +317,7 @@ bindsym F1 exec --no-startup-id echo "help" > /dev/null
 bindsym $mod+F7 exec --no-startup-id arandr
 
 # PulseAudio
-bindsym $mod+F8 exec --no-startup-id pavucontrol
+bindsym $mod+F3 exec --no-startup-id pavucontrol
 
 # Polkit-GNOME
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

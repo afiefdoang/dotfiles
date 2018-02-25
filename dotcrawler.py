@@ -120,9 +120,9 @@ cp ~/.config/bumblebee-status/themes/icons/awesome-fonts-bandit.json {configDir}
 # -----------------------------------------------------------------------------
 ##### From /usr Directory
 # -----------------------------------------------------------------------------
-mkdir -p {usrDir}/lib/libreoffice/program
-sudo cp /usr/lib/libreoffice/program/intro.png {imageDir}
-sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
+#mkdir -p {usrDir}/lib/libreoffice/program
+#sudo cp /usr/lib/libreoffice/program/intro.png {imageDir}
+#sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
 # -----------------------------------------------------------------------------
 
 
