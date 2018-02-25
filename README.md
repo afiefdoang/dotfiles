@@ -52,6 +52,7 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | tmux | [.tmux.conf](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.tmux.conf) | ~/.tmux.conf |
 | i3wm| [config](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/config) | ~/.config/i3/config |
 | Dunst | [dunstrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/dunstrc) | ~/.config/i3/dunstrc |
+| Rofi | [config]() |
 | Compton | [compton.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/i3/compton.conf) | ~/.config/i3/compton.conf |
 | urxvt, uxterm, xterm | [.Xresources](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.Xresources) | ~/.Xresources |
 | startx | [.xinitrc](https://wiki.archlinux.org/index.php/Xinit)
