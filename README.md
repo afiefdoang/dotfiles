@@ -51,11 +51,11 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | GTK+2.0 | [.gtkrc-2.0](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.gtkrc-2.0) | ~/.gtkrc-2.0 |
 | tmux | [.tmux.conf](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.tmux.conf) | ~/.tmux.conf |
 | i3wm| [config](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/config) | ~/.config/i3/config |
-| Dunst | [dunstrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/dunstrc) | ~/.config/i3/dunstrc |
-| Rofi | [config]() |
-| Compton | [compton.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/i3/compton.conf) | ~/.config/i3/compton.conf |
+| Dunst | [dunstrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/dunstrc) | ~/.config/dunst/dunstrc |
+| Rofi | [config](https://github.com/bandithijo/dotfiles/raw/master/.config/rofi/config) | ~/.config/rofi/config |
+| Compton | [compton.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/i3/compton.conf) | ~/.config/compton/compton.conf |
 | urxvt, uxterm, xterm | [.Xresources](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.Xresources) | ~/.Xresources |
-| startx | [.xinitrc](https://wiki.archlinux.org/index.php/Xinit)
+| startx | [.xinitrc](https://wiki.archlinux.org/index.php/Xinit) | ~/.xinitrc |
 | - | [.profile](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.profile) | ~/.profile |
 
 
