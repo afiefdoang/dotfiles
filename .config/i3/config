@@ -41,7 +41,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'Ubuntu-11'"
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 8 -width 500 -i'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 8 -width 500 -i -sort'
 
 # change focus
 bindsym $mod+h focus left
@@ -225,7 +225,7 @@ bar {
   tray_output primary
   position top
   # Bumblebee-Status on GitHub https://github.com/tobi-wan-kenobi/bumblebee-status
-  status_command ~/.config/i3/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="%y%m%d%H%M" -t gruvbox-powerline-bandit-solarized
+  status_command ~/.config/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="0%w%y%m%d%H%M" -t gruvbox-powerline-bandit-solarized
   font pango:Ubuntu 9
   bindsym button1 nop
 
@@ -334,13 +334,13 @@ exec --no-startup-id i3-msg border none
 exec killall conky ; conky -c .conky/arch/conky-i3wm+clock.conf
 
 # Enable Compton for compositor
-exec_always killall compton ; compton --config ~/.config/i3/compton.conf -b
+exec_always killall compton ; compton --config ~/.config/compton/compton.conf -b
 
 # Enable Xcompmgr for compositor
 #exec_always --no-startup-id xcompmgr
 
 # Enable Dunst Notifications
-exec killall dunst ; dunst -config '/home/bandithijo/.config/i3/dunstrc'
+exec killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
 
 # Enable Polybar
 #exec_always killall polybar ; polybar example
