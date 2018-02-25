@@ -340,7 +340,7 @@ exec_always killall compton ; compton --config ~/.config/compton/compton.conf -b
 #exec_always --no-startup-id xcompmgr
 
 # Enable Dunst Notifications
-exec killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
+exec_always killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
 
 # Enable Polybar
 #exec_always killall polybar ; polybar example
