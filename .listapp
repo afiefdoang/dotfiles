@@ -10,6 +10,7 @@ android-sdk-platform-tools
 arandr
 asciinema
 atom
+audacious
 audacity
 aurvote
 automake
@@ -21,6 +22,7 @@ blender
 blueman
 bluez
 bluez-utils
+brasero
 bzip2
 calibre
 catfish
@@ -43,7 +45,6 @@ darkstat
 darktable
 davinci-resolve
 dconf-editor
-deadbeef
 devhelp
 device-mapper
 dhcpcd
