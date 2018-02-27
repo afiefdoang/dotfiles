@@ -1,19 +1,37 @@
 #!/usr/bin/python3.6
 
+#  ██████                           ██ ██   ██   ██      ██ ██    ██
+# ░█░░░░██                         ░██░░   ░██  ░██     ░██░░    ░░
+# ░█   ░██   ██████   ███████      ░██ ██ ██████░██     ░██ ██    ██  ██████
+# ░██████   ░░░░░░██ ░░██░░░██  ██████░██░░░██░ ░██████████░██   ░██ ██░░░░██
+# ░█░░░░ ██  ███████  ░██  ░██ ██░░░██░██  ░██  ░██░░░░░░██░██   ░██░██   ░██
+# ░█    ░██ ██░░░░██  ░██  ░██░██  ░██░██  ░██  ░██     ░██░██ ██░██░██   ░██
+# ░███████ ░░████████ ███  ░██░░██████░██  ░░██ ░██     ░██░██░░███ ░░██████
+# ░░░░░░░   ░░░░░░░░ ░░░   ░░  ░░░░░░ ░░    ░░  ░░      ░░ ░░  ░░░   ░░░░░░
+#
+#                                          ██
+#                                         ░██
+#      █████  ██████  ██████   ███     ██ ░██  █████  ██████
+#     ██░░░██░░██░░█ ░░░░░░██ ░░██  █ ░██ ░██ ██░░░██░░██░░█
+#    ░██  ░░  ░██ ░   ███████  ░██ ███░██ ░██░███████ ░██ ░
+#  ██░██   ██ ░██    ██░░░░██  ░████░████ ░██░██░░░░  ░██
+# ░██░░█████ ░███   ░░████████ ███░ ░░░██ ███░░██████░███
+# ░░  ░░░░░  ░░░     ░░░░░░░░ ░░░    ░░░ ░░░  ░░░░░░ ░░░
+
 # author : BanditHijo
 # source : https://github.com/bandithijo/dotfiles
 
 import os
 
 # Deklarasi Variabel Directory
-mainDir   = '~/GitHub/dotfiles'
-etcDir    = '~/GitHub/dotfiles/etc'
-usrDir    = '~/GitHub/dotfiles/usr'
-configDir = '~/GitHub/dotfiles/.config'
-localDir  = '~/GitHub/dotfiles/.local'
-urxvtDir  = '~/GitHub/dotfiles/.urxvt'
-vimDir    = '~/GitHub/dotfiles/.vim'
-imageDir  = '~/GitHub/dotfiles/images'
+mainDir   = '~/git/dotfiles'
+etcDir    = '~/git/dotfiles/etc'
+usrDir    = '~/git/dotfiles/usr'
+configDir = '~/git/dotfiles/.config'
+localDir  = '~/git/dotfiles/.local'
+urxvtDir  = '~/git/dotfiles/.urxvt'
+vimDir    = '~/git/dotfiles/.vim'
+imageDir  = '~/git/dotfiles/images'
 
 # Proces Copy to GitHub Directory
 os.system(f'''
