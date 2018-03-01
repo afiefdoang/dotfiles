@@ -69,7 +69,7 @@ URxvt.font:                   xft:hack:pixelsize=13.5:regular, \
 URxvt.boldFont:               xft:hack:pixelsize=13.5:bold
 
 ! Text
-URxvt.colorUL:                green
+URxvt.colorUL:                #DEFF00
 URxvt.lineSpace:              0
 
 ! Fix font space
