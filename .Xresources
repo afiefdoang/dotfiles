@@ -46,34 +46,34 @@ Xcursor.size:16
 ! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 !------------------------------------------------------------------------------
 
-URxvt*termName:             rxvt-256color
-URxvt.depth:                0
-URxvt.geometry:             120x40
+URxvt.termName:               rxvt-256color
+URxvt.depth:                  32
+URxvt.geometry:               120x40
 ! URxvt.transparent:          true
 ! URxvt.fading:               0
 ! URxvt.shading:              15
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
-URxvt.loginShell:           true
-URxvt.saveLines:            50
-URxvt.internalBorder:       0
-URxvt*buffered:             true
-urxvt*saveLines:            100000
+URxvt.loginShell:             true
+URxvt.saveLines:              50
+URxvt.internalBorder:         0
+URxvt.buffered:               true
+urxvt.saveLines:              100000
 
 ! Fonts
-URxvt.allow_bold:           true
-URxvt*font:                 xft:hack:pixelsize=13.5:regular, \
-                            xft:Font\ Awesome:antialias=true:size=13, \
-                            xft:unifont:style=Medium:antialias=false, \
-                            xft:FreeSerif:style=Regular
-URxvt*boldFont:             xft:hack:pixelsize=13.5:bold
+URxvt.allow_bold:             true
+URxvt.font:                   xft:hack:pixelsize=13.5:regular, \
+                              xft:Font\ Awesome:antialias=true:size=13, \
+                              xft:unifont:style=Medium:antialias=false, \
+                              xft:FreeSerif:style=Regular
+URxvt.boldFont:               xft:hack:pixelsize=13.5:bold
 
 ! Text
-URxvt*colorUL:                yellow
+URxvt.colorUL:                green
 URxvt.lineSpace:              0
 
 ! Fix font space
-URxvt*letterSpace: -1
+URxvt.letterSpace: -1
 
 ! Scrollbar
 URxvt.scrollStyle:            rxvt
@@ -81,15 +81,14 @@ URxvt.scrollBar:              false
 URxvt.keysym.Shift-Up:        command:\033]720;1\007
 URxvt.keysym.Shift-Down:      command:\033]721;1\007
 ! do not scroll with output
-URxvt*scrollTtyOutput:        false
+URxvt.scrollTtyOutput:        false
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer:       true
+URxvt.scrollWithBuffer:       true
 ! scroll back to the bottom on keypress
-URxvt*scrollTtyKeypress:      true
-
+URxvt.scrollTtyKeypress:      true
 
 ! Perl extensions
-URxvt*perl-lib:               ~/config/urxvt/ext
+URxvt.perl-lib:               ~/config/urxvt/ext
 URxvt.perl-ext-common:        default,matcher,url-select,clipboard,resize-font,unichr
 URxvt.matcher.button:         1
 URxvt.urlLauncher:            google-chrome-stable
@@ -97,7 +96,7 @@ URxvt.keysym.M-u:             perl:url-select:select_next
 URxvt.url-select.launcher:    /usr/bin/xdg-open
 URxvt.url-select.underline:   true
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755:               False
+URxvt.iso14755:               false
 
 ! Cursor
 URxvt.cursorBlink:            true
@@ -109,8 +108,8 @@ URxvt.pointerBlank:           true
 
 !!Source http://github.com/altercation/solarized
 
-URxvt*background:             [98]#002B36
-*foreground:                  #728A92
+URxvt.background:             [98]#002B36
+*foreground:                  #657b83
 !*fading: 40
 *fadeColor:                   #002b36
 *cursorColor:                 #93a1a1
@@ -163,11 +162,11 @@ XTerm.vt100.geometry:         100x32
 XTerm.vt100.faceName:         hack:size=10:antialias=true
 XTerm.vt100.boldFont:         hack:size=10:antialias=true
 XTerm.vt100.allowTitleOps:    true
-XTerm*Border:                 off
-xTerm*BorderWidth:            0
-xTerm*LoginShell:             true
-XTerm*multiScroll:            on
-XTerm*background:             #002B36
+XTerm.Border:                 off
+xTerm.BorderWidth:            0
+xTerm.LoginShell:             true
+XTerm.multiScroll:            on
+XTerm.background:             #002B36
 !------------------------------------------------------------------------------
 
 
@@ -185,10 +184,10 @@ UXTerm.vt100.geometry:         100x32
 UXTerm.vt100.faceName:         hack:size=10:antialias=true
 UXTerm.vt100.boldFont:         hack:size=10:antialias=true
 UXTerm.vt100.allowTitleOps:    true
-UXTerm*Border:                 off
-UXTerm*BorderWidth:            0
-UXTerm*LoginShell:             true
-UXTerm*multiScroll:            on
-UXTerm*background:             #002B36
+UXTerm.Border:                 off
+UXTerm.BorderWidth:            0
+UXTerm.LoginShell:             true
+UXTerm.multiScroll:            on
+UXTerm.background:             #002B36
 !------------------------------------------------------------------------------
 
