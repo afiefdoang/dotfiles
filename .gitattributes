@@ -1,2 +1,2 @@
-.muttrc=remove-pass
+.muttrc filter=remove-pass
 
