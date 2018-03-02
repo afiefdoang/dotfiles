@@ -1,3 +1,14 @@
+```
+      ██            ██     ████ ██  ██                
+     ░██           ░██    ░██░ ░░  ░██                
+     ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
+  ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░ 
+ ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████ 
+░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
+░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████ 
+ ░░░░░░  ░░░░░░     ░░    ░░   ░░ ░░░  ░░░░░░ ░░░░░░  
+ ```
+
 # **dotfiles BanditHijo**
 
 Hi, nama  saya Rizqi. Kamu sedang berada di repository dotfiles milik saya. Untuk saat ini, saya hanya dapat membuat dokumentasi README yang mungkin sedikit sulit dipahami.

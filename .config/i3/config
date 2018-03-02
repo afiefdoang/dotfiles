@@ -220,7 +220,7 @@ set $urgent-text-color		#E4E4E4
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color			      $bg-color          $text-color          #ffaf00
+client.focused          $border-color			  $border-color          $text-color          #ffaf00
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #ffaf00
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #ffaf00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-color   #ffaf00
@@ -229,12 +229,15 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-colo
 hide_edge_borders both
 
 # Window Border Settings
+# format : new_window normal|none|pixel
+new_window pixel 1
+# format : new_float normal|none|pixel
+new_float pixel 1
+
 bindsym $mod+t border normal 0
 bindsym $mod+Shift+t border normal 1
 bindsym $mod+y border none
 bindsym $mod+Shift+y border pixel 1
-new_window pixel 1
-new_float pixel 1
 
 # i3bar Toggle between dock mode and hide mode
 bindsym $mod+F11 bar mode toggle

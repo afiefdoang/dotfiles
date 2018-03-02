@@ -233,9 +233,11 @@ mesa
 mlt
 modemmanager
 mpv
+msmtp
 mysql-workbench
 nano
 nautilus
+nautilus-emblems-menu-extension-git
 neofetch
 neomutt
 neovim
@@ -263,6 +265,7 @@ numix-gtk-theme
 numix-themes-archblue-git
 numix-themes-darkblue
 obs-studio
+offlineimap
 oh-my-zsh-git
 oneko
 opencv-samples
@@ -270,7 +273,6 @@ openssh
 opera
 orca
 otf-ipafont
-pacaur
 packettracer
 pacman
 pamac-aur
