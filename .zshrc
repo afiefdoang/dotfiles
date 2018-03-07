@@ -177,3 +177,10 @@ export TERM=rxvt-unicode
 PATH="$HOME/bin:$HOME/src:$HOME/.local/bin:$PATH"
 export PATH
 
+# Vim as Manpager
+# for Vim
+export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
+# for NeoVim
+export MANPAGER="nvim +set\ filetype=man -"
+
+

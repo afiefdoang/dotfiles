@@ -78,9 +78,12 @@ Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
 "Plug 'python-mode/python-mode'
 "Plug 'Raimondi/delimitMate'
+"Plug 'nikvdp/ejs-syntax'
+Plug 'briancollins/vim-jst'
 
 call plug#end()
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -92,6 +95,7 @@ set encoding=utf-8
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ######### General
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -99,7 +103,8 @@ set backspace=indent,eol,start " make backspace a more flexible
 set backup " make backup files
 set backupdir=~/.vim/tmp/backup " where to put backup files
 set directory=~/.vim/tmp/swap " directory to place swap files in
-set undodir=~/.vim/tmp/undo " directory to place undo files in
+"set undodir=~/.vim/tmp/undo " directory to place undo files in
+"set undofile " make undo possible after the file is closed and reopened
 set clipboard=unnamedplus " share clipboard
 set hidden " you can change buffers without saving
 set mouse=a " use mouse everywhere
@@ -107,13 +112,13 @@ set noerrorbells " don't make noise
 set wildmenu " turn on command line completion wild style
 set wildmode=full
 set ttyfast " i have a fast terminal
-set undofile " make undo possible after the file is closed and reopened
 set gdefault " global substitutions are default s/a/b/g
 set ttimeoutlen=50  " make Esc work faster
 set autoread " make vim monitor realtime changes to a file
 au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving
 au FocusGained,BufEnter * :checktime " auto update trigger on buffer change or terminal focus
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -137,6 +142,8 @@ set relativenumber " turn on line numbers
 set nu " turn on line number on selected line
 set report=0 " tell us when anything is changed
 set ruler " always show current positions along the bottom
+set foldmethod=syntax
+set foldlevel=0 " default unfold when open a file
 set shortmess=atToOI " shortens messages to avoid 'press a key' prompt
 set showcmd " show the command being typed
 set showmode " show current mode
@@ -150,6 +157,7 @@ if &diff " change colorscheme when using vimdiff
   colorscheme solarized-bandit
 endif
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -170,6 +178,7 @@ set autoindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
 autocmd Filetype php setlocal shiftwidth=4 tabstop=4
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -217,6 +226,9 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
+" toggle NerdTree plugin
+nmap <F12> :NERDTreeToggle<cr>
+
 " for move to each split on NerdTree
 nmap <C-h> <C-w><C-h>
 nmap <C-j> <C-w><C-j>
@@ -232,9 +244,6 @@ noremap <c-d> <c-d>zz
 
 " toggle Tagbar plugin
 nmap <F8> :TagbarToggle<cr>
-
-" toggle NerdTree plugin
-nmap <F12> :NERDTreeToggle<cr>
 
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
@@ -282,6 +291,8 @@ vno <up> <Nop>
 " NerdTree
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let NERDTreeHijackNetrw = 0
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " emmet-vim trigger key remap
@@ -343,7 +354,7 @@ let g:mkdp_path_to_chrome = "/usr/bin/google-chrome-stable"
 let g:mkdp_browserfunc = 'MKDP_browserfunc_default'
 " callback vim function to open browser, the only param is the url to open
 
-let g:mkdp_auto_start = 1
+let g:mkdp_auto_start = 0
 " set to 1, the vim will open the preview window once enter the markdown
 " buffer
 
@@ -365,9 +376,9 @@ let g:mkdp_command_for_global = 0
 " by default it just can be use in markdown file
 
 " Mapping for markdown-preview
-nmap <silent> <F10> <Plug>MarkdownPreview        " for normal mode
-imap <silent> <F10> <Plug>MarkdownPreview        " for insert mode
-nmap <silent> <F11> <Plug>StopMarkdownPreview    " for normal mode
-imap <silent> <F11> <Plug>StopMarkdownPreview    " for insert mode
+nmap <F10> <Plug>MarkdownPreview        " for normal mode
+imap <F10> <Plug>MarkdownPreview        " for insert mode
+nmap <F11> <Plug>StopMarkdownPreview    " for normal mode
+imap <F11> <Plug>StopMarkdownPreview    " for insert mode
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

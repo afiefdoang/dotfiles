@@ -76,9 +76,9 @@ cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
 # -----------------------------------------------------------------------------
 ##### From /usr Directory
 # -----------------------------------------------------------------------------
-mkdir -p {usrDir}/lib/libreoffice/program
-sudo cp /usr/lib/libreoffice/program/intro.png {usrDir}/lib/libreoffice/program
-sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
+#mkdir -p {usrDir}/lib/libreoffice/program
+#sudo cp /usr/lib/libreoffice/program/intro.png {usrDir}/lib/libreoffice/program
+#sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
 # -----------------------------------------------------------------------------
 
 
@@ -86,9 +86,6 @@ sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
 ##### From .config Directory
 # -----------------------------------------------------------------------------
 mkdir -p {configDir}
-
-cp ~/.config/user-dirs.dirs {configDir}
-cp ~/.config/user-dirs.conf {configDir}
 
 cp -r ~/.config/compton {configDir}
 cp -r ~/.config/dunst {configDir}
@@ -98,9 +95,12 @@ cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/rofi {configDir}
 cp -r ~/.config/urxvt {configDir}
 
-mkdir -p {configDir}/gtk-3.0
-cp ~/.config/gtk-3.0/bookmarks {configDir}/gtk-3.0
-cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
+#cp ~/.config/user-dirs.dirs {configDir}
+#cp ~/.config/user-dirs.conf {configDir}
+
+#mkdir -p {configDir}/gtk-3.0
+#cp ~/.config/gtk-3.0/bookmarks {configDir}/gtk-3.0
+#cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
 # -----------------------------------------------------------------------------
 
 
