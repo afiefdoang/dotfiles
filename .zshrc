@@ -184,3 +184,5 @@ export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomo
 export MANPAGER="nvim +set\ filetype=man -"
 
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

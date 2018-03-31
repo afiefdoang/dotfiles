@@ -38,12 +38,14 @@ Plug 'tpope/vim-vinegar'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'skwp/greplace.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'ervandew/supertab'
 Plug 'acoustichero/goldenrod.vim'
@@ -76,7 +78,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
-"Plug 'python-mode/python-mode'
+Plug 'python-mode/python-mode', {'branch': 'develop'}
 "Plug 'Raimondi/delimitMate'
 "Plug 'nikvdp/ejs-syntax'
 Plug 'briancollins/vim-jst'
@@ -103,8 +105,8 @@ set backspace=indent,eol,start " make backspace a more flexible
 set backup " make backup files
 set backupdir=~/.vim/tmp/backup " where to put backup files
 set directory=~/.vim/tmp/swap " directory to place swap files in
-"set undodir=~/.vim/tmp/undo " directory to place undo files in
-"set undofile " make undo possible after the file is closed and reopened
+set undodir=~/.vim/tmp/undo " directory to place undo files in
+set undofile " make undo possible after the file is closed and reopened
 set clipboard=unnamedplus " share clipboard
 set hidden " you can change buffers without saving
 set mouse=a " use mouse everywhere
@@ -142,8 +144,8 @@ set relativenumber " turn on line numbers
 set nu " turn on line number on selected line
 set report=0 " tell us when anything is changed
 set ruler " always show current positions along the bottom
-set foldmethod=syntax
-set foldlevel=0 " default unfold when open a file
+"set foldmethod=syntax
+"set foldlevel=1 " default unfold when open a file
 set shortmess=atToOI " shortens messages to avoid 'press a key' prompt
 set showcmd " show the command being typed
 set showmode " show current mode
@@ -170,9 +172,9 @@ set formatoptions=cqt " see :help fo-table
 set infercase " case inferred by default
 set shiftround " round the indent to shiftwidth (when at 3 spaces, and I hit > go to 4, n    ot 5)
 set expandtab " no real tabs please!
-set shiftwidth=2 " auto-indent amount when using >> <<
-set softtabstop=2 " when hitting tab or backspace, how many spaces should a tab be (see e    xpandtab)
-set tabstop=2 " real tabs should be 4, and they will show with set list on
+set shiftwidth=4 " auto-indent amount when using >> <<
+set softtabstop=4 " when hitting tab or backspace, how many spaces should a tab be (see e    xpandtab)
+set tabstop=4 " real tabs should be 4, and they will show with set list on
 set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
@@ -188,24 +190,24 @@ autocmd Filetype php setlocal shiftwidth=4 tabstop=4
 let mapleader = ","
 
 " for edit my .vimrc
-nmap <Leader>ev :e ~/.vimrc<cr>
+nmap <leader>ev :e ~/.vimrc<cr>
 
 " for move & delete buffer
-nmap <Leader>n :bn<cr>
-nmap <Leader>p :bp<cr>
-nmap <Leader>d :bd<cr>
+nmap <leader>n :bn<cr>
+nmap <leader>p :bp<cr>
+nmap <leader>d :bd<cr>
 
 " this key combination gets rid of the search highlights
 nmap <leader><space> :noh<cr>
 
 " for clear highlight search
-nmap <Leader><space> :nohlsearch<cr>
+nmap <leader><space> :nohlsearch<cr>
 
 " Ctags
-nmap <Leader>g <C-]>
+nmap <leader>g <C-]>
 
 " strip all trailing whitespace in the current file
-nmap <Leader>W :StripWhitespace<cr>
+nmap <leader>W :StripWhitespace<cr>
 
 " open vertical split and switch to it
 nnoremap <leader>w <C-w>v<C-w>l
@@ -247,6 +249,9 @@ nmap <F8> :TagbarToggle<cr>
 
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+" fzf.vim
+nmap <leader>b :Buffers<cr>
 
 " enable seeing-is-believing mappings only for Ruby
 augroup seeingIsBelievingSettings
@@ -321,9 +326,9 @@ let g:rubycomplete_include_objectspace=1
 
 " CtrlP
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <leader>r :CtrlPMRUFiles<cr>
-nmap <leader>b :CtrlPBuffer<cr>
-let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
+"nmap <leader>r :CtrlPMRUFiles<cr>
+"nmap <C-b> :CtrlPBuffer<cr>
+"let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Vim-Snipmate
@@ -366,7 +371,7 @@ let g:mkdp_auto_close = 1
 " set to 1, the vim will auto close current preview window when change
 " from markdown buffer to another buffer
 
-let g:mkdp_refresh_slow = 0
+let g:mkdp_refresh_slow = 1
 " set to 1, the vim will just refresh markdown when save the buffer or
 " leave from insert mode, default 0 is auto refresh markdown as you edit or
 " move the cursor
@@ -382,3 +387,13 @@ nmap <F11> <Plug>StopMarkdownPreview    " for normal mode
 imap <F11> <Plug>StopMarkdownPreview    " for insert mode
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Python-Mode
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:pymode_python = 'python3'
+let g:pymode_rope = 0
+let g:pymode_rope_lookup_project = 0
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_autoimport = 0
+let g:python_host_prog = "/usr/bin/python2"
+let g:python3_host_prog = "/usr/bin/python"
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

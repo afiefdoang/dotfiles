@@ -109,8 +109,7 @@ URxvt.pointerBlank:           true
 !!Source http://github.com/altercation/solarized
 
 URxvt.background:             [100]#002B36
-!*foreground:                  #657b83
-*foreground:                  #848F93
+*foreground:                  #93A1A1
 !*fading: 40
 *fadeColor:                   #002b36
 *cursorColor:                 #93a1a1
@@ -160,6 +159,9 @@ XTerm*vt100.backarrowKey:     false
 XTerm*ttyModes:               erase ^?
 XTerm*vt100.saveLines:        4096
 XTerm*vt100.geometry:         100x32
+XTerm*vt100.translations:     #override \n\
+                              Ctrl <Key> minus: smaller-vt-font() \n\
+                              Ctrl <Key> plus: larger-vt-font()
 XTerm*vt100.faceName:         hack:size=10:antialias=true
 XTerm*vt100.boldFont:         hack:size=10:antialias=true
 XTerm*vt100.allowTitleOps:    true
@@ -183,6 +185,9 @@ UXTerm*vt100.backarrowKey:     false
 UXTerm*ttyModes:               erase ^?
 UXTerm*vt100.saveLines:        4096
 UXTerm*vt100.geometry:         100x32
+UXTerm*vt100.translations:     #override \n\
+                               Ctrl <Key> minus: smaller-vt-font() \n\
+                               Ctrl <Key> plus: larger-vt-font()
 UXTerm*vt100.faceName:         hack:size=10:antialias=true
 UXTerm*vt100.boldFont:         hack:size=10:antialias=true
 UXTerm*vt100.allowTitleOps:    true

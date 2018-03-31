@@ -46,6 +46,9 @@ font pango:hack 9
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# enable or disable focus on mouse hover (yes | no)
+focus_follows_mouse no
+
 # start a terminal
 bindsym $mod+Return exec --no-startup-id urxvt # URXVT Terminal
 
@@ -86,10 +89,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+b split h;exec notify-send 'Horizontal Split'
+bindsym $mod+b split h; exec notify-send 'Horizontal Split'
 
 # split in vertical orientation
-bindsym $mod+v split v;exec notify-send 'Vertical Split'
+bindsym $mod+v split v; exec notify-send 'Vertical Split'
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -167,10 +170,14 @@ for_window [class="Modem-manager-gui"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Electrum"] floating enable
 for_window [class="Gpick"] floating enable
+for_window [class="Xfburn"] floating enable
 for_window [class="TeamViewer"] floating enable
 for_window [class="Gnome-calendar"] floating enable
+for_window [class="Gnome-calculator"] floating enable
 for_window [class="flowbladesinglerender"] floating enable
 for_window [class="System-config-printer.py"] floating enable
+for_window [class="sun-awt-X11-XWindowPeer"] floating enable
+for_window [class="JDownloader"] floating enable
 
 # Disable Floating Mode for Specific Programs
 for_window [class="pavucontrol-qt"] floating disable
@@ -185,26 +192,26 @@ bindsym $mod+Shift+r restart
 bindsym $mod+r mode "resize"
 
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+  # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
-        bindsym l resize grow width 5 px or 5 ppt
+  # Pressing left will shrink the window’s width.
+  # Pressing right will grow the window’s width.
+  # Pressing up will shrink the window’s height.
+  # Pressing down will grow the window’s height.
+  bindsym h resize shrink width 5 px or 5 ppt
+  bindsym j resize grow height 5 px or 5 ppt
+  bindsym k resize shrink height 5 px or 5 ppt
+  bindsym l resize grow width 5 px or 5 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 5 px or 5 ppt
-        bindsym Down resize grow height 5 px or 5 ppt
-        bindsym Up resize shrink height 5 px or 5 ppt
-        bindsym Right resize grow width 5 px or 5 ppt
+  # same bindings, but for the arrow keys
+  bindsym Left resize shrink width 5 px or 5 ppt
+  bindsym Down resize grow height 5 px or 5 ppt
+  bindsym Up resize shrink height 5 px or 5 ppt
+  bindsym Right resize grow width 5 px or 5 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+  # back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 
 # Start i3bar to display a workspace bar (plus the system information bumblebee-status
@@ -215,12 +222,12 @@ set $border-color			    #002B36
 set $inactive-bg-color   	#002B36
 set $text-color          	#E4E4E4
 set $inactive-text-color  #576D74
-set $urgent-bg-color      #859900
+set $urgent-bg-color      #268BD2
 set $urgent-text-color		#E4E4E4
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $border-color			  $border-color          $text-color          #ffaf00
+client.focused          $border-color			  $border-color      $text-color          #ffaf00
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #ffaf00
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #ffaf00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-color   #ffaf00
@@ -271,7 +278,7 @@ bar {
 #################################
 
 # Background Wallpaper
-exec_always feh --bg-max -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png
+exec_always --no-startup-id feh --bg-max -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png
 
 # i3lock lockscreen
 bindsym $mod+Shift+x exec --no-startup-id i3lock -u --beep --color 000000 -t -i /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png
@@ -281,7 +288,7 @@ exec_always killall xautolock ; xautolock -time 15 -locker "i3lock -u --beep --c
 set $Locker i3lock -u --beep --color 000000 -i /home/bandithijo/pix/Wallpaper/archWallpaper/Arch-Wallpaper-11L.png && systemctl suspend
 
 # Restart, Suspend, Shutdown, Logout Dialog
-bindsym $mod+End exec ~/.local/bin/rofi-power "i3-msg exit"
+bindsym $mod+End exec --no-startup-id ~/.local/bin/rofi-power "i3-msg exit"
 
 # set $mode_system System [X] lock, [E] logout, [S] suspend, [H] hibernate, [R] reboot, [Shift+S] shutdown
 # mode "$mode_system" {
@@ -299,7 +306,7 @@ bindsym $mod+End exec ~/.local/bin/rofi-power "i3-msg exit"
 # bindsym $mod+End mode "$mode_system"
 
 # Gnome Screenshot
-bindsym $mod+Print exec gnome-screenshot -i
+bindsym $mod+Print exec --no-startup-id gnome-screenshot -i
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 2
@@ -329,11 +336,12 @@ exec killall runenpass.sh ; env GTK_THEME=Adwaita /opt/Enpass/bin/runenpass.sh s
 # Blueman Applet
 # exec_always killall blueman-applet ; blueman-applet
 
+# Caps Lock Indicator
+bindsym Caps_Lock exec notify-send 'CAPS LOCK'
+
 # Disable TouchPad
 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
-
-# Enable Tap to Click
-exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+# Enable Tap to Click exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
 # Disable F1 Help Button
 bindsym F1 exec --no-startup-id echo "help" > /dev/null
@@ -342,7 +350,7 @@ bindsym F1 exec --no-startup-id echo "help" > /dev/null
 bindsym $mod+F7 exec --no-startup-id arandr
 
 # PulseAudio
-bindsym $mod+F3 exec --no-startup-id pavucontrol
+bindsym $mod+F8 exec --no-startup-id pavucontrol
 
 # Polkit-GNOME
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -368,4 +376,4 @@ exec_always killall compton ; compton --config ~/.config/compton/compton.conf -b
 exec_always killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
 
 # Enable Polybar
-#exec_always killall polybar ; polybar example
+# exec_always killall polybar ; polybar example
