@@ -174,7 +174,7 @@ set shiftround " round the indent to shiftwidth (when at 3 spaces, and I hit > g
 set expandtab " no real tabs please!
 set shiftwidth=4 " auto-indent amount when using >> <<
 set softtabstop=4 " when hitting tab or backspace, how many spaces should a tab be (see e    xpandtab)
-set tabstop=4 " real tabs should be 4, and they will show with set list on
+set tabstop=8 " real tabs should be 4, and they will show with set list on
 set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
@@ -251,7 +251,8 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 " fzf.vim
-nmap <leader>b :Buffers<cr>
+"nmap <leader>b :Buffers<cr>
+nmap <C-p> :Buffers<cr>
 
 " enable seeing-is-believing mappings only for Ruby
 augroup seeingIsBelievingSettings
@@ -313,6 +314,7 @@ let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:powerline_pycmd = 'py3'
 let g:airline_theme = 'atomic'
+"let g:airline_theme = 'solarized'
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Rubycomplete

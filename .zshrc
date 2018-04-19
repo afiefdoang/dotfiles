@@ -186,3 +186,4 @@ export MANPAGER="nvim +set\ filetype=man -"
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export GPG_TTY=$(tty)

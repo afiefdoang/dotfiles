@@ -10,7 +10,7 @@ android-sdk-platform-tools
 arandr
 arch-audit
 asciinema
-atom
+atomic-tweetdeck
 audacious
 audacity
 aurvote
@@ -18,6 +18,7 @@ automake
 awesome-terminal-fonts
 baobab
 bash
+bash-pipes
 bison
 blender
 blueman
@@ -36,8 +37,7 @@ color-icc-srgb
 composer
 compton
 conky
-conky-manager
-corebird
+consolas-font
 coreutils
 cpio
 cryptsetup
@@ -51,10 +51,12 @@ dhcpcd
 dia
 dialog
 diffutils
+dina-font
 discount
 dlib
 dmenu
 dmidecode
+docker
 downgrade
 dsniff
 dunst
@@ -66,7 +68,6 @@ electrum
 emma
 encfs
 enpass-bin
-eog
 ethtool
 ettercap
 evince
@@ -93,7 +94,6 @@ foomatic-db-nonfree
 foomatic-db-nonfree-ppds
 foomatic-db-ppds
 fprintd
-freecad
 freetype2
 gawk
 gcc
@@ -107,7 +107,6 @@ geogebra
 gettext
 gimp
 git
-gitbook-editor
 gitg
 gksu
 glibc
@@ -142,7 +141,6 @@ gst-plugins-good
 gst-plugins-ugly
 gthumb
 gtkparasite-git
-gtkpod
 gtop
 gucharmap
 gutenprint
@@ -162,7 +160,6 @@ heroku-cli
 hexchat
 htop
 httrack
-hugo
 i-nex
 i3-wm
 i3blocks
@@ -174,6 +171,7 @@ icedtea-web
 iftop
 imagemagick
 inetutils
+iniparser
 inkscape
 instagram-scraper
 intel-gpu-tools
@@ -198,10 +196,13 @@ less
 lib32-flashplugin
 lib32-vulkan-intel
 libgnome-games-support
+libpam-google-authenticator
 libpng14
 libpng15
+libreoffice-extension-vrt-network-equipment
 libreoffice-still
 licenses
+liferea
 lightdm
 lightdm-gtk-greeter
 lightdm-slick-greeter
@@ -225,14 +226,16 @@ mariadb
 masterpdfeditor
 mdadm
 megacmd
-megasync
 mesa
 mlt
 modemmanager
-mpv
+mpc
+mpd
+mplayer
 msmtp
 mysql-workbench
 nano
+ncmpcpp
 neofetch
 neomutt
 neovim
@@ -249,6 +252,7 @@ networkmanager-openvpn
 networkmanager-pptp
 networkmanager-strongswan
 networkmanager-vpnc
+nfoview
 nftables
 nmap
 nmon
@@ -327,6 +331,7 @@ python-lazy-object-proxy
 python-markdown
 python-matplotlib
 python-mccabe
+python-multidict
 python-neovim
 python-netifaces
 python-pip
@@ -354,6 +359,7 @@ python2-pickleshare
 python2-pip
 python2-virtualenv
 python2-yaml
+qemu
 qt4
 qt5-networkauth
 qt5-styleplugins
@@ -365,6 +371,7 @@ reaver
 reiserfsprogs
 renpy
 rhythmbox
+ristretto
 rkhunter
 rofi
 rpmextract
@@ -378,7 +385,7 @@ seexpr-doc
 shadow
 shotwell
 shutter
-simple-scan-3.12
+simple-scan
 simplescreenrecorder
 skypeforlinux-bin
 smartmontools
@@ -396,10 +403,14 @@ sysfsutils
 sysstat
 system-config-printer
 systemd-sysvcompat
+tamsyn-font
 tar
 telegram-desktop
 telegram-qt
+terminess-powerline-font-git
 terminus-font
+terminus-font-ttf
+termsyn-font
 testdisk
 texinfo
 texlive-core
@@ -418,9 +429,11 @@ transmission-cli
 transmission-gtk
 tree
 ttf-anonymous-pro
+ttf-consolas-powerline
 ttf-croscore
 ttf-dejavu
 ttf-droid
+ttf-envy-code-r
 ttf-fira-mono
 ttf-fira-sans
 ttf-font-awesome
@@ -428,6 +441,7 @@ ttf-freefont
 ttf-hanazono
 ttf-inconsolata
 ttf-liberation
+ttf-monaco
 ttf-roboto
 ttf-roboto-slab
 ttf-sazanami
@@ -436,6 +450,7 @@ ttf-unifont
 ttf-wps-fonts
 tty-clock
 ufw
+uml_utilities
 unrar
 unzip
 urxvt-perls
@@ -449,6 +464,7 @@ virtualbox
 virtualbox-ext-oracle
 virtualbox-guest-iso
 virtualbox-host-modules-arch
+virtualbox-sdk
 visual-studio-code-bin
 vlc
 vulkan-headers
@@ -456,7 +472,7 @@ vulkan-intel
 w3m
 wd719x-firmware
 wget
-whatsie
+whatsapp-desktop
 which
 wine
 wine-mono
@@ -500,6 +516,7 @@ xorg-xcursorgen
 xorg-xdpyinfo
 xorg-xdriinfo
 xorg-xev
+xorg-xfontsel
 xorg-xgamma
 xorg-xhost
 xorg-xinit

@@ -5,12 +5,13 @@
 
 import bumblebee.engine
 
-ALIASES = [ "profile" ]
+ALIASES = ["profile"]
+
 
 class Module(bumblebee.engine.Module):
     def __init__(self, engine, config):
         super(Module, self).__init__(engine, config,
-            bumblebee.output.Widget(full_text=" BANDITHIJO")
+            bumblebee.output.Widget(full_text=" BANDITHIJO.COM")
         )
 
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4

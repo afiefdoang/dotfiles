@@ -3,8 +3,8 @@
 
 include "/home/bandithijo/.gtkrc-2.0.mine"
 gtk-theme-name="NumixSolarizedDarkBlue"
-gtk-icon-theme-name="Flat Remix"
-gtk-font-name="Hack 9"
+gtk-icon-theme-name="Flat Remix Dark"
+gtk-font-name="ShureTechMono Nerd Font 9"
 gtk-cursor-theme-name="ComixCursors-Opaque-White"
 gtk-cursor-theme-size=24
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
