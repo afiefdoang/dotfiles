@@ -248,6 +248,9 @@ bindsym $mod+Shift+t border normal 0
 bindsym $mod+y border none
 bindsym $mod+Shift+y border pixel 1
 
+# Enable Specific Window Border
+#for_window [class=""] border normal 1
+
 # i3bar Toggle between dock mode and hide mode
 bindsym $mod+F11 bar mode toggle
 

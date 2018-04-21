@@ -101,6 +101,10 @@ cp -r ~/.config/urxvt {configDir}
 #mkdir -p {configDir}/gtk-3.0
 #cp ~/.config/gtk-3.0/bookmarks {configDir}/gtk-3.0
 #cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
+
+mkdir -p {configDir}/mpv
+cp ~/.config/mpv/mpv.conf {configDir}/mpv
+cp ~/.config/mpv/input.conf {configDir}/mpv
 # -----------------------------------------------------------------------------
 
 
@@ -164,4 +168,3 @@ pacman -Qqe > .listapp
 
 # Print Output ----------------------------------------------------------------
 print('CRAWLING PROCESS COMPLETED !!')
-

@@ -297,8 +297,10 @@ vno <up> <Nop>
 " NerdTree
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let NERDTreeHijackNetrw = 0
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
+"let g:NERDTreeDirArrowExpandable = '▸'
+"let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " emmet-vim trigger key remap
