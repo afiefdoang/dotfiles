@@ -179,7 +179,7 @@ for_window [class="Gnome-calculator"] floating enable
 for_window [class="flowbladesinglerender"] floating enable
 for_window [class="System-config-printer.py"] floating enable
 for_window [class="sun-awt-X11-XWindowPeer"] floating enable
-for_window [class="Wine"] floating enable
+for_window [title="WinBox v3.13 (Addresses)"] floating enable
 
 # Disable Floating Mode for Specific Programs
 for_window [class="pavucontrol-qt"] floating disable
@@ -249,7 +249,9 @@ bindsym $mod+y border none
 bindsym $mod+Shift+y border pixel 1
 
 # Enable Specific Window Border
-#for_window [class=""] border normal 1
+for_window [class="Gkamus"] border normal 1
+for_window [class="KBBI-Qt"] border normal 1
+for_window [class="Wine"] border normal 1
 
 # i3bar Toggle between dock mode and hide mode
 bindsym $mod+F11 bar mode toggle
@@ -373,16 +375,16 @@ exec --no-startup-id xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
 exec --no-startup-id i3-msg border none
 
 # Start Conky
-exec killall conky ; conky -c .conky/arch/conky-i3wm-clock.conf
+#exec killall conky ; conky -c .conky/arch/conky-i3wm-clock.conf
 
 # Enable Compton for compositor
-exec_always killall compton ; compton --config ~/.config/compton/compton.conf -b
+#exec_always killall compton ; compton --config ~/.config/compton/compton.conf -b
 
 # Enable Xcompmgr for compositor
 #exec_always --no-startup-id xcompmgr
 
 # Enable Dunst Notifications
-exec_always killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
+#exec_always killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
 
 # Enable Polybar
-# exec_always killall polybar ; polybar example
+#exec_always killall polybar ; polybar example

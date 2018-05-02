@@ -21,7 +21,7 @@
 !------------------------------------------------------------------------------
 Xcursor.theme: ComixCursorsURxvt.transparent: true
 Xcursor.size:16
-! Xcursor.size:48
+!Xcursor.size:48
 !------------------------------------------------------------------------------
 
 
@@ -48,7 +48,7 @@ Xcursor.size:16
 
 URxvt.termName:               rxvt-256color
 URxvt.depth:                  32
-URxvt.geometry:               110x35
+URxvt.geometry:               120x35
 ! URxvt.transparent:          true
 ! URxvt.fading:               0
 ! URxvt.shading:              15
@@ -64,9 +64,8 @@ urxvt.saveLines:              100000
 URxvt.allow_bold:             true
 !URxvt.font:                   xft:Ubuntu Mono:pixelsize=16
 !URxvt.boldFont:               xft:Ubuntu Mono:bold:pixelsize=16
-URxvt.font:                   xft:ShureTechMono Nerd Font:pixelsize=16
-URxvt.boldFont:               xft:ShureTechMono Nerd Font:bold:pixelsize=16
-
+URxvt.font:                   xft:ShureTechMono Nerd Font:pixelsize=14
+URxvt.boldFont:               xft:ShureTechMono Nerd Font:bold:pixelsize=14
 
 ! Text
 URxvt.colorUL:                #879C00
@@ -164,8 +163,8 @@ XTerm*vt100.translations:     #override \n\
                               Ctrl <Key> plus: larger-vt-font()
 !XTerm*vt100.faceName:         Ubuntu Mono:size=16:antialias=true
 !XTerm*vt100.boldFont:         Ubuntu Mono:bold:size=16:antialias=true
-XTerm*vt100.faceName:         ShureTechMono Nerd Font:size=16:antialias=true
-XTerm*vt100.boldFont:         ShureTechMono Nerd Font:bold:size=16:antialias=true
+XTerm*vt100.faceName:         ShureTechMono Nerd Font:size=12:antialias=true
+XTerm*vt100.boldFont:         ShureTechMono Nerd Font:bold:size=12:antialias=true
 XTerm*vt100.allowTitleOps:    true
 XTerm*border:                 off
 xTerm*borderWidth:            0
@@ -192,8 +191,8 @@ UXTerm*vt100.translations:     #override \n\
                                Ctrl <Key> plus: larger-vt-font()
 !UXTerm*vt100.faceName:         Ubuntu Mono:size=16:antialias=true
 !UXTerm*vt100.boldFont:         Ubuntu Mono:bold:size=16:antialias=true
-UXTerm*vt100.faceName:         ShureTechMono Nerd Font:size=16:antialias=true
-UXTerm*vt100.boldFont:         ShureTechMono Nerd Font:bold:size=16:antialias=true
+UXTerm*vt100.faceName:         ShureTechMono Nerd Font:size=12:antialias=true
+UXTerm*vt100.boldFont:         ShureTechMono Nerd Font:bold:size=12:antialias=true
 UXTerm*vt100.allowTitleOps:    true
 UXTerm*border:                 off
 UXTerm*borderWidth:            0

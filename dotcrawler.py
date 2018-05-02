@@ -94,6 +94,7 @@ cp -r ~/.config/rofi-power {configDir}
 cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/rofi {configDir}
 cp -r ~/.config/urxvt {configDir}
+cp -r ~/.config/xfce4 {configDir}
 
 #cp ~/.config/user-dirs.dirs {configDir}
 #cp ~/.config/user-dirs.conf {configDir}
@@ -105,6 +106,7 @@ cp -r ~/.config/urxvt {configDir}
 mkdir -p {configDir}/mpv
 cp ~/.config/mpv/mpv.conf {configDir}/mpv
 cp ~/.config/mpv/input.conf {configDir}/mpv
+
 # -----------------------------------------------------------------------------
 
 

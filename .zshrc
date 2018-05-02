@@ -28,7 +28,7 @@ export ZSH=/home/bandithijo/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -139,9 +139,9 @@ alias lampp="sudo /opt/lampp/lampp"
 alias lolban="postbanner -t '-f 3d.flf' -l '-p 10'"
 
 # POWERLINE ARCH
-#if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-#    source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
-#fi
+if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
+   source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+fi
 
 # PKGBUILD YAOURT
 export VISUAL="vim"
@@ -170,8 +170,8 @@ export PATH="$JAVA_HOME/bin:$PATH"
 PATH="$HOME/.node_modules/bin:$PATH"
 export npm_config_prefix="$HOME/.node_modules"
 
-# URXVT Environment
-export TERM=rxvt-unicode
+# URXVT Environment akan berpengaruh ke tmux color
+#export TERM=rxvt-unicode
 
 # Local /bin
 PATH="$HOME/bin:$HOME/src:$HOME/.local/bin:$PATH"
@@ -182,6 +182,18 @@ export PATH
 export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
 # for NeoVim
 export MANPAGER="nvim +set\ filetype=man -"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
