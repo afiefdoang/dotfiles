@@ -2,7 +2,7 @@
 4.10.3+=true
 
 [/home/bandithijo/dex/belajar-ruby]
-row=1
+row=0
 col=1
 
 [/home/bandithijo/dex/belajar-django]
@@ -14,98 +14,90 @@ row=1
 col=2
 
 [/home/bandithijo/dex/listofapp-arch]
-row=3
+row=2
 col=3
 
 [/home/bandithijo/dex/mobile_test.rb]
-row=5
+row=4
 col=3
 
 [/home/bandithijo/dex/test.cpp]
-row=0
-col=4
-
-[/home/bandithijo/dex/hexo]
-row=3
-col=0
-
-[/home/bandithijo/dex/FORMAT_POST]
-row=0
+row=5
 col=3
 
+[/home/bandithijo/dex/hexo]
+row=5
+col=1
+
+[/home/bandithijo/dex/FORMAT_POST]
+row=5
+col=2
+
 [/home/bandithijo/dex/gridanalysis.py]
-row=1
+row=0
 col=3
 
 [/home/bandithijo/dex/bandithijo.com]
 row=0
 col=0
 
-[/home/bandithijo/dex/dw_toko]
-row=4
-col=1
-
 [/home/bandithijo/dex/belajar-web]
-row=2
+row=1
 col=1
 
 [/home/bandithijo/dex/jekyll]
 row=2
 col=2
 
-[/home/bandithijo/dex/danu.py]
-row=5
+[/home/bandithijo/dex/markdown.md]
+row=3
+col=3
+
+[/home/bandithijo/dex/htdocs]
+row=0
 col=2
 
 [/home/bandithijo/dex/index.html]
-row=2
+row=1
 col=3
+
+[/home/bandithijo/dex/danu.py]
+row=4
+col=2
+
+[/home/bandithijo/dex/udos.pl]
+row=0
+col=4
+
+[/home/bandithijo/dex/belajar-rails]
+row=5
+col=0
 
 [/home/bandithijo/dex/programs]
 row=3
 col=2
 
-[/home/bandithijo/dex/belajar-rails]
-row=0
-col=1
-
-[/home/bandithijo/dex/udos.pl]
-row=1
-col=4
-
-[/home/bandithijo/dex/markdown.md]
-row=4
-col=3
-
-[/home/bandithijo/dex/example_GPG]
-row=5
-col=1
-
 [/home/bandithijo/dex/belajar-python3]
-row=5
+row=4
 col=0
 
-[/home/bandithijo/dex/update-system.py]
-row=2
-col=4
-
 [/home/bandithijo/dex/belajar-python]
-row=4
+row=3
 col=0
 
 [/home/bandithijo/dex/belajar-blender]
 row=1
 col=0
 
-[/home/bandithijo/dex/htdocs]
-row=0
-col=2
-
-[/home/bandithijo/dex/2132458.html]
+[/home/bandithijo/dex/example_GPG]
 row=4
-col=2
+col=1
+
+[/home/bandithijo/dex/dw_toko]
+row=3
+col=1
 
 [/home/bandithijo/dex/dicoding]
-row=3
+row=2
 col=1
 

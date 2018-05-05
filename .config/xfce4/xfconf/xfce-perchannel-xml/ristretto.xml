@@ -8,8 +8,8 @@
     <property name="thumbnails" type="empty">
       <property name="show" type="bool" value="false"/>
     </property>
-    <property name="height" type="uint" value="683"/>
-    <property name="width" type="uint" value="981"/>
+    <property name="height" type="uint" value="716"/>
+    <property name="width" type="uint" value="677"/>
     <property name="toolbar" type="empty">
       <property name="show" type="bool" value="true"/>
     </property>
@@ -22,5 +22,8 @@
   </property>
   <property name="errors" type="empty">
     <property name="missing-thumbnailer" type="bool" value="false"/>
+  </property>
+  <property name="image" type="empty">
+    <property name="wrap" type="bool" value="false"/>
   </property>
 </channel>

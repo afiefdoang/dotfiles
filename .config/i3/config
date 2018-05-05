@@ -352,7 +352,8 @@ bindsym Caps_Lock exec notify-send 'CAPS LOCK'
 
 # Disable TouchPad
 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
-# Enable Tap to Click exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+# Enable Tap to Click
+#exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
 # Disable F1 Help Button
 bindsym F1 exec --no-startup-id echo "help" > /dev/null

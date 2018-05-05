@@ -138,6 +138,9 @@ alias lampp="sudo /opt/lampp/lampp"
 # POSTBANNER
 alias lolban="postbanner -t '-f 3d.flf' -l '-p 10'"
 
+# key-mon fix
+alias key-mon-fix="xhost +"
+
 # POWERLINE ARCH
 if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
    source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh

@@ -82,6 +82,8 @@ Plug 'python-mode/python-mode', {'branch': 'develop'}
 "Plug 'Raimondi/delimitMate'
 "Plug 'nikvdp/ejs-syntax'
 Plug 'briancollins/vim-jst'
+Plug 'dsawardekar/wordpress.vim'
+Plug 'shawncplus/phpcomplete.vim'
 
 call plug#end()
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -403,3 +405,13 @@ let g:pymode_rope_autoimport = 0
 let g:python_host_prog = "/usr/bin/python2"
 let g:python3_host_prog = "/usr/bin/python"
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Wordpress.vim
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:phpcomplete_relax_static_constraint = 1
+let g:phpcomplete_complete_for_unknown_classes = 1
+let g:phpcomplete_search_tags_for_variables = 1
+let g:phpcomplete_min_num_of_chars_for_namespace_completion = 1
+let g:phpcomplete_parse_docblock_comments = 1
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
