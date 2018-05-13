@@ -134,12 +134,18 @@ alias pip-upgrade="pip freeze > list && pip install -r list -U && rm list"
 
 # XAMPP
 alias lampp="sudo /opt/lampp/lampp"
+alias lampp-start="sudo /opt/lampp/lampp start"
+alias lampp-stop="sudo /opt/lampp/lampp stop"
 
 # POSTBANNER
 alias lolban="postbanner -t '-f 3d.flf' -l '-p 10'"
 
 # key-mon fix
 alias key-mon-fix="xhost +"
+
+# Wacom Area
+alias wacom-move="xsetwacom --set \"Wacom One by Wacom S Pen stylus\" Area 1000 1000 3800 2375"
+alias wacom-draw="xsetwacom --set \"Wacom One by Wacom S Pen stylus\" ResetArea"
 
 # POWERLINE ARCH
 if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then

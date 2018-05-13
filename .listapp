@@ -119,8 +119,6 @@ gitg
 gksu
 glibc
 gnome-calculator
-gnome-characters
-gnome-clocks
 gnome-color-manager
 gnome-disk-utility
 gnome-keyring
@@ -135,7 +133,6 @@ gnome-themes-extra
 gnome-usage-git
 gnome-user-share
 gnome-video-effects
-gnome-weather
 google-chrome
 gparted
 gpick
@@ -180,6 +177,7 @@ imagemagick
 inetutils
 iniparser
 inkscape
+input-wacom-dkms
 instagram-scraper
 intel-gpu-tools
 intel-opencl-runtime
@@ -312,6 +310,7 @@ perl-path-class
 pgadmin4
 phonon-qt4-vlc
 php
+pikaur
 pinta
 png++
 polkit-gnome
@@ -448,6 +447,7 @@ traceroute
 transmission-cli
 transmission-gtk
 tree
+trimage
 ttf-anonymous-pro
 ttf-consolas-powerline
 ttf-croscore

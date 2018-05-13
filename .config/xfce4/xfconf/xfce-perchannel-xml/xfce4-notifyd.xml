@@ -8,6 +8,7 @@
   <property name="expire-timeout" type="int" value="5"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="audacious"/>
       <value type="string" value="Blueman"/>
       <value type="string" value="calibre"/>
       <value type="string" value="Electron"/>

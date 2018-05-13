@@ -2,7 +2,7 @@
 4.10.3+=true
 
 [/home/bandithijo/dex/belajar-ruby]
-row=4
+row=1
 col=1
 
 [/home/bandithijo/dex/belajar-django]
@@ -14,8 +14,8 @@ row=1
 col=2
 
 [/home/bandithijo/dex/listofapp-arch]
-row=2
-col=1
+row=3
+col=3
 
 [/home/bandithijo/dex/mobile_test.rb]
 row=5
@@ -27,7 +27,7 @@ col=4
 
 [/home/bandithijo/dex/hexo]
 row=3
-col=2
+col=0
 
 [/home/bandithijo/dex/FORMAT_POST]
 row=0
@@ -42,32 +42,28 @@ row=0
 col=0
 
 [/home/bandithijo/dex/belajar-web]
-row=0
+row=2
 col=1
 
 [/home/bandithijo/dex/jekyll]
-row=5
-col=0
+row=2
+col=2
 
 [/home/bandithijo/dex/markdown.md]
 row=4
 col=3
 
 [/home/bandithijo/dex/htdocs]
-row=3
-col=0
+row=0
+col=2
 
-[/home/bandithijo/dex/belajar-cubes]
+[/home/bandithijo/dex/index.html]
 row=2
-col=4
+col=3
 
 [/home/bandithijo/dex/danu.py]
 row=5
-col=1
-
-[/home/bandithijo/dex/index.html]
-row=1
-col=1
+col=2
 
 [/home/bandithijo/dex/udos.pl]
 row=1
@@ -75,35 +71,35 @@ col=4
 
 [/home/bandithijo/dex/belajar-rails]
 row=0
-col=2
+col=1
 
 [/home/bandithijo/dex/programs]
-row=5
+row=3
 col=2
 
 [/home/bandithijo/dex/belajar-python3]
-row=4
+row=5
 col=0
 
 [/home/bandithijo/dex/belajar-python]
-row=2
-col=2
+row=4
+col=0
 
 [/home/bandithijo/dex/belajar-blender]
+row=1
+col=0
+
+[/home/bandithijo/dex/example_GPG]
+row=5
+col=1
+
+[/home/bandithijo/dex/TropicalAdventureNusantara]
 row=4
 col=2
 
-[/home/bandithijo/dex/example_GPG]
-row=3
-col=3
-
-[/home/bandithijo/dex/TropicalAdventureNusantara]
-row=2
-col=3
-
 [/home/bandithijo/dex/dw_toko]
-row=1
-col=0
+row=4
+col=1
 
 [/home/bandithijo/dex/dicoding]
 row=3

@@ -5,7 +5,7 @@
   <property name="panels" type="array">
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=683;y=13"/>
+      <property name="position" type="string" value="p=8;x=683;y=754"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="2"/>
         <value type="int" value="12"/>
@@ -40,6 +40,7 @@
         <value type="string" value="task manager"/>
         <value type="string" value="clipman"/>
         <value type="string" value="gpick"/>
+        <value type="string" value="fusion-icon"/>
         <value type="string" value="transmission"/>
         <value type="string" value="obs"/>
         <value type="string" value="pamac-tray"/>
@@ -57,6 +58,7 @@
         <value type="string" value="florence"/>
         <value type="string" value="shutter"/>
         <value type="string" value="chromium"/>
+        <value type="string" value="simplescreenrecorder"/>
         <value type="string" value="atomic-tweetdeck"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="audacious"/>
@@ -69,6 +71,7 @@
         <value type="string" value="telegramdesktop"/>
         <value type="string" value="notes"/>
         <value type="string" value="goldendict"/>
+        <value type="string" value="trimage.py"/>
         <value type="string" value="telegram"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
@@ -153,7 +156,7 @@
     </property>
     <property name="plugin-32" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15252127716.desktop"/>
+        <value type="string" value="15255856331.desktop"/>
       </property>
     </property>
     <property name="plugin-34" type="string" value="power-manager-plugin"/>

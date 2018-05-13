@@ -24,6 +24,6 @@
     <property name="missing-thumbnailer" type="bool" value="false"/>
   </property>
   <property name="image" type="empty">
-    <property name="wrap" type="bool" value="false"/>
+    <property name="wrap" type="bool" value="true"/>
   </property>
 </channel>
