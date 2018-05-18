@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=calibre-gui.desktop,net.sourceforge.liferea.desktop,org.gnome.DiskUtility.desktop,whatsapp-desktop.desktop,gcolor2.desktop,Macromedia Flash 8.desktop,pamac-manager.desktop,mousepad.desktop,enpass.desktop,thunderbird.desktop
+recent=net.sourceforge.liferea.desktop,org.gnome.Screenshot.desktop,pavucontrol.desktop,firefox.desktop,telegramdesktop.desktop,google-chrome.desktop,gnome-system-monitor.desktop,vokoscreen.desktop,thunderbird.desktop,blender.desktop
 button-title=Applications
 button-icon=/usr/share/pixmaps/xfce4_xicon.png
 button-single-row=false

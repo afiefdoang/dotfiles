@@ -27,8 +27,8 @@ class Module(bumblebee.engine.Module):
         )
         self.update(None)
 
-        # engine.input.register_callback(self, button=bumblebee.input.LEFT_MOUSE,
-        #     cmd="gnome-system-monitor")
+        engine.input.register_callback(self, button=bumblebee.input.LEFT_MOUSE,
+            cmd="gnome-system-monitor")
 
     @property
     def _format(self):
@@ -37,7 +37,6 @@ class Module(bumblebee.engine.Module):
         else:
             #return self.parameter("format", "{used}/{total} ({percent:05.02f}%)")
             return self.parameter("format", "{percent:05.02f}%")
-            #return self.parameter("format", "{used}")
 
     def memory_usage(self, widget):
         return self._format.format(**self._mem)
@@ -52,7 +51,10 @@ class Module(bumblebee.engine.Module):
                 if tmp[2] == "mB": value = value*1024*1024
                 if tmp[2] == "gB": value = value*1024*1024*1024
                 data[tmp[0]] = value
-        used = data["MemTotal"] - data["MemFree"] - data["Buffers"] - data["Cached"] - data["Slab"]
+        if "MemAvailable" in data:
+            used = data["MemTotal"] - data["MemAvailable"]
+        else:
+            used = data["MemTotal"] - data["MemFree"] - data["Buffers"] - data["Cached"] - data["Slab"]
         self._mem = {
             "total": bumblebee.util.bytefmt(data["MemTotal"]),
             "available": bumblebee.util.bytefmt(data["MemAvailable"]),

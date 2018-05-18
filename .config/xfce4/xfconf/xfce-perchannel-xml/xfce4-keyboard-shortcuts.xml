@@ -37,18 +37,18 @@
       <property name="XF86AudioMute" type="string" value="pamixer --toggle-mute">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="XF86AudioRaiseVolume" type="string" value="pactl set-sink-volume 0 +5%">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
-      <property name="XF86AudioLowerVolume" type="string" value="pactl set-sink-volume 0 -5%">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
       <property name="&lt;Shift&gt;&lt;Super&gt;x" type="string" value="xflock4"/>
       <property name="&lt;Super&gt;Return" type="string" value="xfce4-terminal"/>
       <property name="&lt;Super&gt;d" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Super&gt;e" type="string" value="pcmanfm"/>
       <property name="&lt;Super&gt;Print" type="string" value="gnome-screenshot"/>
       <property name="XF86Search" type="string" value="xfce4-appfinder --collapsed">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="XF86AudioRaiseVolume" type="string" value="pamixer --increase 2">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="XF86AudioLowerVolume" type="string" value="pamixer --decrease 2">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
     </property>

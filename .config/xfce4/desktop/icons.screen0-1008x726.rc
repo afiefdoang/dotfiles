@@ -57,13 +57,17 @@ col=3
 row=0
 col=2
 
-[/home/bandithijo/dex/index.html]
-row=1
-col=3
+[/home/bandithijo/dex/belajar-cubes]
+row=2
+col=4
 
 [/home/bandithijo/dex/danu.py]
 row=4
 col=2
+
+[/home/bandithijo/dex/index.html]
+row=1
+col=3
 
 [/home/bandithijo/dex/udos.pl]
 row=0

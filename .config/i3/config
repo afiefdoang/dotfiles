@@ -164,20 +164,20 @@ assign [class="whatsapp-desktop"] $workspace9
 assign [class="Thunderbird"] $workspace7
 
 # Enable Floating Mode for Specific Programs
-for_window [class="Gkamus"] floating enable
-for_window [class="KBBI-Qt"] floating enable
-for_window [class="Gnome-power-statistics"] floating enable
+for_window [class="Gkamus"] floating enable border normal 1
+for_window [class="KBBI-Qt"] floating enable border normal 1
+for_window [class="Gnome-power-statistics"] floating enable border normal 1
 for_window [class="Xdotool-gui"] floating enable
 for_window [class="Modem-manager-gui"] floating enable
-for_window [class="Gnome-system-monitor"] floating enable
+for_window [class="Gnome-system-monitor"] floating enable border normal 1
 for_window [class="Electrum"] floating enable
-for_window [class="Gpick"] floating enable
+for_window [class="Gpick"] floating enable border normal 1
 for_window [class="Xfburn"] floating enable
-for_window [class="TeamViewer"] floating enable
-for_window [class="Gnome-calendar"] floating enable
-for_window [class="Gnome-calculator"] floating enable
+for_window [class="TeamViewer"] floating enable border normal 1
+for_window [class="Gnome-calendar"] floating enable border normal 1
+for_window [class="Gnome-calculator"] floating enable border normal 1
 for_window [class="flowbladesinglerender"] floating enable
-for_window [class="System-config-printer.py"] floating enable
+for_window [class="System-config-printer.py"] floating enable border normal 1
 for_window [class="sun-awt-X11-XWindowPeer"] floating enable
 for_window [title="WinBox v3.13 (Addresses)"] floating enable
 
@@ -219,13 +219,13 @@ mode "resize" {
 # Start i3bar to display a workspace bar (plus the system information bumblebee-status
 # finds out, if available)
 
-set $bg-color 	      		#002B36
+set $bg-color 	      		#268BD2
 set $border-color		#268BD2
-set $inactive-bg-color   	#002B36
-set $text-color          	#E4E4E4
-set $inactive-text-color        #576D74
-set $urgent-bg-color            #268BD2
-set $urgent-text-color		#E4E4E4
+set $inactive-bg-color   	#268BD2
+set $text-color          	#FFFFFF
+set $inactive-text-color        #436B96
+set $urgent-bg-color            #FFFFFF
+set $urgent-text-color		#268BD2
 
 # window colors
 #                       border              background         text                 indicator
@@ -249,8 +249,6 @@ bindsym $mod+y border none
 bindsym $mod+Shift+y border pixel 1
 
 # Enable Specific Window Border
-for_window [class="Gkamus"] border normal 1
-for_window [class="KBBI-Qt"] border normal 1
 for_window [class="Wine"] border normal 1
 
 # i3bar Toggle between dock mode and hide mode
@@ -261,21 +259,21 @@ bar {
   tray_output primary
   position top
   # Bumblebee-Status on GitHub https://github.com/tobi-wan-kenobi/bumblebee-status
-  status_command ~/.config/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="0%w%y%m%d%H%M" -t gruvbox-powerline-bandit-solarized
+  status_command ~/.config/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="0%w%y%m%d%H%M" -t gruvbox-powerline-bandit-blue
   #font pango:Ubuntu 9
   font pango:ShureTechMono Nerd Font 9
   bindsym button1 nop
 
   colors {
-    background  #002B36
+    background  #268BD2
     separator   #E4E4E4
     statusline  #E4E4E4
 
     #		              	border                background          text
-    focused_workspace  		$text-color  	      #002B36             $text-color
-    active_workspace            #829395               #002B36             $text-color
-    inactive_workspace 		#41565D		      #002B36		  $text-color
-    urgent_workspace   		$urgent-bg-color      $urgent-bg-color    $text-color
+    focused_workspace  		$text-color  	      #268BD2             $text-color
+    active_workspace            #829395               #268BD2             $text-color
+    inactive_workspace 		#6DAFDE		      #268BD2		  $text-color
+    urgent_workspace   		$urgent-bg-color      $urgent-bg-color    $urgent-text-color
     #binding_mode       	#2f343a 	      #900000         	  #E4E4E4
   }
 
@@ -339,7 +337,7 @@ exec killall xfce4-power-manager ; xfce4-power-manager
 exec killall firewall-applet ; firewall-applet
 
 # Enpass
-exec killall runenpass.sh ; env GTK_THEME=Adwaita /opt/Enpass/bin/runenpass.sh startWithTray
+exec killall runenpass.sh ; env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc /opt/Enpass/bin/runenpass.sh startWithTray
 
 # clipmenu
 #bindsym $mod+p exec --no-startup-id clipmenu -i -fn hack:size=10 -nb '#002B36' -nf '#839496' -sb '#E4E4E4' -sf '#002B36'
@@ -376,16 +374,16 @@ exec --no-startup-id xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
 exec --no-startup-id i3-msg border none
 
 # Start Conky
-#exec killall conky ; conky -c .conky/arch/conky-i3wm-clock.conf
+exec killall conky ; conky -c .conky/arch/conky-i3wm-clock.conf
 
 # Enable Compton for compositor
-#exec_always killall compton ; compton --config ~/.config/compton/compton.conf -b
+exec_always killall compton ; compton --config ~/.config/compton/compton.conf -b
 
 # Enable Xcompmgr for compositor
 #exec_always --no-startup-id xcompmgr
 
 # Enable Dunst Notifications
-#exec_always killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
+exec_always killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
 
 # Enable Polybar
 #exec_always killall polybar ; polybar example

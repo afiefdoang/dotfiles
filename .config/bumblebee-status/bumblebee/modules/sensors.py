@@ -62,7 +62,7 @@ class Module(bumblebee.engine.Module):
 
     def temperature(self, _):
         #return u"{}°c @ {}".format(self._temperature, self._mhz)
-        return u"{}°".format(self._temperature, self._mhz)
+        return u"{}°C".format(self._temperature, self._mhz)
 
     def update(self, widgets):
         self._temperature = self.get_temp()

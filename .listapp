@@ -11,6 +11,7 @@ arandr
 arc-icon-theme
 arch-audit
 asciinema
+atom
 atomic-tweetdeck
 audacious
 audacity
@@ -112,6 +113,7 @@ gconf-editor
 geany
 gedit
 geogebra
+geteltorito
 gettext
 gimp
 git
@@ -194,9 +196,11 @@ jfsutils
 john
 jp2a
 kbbi-qt
+kdenlive
 key-mon
 kismet
 klavaro
+kmag
 less
 lib32-flashplugin
 lib32-vulkan-intel
@@ -290,7 +294,6 @@ pandoc-citeproc
 pandoc-crossref
 paper-icon-theme-git
 papirus-icon-theme
-parole
 pavucontrol
 pciutils
 pcmanfm-gtk3

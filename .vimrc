@@ -128,8 +128,8 @@ au FocusGained,BufEnter * :checktime " auto update trigger on buffer change or t
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ########## VIM User Interface
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"colorscheme solarized-bandit
-colorscheme Tomorrow-Night-Bandit
+colorscheme solarized-bandit
+"colorscheme Tomorrow-Night-Bandit
 set background=dark
 set t_Co=256 " set terminal 256 color
 set incsearch " incremental search aka search as you type
@@ -159,8 +159,8 @@ set cursorline " visually mark current line
 "set showbreak=↪ " indicate wrapped line
 hi  clear ModeMsg " disable Color StatusLine on Insert Mode and Visual Mode
 if &diff " change colorscheme when using vimdiff
-  "colorscheme solarized-bandit
-  colorscheme Tomorrow-Night-Bandit
+  colorscheme solarized-bandit
+  "colorscheme Tomorrow-Night-Bandit
 endif
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -319,8 +319,8 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:powerline_pycmd = 'py3'
-"let g:airline_theme = 'atomic'
-let g:airline_theme = 'minimalist'
+let g:airline_theme = 'atomic'
+"let g:airline_theme = 'minimalist'
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Rubycomplete
