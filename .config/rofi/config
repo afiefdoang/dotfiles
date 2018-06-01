@@ -4,6 +4,7 @@
 rofi.combi-modi:    window,drun,ssh
 rofi.theme:         solarized
 !rofi.font:          Ubuntu Mono 12
-rofi.font:          ShureTechMono Nerd Font 11
+!rofi.font:          ShureTechMono Nerd Font 11
+rofi.font:          Fixedsys Excelsior 3.01 11
 rofi.modi:          combi
 !------------------------------------------------------------------------------

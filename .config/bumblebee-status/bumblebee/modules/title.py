@@ -47,10 +47,10 @@ class Module(bumblebee.engine.Module):
             return self.focused_title(widget)
 
     def focused_title(self, widget):
-        title = self._full_title[0:self.parameter("max", 64)]
+        title = self._full_title[0:self.parameter("max", 60)]
         placeholder = self.parameter("placeholder", "...")
         if title != self._full_title:
-            title = self._full_title[0:self.parameter("max", 64) - len(placeholder)]
+            title = self._full_title[0:self.parameter("max", 60) - len(placeholder)]
             title = "{}{}".format(title, placeholder)
 
         return title

@@ -1,5 +1,5 @@
 [Configuration]
-FontName=Hack 11
+FontName=Fixedsys Excelsior 3.01-L2 12
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
@@ -31,6 +31,11 @@ ScrollingUnlimited=TRUE
 ScrollingOnOutput=FALSE
 MiscShowRelaunchDialog=TRUE
 MiscNewTabAdjacent=FALSE
-ColorPalette=rgb(44,44,44);rgb(204,0,0);rgb(78,154,6);rgb(196,160,0);rgb(52,101,164);rgb(117,80,123);rgb(6,152,154);rgb(211,215,207);rgb(85,87,83);rgb(239,41,41);rgb(138,226,52);rgb(252,233,79);rgb(115,159,207);rgb(173,127,168);rgb(52,226,226);rgb(238,238,236)
-ColorBackground=#2c2c2c2c2c2c
+ColorPalette=#073642;#dc322f;#859900;#b58900;#268bd2;#d33682;#2aa198;#eee8d5;#002b36;#cb4b16;#586e75;#657b83;#839496;#6c71c4;#93a1a1;#fdf6e3
+ColorBackground=#002b36
+ColorForeground=#839496
+ColorCursor=#93a1a1
+ColorBold=#93a1a1
+ColorBoldUseDefault=FALSE
+TabActivityColor=#dc322f
 

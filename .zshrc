@@ -28,7 +28,7 @@ export ZSH=/home/bandithijo/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="blinks"
+ZSH_THEME="bureau"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -195,7 +195,11 @@ export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomo
 # for NeoVim
 export MANPAGER="nvim +set\ filetype=man -"
 
-
+# FZF Solarized colors
+export FZF_DEFAULT_OPTS='
+--color dark,hl:33,hl+:37,fg+:235,bg+:136,fg+:254
+--color info:254,prompt:37,spinner:108,pointer:235,marker:235
+  '
 
 
 

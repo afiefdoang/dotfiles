@@ -82,8 +82,6 @@ Plug 'python-mode/python-mode', {'branch': 'develop'}
 "Plug 'Raimondi/delimitMate'
 "Plug 'nikvdp/ejs-syntax'
 Plug 'briancollins/vim-jst'
-Plug 'dsawardekar/wordpress.vim'
-Plug 'shawncplus/phpcomplete.vim'
 
 call plug#end()
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -149,7 +147,7 @@ set report=0 " tell us when anything is changed
 set ruler " always show current positions along the bottom
 "set foldmethod=syntax
 "set foldlevel=1 " default unfold when open a file
-set shortmess=atToOI " shortens messages to avoid 'press a key' prompt
+set shortmess=atToO " shortens messages to avoid 'press a key' prompt
 set showcmd " show the command being typed
 set showmode " show current mode
 set showmatch " show matching brackets
@@ -317,7 +315,7 @@ let g:user_emmet_leader_key='<C-space>' " then press , (comma) to do magic !
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:powerline_pycmd = 'py3'
 let g:airline_theme = 'atomic'
 "let g:airline_theme = 'minimalist'
@@ -388,7 +386,15 @@ let g:mkdp_command_for_global = 0
 " set to 1, the MarkdownPreview command can be use for all files,
 " by default it just can be use in markdown file
 
+" FZF
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" # --color=[BASE_SCHEME][,COLOR:ANSI]
+" fzf --color=bg+:24
+" fzf --color=light,fg:232,bg:255,bg+:116,info:27
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Mapping for markdown-preview
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <F10> <Plug>MarkdownPreview        " for normal mode
 imap <F10> <Plug>MarkdownPreview        " for insert mode
 nmap <F11> <Plug>StopMarkdownPreview    " for normal mode
@@ -406,12 +412,5 @@ let g:python_host_prog = "/usr/bin/python2"
 let g:python3_host_prog = "/usr/bin/python"
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Wordpress.vim
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:phpcomplete_relax_static_constraint = 1
-let g:phpcomplete_complete_for_unknown_classes = 1
-let g:phpcomplete_search_tags_for_variables = 1
-let g:phpcomplete_min_num_of_chars_for_namespace_completion = 1
-let g:phpcomplete_parse_docblock_comments = 1
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 

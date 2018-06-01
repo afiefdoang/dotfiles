@@ -48,12 +48,12 @@ Xcursor.size:16
 
 URxvt.termName:               rxvt-256color
 URxvt.depth:                  32
-URxvt.geometry:               120x35
-! URxvt.transparent:          true
-! URxvt.fading:               0
-! URxvt.shading:              15
-! URxvt.urgentOnBell:         true
-! URxvt.visualBell:           true
+URxvt.geometry:               110x40
+!URxvt.transparent:          true
+!URxvt.fading:               0
+!URxvt.shading:              15
+!URxvt.urgentOnBell:         true
+!URxvt.visualBell:           true
 URxvt.loginShell:             true
 URxvt.saveLines:              50
 URxvt.internalBorder:         0
@@ -62,17 +62,15 @@ urxvt.saveLines:              100000
 
 ! Fonts
 URxvt.allow_bold:             true
-!URxvt.font:                   xft:Ubuntu Mono:pixelsize=16
-!URxvt.boldFont:               xft:Ubuntu Mono:bold:pixelsize=16
-URxvt.font:                   xft:ShureTechMono Nerd Font:pixelsize=14
-URxvt.boldFont:               xft:ShureTechMono Nerd Font:bold:pixelsize=14
+URxvt.font:                   xft:Fixedsys Excelsior 3.01:pixelsize=15
+URxvt.boldFont:               xft:Fixedsys Excelsior 3.01:bold:pixelsize=15
 
 ! Text
 URxvt.colorUL:                #879C00
 URxvt.lineSpace:              0
 
 ! Fix font space
-URxvt.letterSpace: -1
+URxvt.letterSpace: -2
 
 ! Scrollbar
 URxvt.scrollStyle:            rxvt
@@ -87,8 +85,9 @@ URxvt.scrollWithBuffer:       true
 URxvt.scrollTtyKeypress:      true
 
 ! Perl extensions
-URxvt.perl-lib:               ~/config/urxvt/ext
-URxvt.perl-ext-common:        default,matcher,url-select,clipboard,resize-font,unichr
+URxvt.perl-lib:               ~/.config/urxvt/ext
+URxvt.perl-ext-common:        default,matcher,url-select,clipboard,resize-font,unichr,solarized
+URxvt.solarized.default:      dark
 URxvt.matcher.button:         1
 URxvt.urlLauncher:            google-chrome-stable
 URxvt.keysym.M-u:             perl:url-select:select_next

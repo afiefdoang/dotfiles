@@ -31,8 +31,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-#font pango:Ubuntu 9
-font pango:ShureTechMono Nerd Font 9
+font pango:Fixedsys Excelsior 3.01 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).let g:airline_theme='powelet g:airline_theme='powerlineish'
@@ -51,16 +50,10 @@ floating_modifier $mod
 focus_follows_mouse no
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id urxvt # URXVT Terminal
+bindsym $mod+Return exec --no-startup-id urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# start dmenu (a program launcher)
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -i -sb '#E4E4E4' -sf '#002B36' -nb '#002B36' -fn 'hack-10'"
 
 # start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 8 -width 500 -i -sort'
@@ -104,7 +97,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space floating toggle border normal 1
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -170,16 +163,18 @@ for_window [class="Gnome-power-statistics"] floating enable border normal 1
 for_window [class="Xdotool-gui"] floating enable
 for_window [class="Modem-manager-gui"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable border normal 1
+for_window [class="Nm-connection-editor"] floating enable border normal 1
 for_window [class="Electrum"] floating enable
 for_window [class="Gpick"] floating enable border normal 1
 for_window [class="Xfburn"] floating enable
-for_window [class="TeamViewer"] floating enable border normal 1
+for_window [class="Arandr"] floating enable border normal 1
 for_window [class="Gnome-calendar"] floating enable border normal 1
 for_window [class="Gnome-calculator"] floating enable border normal 1
 for_window [class="flowbladesinglerender"] floating enable
 for_window [class="System-config-printer.py"] floating enable border normal 1
 for_window [class="sun-awt-X11-XWindowPeer"] floating enable
 for_window [title="WinBox v3.13 (Addresses)"] floating enable
+for_window [title="TeamViewer"] floating enable border none
 
 # Disable Floating Mode for Specific Programs
 for_window [class="pavucontrol-qt"] floating disable
@@ -200,16 +195,16 @@ mode "resize" {
   # Pressing right will grow the window’s width.
   # Pressing up will shrink the window’s height.
   # Pressing down will grow the window’s height.
-  bindsym h resize shrink width 5 px or 5 ppt
-  bindsym j resize grow height 5 px or 5 ppt
-  bindsym k resize shrink height 5 px or 5 ppt
-  bindsym l resize grow width 5 px or 5 ppt
+  bindsym h resize shrink width 2 px or 2 ppt
+  bindsym j resize grow height 2 px or 2 ppt
+  bindsym k resize shrink height 2 px or 2 ppt
+  bindsym l resize grow width 2 px or 2 ppt
 
   # same bindings, but for the arrow keys
-  bindsym Left resize shrink width 5 px or 5 ppt
-  bindsym Down resize grow height 5 px or 5 ppt
-  bindsym Up resize shrink height 5 px or 5 ppt
-  bindsym Right resize grow width 5 px or 5 ppt
+  bindsym Left resize shrink width 2 px or 2 ppt
+  bindsym Down resize grow height 2 px or 2 ppt
+  bindsym Up resize shrink height 2 px or 2 ppt
+  bindsym Right resize grow width 2 px or 2 ppt
 
   # back to normal: Enter or Escape
   bindsym Return mode "default"
@@ -223,7 +218,7 @@ set $bg-color 	      		#268BD2
 set $border-color		#268BD2
 set $inactive-bg-color   	#268BD2
 set $text-color          	#FFFFFF
-set $inactive-text-color        #436B96
+set $inactive-text-color        #36688C
 set $urgent-bg-color            #FFFFFF
 set $urgent-text-color		#268BD2
 
@@ -260,8 +255,7 @@ bar {
   position top
   # Bumblebee-Status on GitHub https://github.com/tobi-wan-kenobi/bumblebee-status
   status_command ~/.config/bumblebee-status/bumblebee-status -m title brightness pasink pasource nic memory sensors battery1 battery0 date profile -p date.format="0%w%y%m%d%H%M" -t gruvbox-powerline-bandit-blue
-  #font pango:Ubuntu 9
-  font pango:ShureTechMono Nerd Font 9
+  font pango:Fixedsys Excelsior 3.01 10
   bindsym button1 nop
 
   colors {
@@ -271,7 +265,7 @@ bar {
 
     #		              	border                background          text
     focused_workspace  		$text-color  	      #268BD2             $text-color
-    active_workspace            #829395               #268BD2             $text-color
+    active_workspace            #6DAFDE               #268BD2             $text-color
     inactive_workspace 		#6DAFDE		      #268BD2		  $text-color
     urgent_workspace   		$urgent-bg-color      $urgent-bg-color    $urgent-text-color
     #binding_mode       	#2f343a 	      #900000         	  #E4E4E4
@@ -279,9 +273,10 @@ bar {
 
 }
 
-#################################
-## DITAMBAHKAN OLEH BANDITHIJO ##
-#################################
+
+################################################################################
+####################### DITAMBAHKAN OLEH BANDITHIJO ############################
+################################################################################
 
 # Background Color
 exec_always --no-startup-id xsetroot -solid "#002B36"
@@ -298,21 +293,6 @@ set $Locker i3lock -u --beep --color 002B36 -i /home/bandithijo/pix/Wallpaper/ar
 
 # Restart, Suspend, Shutdown, Logout Dialog
 bindsym $mod+End exec --no-startup-id ~/.local/bin/rofi-power "i3-msg exit"
-
-# set $mode_system System [X] lock, [E] logout, [S] suspend, [H] hibernate, [R] reboot, [Shift+S] shutdown
-# mode "$mode_system" {
-#   bindsym x exec --no-startup-id $Locker, mode "default"
-#   bindsym e exec --no-startup-id i3-msg exit, mode "default"
-#   bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-#   bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
-#   bindsym r exec --no-startup-id systemctl reboot, mode "default"
-#   bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
-#
-#   # back to normal: Enter or Escape
-#   bindsym Return mode "default"
-#   bindsym Escape mode "default"
-# }
-# bindsym $mod+End mode "$mode_system"
 
 # Gnome Screenshot
 bindsym $mod+Print exec --no-startup-id gnome-screenshot -i
@@ -336,8 +316,8 @@ exec killall xfce4-power-manager ; xfce4-power-manager
 # Firewalld
 exec killall firewall-applet ; firewall-applet
 
-# Enpass
-exec killall runenpass.sh ; env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc /opt/Enpass/bin/runenpass.sh startWithTray
+# KeePassXC
+exec killall keepassxc ; keepassxc
 
 # clipmenu
 #bindsym $mod+p exec --no-startup-id clipmenu -i -fn hack:size=10 -nb '#002B36' -nf '#839496' -sb '#E4E4E4' -sf '#002B36'
@@ -346,10 +326,11 @@ exec killall runenpass.sh ; env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/
 # exec_always killall blueman-applet ; blueman-applet
 
 # Caps Lock Indicator
-bindsym Caps_Lock exec notify-send 'CAPS LOCK'
+#bindsym Caps_Lock exec notify-send 'CAPS LOCK'
 
 # Disable TouchPad
 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
+
 # Enable Tap to Click
 #exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
@@ -374,7 +355,7 @@ exec --no-startup-id xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
 exec --no-startup-id i3-msg border none
 
 # Start Conky
-exec killall conky ; conky -c .conky/arch/conky-i3wm-clock.conf
+exec killall conky ; conky -c ~/.config/conky/conkyrc
 
 # Enable Compton for compositor
 exec_always killall compton ; compton --config ~/.config/compton/compton.conf -b
