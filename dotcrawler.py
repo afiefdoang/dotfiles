@@ -17,9 +17,25 @@
 #  ██░██   ██ ░██    ██░░░░██  ░████░████ ░██░██░░░░  ░██
 # ░██░░█████ ░███   ░░████████ ███░ ░░░██ ███░░██████░███
 # ░░  ░░░░░  ░░░     ░░░░░░░░ ░░░    ░░░ ░░░  ░░░░░░ ░░░
-
+#
 # author : BanditHijo
 # source : https://github.com/bandithijo/dotfiles
+#
+# Copyright (C) 2018 BanditHijo
+#
+# This program is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option)
+# any later version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+# FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+# more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see http://www.gnu.org/licenses/.
+
 
 import os
 
@@ -31,6 +47,7 @@ configDir = '~/git/dotfiles/.config'
 localDir  = '~/git/dotfiles/.local'
 urxvtDir  = '~/git/dotfiles/.urxvt'
 vimDir    = '~/git/dotfiles/.vim'
+ohMyZshDir= '~/git/dotfiles/.oh-my-zsh'
 imageDir  = '~/git/dotfiles/images'
 
 # Proces Copy to GitHub Directory
@@ -39,6 +56,8 @@ os.system(f'''
 ##### Make main Directory
 # -----------------------------------------------------------------------------
 mkdir -p {mainDir}
+
+echo '[DONE] Make main directory'
 # -----------------------------------------------------------------------------
 
 
@@ -48,10 +67,13 @@ mkdir -p {mainDir}
 cp ~/.gtkrc-2.0 {mainDir}
 cp ~/.profile {mainDir}
 cp ~/.tmux.conf {mainDir}
+cp ~/.muttrc {mainDir}
 cp ~/.vimrc {mainDir}
 cp ~/.Xresources {mainDir}
 cp ~/.xinitrc {mainDir}
 cp ~/.zshrc {mainDir}
+
+echo '[DONE] Copy dotfiles from /home user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -70,6 +92,8 @@ cp /etc/pam.d/sudo {etcDir}/pam.d
 
 mkdir -p {etcDir}/X11/xorg.conf.d
 cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
+
+echo '[DONE] Copy dotfiles from /etc directory'
 # -----------------------------------------------------------------------------
 
 
@@ -79,6 +103,8 @@ cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
 #mkdir -p {usrDir}/lib/libreoffice/program
 #sudo cp /usr/lib/libreoffice/program/intro.png {usrDir}/lib/libreoffice/program
 #sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
+
+#echo '[DONE] Copy dotfiles from /usr directory'
 # -----------------------------------------------------------------------------
 
 
@@ -107,6 +133,10 @@ mkdir -p {configDir}/mpv
 cp ~/.config/mpv/mpv.conf {configDir}/mpv
 cp ~/.config/mpv/input.conf {configDir}/mpv
 
+mkdir -p {configDir}/mutt
+cp ~/.config/mutt/account.com.gmail.bandithijo {configDir}/mutt
+
+echo '[DONE] Copy dotfiles from ~/.config user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -114,6 +144,8 @@ cp ~/.config/mpv/input.conf {configDir}/mpv
 ##### From .conky Directory
 # -----------------------------------------------------------------------------
 cp -r ~/.conky {mainDir}
+
+echo '[DONE] Copy dotfiles from ~/.conky user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -122,6 +154,8 @@ cp -r ~/.conky {mainDir}
 # -----------------------------------------------------------------------------
 mkdir -p {localDir}/bin
 cp ~/.local/bin/rofi-power {localDir}/bin
+
+echo '[DONE] Copy dotfiles from ~/.local user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -135,6 +169,22 @@ mkdir -p {vimDir}/colors
 cp ~/.vim/colors/Monokai-Bandit.vim {vimDir}/colors
 cp ~/.vim/colors/solarized-bandit.vim {vimDir}/colors
 cp ~/.vim/colors/Tomorrow-Night-Bandit.vim {vimDir}/colors
+
+mkdir -p {vimDir}/plugged/vim-airline-themes/autoload/airline/themes
+cp ~/.vim/plugged/vim-airline-themes/autoload/airline/themes/solarized_bandit.vim {vimDir}/plugged/vim-airline-themes/autoload/airline/themes
+
+echo '[DONE] Copy dotfiles from ~/.vim user directory'
+# -----------------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------------
+##### From .oh-my-zsh Directory
+# -----------------------------------------------------------------------------
+mkdir -p {ohMyZshDir}/themes
+cp ~/.oh-my-zsh/themes/avit-bandit.zsh-theme {ohMyZshDir}/themes
+cp ~/.oh-my-zsh/themes/bureau-bandit.zsh-theme {ohMyZshDir}/themes
+
+echo '[DONE] Copy dotfiles from ~/.oh-my-zsh user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -153,10 +203,16 @@ cp ~/.config/bumblebee-status/bumblebee/modules/battery1.py {configDir}/bumblebe
 cp ~/.config/bumblebee-status/bumblebee/modules/profile.py {configDir}/bumblebee-status/bumblebee/modules
 
 mkdir -p {configDir}/bumblebee-status/themes
+cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-black.json {configDir}/bumblebee-status/themes
+cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-blue.json {configDir}/bumblebee-status/themes
+cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-blue-nosymbol.json {configDir}/bumblebee-status/themes
 cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-solarized.json {configDir}/bumblebee-status/themes
 
 mkdir -p {configDir}/bumblebee-status/themes/icons
 cp ~/.config/bumblebee-status/themes/icons/awesome-fonts-bandit.json {configDir}/bumblebee-status/themes/icons
+cp ~/.config/bumblebee-status/themes/icons/awesome-fonts-bandit-nosymbol.json {configDir}/bumblebee-status/themes/icons
+
+echo '[DONE] Copy dotfiles from ~/.config/bumblebee-status user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -169,4 +225,6 @@ pacman -Qqe > .listapp
 
 
 # Print Output ----------------------------------------------------------------
-print('CRAWLING PROCESS COMPLETED !!')
+print('\n>> CRAWLING PROCESS COMPLETED !!')
+
+# vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
