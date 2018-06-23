@@ -1,0 +1,159 @@
+{
+  "defaults": {
+    "separator": "", "padding": " ",
+    "unknown": { "prefix": "" }
+  },
+  "date": { "prefix": "DT:" },
+  "time": { "prefix": "TME:" },
+  "datetime": { "prefix": "DTE:" },
+  "memory": { "prefix": "MMR:" },
+  "cpu": { "prefix": "CPU:" },
+  "disk": { "prefix": "DSK:" },
+  "dnf": { "prefix": "DNF:" },
+  "pacman": { "prefix": "PCM:" },
+  "brightness": { "prefix": "SCR:" },
+  "load": { "prefix": "LD:" },
+  "layout": { "prefix": "LYT:" },
+  "layout-xkb": { "prefix": "LYT:" },
+  "todo": { "empty": {"prefix": "TD:" },
+  "items": {"prefix": "ITM:" }
+  },
+
+  "cmus": {
+    "playing": { "prefix": "" },
+    "paused": { "prefix": "" },
+    "stopped": { "prefix": "" },
+    "prev": { "prefix": "" },
+    "next": { "prefix": "" },
+    "shuffle-on": { "prefix": "" },
+    "shuffle-off": { "prefix": "" },
+    "repeat-on": { "prefix": "" },
+    "repeat-off": { "prefix": "" }
+  },
+  "gpmdp": {
+    "playing": { "prefix": "" },
+    "paused": { "prefix": "" },
+    "stopped": { "prefix": "" },
+    "prev": { "prefix": "" },
+    "next": { "prefix": "" }
+  },
+  "pasink": {
+    "muted": { "prefix": "SND:" },
+    "unmuted": { "prefix": "SND:" }
+  },
+  "amixer": {
+    "muted": { "prefix": "SND:" },
+    "unmuted": { "prefix": "SND:" }
+  },
+  "pasource": {
+    "muted": { "prefix": "MIC:" },
+    "unmuted": { "prefix": "MIC:" }
+  },
+  "kernel": {
+    "prefix": ""
+  },
+  "nic": {
+    "wireless-UP": { "prefix": "WLAN:" },
+    "wireless-DOWN": { "prefix": "WLAN:" },
+    "wired-UP": { "prefix": "LAN:" },
+    "wired-DOWN": { "prefix": "LAN:" },
+    "tunnel-UP": { "prefix": "TNL:" },
+    "tunnel-DOWN": { "prefix": "TNL:" }
+  },
+  "bluetooth": {
+      "ON": { "prefix": "BT:ON" },
+      "OFF": { "prefix": "BT:OFF" },
+      "?": { "prefix": "BT:UNK" }
+  },
+  "battery": {
+    "charged": { "prefix": "", "suffix": "" },
+    "AC": { "suffix": "" },
+    "charging": {
+      "prefix": [ "", "", "", "", "" ],
+      "suffix": ""
+    },
+    "discharging-10": { "prefix": "", "suffix": "" },
+    "discharging-25": { "prefix": "", "suffix": "" },
+    "discharging-50": { "prefix": "", "suffix": "" },
+    "discharging-80": { "prefix": "", "suffix": "" },
+    "discharging-100": { "prefix": "", "suffix": "" },
+    "unlimited": { "prefix": "", "suffix": "" },
+    "estimate": {	"prefix": ""  }
+  },
+  "battery0": {
+    "charged": { "prefix": "BT0: |||||", "suffix": "CG" },
+    "AC": { "suffix": "AC" },
+    "charging": {
+      "prefix": [ "BT0: |----", "BT0: ||---", "BT0: |||--", "BT0: ||||-", "BT0: |||||" ],
+      "suffix": "CG"
+    },
+    "discharging-10": { "prefix": "BT0: |----", "suffix": "!!" },
+    "discharging-25": { "prefix": "BT0: ||---", "suffix": "DC" },
+    "discharging-50": { "prefix": "BT0: |||--", "suffix": "DC" },
+    "discharging-80": { "prefix": "BT0: ||||-", "suffix": "DC" },
+    "discharging-100": { "prefix": "BT0: |||||", "suffix": "DC" },
+    "unlimited": { "prefix": " ", "suffix": "CG" },
+    "estimate": {	"prefix": ""  }
+  },
+  "battery1": {
+    "charged": { "prefix": "BT1: |||||", "suffix": "CG" },
+    "AC": { "suffix": "AC" },
+    "charging": {
+      "prefix": [ "BT1: |----", "BT1: ||---", "BT1: |||--", "BT1: ||||-", "BT1: |||||" ],
+      "suffix": "CG"
+    },
+    "discharging-10": { "prefix": "BT1: |----", "suffix": "!!" },
+    "discharging-25": { "prefix": "BT1: ||---", "suffix": "DC" },
+    "discharging-50": { "prefix": "BT1: |||--", "suffix": "DC" },
+    "discharging-80": { "prefix": "BT1: ||||-", "suffix": "DC" },
+    "discharging-100": { "prefix": "BT1: |||||", "suffix": "DC" },
+    "unlimited": { "prefix": " ", "suffix": "CG" },
+    "estimate": {	"prefix": ""  }
+  },
+  "title": {
+    "prefix": ""
+  },
+  "caffeine": {
+    "activated": {"prefix": " " }, "deactivated": { "prefix": " " }
+  },
+  "xrandr": {
+    "on": { "prefix": " "}, "off": { "prefix": " " }
+  },
+  "redshift": {
+    "day": { "prefix": "" }, "night": { "prefix": "" }, "transition": { "prefix": "" }
+  },
+  "sensors": {
+    "prefix": "SEN:"
+  },
+  "traffic":{
+    "rx": { "prefix": "" },
+    "tx": { "prefix": "" }
+  },
+  "mpd": {
+    "playing": { "prefix": "" },
+    "paused": { "prefix": "" },
+    "stopped": { "prefix": "" },
+    "prev": { "prefix": "" },
+    "next": { "prefix": "" },
+    "shuffle-on": { "prefix": "" },
+    "shuffle-off": { "prefix": "" },
+    "repeat-on": { "prefix": "" },
+    "repeat-off": { "prefix": "" }
+  },
+  "github": {
+    "prefix": "  "
+  },
+  "spotify": {
+    "prefix": "  "
+  },
+  "publicip": {
+    "prefix": "  "
+  },
+  "weather": {
+    "clouds": { "prefix": "" },
+    "rain": { "prefix": "" },
+    "snow": { "prefix": "" },
+    "clear": { "prefix": "" },
+    "thunder": { "prefix": "" }
+  }
+}

@@ -46,7 +46,7 @@ class Module(bumblebee.engine.Module):
             {"expr": "volume:", "callback": self.getvolume},
         ]
 
-        # engine.input.register_callback(self, button=bumblebee.input.RIGHT_MOUSE, cmd="pavucontrol")
+        engine.input.register_callback(self, button=bumblebee.input.RIGHT_MOUSE, cmd="pavucontrol")
 
         events = [
             {"type": "mute", "action": "toggle", "button": bumblebee.input.LEFT_MOUSE},
@@ -70,7 +70,7 @@ class Module(bumblebee.engine.Module):
         else:
             m = re.search(r'left:.*\s*\/\s*(\d+)%.*right:.*\s*\/\s*(\d+)%', line)
             if m:
-                self._left  = m.group(1)
+                self._left = m.group(1)
                 self._right = m.group(2)
         return True
 
@@ -86,15 +86,14 @@ class Module(bumblebee.engine.Module):
         if self._failed == True:
             return "n/a"
         if int(self._mono) > 0:
-            # return "{}%".format(self._mono)
+            #return "{}%".format(self._mono)
             return "{}".format(self._mono)
         elif self._left == self._right:
-            # return "{}%".format(self._left)
+            #return "{}%".format(self._left)
             return "{}".format(self._left)
         else:
             #return "{}%/{}%".format(self._left, self._right)
-            #return "{}|{}".format(self._left, self._right)
-            return "{}".format(self._left)
+            return "{}|{}".format(self._left, self._right)
 
     def update(self, widgets):
         try:
@@ -106,15 +105,15 @@ class Module(bumblebee.engine.Module):
             found = False
 
             for line in result.split("\n"):
-                if device in line:
+                if "<"+device+">" in line:
                     found = True
                     continue
-                if found == False:
+                if found is False:
                     continue
                 for pattern in self._patterns:
                     if not pattern["expr"] in line:
                         continue
-                    if pattern["callback"](line) == False and found == True:
+                    if pattern["callback"](line) is False and found == True:
                         return
         except Exception:
             self._failed = True

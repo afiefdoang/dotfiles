@@ -47,10 +47,10 @@ class Module(bumblebee.engine.Module):
             return self.focused_title(widget)
 
     def focused_title(self, widget):
-        title = self._full_title[0:self.parameter("max", 60)]
+        title = self._full_title[0:self.parameter("max", 40)]
         placeholder = self.parameter("placeholder", "...")
         if title != self._full_title:
-            title = self._full_title[0:self.parameter("max", 60) - len(placeholder)]
+            title = self._full_title[0:self.parameter("max", 40) - len(placeholder)]
             title = "{}{}".format(title, placeholder)
 
         return title
@@ -66,7 +66,7 @@ class Module(bumblebee.engine.Module):
         except Exception:
             self._full_title = no_title
 
-        if(self._full_title is None):
+        if self._full_title is None:
             self._full_title = no_title
 
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
