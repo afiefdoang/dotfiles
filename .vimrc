@@ -23,7 +23,7 @@
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
-filetype off                  " required
+"filetype off                  " required
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -127,7 +127,6 @@ au FocusGained,BufEnter * :checktime " auto update trigger on buffer change or t
 " ########## VIM User Interface
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme solarized-bandit
-"colorscheme Tomorrow-Night-Bandit
 set background=dark
 set t_Co=256 " set terminal 256 color
 set incsearch " incremental search aka search as you type
@@ -194,6 +193,9 @@ let mapleader = ","
 " for edit my .vimrc
 nmap <leader>ev :e ~/.vimrc<cr>
 
+" for edit my config.tsx
+nmap <leader>ec :e ~/.config/oni/config.tsx<cr>
+
 " for move & delete buffer
 nmap <leader>n :bn<cr>
 nmap <leader>p :bp<cr>
@@ -251,6 +253,9 @@ nmap <F8> :TagbarToggle<cr>
 
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+" toggle PymodeLintToggle
+nmap <F10> :PymodeLintToggle<cr>
 
 " fzf.vim
 "nmap <leader>b :Buffers<cr>
@@ -315,10 +320,12 @@ let g:user_emmet_leader_key='<C-space>' " then press , (comma) to do magic !
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#branch#enabled = 1
-let g:airline_powerline_fonts = 0
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline_powerline_fonts = 1
 let g:powerline_pycmd = 'py3'
-let g:airline_theme = 'atomic'
-"let g:airline_theme = 'minimalist'
+let g:airline_theme = 'solarized_bandit'
+"let g:airline_theme = 'atomic'
+"let g:airline_theme = 'molokai'
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Rubycomplete
@@ -358,7 +365,7 @@ let g:syntastic_python_pylint_args = '--rcfile=/path/to/rc -E'
 
 " Markdown Preview
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:mkdp_path_to_chrome = "/usr/bin/google-chrome-stable"
+let g:mkdp_path_to_chrome = "/usr/bin/firefox"
 " path to the chrome or the command to open chrome(or other modern browsers)
 " if set, g:mkdp_browserfunc would be ignored
 
@@ -395,10 +402,10 @@ let g:mkdp_command_for_global = 0
 
 " Mapping for markdown-preview
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <F10> <Plug>MarkdownPreview        " for normal mode
-imap <F10> <Plug>MarkdownPreview        " for insert mode
-nmap <F11> <Plug>StopMarkdownPreview    " for normal mode
-imap <F11> <Plug>StopMarkdownPreview    " for insert mode
+"nmap <F10> <Plug>MarkdownPreview        " for normal mode
+"imap <F10> <Plug>MarkdownPreview        " for insert mode
+"nmap <F11> <Plug>StopMarkdownPreview    " for normal mode
+"imap <F11> <Plug>StopMarkdownPreview    " for insert mode
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Python-Mode
