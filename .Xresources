@@ -26,18 +26,6 @@ Xcursor.size:16
 
 
 !------------------------------------------------------------------------------
-! Xft Settings
-!------------------------------------------------------------------------------
-! Xft.dpi:                    96
-! Xft.antialias:              false
-! Xft.rgba:                   rgb
-! Xft.hinting:                true
-! Xft.hintstyle:              hintslight
-! Xft.hintstyle:              full
-!------------------------------------------------------------------------------
-
-
-!------------------------------------------------------------------------------
 ! UXVRT PREFERENCES
 !------------------------------------------------------------------------------
 ! URxvt settings
@@ -62,15 +50,20 @@ urxvt.saveLines:              100000
 
 ! Fonts
 URxvt.allow_bold:             true
-URxvt.font:                   xft:Fixedsys Excelsior 3.01:pixelsize=15
-URxvt.boldFont:               xft:Fixedsys Excelsior 3.01:bold:pixelsize=15
+!                             size of terminus font : 12 14 16 18 20 22 24 28 32
+!URxvt.font:         	      -xos4-terminesspowerline-medium-r-normal--16-*-72-72-c-*-iso10646-1
+!URxvt.boldFont:               -xos4-terminesspowerline-bold-r-normal--16-*-72-72-c-*-iso10646-1
+URxvt.font:                   xft:xos4 Terminess Powerline:pixelsize=16:antialias=true:hinting=true
+URxvt.boldFont:               xft:xos4 Terminess Powerline:bold:pixelsize=16:antialias=true:hinting=true
+!URxvt.font:                   xft:Hack:pixelsize=14:antialias=true:hinting=true
+!URxvt.boldFont:               xft:Hack:bold:pixelsize=14:antialias=true:hinting=true
 
 ! Text
 URxvt.colorUL:                #879C00
 URxvt.lineSpace:              0
 
 ! Fix font space
-URxvt.letterSpace: -2
+URxvt.letterSpace:            0
 
 ! Scrollbar
 URxvt.scrollStyle:            rxvt
@@ -86,10 +79,8 @@ URxvt.scrollTtyKeypress:      true
 
 ! Perl extensions
 URxvt.perl-lib:               ~/.config/urxvt/ext
-URxvt.perl-ext-common:        default,matcher,url-select,clipboard,resize-font,unichr,solarized
-URxvt.solarized.default:      dark
+URxvt.perl-ext-common:        default,matcher,url-select,clipboard,resize-font,unichr
 URxvt.matcher.button:         1
-URxvt.urlLauncher:            google-chrome-stable
 URxvt.keysym.M-u:             perl:url-select:select_next
 URxvt.url-select.launcher:    /usr/bin/xdg-open
 URxvt.url-select.underline:   true
@@ -106,9 +97,8 @@ URxvt.pointerBlank:           true
 
 !!Source http://github.com/altercation/solarized
 
-URxvt.background:             [100]#002B36
-!URxvt.background:             [100]#073642
-*foreground:                  #93A1A1
+URxvt.background:             [98]#002B36
+*foreground:                  #93a1a1
 !*fading: 40
 *fadeColor:                   #002b36
 *cursorColor:                 #93a1a1
@@ -161,10 +151,8 @@ XTerm*vt100.geometry:         100x32
 XTerm*vt100.translations:     #override \n\
                               Ctrl <Key> minus: smaller-vt-font() \n\
                               Ctrl <Key> plus: larger-vt-font()
-!XTerm*vt100.faceName:         Ubuntu Mono:size=16:antialias=true
-!XTerm*vt100.boldFont:         Ubuntu Mono:bold:size=16:antialias=true
-XTerm*vt100.faceName:         ShureTechMono Nerd Font:size=12:antialias=true
-XTerm*vt100.boldFont:         ShureTechMono Nerd Font:bold:size=12:antialias=true
+XTerm*vt100.faceName:         xos4 Terminess Powerline:size=16:antialias=true
+XTerm*vt100.boldFont:         xos4 Terminess Powerline:bold:size=16:antialias=true
 XTerm*vt100.allowTitleOps:    true
 XTerm*border:                 off
 xTerm*borderWidth:            0
@@ -189,10 +177,8 @@ UXTerm*vt100.geometry:         100x32
 UXTerm*vt100.translations:     #override \n\
                                Ctrl <Key> minus: smaller-vt-font() \n\
                                Ctrl <Key> plus: larger-vt-font()
-!UXTerm*vt100.faceName:         Ubuntu Mono:size=16:antialias=true
-!UXTerm*vt100.boldFont:         Ubuntu Mono:bold:size=16:antialias=true
-UXTerm*vt100.faceName:         ShureTechMono Nerd Font:size=12:antialias=true
-UXTerm*vt100.boldFont:         ShureTechMono Nerd Font:bold:size=12:antialias=true
+UXTerm*vt100.faceName:         xos4 Terminess Powerline:size=16:antialias=true
+UXTerm*vt100.boldFont:         xos4 Terminess Powerline:bold:size=16:antialias=true
 UXTerm*vt100.allowTitleOps:    true
 UXTerm*border:                 off
 UXTerm*borderWidth:            0
