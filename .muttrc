@@ -1,0 +1,201 @@
+#  ██████                           ██ ██   ██   ██      ██ ██    ██
+# ░█░░░░██                         ░██░░   ░██  ░██     ░██░░    ░░
+# ░█   ░██   ██████   ███████      ░██ ██ ██████░██     ░██ ██    ██  ██████
+# ░██████   ░░░░░░██ ░░██░░░██  ██████░██░░░██░ ░██████████░██   ░██ ██░░░░██
+# ░█░░░░ ██  ███████  ░██  ░██ ██░░░██░██  ░██  ░██░░░░░░██░██   ░██░██   ░██
+# ░█    ░██ ██░░░░██  ░██  ░██░██  ░██░██  ░██  ░██     ░██░██ ██░██░██   ░██
+# ░███████ ░░████████ ███  ░██░░██████░██  ░░██ ░██     ░██░██░░███ ░░██████
+# ░░░░░░░   ░░░░░░░░ ░░░   ░░  ░░░░░░ ░░    ░░  ░░      ░░ ░░  ░░░   ░░░░░░
+#
+#                        ██     ██
+#                       ░██    ░██
+#  ██████████  ██   ██ ██████ ██████ ██████  █████
+# ░░██░░██░░██░██  ░██░░░██░ ░░░██░ ░░██░░█ ██░░░██
+#  ░██ ░██ ░██░██  ░██  ░██    ░██   ░██ ░ ░██  ░░
+#  ░██ ░██ ░██░██  ░██  ░██    ░██   ░██   ░██   ██
+#  ███ ░██ ░██░░██████  ░░██   ░░██ ░███   ░░█████
+# ░░░  ░░  ░░  ░░░░░░    ░░     ░░  ░░░     ░░░░░
+
+
+# ----------------------------------------------------------------------------
+# Folder hooks
+folder-hook 'account.com.gmail.bandithijo' 'source ~/.config/mutt/account.com.gmail.bandithijo'
+
+# Default account
+source ~/.config/mutt/account.com.gmail.bandithijo
+source ~/.config/mutt/aliases
+# ----------------------------------------------------------------------------
+
+
+# ----------------------------------------------------------------------------
+# Macros for switching accounts
+# ----------------------------------------------------------------------------
+# macro index <F12> '<sync-mailbox><enter-command>source ~/.config/mutt/account.com.gmail.bandithijo<enter><change-folder>!<enter>'
+# ----------------------------------------------------------------------------
+
+
+# ----------------------------------------------------------------------------
+set send_charset="utf-8"
+set edit_headers=yes
+set ssl_starttls = yes
+set ssl_force_tls = yes
+set mail_check=90
+set timeout=15
+set imap_keepalive = 300
+set imap_check_subscribed
+unset imap_passive # allow mutt to open new imap connection automatically
+set smtp_authenticators = 'gssapi:login'
+set move = no
+set fast_reply=yes
+set sort = 'threads'
+set sort_aux = 'reverse-last-date-received'
+set auto_tag = yes
+set pager_index_lines = 10
+set sleep_time = 0
+set editor = 'vim'
+set index_format = '%4C %Z %{0%w %y/%m/%d %H:%M}  %-30.30L (%?l?%4l&%4c?) %s'
+set nomark_old                          # Don't mark unread new msgs as old.
+set include=yes                         # Include the message in replies.
+set nobeep                              # We don't need no beeping software.
+set nomarkers                           # Don't want any wrap markers.
+set postponed = "+[Gmail]/Drafts"
+set maildir_trash=yes
+set trash = "imaps://imap.gmail.com/[Gmail]/Trash"
+
+
+ignore "Authentication-Results:"
+ignore "DomainKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To Cc
+alternative_order text/plain text/html *
+auto_view text/html
+bind editor <Tab> complete-query
+bind editor ^T complete
+bind editor <space> noop
+bind index B bounce-message
+bind index l display-message
+bind pager j next-line
+bind pager k previous-line
+bind attach,index,pager \CD next-page
+bind attach,index,pager \CU previous-page
+bind index g first-entry
+bind index G last-entry
+bind pager g top
+bind pager G bottom
+bind index \Cd half-down
+bind index \Cu half-up
+# ----------------------------------------------------------------------------
+
+
+# ----------------------------------------------------------------------------
+# View attachments properly.
+# ----------------------------------------------------------------------------
+bind attach <return> view-mailcap
+set fast_reply           # skip to compose when replying
+set fcc_attach           # save attachments with the body
+unset mime_forward       # forward attachments as part of body
+set forward_format = "Fwd: %s"       # format of subject when forwarding
+set forward_decode                   # decode when forwarding
+set forward_quote                    # include message in forwards
+set reverse_name                     # reply as whomever it was to
+set include                          # include message in replies
+# ----------------------------------------------------------------------------
+
+
+# ----------------------------------------------------------------------------
+## SIDEBAR
+# ----------------------------------------------------------------------------
+set sidebar_visible = yes
+set sidebar_width = 30
+set sidebar_folder_indent = no
+set sidebar_indent_string = '  '
+set sidebar_divider_char = '|'
+set mail_check_stats
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+# Sort the mailboxes in the Sidebar using this method:
+#       count    - total number of messages
+#       flagged  - number of flagged messages
+#       new      - number of new messages
+#       path     - mailbox path
+#       unsorted - do not sort the mailboxes
+set sidebar_sort_method = 'unsorted'
+set sidebar_short_path = no
+set sidebar_component_depth = 0
+# When abbreviating mailbox path names, use any of these characters as path
+# separators.  Only the part after the last separators will be shown.
+# For file folders '/' is good.  For IMAP folders, often '.' is useful.
+set sidebar_delim_chars = '/.'
+set sidebar_next_new_wrap = yes
+bind index,pager \Cp sidebar-prev
+bind index,pager \Cn sidebar-next
+bind index,pager \Co sidebar-open
+# Toggle the visibility of the Sidebar.
+macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
+macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
+# ----------------------------------------------------------------------------
+
+
+# ----------------------------------------------------------------------------
+## NOTIFICATIONS
+# ----------------------------------------------------------------------------
+# Set the command you want NeoMutt to execute upon the receipt of a new email
+#set new_mail_command="notify-send 'New Email!' '%n new messages, %u unread.' &"
+set new_mail_command="notify-send --icon='/home/bandithijo/.icons/Flat Remix Dark/panel/applications-email-panel.svg' \
+'New Email !' '%n new messages, %u unread.' &"
+# ----------------------------------------------------------------------------
+
+
+# ----------------------------------------------------------------------------
+## COLORS
+# ----------------------------------------------------------------------------
+color normal default default
+#color body brightred default '[\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+'
+#color body brightblue default '(https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+'
+# Color to give mailboxes containing new mail
+color sidebar_new blue default
+# Color of the highlighted, but not open, mailbox.
+color sidebar_highlight white blue
+# Set the default color for the entire status line
+color status white blue
+# Set the idicator color or selected line
+color indicator white blue
+# basic monocolor screen
+mono  bold          bold
+mono  underline     underline
+mono  indicator     reverse
+mono  error         bold
+# ----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# for authentication purposes
+source "gpg -dq $HOME/.config/mutt/sandi.gpg |"
