@@ -28,7 +28,8 @@ export ZSH=/home/bandithijo/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bureau"
+#ZSH_THEME="bureau-bandit"
+ZSH_THEME="avit-bandit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -112,13 +113,18 @@ prompt_context() {
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias fireprox="proxychains env GTK_THEME=Adwaita firefox"
+
+# Firefox with Tor
+alias fireprox="proxychains env GTK_THEME=Adwaita firefox --private-window"
 
 # BACKUP ENTIRE SYSTEM
 alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BANDITHIJO-X260/BANDITHIJO-ARCH"
 
 # tty-clock
-alias clock="tty-clock -nscC 7"
+alias clock="tty-clock -nscDC 7"
+
+# termdown
+alias termdown="termdown -f nancyj"
 
 # vimdiff
 alias vimdiff="vim -d"
@@ -141,7 +147,7 @@ alias lampp-stop="sudo /opt/lampp/lampp stop"
 alias lolban="postbanner -t '-f 3d.flf' -l '-p 10'"
 
 # key-mon fix
-alias key-mon-fix="xhost +"
+alias key-mon="xhost +; key-mon"
 
 # Wacom Area
 alias wacom-move="xsetwacom --set \"Wacom One by Wacom S Pen stylus\" Area 1000 1000 3800 2375"
@@ -150,9 +156,23 @@ alias wacom-draw="xsetwacom --set \"Wacom One by Wacom S Pen stylus\" ResetArea"
 # geteltorito
 alias geteltorito="geteltorito.pl"
 
+# Disable WebCam
+alias webcam-disable="echo 'blacklist uvcvideo' | sudo tee /etc/modprobe.d/blacklist.conf; echo '[Disable] WebCam'"
+alias webcam-enable="echo '' | sudo tee /etc/modprobe.d/blacklist.conf; echo '[Enable] WebCam'"
+
+# Presentation Mode XFCE4-POWER-MANAGER
+alias presentationmode-on="xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s true; echo 'Presentation Mode ON'; notify-send '[ON] Presentation Mode'"
+alias presentationmode-off="xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s false; echo 'Presentation Mode OFF'; notify-send '[OFF] Presentation Mode'"
+
+# scrot
+alias scrot="scrot 'Screenshot\ from\ %Y-%m-%d %H-%M-%S.png' -e 'mv *.png ~/pix/ScreenShot/' -d 3 -c"
+
+# ncpamixer
+alias ncpamixer="ncpamixer -c .ncpamixer.conf"
+
 # POWERLINE ARCH
 #if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-#   source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+#  source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
 #fi
 
 # PKGBUILD YAOURT
@@ -183,7 +203,7 @@ PATH="$HOME/.node_modules/bin:$PATH"
 export npm_config_prefix="$HOME/.node_modules"
 
 # URXVT Environment akan berpengaruh ke tmux color
-#export TERM=rxvt-unicode
+export TERM=rxvt-unicode
 
 # Local /bin
 PATH="$HOME/bin:$HOME/src:$HOME/.local/bin:$PATH"
