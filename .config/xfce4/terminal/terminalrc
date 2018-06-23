@@ -1,5 +1,5 @@
 [Configuration]
-FontName=Fixedsys Excelsior 3.01-L2 12
+FontName=xos4 Terminess Powerline Bold 12
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
@@ -26,7 +26,7 @@ MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=FALSE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-BackgroundDarkness=0.980000
+BackgroundDarkness=1.000000
 ScrollingUnlimited=TRUE
 ScrollingOnOutput=FALSE
 MiscShowRelaunchDialog=TRUE

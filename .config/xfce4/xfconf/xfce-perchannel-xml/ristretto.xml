@@ -8,7 +8,7 @@
     <property name="thumbnails" type="empty">
       <property name="show" type="bool" value="false"/>
     </property>
-    <property name="height" type="uint" value="730"/>
+    <property name="height" type="uint" value="732"/>
     <property name="width" type="uint" value="1366"/>
     <property name="toolbar" type="empty">
       <property name="show" type="bool" value="true"/>
