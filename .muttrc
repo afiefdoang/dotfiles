@@ -67,7 +67,7 @@ ignore "Authentication-Results:"
 ignore "DomainKey-Signature:"
 ignore "DKIM-Signature:"
 hdr_order Date From To Cc
-alternative_order text/plain text/html *
+alternative_order text/plain text/html
 auto_view text/html
 bind editor <Tab> complete-query
 bind editor ^T complete
