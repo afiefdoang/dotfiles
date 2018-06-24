@@ -57,7 +57,7 @@ os.system(f'''
 # -----------------------------------------------------------------------------
 mkdir -p {mainDir}
 
-echo '[DONE] Make main directory'
+echo '[ DONE ] Make main directory'
 # -----------------------------------------------------------------------------
 
 
@@ -67,13 +67,14 @@ echo '[DONE] Make main directory'
 cp ~/.gtkrc-2.0 {mainDir}
 cp ~/.profile {mainDir}
 cp ~/.tmux.conf {mainDir}
+cp ~/.mailcap {mainDir}
 cp ~/.muttrc {mainDir}
 cp ~/.vimrc {mainDir}
 cp ~/.Xresources {mainDir}
 cp ~/.xinitrc {mainDir}
 cp ~/.zshrc {mainDir}
 
-echo '[DONE] Copy dotfiles from /home user directory'
+echo '[ DONE ] Copy dotfiles from /home user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -93,7 +94,7 @@ cp /etc/pam.d/sudo {etcDir}/pam.d
 mkdir -p {etcDir}/X11/xorg.conf.d
 cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
 
-echo '[DONE] Copy dotfiles from /etc directory'
+echo '[ DONE ] Copy dotfiles from /etc directory'
 # -----------------------------------------------------------------------------
 
 
@@ -104,7 +105,7 @@ echo '[DONE] Copy dotfiles from /etc directory'
 #sudo cp /usr/lib/libreoffice/program/intro.png {usrDir}/lib/libreoffice/program
 #sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
 
-#echo '[DONE] Copy dotfiles from /usr directory'
+#echo '[ DONE ] Copy dotfiles from /usr directory'
 # -----------------------------------------------------------------------------
 
 
@@ -136,7 +137,7 @@ cp ~/.config/mpv/input.conf {configDir}/mpv
 mkdir -p {configDir}/mutt
 cp ~/.config/mutt/account.com.gmail.bandithijo {configDir}/mutt
 
-echo '[DONE] Copy dotfiles from ~/.config user directory'
+echo '[ DONE ] Copy dotfiles from ~/.config user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -145,7 +146,7 @@ echo '[DONE] Copy dotfiles from ~/.config user directory'
 # -----------------------------------------------------------------------------
 cp -r ~/.conky {mainDir}
 
-echo '[DONE] Copy dotfiles from ~/.conky user directory'
+echo '[ DONE ] Copy dotfiles from ~/.conky user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -155,7 +156,7 @@ echo '[DONE] Copy dotfiles from ~/.conky user directory'
 mkdir -p {localDir}/bin
 cp ~/.local/bin/rofi-power {localDir}/bin
 
-echo '[DONE] Copy dotfiles from ~/.local user directory'
+echo '[ DONE ] Copy dotfiles from ~/.local user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -173,7 +174,7 @@ cp ~/.vim/colors/Tomorrow-Night-Bandit.vim {vimDir}/colors
 mkdir -p {vimDir}/plugged/vim-airline-themes/autoload/airline/themes
 cp ~/.vim/plugged/vim-airline-themes/autoload/airline/themes/solarized_bandit.vim {vimDir}/plugged/vim-airline-themes/autoload/airline/themes
 
-echo '[DONE] Copy dotfiles from ~/.vim user directory'
+echo '[ DONE ] Copy dotfiles from ~/.vim user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -184,7 +185,7 @@ mkdir -p {ohMyZshDir}/themes
 cp ~/.oh-my-zsh/themes/avit-bandit.zsh-theme {ohMyZshDir}/themes
 cp ~/.oh-my-zsh/themes/bureau-bandit.zsh-theme {ohMyZshDir}/themes
 
-echo '[DONE] Copy dotfiles from ~/.oh-my-zsh user directory'
+echo '[ DONE ] Copy dotfiles from ~/.oh-my-zsh user directory'
 # -----------------------------------------------------------------------------
 
 
@@ -212,7 +213,7 @@ mkdir -p {configDir}/bumblebee-status/themes/icons
 cp ~/.config/bumblebee-status/themes/icons/awesome-fonts-bandit.json {configDir}/bumblebee-status/themes/icons
 cp ~/.config/bumblebee-status/themes/icons/awesome-fonts-bandit-nosymbol.json {configDir}/bumblebee-status/themes/icons
 
-echo '[DONE] Copy dotfiles from ~/.config/bumblebee-status user directory'
+echo '[ DONE ] Copy dotfiles from ~/.config/bumblebee-status user directory'
 # -----------------------------------------------------------------------------
 
 
