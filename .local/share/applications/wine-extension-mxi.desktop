@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Extension Manager
+MimeType=application/x-wine-extension-mxi;
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine start /ProgIDOpen Macromedia.Extension.Information %f
+NoDisplay=true
+StartupNotify=true
+Icon=BA01_Extension Manager.0

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=I-Nex
+Comment=I-Nex Viewing System Device Information.
+Exec=/usr/bin/i-nex.gambas
+#Exec=env QT_STYLE_OVERRIDE=Adwaita /usr/bin/i-nex.gambas
+Icon=/usr/share/pixmaps/i-nex-128.png
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;
+Encoding=UTF-8

@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Zekr
+Comment=Zekr is an Open Source Qur'an study project
+Exec=sh - '/home/bandithijo/Apps/zekr/zekr-1.1.0-linux_64/zekr/zekr.sh'
+Icon=zekr
+Terminal=false
+Type=Application
+Categories=Application;Utility
+StartupNotify=true
+NoDisplay=true

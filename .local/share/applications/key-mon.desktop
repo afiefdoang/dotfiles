@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=KeyMon
+Comment=Keyboard and Mouse Monitor for screencasts
+Exec=key-mon
+Icon=key-mon
+Terminal=false
+Type=Application
+Categories=GTK;Graphics;
+StartupNotify=true

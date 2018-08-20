@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Electron
+Icon=electron
+Exec=electron %u
+Categories=Development;GTK;
+StartupNotify=true
+Comment=Build cross platform desktop apps with web technologies
+NoDisplay=true

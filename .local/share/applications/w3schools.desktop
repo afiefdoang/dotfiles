@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=w3schools-offline
+Comment=w3schools offline
+Exec=firefox file:///home/bandithijo/app/w3schools-offline/w3schools-offline/index.html
+Icon=/home/bandithijo/app/w3schools-offline/w3-green-logo.png
+Terminal=false
+Type=Application
+Categories=Educations;Programming;
+StartupNotify=true
+Name[id_ID]=w3schools

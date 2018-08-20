@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=arandr
+Icon=display
+Exec=arandr
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+StartupNotify=true
+Comment=ARandR is designed to provide a simple visual front end for XRandR.

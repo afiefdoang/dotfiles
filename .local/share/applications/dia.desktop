@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Dia
+Comment=Edit your Diagrams
+Type=Application
+#Exec=dia %F
+#Exec=env GTK_THEME=NumixSolarizedDarkBlue dia %F
+Exec=env GTK2_RC_FILES=/usr/share/themes/NumixSolarizedLightBlue/gtk-2.0/gtkrc dia %F
+Icon=dia
+Terminal=false
+Categories=GNOME;Graphics;
+StartupNotify=true
+MimeType=application/x-dia-diagram;
+

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Disable Touchpad
+Exec=xinput --disable 11
+NoDisplay=true
+X-Gnome-Autostart-enabled=false

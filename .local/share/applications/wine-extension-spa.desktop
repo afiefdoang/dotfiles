@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Flash 8
+MimeType=application/x-wine-extension-spa;
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine start /ProgIDOpen Flash.Movie %f
+NoDisplay=true
+StartupNotify=true
+Icon=9212_Flash.0

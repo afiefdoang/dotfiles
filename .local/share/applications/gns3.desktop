@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=GNS3
+Comment=Graphical Network Simulator 3
+Exec=/usr/bin/gns3
+Icon=gns3
+Terminal=false
+Categories=Application;Network;Qt;

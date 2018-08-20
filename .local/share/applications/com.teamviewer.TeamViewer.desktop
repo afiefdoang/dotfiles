@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Categories=Network;
+Name=TeamViewer 13
+Comment=Remote control and meeting solution.
+#Exec=/opt/teamviewer/tv_bin/script/teamviewer
+Exec=$HOME/app/teamviewer/teamviewer_13.0.9865/tv_bin/script/teamviewer
+Icon=TeamViewer

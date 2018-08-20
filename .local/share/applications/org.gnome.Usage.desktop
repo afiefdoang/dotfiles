@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Usage
+Comment=A nice way to view information about use of system resources, like memory and disk space
+Categories=GNOME;GTK;
+Exec=gnome-usage
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=org.gnome.Usage
+Terminal=false
+StartupNotify=true
+Type=Application
+# Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+Keywords=Monitor;System;Process;CPU;Memory;Network;History;Usage;Performance;Task;Manager;

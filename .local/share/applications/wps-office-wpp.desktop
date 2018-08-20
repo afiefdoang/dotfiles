@@ -1,0 +1,17 @@
+[Desktop Entry]
+Comment=Use WPS Presentation to edit and play presentations.
+#Exec=/usr/bin/wpp %f
+Exec=env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc /usr/bin/wpp %f
+MimeType=application/wps-office.dps;application/wps-office.dpt;application/wps-office.ppt;application/wps-office.pot;application/vnd.ms-powerpoint;application/vnd.mspowerpoint;application/mspowerpoint;application/powerpoint;application/x-mspowerpoint;application/wps-office.pptx;application/wps-office.potx;
+Name=WPS Presentation
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Office;Presentation;Qt;
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+Icon=wps-office-wppmain
+InitialPreference=3
+StartupWMClass=wpp

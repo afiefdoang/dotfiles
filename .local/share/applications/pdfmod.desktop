@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=PDF Mod
+Comment=Remove, extract, and rotate pages in PDF documents
+TryExec=pdfmod
+Exec=pdfmod %U
+StartupNotify=true
+Type=Application
+Terminal=false
+Icon=pdfmod
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=pdfmod
+X-GNOME-Bugzilla-Component=general
+X-GNOME-Bugzilla-Version=0.9.1
+Categories=GNOME;GTK;Utility;
+MimeType=application/pdf;application/x-bzpdf;application/x-gzpdf;

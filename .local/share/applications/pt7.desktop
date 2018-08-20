@@ -1,0 +1,10 @@
+[Desktop Entry]
+#Exec=/opt/pt/bin/PacketTracer7
+#Exec=env QT_STYLE_OVERRIDE=Adwaita /opt/pt/bin/PacketTracer7
+Exec=/usr/bin/packettracer
+Icon=pt7
+Type=Application
+Terminal=false
+Name=Packet Tracer 7.1
+Comment=Packet Tracer is a cross-platform visual simulation tool designed by Cisco Systems
+NoDisplay=true

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ePDFViewer
+Comment=Lightweight PDF document viewer
+Categories=Viewer;Office;GTK;
+Exec=epdfview %f
+Icon=epdfview
+MimeType=application/pdf;
+Terminal=false
+Type=Application
+NoDisplay=true

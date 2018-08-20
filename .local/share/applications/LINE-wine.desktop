@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=LINE Wine
+Exec=env WINEPREFIX="/home/bandithijo/.wine" /usr/bin/wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/bandithijo/Start\\ Menu/Programs/LINE/LINE.lnk
+Type=Application
+StartupNotify=true
+Path=/home/bandithijo/.wine/dosdevices/c:/users/bandithijo/Local Settings/Application Data/LINE/bin
+Icon=line
+Name[en_US]=LINE-wine
+Comment=Free, cross-platform & proprietary instant messaging application by Naver Japan.

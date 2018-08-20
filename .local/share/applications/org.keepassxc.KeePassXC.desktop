@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=KeePassXC
+Comment=Community-driven port of the Windows application “KeePass Password Safe”
+#Exec=keepassxc %f
+Exec=keepassxc
+#Exec=env QT_STYLE_OVERRIDE=Adwaita keepassxc %f
+#TryExec=keepassxc
+Icon=keepassxc
+#StartupWMClass=keepassxc
+Terminal=false
+Type=Application
+Categories=Utility;Security;Qt;
+MimeType=application/x-keepass2;
+NoDisplay=true

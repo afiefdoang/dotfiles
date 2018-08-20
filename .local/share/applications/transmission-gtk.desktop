@@ -1,0 +1,24 @@
+[Desktop Entry]
+Name=Transmission
+Comment=Download and share files over BitTorrent
+#Exec=transmission-gtk %U
+Exec=env GTK_THEME=NumixSolarizedDarkBlue transmission-gtk %U
+Icon=transmission
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+Categories=Network;FileTransfer;P2P;GTK;
+X-Ubuntu-Gettext-Domain=transmission
+X-AppInstall-Keywords=torrent
+Actions=Pause;Minimize;
+
+[Desktop Action Pause]
+Name=Start Transmission with All Torrents Paused
+#Exec=transmission-gtk --paused
+Exec=env GTK_THEME=NumixSolarizedDarkBlue transmission-gtk --paused
+
+[Desktop Action Minimize]
+Name=Start Transmission Minimized
+#Exec=transmission-gtk --minimized
+Exec=env GTK_THEME=NumixSolarizedDarkBlue transmission-gtk --minimized

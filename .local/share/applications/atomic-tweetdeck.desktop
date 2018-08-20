@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Tweetdeck
+Categories=Network;
+Comment=just a small Electron TweetDeck app.
+Exec=/usr/bin/atomic-tweetdeck
+#Exec=env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc /usr/bin/atomic-tweetdeck
+GenericName=Twitter Client
+Icon=twitter
+StartupNotify=false
+Type=Application

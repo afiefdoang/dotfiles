@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=JDownloader 2
+Exec=/bin/sh "/home/bandithijo/app/jdownloader2beta/jd2/JDownloader2"
+Icon=jdownloader.png
+Categories=Network;Application;
+Comment=Free & open-source download management tool with a huge community of developers that makes downloading as easy and fast as it should be.

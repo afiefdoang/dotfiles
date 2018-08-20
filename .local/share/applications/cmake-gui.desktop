@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=CMake
+Comment=Cross-platform buildsystem
+Exec=cmake-gui %f
+Icon=CMakeSetup
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Categories=Development;
+StartupNotify=true
+MimeType=application/x-cmakecache;
+NoDisplay=true

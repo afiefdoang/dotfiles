@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Terminal=false
+Exec="/opt/xdman/xdman"
+Name=xdman
+Comment=Powerfull download accelarator and video downloader
+Categories=Network;
+Icon=xdman
+NoDisplay=true

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=gtkpod
+Comment=Manage music, video and photos on an Apple iPod
+Comment[it]=Gestisce musica, video e foto negli iPod Apple
+Exec=gtkpod
+Icon=gtkpod
+Terminal=false
+Type=Application
+Categories=GTK;AudioVideo;
+X-GNOME-FullName=gtkpod iPod Manager

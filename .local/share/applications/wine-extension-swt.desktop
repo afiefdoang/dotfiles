@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Macromedia Flash Player 8.0  r22
+MimeType=application/x-wine-extension-swt;
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine start /ProgIDOpen ShockwaveFlash.ShockwaveFlash %f
+NoDisplay=true
+StartupNotify=true
+Icon=56F2_SAFlashPlayer.0

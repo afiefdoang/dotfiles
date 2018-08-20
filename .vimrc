@@ -16,6 +16,7 @@
 "   ░░██   ░██ ███ ░██ ░██░███   ░░█████
 "    ░░    ░░ ░░░  ░░  ░░ ░░░     ░░░░░
 
+
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BanditHijo's .vimrc
 " dotfiles : https://github.com/bandithijo/dotfiles
@@ -82,6 +83,7 @@ Plug 'python-mode/python-mode', {'branch': 'develop'}
 "Plug 'Raimondi/delimitMate'
 "Plug 'nikvdp/ejs-syntax'
 Plug 'briancollins/vim-jst'
+"Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -93,7 +95,7 @@ call plug#end()
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 filetype plugin indent on
-set encoding=utf-8
+set encoding=UTF-8
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

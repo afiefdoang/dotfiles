@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=gconf-editor
+Comment=Directly edit your entire configuration database
+Exec=gconf-editor
+Terminal=false
+Type=Application
+Icon=gconf-editor
+StartupNotify=true
+Categories=GNOME;GTK;System;
+NoDisplay=true

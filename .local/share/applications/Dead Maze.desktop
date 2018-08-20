@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Dead Maze
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/667890
+Icon=steam
+Terminal=false
+Type=Application
+Categories=Game;
+NoDisplay=true

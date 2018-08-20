@@ -2,7 +2,7 @@
 ! ROFI PREFERENCES
 !------------------------------------------------------------------------------
 rofi.combi-modi:    window,drun,ssh
-rofi.theme:         solarized
+rofi.theme:         solarized-bandit
 rofi.font:          xos4 Terminess Powerline 10
 rofi.modi:          combi
 !------------------------------------------------------------------------------

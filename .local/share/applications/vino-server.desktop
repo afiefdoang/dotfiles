@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=vino-server
+Comment=GNOME Desktop Sharing Server
+Keywords=vnc;share;remote;
+Exec=/usr/lib/vino/vino-server
+Icon=preferences-desktop-remote-desktop
+NoDisplay=true
+Terminal=false
+Type=Application
+X-GNOME-Autostart-Phase=Applications
+X-GNOME-AutoRestart=true
+X-GNOME-UsesNotifications=true

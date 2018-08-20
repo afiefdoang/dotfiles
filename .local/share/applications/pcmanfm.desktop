@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Icon=system-file-manager
+Name=PCmanFM
+Comment=Browse the file system and manage the files
+Categories=System;FileTools;FileManager;Utility;Core;GTK;
+Exec=pcmanfm %U
+#Exec=env GTK_THEME=NumixSolarizedDarkBlue pcmanfm %U
+StartupNotify=true
+Terminal=false
+MimeType=inode/directory;
+
+[Desktop Action new-window]
+Name=PCmanFM New Window
+Exec=env GTK_THEME=NumixSolarizedDarkBlue pcmanfm --new-win

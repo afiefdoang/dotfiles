@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=catfish
+Comment=Search the file system
+Categories=GNOME;Utility;
+Exec=/usr/bin/catfish
+Icon=catfish
+Terminal=false
+Type=Application
+NoDisplay=true

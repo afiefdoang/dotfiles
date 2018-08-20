@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=hardinfo
+Comment=Hardinfo is a system information and benchmark tool for Linux.
+Exec=/usr/bin/hardinfo
+# Exec=env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc /usr/bin/hardinfo
+Icon=/usr/share/pixmaps/i-nex-128.png
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;
+Encoding=UTF-8

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Conky-Manager
+Exec=conky-manager
+Type=Application
+Terminal=false
+Icon=conky-manager
+Caption=Conky Theme Manager
+X-KDE-StartupNotify=false
+Categories=Utility
+InitialPreference=9
+Comment=GUI for managing Conky config files with options to browse and edit themes.

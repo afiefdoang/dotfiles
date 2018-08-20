@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Contacts
+Keywords=friends;address book;
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=gnome-contacts
+Exec=gnome-contacts
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Office;ContactManagement;
+OnlyShowIn=GNOME;Unity;
+DBusActivatable=true
+NoDisplay=true

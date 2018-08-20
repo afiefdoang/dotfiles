@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+MimeType=application/x-gnucash;
+Name=GnuCash
+Comment=Manage your finances, accounts, and investments
+Exec=gnucash %f
+#Exec=env GTK_THEME=Adwaita gnucash %f
+Icon=gnucash-icon
+StartupNotify=true
+Terminal=false
+Categories=Office;Finance;
+NoDisplay=true

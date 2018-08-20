@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Macromedia Flash 8 Readme
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/bandithijo/Start\\ Menu/Programs/Macromedia/Readme\\ Files/Macromedia\\ Flash\\ 8\\ Readme.lnk
+Type=Application
+StartupNotify=true
+Icon=9B3C_READMESHORTCUTICON.0

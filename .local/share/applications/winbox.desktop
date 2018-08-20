@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Winbox
+Exec=wine /home/bandithijo/app/winbox/winbox.exe
+Type=Application
+StartupNotify=true
+Icon=winbox
+Comment=Mikrotik RouterOS GUI Configurator (wine)

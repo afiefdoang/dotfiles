@@ -1,0 +1,5 @@
+[Default Applications]
+x-scheme-handler/tg=telegramdesktop.desktop
+/* inode/directory=org.gnome.Nautilus.desktop */
+/* inode/directory=Thunar.desktop */
+inode/directory=pcmanfm.desktop

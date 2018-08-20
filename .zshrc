@@ -28,6 +28,7 @@ export ZSH=/home/bandithijo/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+#ZSH_THEME="terminalparty"
 #ZSH_THEME="bureau-bandit"
 ZSH_THEME="avit-bandit"
 
@@ -95,7 +96,8 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/bandithijo"
+eval $(keychain --eval --quiet ~/.ssh/bandithijo)
 
 # For Remove username on oh-my-zsh
 #prompt_context() {}
@@ -118,7 +120,7 @@ prompt_context() {
 alias fireprox="proxychains env GTK_THEME=Adwaita firefox --private-window"
 
 # BACKUP ENTIRE SYSTEM
-alias devika!="sudo rsync -aAXvP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BANDITHIJO-X260/BANDITHIJO-ARCH"
+alias devika!="sudo mkdir -p /run/media/bandithijo/BACKUP/BANDITHIJO-ARCH ; sudo rsync -avAXP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BACKUP/BANDITHIJO-ARCH"
 
 # tty-clock
 alias clock="tty-clock -nscDC 7"
@@ -137,6 +139,9 @@ alias menuitem-enable="gsettings set org.gnome.settings-daemon.plugins.xsettings
 # Upgrade all packages PIP
 alias pip-superupgrade="pip freeze > list && sudo pip install -r list -U && rm list"
 alias pip-upgrade="pip freeze > list && pip install -r list -U && rm list"
+
+alias pip2-superupgrade="pip2 freeze > list && sudo pip2 install -r list -U && rm list"
+alias pip2-upgrade="pip2 freeze > list && pip2 install -r list -U && rm list"
 
 # XAMPP
 alias lampp="sudo /opt/lampp/lampp"
@@ -170,10 +175,18 @@ alias scrot="scrot 'Screenshot\ from\ %Y-%m-%d %H-%M-%S.png' -e 'mv *.png ~/pix/
 # ncpamixer
 alias ncpamixer="ncpamixer -c .ncpamixer.conf"
 
+# alias macchanger
+alias macchanger-on="sudo mv /etc/systemd/network/00-default.link.bak /etc/systemd/network/00-default.link && echo 'Reboot to take effect !'"
+alias macchanger-off="sudo mv /etc/systemd/network/00-default.link /etc/systemd/network/00-default.link.bak && echo 'Reboot to take effect !'"
+
 # POWERLINE ARCH
 #if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
 #  source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
 #fi
+
+
+# qt5ct
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # PKGBUILD YAOURT
 export VISUAL="vim"
@@ -211,15 +224,16 @@ export PATH
 
 # Vim as Manpager
 # for Vim
-export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
+#export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
 # for NeoVim
-export MANPAGER="nvim +set\ filetype=man -"
+# export MANPAGER="nvim +set\ filetype=man -"
 
 # FZF Solarized colors
 export FZF_DEFAULT_OPTS='
 --color dark,hl:33,hl+:37,fg+:235,bg+:136,fg+:254
 --color info:254,prompt:37,spinner:108,pointer:235,marker:235
   '
+
 
 
 

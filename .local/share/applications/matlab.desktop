@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Matlab
+Comment=MATLAB is a multi-paradigm numerical computing environment and fourth-generation programming language
+Exec=/home/bandithijo/Apps/matlab/MATLAB/MATLAB_Production_Server/R2015a/bin/matlab
+Icon=matlab
+Terminal=true
+Type=Application
+Keywords=matlab;MATLAB;
+Categories=Education;Science;Math;
+# X-GNOME-UsesNotifications=true
+NoDisplay=true

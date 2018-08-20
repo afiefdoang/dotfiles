@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=GTick
+Comment=a GTK-based metronome
+Exec=/usr/bin/gtick
+Icon=gtick
+Terminal=false
+Type=Application
+Categories=GTK;AudioVideo;Audio;
+NoDisplay=true

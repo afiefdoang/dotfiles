@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Macromedia Flash 8
+Comment=Multimedia platform that is used to create stand-alone and web animations and applications that are interactive
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\Program\\ Files\\ \\(x86\\)\\\\Macromedia\\\\Flash\\ 8\\\\Flash.exe
+Type=Application
+StartupNotify=true
+Icon=flash
+StartupWMClass=flash.exe

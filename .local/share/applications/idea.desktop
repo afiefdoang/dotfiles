@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=IntelliJ
+Comment=Develop with pleasure!
+Exec=idea.sh %f
+Icon=idea
+Terminal=false
+StartupNotify=true
+StartupWMClass=jetbrains-idea-ce
+Categories=Development;IDE;Java;
+NoDisplay=true

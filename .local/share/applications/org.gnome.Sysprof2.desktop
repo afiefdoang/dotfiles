@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Sysprof
+Comment=Profile an application or entire system.
+Exec=sysprof %u
+TryExec=sysprof
+Icon=sysprof
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;Development;
+MimeType=application/x-sysprof-capture;

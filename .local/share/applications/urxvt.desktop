@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=urxvt
+Comment=An unicode capable rxvt clone
+#Exec=urxvt
+Exec=env GTK_THEME=Adwaita urxvt
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=System;TerminalEmulator;
+NoDisplay=false

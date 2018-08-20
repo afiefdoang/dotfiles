@@ -66,7 +66,8 @@ function! airline#themes#solarized_bandit#refresh()
     " untuk merubah sebelah NORMAL
     let s:N2 = [s:base02, (s:tty ? s:base01 : s:base00), '']
     " untuk merubah sebelahnya, sebelahnya lagi NORMAL
-    let s:N3 = [s:base01, s:base02, '']
+    "let s:N3 = [s:base01, s:base02, '']
+    let s:N3 = [s:base01, s:base03, '']
   else
     let s:N1 = [(s:dark_text ? s:base03 : s:base2), (s:use_green ? s:green : s:base00), 'bold']
     let s:N2 = [(s:tty ? s:base01 : s:base2), s:base1, '']

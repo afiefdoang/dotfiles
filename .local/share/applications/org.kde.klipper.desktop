@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Klipper
+Exec=klipper
+Icon=klipper
+Type=Application
+X-DocPath=klipper/index.html
+Terminal=false
+X-KDE-autostart-after=panel
+X-KDE-StartupNotify=false
+X-DBUS-StartupType=Unique
+X-DBUS-ServiceName=org.kde.klipper
+X-KDE-UniqueApplet=true
+X-KDE-autostart-condition=klipperrc:General:AutoStart:false
+NotShowIn=KDE;GNOME;XFCE;
+Categories=Qt;KDE;Utility;X-KDE-Utilities-Desktop;
+Comment=A cut & paste history utility
+NoDisplay=true

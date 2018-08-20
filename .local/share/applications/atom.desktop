@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=atom
+Comment=A hackable text editor for the 21st Century
+Exec=electron --app=/usr/lib/atom %F
+Icon=atom
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;TextEditor;Development;
+MimeType=text/plain;
+NoDisplay=true

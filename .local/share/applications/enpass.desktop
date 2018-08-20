@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Enpass
+Name[en_IN]=Enpass
+Icon=enpass
+Icon[en_IN]=enpass
+Terminal=false
+#Exec=/opt/Enpass/bin/runenpass.sh %U
+Exec=env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc /opt/Enpass/bin/runenpass.sh %U
+MimeType=x-scheme-handler/enpass;x-scheme-handler/enpassextension;
+Categories=Utility;
+Comment=Enpass is a password management program to securely store passwords and other credentials.

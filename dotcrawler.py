@@ -40,38 +40,39 @@
 import os
 
 # Deklarasi Variabel Directory
-mainDir   = '~/git/dotfiles'
-etcDir    = '~/git/dotfiles/etc'
-usrDir    = '~/git/dotfiles/usr'
-configDir = '~/git/dotfiles/.config'
-localDir  = '~/git/dotfiles/.local'
-urxvtDir  = '~/git/dotfiles/.urxvt'
-vimDir    = '~/git/dotfiles/.vim'
-ohMyZshDir= '~/git/dotfiles/.oh-my-zsh'
-imageDir  = '~/git/dotfiles/images'
+mainDir     = '~/git/dotfiles'
+etcDir      = '~/git/dotfiles/etc'
+usrDir      = '~/git/dotfiles/usr'
+configDir   = '~/git/dotfiles/.config'
+localDir    = '~/git/dotfiles/.local'
+urxvtDir    = '~/git/dotfiles/.urxvt'
+vimDir      = '~/git/dotfiles/.vim'
+ohMyZshDir  = '~/git/dotfiles/.oh-my-zsh'
+newsboatDir = '~/git/dotfiles/.newsboat'
+imageDir    = '~/git/dotfiles/images'
 
 # Proces Copy to GitHub Directory
 os.system(f'''
 # -----------------------------------------------------------------------------
-##### Make main Directory
+##### Create main Directory
 # -----------------------------------------------------------------------------
 mkdir -p {mainDir}
 
-echo '[ DONE ] Make main directory'
+echo '[ DONE ] Create main directory'
 # -----------------------------------------------------------------------------
 
 
 # -----------------------------------------------------------------------------
-##### From $HOME Directory
+##### Content from $HOME Directory
 # -----------------------------------------------------------------------------
 cp ~/.gtkrc-2.0 {mainDir}
-cp ~/.profile {mainDir}
 cp ~/.tmux.conf {mainDir}
 cp ~/.mailcap {mainDir}
-cp ~/.muttrc {mainDir}
-cp ~/.vimrc {mainDir}
+cp ~/.ncpamixer.conf {mainDir}
 cp ~/.Xresources {mainDir}
 cp ~/.xinitrc {mainDir}
+cp ~/.profile {mainDir}
+cp ~/.vimrc {mainDir}
 cp ~/.zshrc {mainDir}
 
 echo '[ DONE ] Copy dotfiles from /home user directory'
@@ -79,18 +80,21 @@ echo '[ DONE ] Copy dotfiles from /home user directory'
 
 
 # -----------------------------------------------------------------------------
-##### From /etc Directory
+##### Content from /etc Directory
 # -----------------------------------------------------------------------------
+# lightdm
 mkdir -p {etcDir}/lightdm
 cp /etc/lightdm/lightdm.conf {etcDir}/lightdm
 cp /etc/lightdm/slick-greeter.conf {etcDir}/lightdm
 
+# pam
 mkdir -p {etcDir}/pam.d
 cp /etc/pam.d/i3lock {etcDir}/pam.d
 cp /etc/pam.d/login {etcDir}/pam.d
 cp /etc/pam.d/polkit-1 {etcDir}/pam.d
 cp /etc/pam.d/sudo {etcDir}/pam.d
 
+# X11
 mkdir -p {etcDir}/X11/xorg.conf.d
 cp /etc/X11/xorg.conf.d/20-intel.conf {etcDir}/X11/xorg.conf.d
 
@@ -99,77 +103,74 @@ echo '[ DONE ] Copy dotfiles from /etc directory'
 
 
 # -----------------------------------------------------------------------------
-##### From /usr Directory
-# -----------------------------------------------------------------------------
-#mkdir -p {usrDir}/lib/libreoffice/program
-#sudo cp /usr/lib/libreoffice/program/intro.png {usrDir}/lib/libreoffice/program
-#sudo cp /usr/lib/libreoffice/program/sofficerc {usrDir}/lib/libreoffice/program
-
-#echo '[ DONE ] Copy dotfiles from /usr directory'
-# -----------------------------------------------------------------------------
-
-
-# -----------------------------------------------------------------------------
-##### From .config Directory
+##### Content from .config Directory
 # -----------------------------------------------------------------------------
 mkdir -p {configDir}
 
+cp -r ~/.config/conky {configDir}
 cp -r ~/.config/compton {configDir}
 cp -r ~/.config/dunst {configDir}
 cp -r ~/.config/i3 {configDir}
-cp -r ~/.config/rofi-power {configDir}
+cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/rofi {configDir}
+cp -r ~/.config/rofi-power {configDir}
 cp -r ~/.config/urxvt {configDir}
-cp -r ~/.config/xfce4 {configDir}
 
-#cp ~/.config/user-dirs.dirs {configDir}
-#cp ~/.config/user-dirs.conf {configDir}
+cp ~/.config/user-dirs.dirs {configDir}
+cp ~/.config/user-dirs.conf {configDir}
 
+# gtk3
 #mkdir -p {configDir}/gtk-3.0
 #cp ~/.config/gtk-3.0/bookmarks {configDir}/gtk-3.0
 #cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
 
+# mpv
 mkdir -p {configDir}/mpv
 cp ~/.config/mpv/mpv.conf {configDir}/mpv
 cp ~/.config/mpv/input.conf {configDir}/mpv
 
+# mutt
 mkdir -p {configDir}/mutt
-cp ~/.config/mutt/account.com.gmail.bandithijo {configDir}/mutt
+cp -r ~/.config/mutt/mutt-colors-solarized {configDir}/mutt
+cp ~/.config/mutt/muttrc {configDir}/mutt
+
+# ranger
+mkdir -p {configDir}/ranger
+cp -r ~/.config/ranger/colorschemes {configDir}/ranger
+cp ~/.config/ranger/commands.py {configDir}/ranger
+cp ~/.config/ranger/commands_full.py {configDir}/ranger
+cp ~/.config/ranger/rc.conf {configDir}/ranger
+cp ~/.config/ranger/rifle.conf {configDir}/ranger
+
 
 echo '[ DONE ] Copy dotfiles from ~/.config user directory'
 # -----------------------------------------------------------------------------
 
 
 # -----------------------------------------------------------------------------
-##### From .conky Directory
+##### Content from .local Directory
 # -----------------------------------------------------------------------------
-cp -r ~/.conky {mainDir}
-
-echo '[ DONE ] Copy dotfiles from ~/.conky user directory'
-# -----------------------------------------------------------------------------
-
-
-# -----------------------------------------------------------------------------
-##### From .local Directory
-# -----------------------------------------------------------------------------
+# rofi-power
 mkdir -p {localDir}/bin
 cp ~/.local/bin/rofi-power {localDir}/bin
+
+# application desktop configuration files
+mkdir -p {localDir}/share
+cp -r ~/.local/share/applications {localDir}/share
 
 echo '[ DONE ] Copy dotfiles from ~/.local user directory'
 # -----------------------------------------------------------------------------
 
 
 # -----------------------------------------------------------------------------
-##### From .vim Directory
+##### Content from .vim Directory
 # -----------------------------------------------------------------------------
 mkdir -p {vimDir}
 cp -r ~/.vim/autoload {vimDir}
 
 mkdir -p {vimDir}/colors
-cp ~/.vim/colors/Monokai-Bandit.vim {vimDir}/colors
 cp ~/.vim/colors/solarized-bandit.vim {vimDir}/colors
-cp ~/.vim/colors/Tomorrow-Night-Bandit.vim {vimDir}/colors
 
 mkdir -p {vimDir}/plugged/vim-airline-themes/autoload/airline/themes
 cp ~/.vim/plugged/vim-airline-themes/autoload/airline/themes/solarized_bandit.vim {vimDir}/plugged/vim-airline-themes/autoload/airline/themes
@@ -179,7 +180,7 @@ echo '[ DONE ] Copy dotfiles from ~/.vim user directory'
 
 
 # -----------------------------------------------------------------------------
-##### From .oh-my-zsh Directory
+##### Content from .oh-my-zsh Directory
 # -----------------------------------------------------------------------------
 mkdir -p {ohMyZshDir}/themes
 cp ~/.oh-my-zsh/themes/avit-bandit.zsh-theme {ohMyZshDir}/themes
@@ -190,30 +191,12 @@ echo '[ DONE ] Copy dotfiles from ~/.oh-my-zsh user directory'
 
 
 # -----------------------------------------------------------------------------
-##### From bumblebee-status Directory
+##### Content from .newsboat Directory
 # -----------------------------------------------------------------------------
-mkdir -p {configDir}/bumblebee-status/bumblebee/modules
-cp ~/.config/bumblebee-status/bumblebee/modules/brightness.py {configDir}/bumblebee-status/bumblebee/modules
-cp ~/.config/bumblebee-status/bumblebee/modules/title.py {configDir}/bumblebee-status/bumblebee/modules
-cp ~/.config/bumblebee-status/bumblebee/modules/pulseaudio.py {configDir}/bumblebee-status/bumblebee/modules
-cp ~/.config/bumblebee-status/bumblebee/modules/nic.py {configDir}/bumblebee-status/bumblebee/modules
-cp ~/.config/bumblebee-status/bumblebee/modules/memory.py {configDir}/bumblebee-status/bumblebee/modules
-cp ~/.config/bumblebee-status/bumblebee/modules/sensors.py {configDir}/bumblebee-status/bumblebee/modules
-cp ~/.config/bumblebee-status/bumblebee/modules/battery0.py {configDir}/bumblebee-status/bumblebee/modules
-cp ~/.config/bumblebee-status/bumblebee/modules/battery1.py {configDir}/bumblebee-status/bumblebee/modules
-cp ~/.config/bumblebee-status/bumblebee/modules/profile.py {configDir}/bumblebee-status/bumblebee/modules
+mkdir -p {newsboatDir}
+cp ~/.newsboat/config {newsboatDir}
 
-mkdir -p {configDir}/bumblebee-status/themes
-cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-black.json {configDir}/bumblebee-status/themes
-cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-blue.json {configDir}/bumblebee-status/themes
-cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-blue-nosymbol.json {configDir}/bumblebee-status/themes
-cp ~/.config/bumblebee-status/themes/gruvbox-powerline-bandit-solarized.json {configDir}/bumblebee-status/themes
-
-mkdir -p {configDir}/bumblebee-status/themes/icons
-cp ~/.config/bumblebee-status/themes/icons/awesome-fonts-bandit.json {configDir}/bumblebee-status/themes/icons
-cp ~/.config/bumblebee-status/themes/icons/awesome-fonts-bandit-nosymbol.json {configDir}/bumblebee-status/themes/icons
-
-echo '[ DONE ] Copy dotfiles from ~/.config/bumblebee-status user directory'
+echo '[ DONE ] Copy dotfiles from ~/.newsboat user directory'
 # -----------------------------------------------------------------------------
 
 

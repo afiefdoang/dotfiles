@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Lightworks
+Comment=Cross-platform film & video editor
+Exec=ln -s /home/bandithijo/vid/Lightworks /home/bandithijo/Lightworks; env "LD_PRELOAD=/usr/lib/openssl-1.0-compat/libssl.so /usr/lib/openssl-1.0-compat/libcrypto.so" /usr/bin/lightworks
+Icon=/usr/share/lightworks/Icons/App.png
+Terminal=false
+Type=Application
+Categories=AudioVideo;AudioVideoEditing;
+StartupWMClass=Ntcardvt
+NoDisplay=false

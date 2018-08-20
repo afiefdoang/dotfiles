@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Macromedia Extension Manager Readme
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/bandithijo/Start\\ Menu/Programs/Macromedia/Readme\\ Files/Macromedia\\ Extension\\ Manager\\ Readme.lnk
+Type=Application
+StartupNotify=true
+Icon=F21A_READMEICON.0

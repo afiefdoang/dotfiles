@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Program Files
+MimeType=application/x-wine-extension-swc;
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine start /ProgIDOpen Flash.FlashComponentFile %f
+NoDisplay=true
+StartupNotify=true
+Icon=CCAD_Program Files.0

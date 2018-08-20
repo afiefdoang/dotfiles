@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Corebird
+Comment=Use Twitter from within a normal desktop application
+Keywords=twitter;
+Exec=corebird
+Type=Application
+Icon=corebird
+Categories=Network;GTK;
+DBusActivatable=true
+StartupWMClass=corebird
+NoDisplay=true

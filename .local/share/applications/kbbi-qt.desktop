@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=KBBI-Qt
+Comment=KBBI-Qt Indonesian dictionary
+Exec=/usr/bin/KBBI-Qt
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=kbbi-qt
+Categories=Educations;Office;

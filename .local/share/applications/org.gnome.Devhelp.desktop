@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Devhelp
+Comment=Developer's Help program
+Keywords=documentation;information;manual;developer;api;
+Exec=devhelp
+Terminal=false
+Type=Application
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=devhelp
+Categories=GNOME;GTK;Development;
+StartupNotify=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=devhelp
+X-GNOME-Bugzilla-Component=General
+X-GNOME-Bugzilla-Version=3.24.1
+DBusActivatable=true

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=TyperShark
+Exec=wine /home/bandithijo/.wine/drive_c/Program\\ Files\\ \\(x86\\)/Typer\\ Shark\\ Deluxe/TyperShark.exe
+Type=Application
+StartupNotify=true
+# Path=/home/bandithijo/.wine/drive_c/Program Files (x86)/Typer Shark Deluxe
+Icon=typershark
+Comment=Sink your teeth into an action-packed educational adventure.
+Terminal=true
+Path=

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Unified Remote
+Comment=Launching unified-remote-server on your system
+Exec=/home/bandithijo/Apps/unifiedremote/urserver-3.6.0.745/urserver
+Icon=/home/bandithijo/Apps/unifiedremote/urserver-3.6.0.745/manager/img/brand.png
+Terminal=true
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;
+NoDisplay=true

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=GitBook Editor
+Comment=Write and publish books
+Exec=/opt/gitbook-editor/editor
+Icon=gitbook-editor
+Terminal=false
+Categories=Application;
+NoDisplay=true

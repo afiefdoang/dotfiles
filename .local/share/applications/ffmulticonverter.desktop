@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=FF-MultiConverter
+Comment=GUI application which converts multiple file formats
+Exec=ffmulticonverter
+Icon=ffmulticonverter
+Terminal=false
+StartupNotify=false
+Encoding=UTF-8
+Categories=Application;AudioVideo;AudioVideoEditing;Office;

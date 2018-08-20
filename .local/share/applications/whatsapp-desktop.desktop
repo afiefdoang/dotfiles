@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Whatsapp-Desktop
+Comment=A simple & beautiful desktop client for WhatsApp Web.
+#Exec=/home/bandithijo/git/Whatsapp-Desktop/dist/WhatsApp-linux-x64/WhatsApp
+Exec=/home/bandithijo/app/whatsapp/Whatsapp-Desktop/dist/WhatsApp-linux-x64/WhatsApp
+Icon=whatsapp
+Terminal=false
+Type=Application
+StartupNotify=true
+StartupWMClass=whatsapp
+Keywords=WhatsApp;Whats;
+Categories=Network;InstantMessaging;
+X-GNOME-UsesNotifications=true

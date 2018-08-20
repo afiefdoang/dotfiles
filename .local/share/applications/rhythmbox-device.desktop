@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Rhythmbox
+Comment=Play and organize your music collection
+Exec=rhythmbox-client --select-source %U
+Terminal=false
+Type=Application
+Icon=rhythmbox
+X-GNOME-DocPath=rhythmbox/rhythmbox.xml
+Categories=GNOME;GTK;AudioVideo;
+MimeType=x-content/audio-player;x-content/audio-cdda;
+StartupNotify=false
+NoDisplay=true

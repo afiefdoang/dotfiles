@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Links
+Exec=xlinks -g
+Icon=links
+Type=Application
+Terminal=false
+Categories=Network;WebBrowser;
+NoDisplay=true

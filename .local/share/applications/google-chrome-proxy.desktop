@@ -1,0 +1,29 @@
+[Desktop Entry]
+Name=Google Chrome + Proxy
+# Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
+# From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413.
+# Gnome and KDE 3 uses Comment.
+Comment=Access the Internet
+StartupWMClass=Google-chrome
+#Exec=/usr/bin/google-chrome-stable --password-store=gnome %U
+#Exec=google-chrome-stable --password-store=gnome
+Exec=/usr/bin/google-chrome-stable --proxy-server="socks5://localhost:8080"%U
+#Exec=env GTK_THEME=Adwaita /usr/bin/google-chrome-stable %U
+Terminal=false
+Icon=google-chrome
+Type=Application
+Categories=Network;WebBrowser;
+Actions=NewWindow;NewPrivateWindow;
+
+[Desktop Action NewWindow]
+Name=New Window
+StartupWMClass=Google-chrome
+Exec=/usr/bin/google-chrome-stable --proxy-server="socks5://localhost:8080"
+#Exec=env GTK_THEME=Adwaita /usr/bin/google-chrome-stable
+
+[Desktop Action NewPrivateWindow]
+Name=New Incognito Window
+StartupWMClass=Google-chrome
+Exec=/usr/bin/google-chrome-stable --incognito --proxy-server="socks5://localhost:8080"
+#Exec=env GTK_THEME=Adwaita /usr/bin/google-chrome-stable --incognito
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;

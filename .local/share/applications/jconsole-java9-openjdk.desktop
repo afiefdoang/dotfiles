@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=OpenJDK Java 9 Console
+Comment=OpenJDK Java 9 Monitoring & Management Console
+Keywords=java;console;monitoring
+Exec=/usr/lib/jvm/java-9-openjdk/bin/jconsole
+Terminal=false
+Type=Application
+Icon=java9-openjdk
+Categories=Application;System;
+NoDisplay=true

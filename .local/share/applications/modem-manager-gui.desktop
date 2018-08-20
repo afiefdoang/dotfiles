@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Modem Manager GUI
+Comment=Graphical interface for Modem manager daemon control
+Exec=modem-manager-gui
+Icon=modem-manager-gui
+Terminal=false
+Type=Application
+Categories=System;
+Keywords=modem;manager;sms;ussd;
+NoDisplay=true

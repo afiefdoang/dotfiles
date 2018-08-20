@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Logs
+Comment=View detailed event logs for the system
+Keywords=log;journal;debug;error;
+Type=Application
+Categories=GTK;GNOME;System;Monitor;Utility;X-GNOME-Utilities;
+Exec=gnome-logs
+Icon=gnome-logs
+Terminal=false
+StartupNotify=true
+DBusActivatable=true

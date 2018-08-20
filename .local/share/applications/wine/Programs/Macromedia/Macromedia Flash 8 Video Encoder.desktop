@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Macromedia Flash 8 Video Encoder
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/bandithijo/Start\\ Menu/Programs/Macromedia/Macromedia\\ Flash\\ 8\\ Video\\ Encoder.lnk
+Type=Application
+StartupNotify=true
+Path=/home/bandithijo/.wine/dosdevices/c:/Program Files (x86)/Macromedia/Flash 8 Video Encoder/
+Icon=E96F_ARPPRODUCTICONFLV1.0
+StartupWMClass=flash 8 video encoder.exe

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Htop
+Type=Application
+Comment=Show System Processes
+Terminal=true
+Exec=htop
+Icon=htop
+Categories=ConsoleOnly;System;
+Keywords=system;process;task
+NotShowIn=GNOME;XFCE;

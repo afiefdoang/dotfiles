@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=winebrowser
+MimeType=application/x-shockwave-flash;
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine start /ProgIDOpen MacromediaFlashPaper.MacromediaFlashPaper %f
+NoDisplay=true
+StartupNotify=true
+Icon=7765_winebrowser.0

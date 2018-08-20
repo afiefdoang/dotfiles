@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment=An easy to use screencast creator
+Exec=/home/bandithijo/.local/bin/vokoscreen
+#Exec=env QT_STYLE_OVERRIDE=Adwaita vokoscreen
+Icon=vokoscreen
+Name=vokoscreen
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=AudioVideo;Recorder;Qt;
+Keywords=Audio;Video;Recorder;Screencast;

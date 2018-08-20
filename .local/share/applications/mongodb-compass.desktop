@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=MongoDB Compass
+Comment=The MongoDB GUI
+GenericName=MongoDB Compass
+Exec=mongodb-compass %U
+Icon=mongodb-compass
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;
+
+Path=
+Terminal=false

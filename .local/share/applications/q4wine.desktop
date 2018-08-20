@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Qt;System;Emulator;
+Exec=q4wine -b %u
+Icon=q4wine
+Name=Q4Wine
+StartupNotify=true
+Terminal=false
+Type=Application
+MimeType=application/x-ms-dos-executable;application/x-msi;
+Keywords=Wine;Windows;Emulator;
+NoDisplay=true

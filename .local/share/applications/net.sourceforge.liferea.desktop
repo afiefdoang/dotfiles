@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Liferea
+Comment=Read news feeds and blogs
+Keywords=news;feed;aggregator;blog;podcast;
+#Exec=liferea %U
+Exec=env GTK_THEME=Adwaita liferea %U
+DBusActivatable=true
+Icon=liferea
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Network;News;
+Version=1.1
+MimeType=application/rss+xml;application/atom+xml;application/rdf+xml;x-scheme-handler/feed

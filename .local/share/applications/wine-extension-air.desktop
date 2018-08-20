@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Adobe AIR Application Installer
+MimeType=application/vnd.adobe.air-application-installer-package+zip;
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine start /ProgIDOpen AIR.InstallerPackage %f
+NoDisplay=true
+StartupNotify=true
+Icon=5C3A_ADOB~DWN.0

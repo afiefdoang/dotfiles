@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Categories=Office;Dictionary;Education;Qt
+Name=GoldenDict
+Comment=Feature-rich dictionary lookup program
+Encoding=UTF-8
+Icon=goldendict
+Exec=goldendict
+Hidden=true
