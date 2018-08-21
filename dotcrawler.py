@@ -195,6 +195,7 @@ echo '[ DONE ] Copy dotfiles from ~/.oh-my-zsh user directory'
 # -----------------------------------------------------------------------------
 mkdir -p {newsboatDir}
 cp ~/.newsboat/config {newsboatDir}
+cp ~/.newsboat/urls {newsboatDir}
 
 echo '[ DONE ] Copy dotfiles from ~/.newsboat user directory'
 # -----------------------------------------------------------------------------
