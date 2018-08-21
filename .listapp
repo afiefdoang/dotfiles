@@ -115,6 +115,7 @@ foomatic-db-ppds
 fprintd
 freetype2
 gawk
+gcalcli
 gcc
 gcc-go
 gcc-objc
@@ -217,6 +218,7 @@ kdenlive
 keepassxc
 key-mon
 keychain
+khal
 kismet
 klavaro
 kmag
@@ -341,7 +343,6 @@ perl-net-oauth
 perl-path-class
 pgadmin4
 php
-pikaur
 pinta
 png++
 polkit-gnome
@@ -473,6 +474,7 @@ termdown
 terminess-powerline-font-git
 terminus-font
 terminus-font-ttf
+termite
 termsyn-font
 testdisk
 texinfo
@@ -524,6 +526,7 @@ urxvt-perls
 urxvt-resize-font-git
 usbutils
 util-linux
+vdirsyncer
 vi
 vicious
 vinagre
