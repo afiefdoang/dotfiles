@@ -53,10 +53,10 @@ URxvt.allow_bold:             true
 !                             size of terminus font : 12 14 16 18 20 22 24 28 32
 !URxvt.font:         	      -xos4-terminesspowerline-medium-r-normal--16-*-72-72-c-*-iso10646-1
 !URxvt.boldFont:               -xos4-terminesspowerline-bold-r-normal--16-*-72-72-c-*-iso10646-1
-URxvt.font:                   xft:xos4 Terminess Powerline:pixelsize=16:antialias=true:hinting=true
-URxvt.boldFont:               xft:xos4 Terminess Powerline:bold:pixelsize=16:antialias=true:hinting=true
-!URxvt.font:                   xft:Hack:pixelsize=12:antialias=true:hinting=true
-!URxvt.boldFont:               xft:Hack:bold:pixelsize=12:antialias=true:hinting=true
+!URxvt.font:                   xft:xos4 Terminess Powerline:pixelsize=16:antialias=true:hinting=true
+!URxvt.boldFont:               xft:xos4 Terminess Powerline:bold:pixelsize=16:antialias=true:hinting=true
+URxvt.font:                   xft:Hack:pixelsize=14:antialias=true:hinting=true
+URxvt.boldFont:               xft:Hack:bold:pixelsize=14:antialias=true:hinting=true
 !URxvt.font:                   xft:Menlo for Powerline:pixelsize=12:antialias=true:hinting=true
 !URxvt.boldFont:               xft:Menlo for Powerline:bold:pixelsize=12:antialias=true:hinting=true
 
@@ -65,7 +65,7 @@ URxvt.colorUL:                #879C00
 URxvt.lineSpace:              0
 
 ! Fix font space
-URxvt.letterSpace:            0
+URxvt.letterSpace:            -1
 
 ! Scrollbar
 URxvt.scrollStyle:            rxvt
