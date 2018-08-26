@@ -74,7 +74,7 @@ set sidebar_width = 30
 set sidebar_short_path = no
 set sidebar_sort_method = 'unsorted'
 set sidebar_next_new_wrap = yes
-# set sidebar_divider_char = '|'
+#set sidebar_divider_char = '|'
 set mail_check_stats
 set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%?S?%S?'
 bind index,pager \Ck sidebar-prev
