@@ -179,6 +179,9 @@ alias ncpamixer="ncpamixer -c .ncpamixer.conf"
 alias macchanger-on="sudo mv /etc/systemd/network/00-default.link.bak /etc/systemd/network/00-default.link && echo 'Reboot to take effect !'"
 alias macchanger-off="sudo mv /etc/systemd/network/00-default.link /etc/systemd/network/00-default.link.bak && echo 'Reboot to take effect !'"
 
+# nameserver dnscrypt
+alias dnscrypt-proxy-on="sudo systemctl start dnscrypt-proxy && sudo sed -i s/192.168.1.1/127.0.0.1/g /etc/resolv.conf"
+
 # POWERLINE ARCH
 #if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
 #  source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
