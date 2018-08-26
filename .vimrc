@@ -28,6 +28,7 @@ set nocompatible              " be iMproved, required
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Manager {{{
 " Plugin Manager : vim-plug
 " Source : https://github.com/junegunn/vim-plug
 
@@ -79,29 +80,29 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
-Plug 'python-mode/python-mode', {'branch': 'develop'}
+Plug 'python-mode/python-mode'
+"Plug 'python-mode/python-mode', {'branch': 'develop'}
 "Plug 'Raimondi/delimitMate'
 "Plug 'nikvdp/ejs-syntax'
 Plug 'briancollins/vim-jst'
 "Plug 'ryanoasis/vim-devicons'
+Plug 'SirVer/ultisnips'
 
 call plug#end()
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ########## Basic
+" Basic {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 filetype plugin indent on
 set encoding=UTF-8
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ######### General
+" General {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set backspace=indent,eol,start " make backspace a more flexible
 set backup " make backup files
@@ -121,12 +122,11 @@ set ttimeoutlen=50  " make Esc work faster
 set autoread " make vim monitor realtime changes to a file
 au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving
 au FocusGained,BufEnter * :checktime " auto update trigger on buffer change or terminal focus
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ########## VIM User Interface
+" VIM User Interface {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 colorscheme solarized-bandit
 set background=dark
@@ -146,8 +146,8 @@ set relativenumber " turn on line numbers
 set nu " turn on line number on selected line
 set report=0 " tell us when anything is changed
 set ruler " always show current positions along the bottom
-"set foldmethod=syntax
-"set foldlevel=1 " default unfold when open a file
+set foldmethod=syntax
+set foldlevel=0 " default unfold when open a file
 set shortmess=atToO " shortens messages to avoid 'press a key' prompt
 set showcmd " show the command being typed
 set showmode " show current mode
@@ -161,12 +161,11 @@ if &diff " change colorscheme when using vimdiff
   colorscheme solarized-bandit
   "colorscheme Tomorrow-Night-Bandit
 endif
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ########## Text Formatting/Layout
+" Text Formatting/Layout {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set wrap " wrap text
 "set textwidth=79 " to 79 characters
@@ -182,12 +181,11 @@ set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
 autocmd Filetype php setlocal shiftwidth=4 tabstop=4
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ########## Keyboard Mappings
+" Keyboard Mappings {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " my leader key is comma
 let mapleader = ","
@@ -295,29 +293,31 @@ vno <down> <Nop>
 vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ########## Plugins Settings
+" Plugins Settings
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" NerdTree
+" NerdTree {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let NERDTreeHijackNetrw = 0
 "let g:NERDTreeDirArrowExpandable = '▸'
 "let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" emmet-vim trigger key remap
+" emmet-vim trigger key remap {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:user_emmet_leader_key='<C-space>' " then press , (comma) to do magic !
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Vim-Airline
+" Vim-Airline {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -328,44 +328,50 @@ let g:powerline_pycmd = 'py3'
 let g:airline_theme = 'solarized_bandit'
 "let g:airline_theme = 'atomic'
 "let g:airline_theme = 'molokai'
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Rubycomplete
+" Rubycomplete {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:rubycomplete_rails=1
 let g:rubycomplete_classes_in_global=1
 let g:rubycomplete_buffer_loading=1
 let g:rubycomplete_include_object=1
 let g:rubycomplete_include_objectspace=1
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" CtrlP
+" CtrlP {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "nmap <leader>r :CtrlPMRUFiles<cr>
 "nmap <C-b> :CtrlPBuffer<cr>
 "let g:ctrlp_match_window = 'bottom,order:ttb,min:1,max:20,results:20'
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Vim-Snipmate
+" Vim-Snipmate {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:snipMateTrigger = '<c-space>'
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Greplace
+" Greplace {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" pylint
+" pylint {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_python_checkers = ['pylint']  "" or ['flake8', 'pylint'], etc
 let g:syntastic_python_pylint_args = '-E'
 "" to show it accepts a string of args, also:
 let g:syntastic_python_pylint_args = '--rcfile=/path/to/rc -E'
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Markdown Preview
+" Markdown Preview {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:mkdp_path_to_chrome = "/usr/bin/firefox"
 " path to the chrome or the command to open chrome(or other modern browsers)
@@ -395,12 +401,6 @@ let g:mkdp_command_for_global = 0
 " set to 1, the MarkdownPreview command can be use for all files,
 " by default it just can be use in markdown file
 
-" FZF
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" # --color=[BASE_SCHEME][,COLOR:ANSI]
-" fzf --color=bg+:24
-" fzf --color=light,fg:232,bg:255,bg+:116,info:27
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Mapping for markdown-preview
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -408,9 +408,18 @@ let g:mkdp_command_for_global = 0
 "imap <F10> <Plug>MarkdownPreview        " for insert mode
 "nmap <F11> <Plug>StopMarkdownPreview    " for normal mode
 "imap <F11> <Plug>StopMarkdownPreview    " for insert mode
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Python-Mode
+" FZF {{{
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" # --color=[BASE_SCHEME][,COLOR:ANSI]
+" fzf --color=bg+:24
+" fzf --color=light,fg:232,bg:255,bg+:116,info:27
+" }}}
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Python-Mode {{{
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:pymode_python = 'python3'
 let g:pymode_rope = 0
@@ -419,7 +428,15 @@ let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_autoimport = 0
 let g:python_host_prog = "/usr/bin/python2"
 let g:python3_host_prog = "/usr/bin/python"
+" }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 
+
+
+
+
+
+
+" vim: ft=vim fdm=marker
