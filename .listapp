@@ -1,6 +1,5 @@
 acpi
 acpi_call
-acpi_call-lts
 adwaita-icon-theme
 adwaita-qt4
 adwaita-qt5
@@ -244,9 +243,6 @@ lightdm-gtk-greeter-settings
 lightdm-slick-greeter
 linux
 linux-headers
-linux-lts
-linux-lts-docs
-linux-lts-headers
 logrotate
 lolcat
 lsb-release
@@ -315,7 +311,6 @@ openssh
 opera
 orca
 otf-fantasque-sans-mono
-otf-font-awesome
 otf-ipafont
 package-query
 packettracer
@@ -435,6 +430,7 @@ rkhunter
 rlwrap
 rofi
 rpmextract
+rust
 rxvt-unicode
 s-nail
 s-tui
@@ -503,7 +499,6 @@ ttf-fantasque-sans-mono
 ttf-fira-mono
 ttf-fira-sans
 ttf-fixedsys-excelsior-linux
-ttf-font-awesome
 ttf-freefont
 ttf-hanazono
 ttf-inconsolata
