@@ -82,12 +82,12 @@ echo '[ DONE ] Copy dotfiles from /home user directory'
 # -----------------------------------------------------------------------------
 ##### Content from /etc Directory
 # -----------------------------------------------------------------------------
-# lightdm
+# LIGHTDM
 mkdir -p {etcDir}/lightdm
 cp /etc/lightdm/lightdm.conf {etcDir}/lightdm
 cp /etc/lightdm/slick-greeter.conf {etcDir}/lightdm
 
-# pam
+# PAM
 mkdir -p {etcDir}/pam.d
 cp /etc/pam.d/i3lock {etcDir}/pam.d
 cp /etc/pam.d/login {etcDir}/pam.d
@@ -111,6 +111,8 @@ cp -r ~/.config/conky {configDir}
 cp -r ~/.config/compton {configDir}
 cp -r ~/.config/dunst {configDir}
 cp -r ~/.config/i3 {configDir}
+cp -r ~/.config/mpd {configDir}
+cp -r ~/.config/ncmpcpp {configDir}
 cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/rofi {configDir}
@@ -120,22 +122,22 @@ cp -r ~/.config/urxvt {configDir}
 cp ~/.config/user-dirs.dirs {configDir}
 cp ~/.config/user-dirs.conf {configDir}
 
-# gtk3
+# GTK3
 #mkdir -p {configDir}/gtk-3.0
 #cp ~/.config/gtk-3.0/bookmarks {configDir}/gtk-3.0
 #cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
 
-# mpv
+# MPV
 mkdir -p {configDir}/mpv
 cp ~/.config/mpv/mpv.conf {configDir}/mpv
 cp ~/.config/mpv/input.conf {configDir}/mpv
 
-# mutt
+# MUTT
 mkdir -p {configDir}/mutt
 cp -r ~/.config/mutt/mutt-colors-solarized {configDir}/mutt
 cp ~/.config/mutt/muttrc {configDir}/mutt
 
-# ranger
+# RANGER
 mkdir -p {configDir}/ranger
 cp -r ~/.config/ranger/colorschemes {configDir}/ranger
 cp ~/.config/ranger/commands.py {configDir}/ranger
@@ -151,11 +153,11 @@ echo '[ DONE ] Copy dotfiles from ~/.config user directory'
 # -----------------------------------------------------------------------------
 ##### Content from .local Directory
 # -----------------------------------------------------------------------------
-# rofi-power
+# ROFI-POWER
 mkdir -p {localDir}/bin
 cp ~/.local/bin/rofi-power {localDir}/bin
 
-# application desktop configuration files
+# APPLICATION DESKTOP CONFIG FILES
 mkdir -p {localDir}/share
 cp -r ~/.local/share/applications {localDir}/share
 
