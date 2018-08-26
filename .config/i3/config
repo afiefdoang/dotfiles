@@ -57,7 +57,7 @@ bindsym $mod+Return exec --no-startup-id urxvt
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 8 -width 500 -i -sort'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 8 -width 400 -i -sort'
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn 'xos4 Terminess Powerline-9' -nb '#268BD2' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#002B36' -i -h '21'"
 
 # change focus
@@ -407,6 +407,10 @@ exec --no-startup-id i3-msg border none
 
 # Start Conky
 #exec killall conky ; conky -c ~/.config/conky/conkyrc
+
+# Enable dnscrypt-proxy
+#exec --no-startup-id sudo systemctl start dnscrypt-proxy && sudo sed -i s/192.168.1.1/127.0.0.1/g /etc/resolv.conf
+#exec --no-startup-id $HOME/app/dnscrypt/linux-x86_64/dnscrypt-proxy start
 
 # Enable Compton for compositor
 exec_always killall compton ; compton -b --respect-prop-shadow --config ~/.config/compton/compton.conf
