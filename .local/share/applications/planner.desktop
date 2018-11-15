@@ -1,0 +1,19 @@
+[Desktop Entry]
+Version=1.0
+Name=Planner
+GenericName=Project Management
+X-GNOME-FullName=Planner Project Management
+Comment=Handle the tasks, resources, and cost of your projects
+Keywords=Gantt;Chart;Critical path;Relationship;Dependency;WBS;
+#Exec=env GTK2_RC_FILES=/usr/share/themes/NumixSolarizedLightBlue/gtk-2.0/gtkrc planner %F
+Exec=env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc planner %F
+Icon=gnome-planner.png
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Application;Office;ProjectManagement;
+StartupNotify=true
+MimeType=application/x-planner;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=planner
+X-GNOME-Bugzilla-Component=General
+X-GNOME-Bugzilla-Version=0.14.6

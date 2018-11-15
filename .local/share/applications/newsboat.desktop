@@ -1,8 +1,10 @@
 [Desktop Entry]
 Name=newsboat
 Comment=Newsbeuter is an open-source RSS/Atom feed reader for text terminals.
-#Exec=urxvt -e newsboat
-Exec=env GTK_THEME=Adwaita urxvt -e newsboat
+#Exec=termite -e newsboat
+Exec=urxvt -e newsboat
+#Exec=env GTK_THEME=Adwaita urxvt -e newsboat
+#Exec=env GTK_THEME=Adwaita xfce4-terminal -x newsboat
 Icon=liferea
 Terminal=false
 Type=Application

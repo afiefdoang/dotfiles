@@ -5,9 +5,8 @@ Comment=Official desktop application for the Telegram messaging service
 #TryExec=/home/bandithijo/.local/share/TelegramDesktop/Telegram
 #Exec=/home/bandithijo/.local/share/TelegramDesktop/Telegram -- %u
 #Exec=/home/bandithijo/.local/share/TelegramDesktop/Telegram
-#Exec=telegram-desktop
-#Exec=env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc telegram-desktop
-Exec=env GTK_THEME=Adwaita telegram-desktop
+Exec=telegram-desktop
+#Exec=env GTK_THEME=Adwaita telegram-desktop
 Icon=telegram
 Terminal=false
 StartupWMClass=TelegramDesktop

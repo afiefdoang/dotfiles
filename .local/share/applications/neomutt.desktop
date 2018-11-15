@@ -1,8 +1,10 @@
 [Desktop Entry]
 Name=mutt
 Comment=Command line mail reader, fork of Mutt with added features.
-#Exec=urxvt -e neomutt
-Exec=env GTK_THEME=Adwaita urxvt -e neomutt
+#Exec=termite -e neomutt
+Exec=urxvt -e neomutt
+#Exec=env GTK_THEME=Adwaita urxvt -e neomutt
+#Exec=env GTK_THEME=Adwaita xfce4-terminal -e neomutt
 Icon=evolution
 Terminal=false
 Type=Application

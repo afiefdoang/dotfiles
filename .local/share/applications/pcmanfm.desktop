@@ -9,6 +9,7 @@ Exec=pcmanfm %U
 StartupNotify=true
 Terminal=false
 MimeType=inode/directory;
+NoDisplay=false
 
 [Desktop Action new-window]
 Name=PCmanFM New Window

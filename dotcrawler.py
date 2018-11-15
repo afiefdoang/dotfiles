@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/env python
 
 #  ██████                           ██ ██   ██   ██      ██ ██    ██
 # ░█░░░░██                         ░██░░   ░██  ░██     ░██░░    ░░
@@ -114,9 +114,10 @@ cp -r ~/.config/i3 {configDir}
 cp -r ~/.config/mpd {configDir}
 cp -r ~/.config/ncmpcpp {configDir}
 cp -r ~/.config/nvim {configDir}
-cp -r ~/.config/nvim {configDir}
+cp -r ~/.config/newsboat {configDir}
 cp -r ~/.config/rofi {configDir}
 cp -r ~/.config/rofi-power {configDir}
+cp -r ~/.config/polybar {configDir}
 cp -r ~/.config/urxvt {configDir}
 
 cp ~/.config/user-dirs.dirs {configDir}
@@ -189,17 +190,6 @@ cp ~/.oh-my-zsh/themes/avit-bandit.zsh-theme {ohMyZshDir}/themes
 cp ~/.oh-my-zsh/themes/bureau-bandit.zsh-theme {ohMyZshDir}/themes
 
 echo '[ DONE ] Copy dotfiles from ~/.oh-my-zsh user directory'
-# -----------------------------------------------------------------------------
-
-
-# -----------------------------------------------------------------------------
-##### Content from .newsboat Directory
-# -----------------------------------------------------------------------------
-mkdir -p {newsboatDir}
-cp ~/.newsboat/config {newsboatDir}
-cp ~/.newsboat/urls {newsboatDir}
-
-echo '[ DONE ] Copy dotfiles from ~/.newsboat user directory'
 # -----------------------------------------------------------------------------
 
 

@@ -80,13 +80,14 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
-Plug 'python-mode/python-mode'
-"Plug 'python-mode/python-mode', {'branch': 'develop'}
+Plug 'python-mode/python-mode', {'branch': 'develop'}
 "Plug 'Raimondi/delimitMate'
 "Plug 'nikvdp/ejs-syntax'
 Plug 'briancollins/vim-jst'
 "Plug 'ryanoasis/vim-devicons'
 Plug 'SirVer/ultisnips'
+Plug 'tweekmonster/django-plus.vim'
+Plug 'tpope/vim-liquid'
 
 call plug#end()
 " }}}
@@ -169,14 +170,14 @@ endif
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set wrap " wrap text
 "set textwidth=79 " to 79 characters
-"set colorcolumn=79 " and warn me if my line gets over 85 characters
+set colorcolumn=79 " and warn me if my line gets over 85 characters
 set formatoptions=cqt " see :help fo-table
 set infercase " case inferred by default
 set shiftround " round the indent to shiftwidth (when at 3 spaces, and I hit > go to 4, n    ot 5)
 set expandtab " no real tabs please!
 set shiftwidth=4 " auto-indent amount when using >> <<
 set softtabstop=4 " when hitting tab or backspace, how many spaces should a tab be (see e    xpandtab)
-set tabstop=8 " real tabs should be 4, and they will show with set list on
+set tabstop=4 " real tabs should be 4, and they will show with set list on
 set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
@@ -293,6 +294,10 @@ vno <down> <Nop>
 vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
+
+" Code folding saved after exit vim
+autocmd BufWinLeave .* mkview
+autocmd BufWinEnter .* silent loadview
 " }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

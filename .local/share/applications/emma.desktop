@@ -3,8 +3,9 @@ Encoding=UTF-8
 Type=Application
 Categories=GNOME;Application;Development
 Comment=Database Administration
-Exec=emma
-#Exec=env GTK_THEME=NumixSolarizedLightBlue emma
+#Exec=emma
+#Exec=env GTK_THEME=NumixSolarizedDarkBlue emma
+Exec=env GTK2_RC_FILES=/usr/share/themes/NumixSolarizedDarkBlue/gtk-2.0/gtkrc emma
 Icon=emma
 Name=Emma
 Terminal=false

@@ -3,10 +3,10 @@
 #[[ -f ~/.Xresources ]] && xrdb -merge "${HOME}/.Xresources"
 
 # initialize X resource database (if file ~/.Xresources is present on the system)
-#xrdb -load ~/.Xresources
+xrdb -load ~/.Xresources
 
 # Start GNOME Keyring
-#eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 #export SSH_AUTH_SOCK
 
 # Launch i3 window manager
@@ -17,6 +17,8 @@
 
 ## Executed by startx (run your window manager from here)
 xrdb -load ~/.Xresources
+xset +fp /usr/share/fonts/local
+xset fp rehash
 
 if [ -d /etc/X11/xinit/xinitrc.d  ]; then
   for f in /etc/X11/xinit/xinitrc.d/*; do

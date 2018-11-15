@@ -15,3 +15,4 @@ X-KDE-Username=
 Icon=wps-office-etmain
 InitialPreference=3
 StartupWMClass=et
+NoDisplay=true

@@ -22,7 +22,7 @@
 
 background no
 use_xft yes
-xftfont xos4 Terminess Powerline:size=7.5
+xftfont Hack:size=7.5
 xftalpha 0.1
 update_interval 1
 total_run_times 0
@@ -45,8 +45,8 @@ default_shade_color #002B36
 default_outline_color #002B36
 alignment top_left
 
-gap_x 5
-gap_y 5
+gap_x 10
+gap_y 20
 
 stippled_borders 0
 border_inner_margin 0
@@ -61,54 +61,26 @@ use_spacer left
 text_buffer_size 256
 
 own_window_color #002B36
+
+own_window_colour 000000
 TEXT
 
-#${voffset -5}
-#${font ShureTechMono Nerd Font:bold:size=16.5}${color #dddddd}BANDITHIJO-X260
-#${voffset -80}
-
-${voffset -15}
-${font xos4 Terminess Powerline:bold:size=8}${color #dddddd}SYSTEM INFO
+${voffset 0}
+${font Hack:bold:size=8}${color #BCC3C3}SYSTEM INFO
 $font${color #4a4a4a}$sysname $kernel ${alignr} $machine
 Intel CORE i5-6300 ${alignr} ${freq_g cpu0}Ghz
 Uptime ${alignr} ${uptime}
 File System ${alignr} ${fs_type}
-#Email $alignr ${execpi 5 python /home/bandithijo/.config/checkMail.py}
 
-${font xos4 Terminess Powerline:bold:size=8}${color #dddddd}PROCESSORS
-$font${color #4a4a4a}Thread1 ${cpu cpu1}% ${cpubar cpu1}
-Thread2 ${cpu cpu2}% ${cpubar cpu2}
-Thread3 ${cpu cpu3}% ${cpubar cpu3}
-Thread4 ${cpu cpu4}% ${cpubar cpu4}
-
-${font xos4 Terminess Powerline:bold:size=8}${color #dddddd}MEMORY
+${font Hack:bold:size=8}${color #BCC3C3}MEMORY
 $font${color #4a4a4a}MEM $mem / $memmax ${alignr} $memperc%
 ${membar 5,199}
 
-${font xos4 Terminess Powerline:bold:size=8}${color #dddddd}HDD
+${font Hack:bold:size=8}${color #BCC3C3}HDD
 $font${color #4a4a4a}/ ${fs_used /} / ${fs_size /} ${alignr} ${fs_free_perc /}%
 ${fs_bar 5,199 /}
 
-${font xos4 Terminess Powerline:bold:size=8}${color #dddddd}TOP PROCESSES
-${color #4a4a4a}$font${top_mem name 1}${alignr}${top mem 1} %
-$font${top_mem name 2}${alignr}${top mem 2} %
-$font${top_mem name 3}${alignr}${top mem 3} %
-$font${top_mem name 4}${alignr}${top mem 4} %
-$font${top_mem name 5}${alignr}${top mem 5} %
-#$font${top_mem name 6}${alignr}${top mem 6} %
-#$font${top_mem name 7}${alignr}${top mem 7} %
-#$font${top_mem name 8}${alignr}${top mem 8} %
-#$font${top_mem name 9}${alignr}${top mem 9} %
-#$font${top_mem name 10}${alignr}${top mem 10} %
-
-${font xos4 Terminess Powerline:bold:size=8}${color #dddddd}NETWORKS
-$font${color #4a4a4a}IP on enp0s31f6 ${alignr} ${addr enp0s31f6}
-Down ${alignr} ${downspeed enp0s31f6} kb/s
-Up ${alignr} ${upspeed enp0s31f6} kb/s
-
-Downloaded: ${alignr} ${totaldown enp0s31f6}
-Uploaded: ${alignr} ${totalup enp0s31f6}
-${color #4a4a4a}${downspeedgraph enp0s31f6 20,97 #4a4a4a #4a4a4a} ${color #4a4a4a}${upspeedgraph enp0s31f6 20,97 #4a4a4a #4a4a4a}
+${font Hack:bold:size=8}${color #BCC3C3}NETWORKS
 $font${color #4a4a4a}IP on wlp4s0 ${alignr} ${addr wlp4s0}
 Down ${alignr} ${downspeed wlp4s0} kb/s
 Up ${alignr} ${upspeed wlp4s0} kb/s
@@ -117,47 +89,18 @@ Downloaded: ${alignr} ${totaldown wlp4s0}
 Uploaded: ${alignr} ${totalup wlp4s0}
 ${downspeedgraph wlp4s0 20,97 #4a4a4a #4a4a4a} ${upspeedgraph wlp4s0 20,97 #4a4a4a #4a4a4a}
 
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
-${hr}
+${voffset -40}
+${font Hack:bold:size=124}${color #4A7580}${time %H}
+${voffset -250}
+${font Hack:bold:size=124}${color #4A7580}${time %M}
+${voffset -340}
+${offset -4}${font Hack:bold:size=21}${color #4A7580}${time [%Y/%m/%d]}
 
-# ${font ShureTechMono Nerd Font:bold:size=8}${color #dddddd}NUCLEAR+ ${color #4a4a4a}
-# $font${color #4a4a4a}Reactor 0 : ${battery_time BAT0} ${alignr 204} ${battery_percent BAT0}%
-# ${battery_bar 5,195 BAT0}
-# $font${color #4a4a4a}Reactor 1 : ${battery_time BAT1} ${alignr 204} ${battery_percent BAT1}%
-# ${battery_bar 5,195 BAT1}
+#${image /home/bandithijo/.config/conky/archlogo.png -p 25,680 -s 149x40}
+
+#${font ShureTechMono Nerd Font:bold:size=8}${color #dddddd}NUCLEAR+ ${color #4a4a4a}
+#$font${color #4a4a4a}Reactor 0 : ${battery_time BAT0} ${alignr 204} ${battery_percent BAT0}%
+#${battery_bar 5,195 BAT0}
+#$font${color #4a4a4a}Reactor 1 : ${battery_time BAT1} ${alignr 204} ${battery_percent BAT1}%
+#${battery_bar 5,195 BAT1}
 

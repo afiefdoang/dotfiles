@@ -6,4 +6,4 @@ Exec=/usr/bin/catfish
 Icon=catfish
 Terminal=false
 Type=Application
-NoDisplay=true
+NoDisplay=false

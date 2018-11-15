@@ -4,7 +4,8 @@ Type=Application
 Name=NetBeans
 Comment=IDE for Java, HTML5, PHP, Groovy, C and C++
 #Exec=netbeans %f
-Exec=netbeans
+#Exec=netbeans
+Exec=/usr/local/netbeans-8.2/bin/netbeans
 #Exec=env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc netbeans
 Icon=netbeans
 Terminal=false

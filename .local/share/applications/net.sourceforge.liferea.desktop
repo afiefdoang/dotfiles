@@ -2,8 +2,8 @@
 Name=Liferea
 Comment=Read news feeds and blogs
 Keywords=news;feed;aggregator;blog;podcast;
-#Exec=liferea %U
-Exec=env GTK_THEME=Adwaita liferea %U
+Exec=liferea %U
+#Exec=env GTK_THEME=Adwaita liferea %U
 DBusActivatable=true
 Icon=liferea
 StartupNotify=true

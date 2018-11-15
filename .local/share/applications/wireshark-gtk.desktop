@@ -8,7 +8,8 @@ Name=Wireshark (GTK+)
 Comment=Network traffic analyzer
 Icon=wireshark
 TryExec=wireshark-gtk
-Exec=env GTK_THEME=Adwaita wireshark-gtk %f
+Exec=wireshark-gtk %f
+#Exec=env GTK_THEME=Adwaita wireshark-gtk %f
 Terminal=false
 MimeType=application/vnd.tcpdump.pcap;application/x-pcapng;application/x-snoop;application/x-iptrace;application/x-lanalyzer;application/x-nettl;application/x-radcom;application/x-etherpeek;application/x-visualnetworks;application/x-netinstobserver;application/x-5view;application/x-tektronix-rf5;
 # Category entry according to:

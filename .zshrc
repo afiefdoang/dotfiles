@@ -30,6 +30,7 @@ export ZSH=/home/bandithijo/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="terminalparty"
 #ZSH_THEME="bureau-bandit"
+#ZSH_THEME="cobalt2"
 ZSH_THEME="avit-bandit"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -120,7 +121,7 @@ prompt_context() {
 alias fireprox="proxychains env GTK_THEME=Adwaita firefox --private-window"
 
 # BACKUP ENTIRE SYSTEM
-alias devika!="sudo mkdir -p /run/media/bandithijo/BACKUP/BANDITHIJO-ARCH ; sudo rsync -avAXP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BACKUP/BANDITHIJO-ARCH"
+alias devika!="sudo rsync -avAXP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BACKUP-X260/BANDITHIJO-ARCH"
 
 # tty-clock
 alias clock="tty-clock -nscDC 7"
@@ -181,6 +182,12 @@ alias macchanger-off="sudo mv /etc/systemd/network/00-default.link /etc/systemd/
 
 # nameserver dnscrypt
 alias dnscrypt-proxy-on="sudo systemctl start dnscrypt-proxy && sudo sed -i s/192.168.1.1/127.0.0.1/g /etc/resolv.conf"
+
+# speedup trackpoint
+alias trackpoint-speedup="echo 240 | sudo tee /sys/devices/platform/i8042/serio1/serio2/sensitivity"
+
+# ranger
+alias ranger='TERM=xterm-256color ranger'
 
 # POWERLINE ARCH
 #if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then

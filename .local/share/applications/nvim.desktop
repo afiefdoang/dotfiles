@@ -1,12 +1,13 @@
 [Desktop Entry]
 Name=Neovim
 Comment=Edit text files
-# TryExec=nvim
+#TryExec=nvim
 #Exec=nvim %F
 #Exec=gnome-terminal -x nvim %F
-Exec=env GTK_THEME=Adwaita urxvt -e nvim %F
-#Exec=xfce4-terminal -e 'nvim %F' %f
+#Exec=env GTK_THEME=Adwaita xfce4-terminal -x nvim %F
 #Exec=xfce4-terminal -x nvim %F
+#Exec=termite -e 'nvim %F' %f
+Exec=urxvt -e nvim %F
 Terminal=false
 Type=Application
 Keywords=Text;editor;

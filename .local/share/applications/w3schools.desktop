@@ -9,3 +9,4 @@ Type=Application
 Categories=Educations;Programming;
 StartupNotify=true
 Name[id_ID]=w3schools
+NoDisplay=true

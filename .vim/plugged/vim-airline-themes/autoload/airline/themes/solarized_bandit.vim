@@ -24,7 +24,8 @@ function! airline#themes#solarized_bandit#refresh()
     let s:base01  = {'t': 19, 'g': "#586e75"}  " Base 02
     let s:base00  = {'t': 8,  'g': "#657b83"}  " Base 03
     let s:base0   = {'t': 20, 'g': "#839496"}  " Base 04
-    let s:base1   = {'t': 7,  'g': "#93a1a1"}  " Base 05
+    "let s:base1   = {'t': 7,  'g': "#93a1a1"}  " Base 05
+    let s:base1   = {'t': 7,  'g': "#bcc3c3"}  " Base 05
     let s:base2   = {'t': 21, 'g': "#eee8d5"}  " Base 06
     let s:base3   = {'t': 15, 'g': "#fdf6e3"}  " Base 07
     let s:yellow  = {'t': 3,  'g': "#dc322f"}  " Base 0A
@@ -41,7 +42,8 @@ function! airline#themes#solarized_bandit#refresh()
     let s:base01  = {'t': s:ansi_colors ?  10 : (s:tty ? '0' : 240), 'g': '#586e75'}
     let s:base00  = {'t': s:ansi_colors ?  11 : (s:tty ? '7' : 241), 'g': '#657b83'}
     let s:base0   = {'t': s:ansi_colors ?  12 : (s:tty ? '7' : 244), 'g': '#839496'}
-    let s:base1   = {'t': s:ansi_colors ?  14 : (s:tty ? '7' : 245), 'g': '#93a1a1'}
+    "let s:base1   = {'t': s:ansi_colors ?  14 : (s:tty ? '7' : 245), 'g': '#93a1a1'}
+    let s:base1   = {'t': s:ansi_colors ?  14 : (s:tty ? '7' : 245), 'g': '#bcc3c3'}
     let s:base2   = {'t': s:ansi_colors ?   7 : (s:tty ? '7' : 254), 'g': '#eee8d5'}
     let s:base3   = {'t': s:ansi_colors ?  15 : (s:tty ? '7' : 230), 'g': '#fdf6e3'}
     let s:yellow  = {'t': s:ansi_colors ?   3 : (s:tty ? '3' : 136), 'g': '#b58900'}
@@ -66,8 +68,8 @@ function! airline#themes#solarized_bandit#refresh()
     " untuk merubah sebelah NORMAL
     let s:N2 = [s:base02, (s:tty ? s:base01 : s:base00), '']
     " untuk merubah sebelahnya, sebelahnya lagi NORMAL
-    "let s:N3 = [s:base01, s:base02, '']
-    let s:N3 = [s:base01, s:base03, '']
+    let s:N3 = [s:base01, s:base02, '']
+    "let s:N3 = [s:base01, s:base03, '']
   else
     let s:N1 = [(s:dark_text ? s:base03 : s:base2), (s:use_green ? s:green : s:base00), 'bold']
     let s:N2 = [(s:tty ? s:base01 : s:base2), s:base1, '']

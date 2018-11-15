@@ -24,16 +24,16 @@
 # base03, bg, black, any of the non brights
 
 # basic colors ---------------------------------------------------------
-color normal        J_base00        J_bg            
-color error         J_red           J_bg            
-color tilde         J_base02        J_bg            
-color message       J_cyan          J_bg            
-color markers       J_red           J_base2         
-color attachment    J_base2         J_bg            
-color search        J_violet        J_bg            
-#color status        J_black         J_status        
-color status        J_statusfg      J_statusbg      
-color indicator     J_base03        J_yellow        
+color normal        J_base00        J_bg
+color error         J_red           J_bg
+color tilde         J_base02        J_bg
+color message       J_cyan          J_bg
+color markers       J_red           J_base2
+color attachment    J_base2         J_bg
+color search        J_violet        J_bg
+#color status        J_black         J_status
+color status        J_statusfg      J_statusbg
+color indicator     J_base03        J_yellow
 color tree          J_yellow        J_bg                                        # arrow in threads
 
 # basic monocolor screen
@@ -88,22 +88,22 @@ color index         J_yellow        J_red           "~v~(~D)"                   
 # message headers ------------------------------------------------------
 
 #color header        J_base01        J_bg            "^"
-color hdrdefault    J_base01        J_bg            
+color hdrdefault    J_base01        J_bg
 color header        J_base00        J_bg            "^(From)"
 color header        J_blue          J_bg            "^(Subject)"
 
 # body -----------------------------------------------------------------
 
-color quoted        J_blue          J_bg            
-color quoted1       J_cyan          J_bg            
-color quoted2       J_yellow        J_bg            
-color quoted3       J_red           J_bg            
-color quoted4       J_orange        J_bg            
+color quoted        J_blue          J_bg
+color quoted1       J_cyan          J_bg
+color quoted2       J_yellow        J_bg
+color quoted3       J_red           J_bg
+color quoted4       J_orange        J_bg
 
-color signature     J_base01        J_bg            
-color bold          J_base02        J_bg            
-color underline     J_base02        J_bg            
-color normal        J_fg            J_bg            
+color signature     J_base01        J_bg
+color bold          J_base02        J_bg
+color underline     J_base02        J_bg
+color normal        J_fg            J_bg
 #
 color body          J_base1         J_bg            "[;:][-o][)/(|]"    # emoticons
 color body          J_base1         J_bg            "[;:][)(|]"         # emoticons

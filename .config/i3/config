@@ -31,7 +31,10 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:xos4 Terminess Powerline 9
+font pango:Hack 9
+#font pango:xos4 Terminess Powerline 9
+#font pango:Menlo for Powerline 9
+#font pango:Misc Terminusmodx 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).let g:airline_theme='powelet g:airline_theme='powerlineish'
@@ -50,15 +53,16 @@ floating_modifier $mod
 focus_follows_mouse no
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id urxvt
 #bindsym $mod+Return exec --no-startup-id termite
+bindsym $mod+Return exec --no-startup-id urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 8 -width 400 -i -sort'
-#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn 'xos4 Terminess Powerline-9' -nb '#268BD2' -nf '#FFFFFF' -sb '#FFFFFF' -sf '#002B36' -i -h '21'"
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 6 -width 400 -i -sort'
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -dmenu -lines 6 -width 400 -i -sort'
+#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn 'Ubuntu Mono derivative Powerline-12' -nb '#002B35' -nf '#93A1A1' -sb '#93A1A1' -sf '#002B36' -i -h '21'"
 
 # change focus
 bindsym $mod+h focus left
@@ -103,16 +107,16 @@ bindsym $mod+e layout toggle split
 # (anything wider than high) get horizontal orientation, rotated monitors
 # (anything higher than wide) get vertical orientation.
 # syntax: default_orientation horizontal|vertical|auto
-default_orientation vertical
+default_orientation horizontal
 
 # layout mode for new containers
 # this option determines in which mode new containers on workspace level will start
 # syntax: workspace_layout default|stacking|tabbed
-workspace_layout tabbed
+#workspace_layout default
 
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle border normal 1
+bindsym $mod+Shift+space floating toggle border pixel 1
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -170,41 +174,49 @@ assign [class="Telegram"] $workspace9
 assign [class="Whatsie"] $workspace9
 assign [class="whatsapp-desktop"] $workspace9
 assign [class="Thunderbird"] $workspace7
+assign [class="Geary"] $workspace7
 assign [class="URxvt" title="neomutt"] $workspace7
-assign [class="URxvt" title="newsboat"] $workspace7
-assign [class="Wine" title="LINE"] $workspace8
+assign [class="URxvt" title="newsboat"] $workspace8
+assign [class="Wine" title="LINE"] $workspace6
 
 # Enable Floating Mode for Specific Programs
 for_window [class="Gkamus"] floating enable border normal 1
 for_window [class="KBBI-Qt"] floating enable border normal 1
 for_window [class="Gnome-power-statistics"] floating enable border normal 1
-for_window [class="Xdotool-gui"] floating enable
-for_window [class="Modem-manager-gui"] floating enable
+for_window [class="Xdotool-gui"] floating enable border normal 1
+for_window [class="Modem-manager-gui"] floating enable border normal 1
 for_window [class="Gnome-system-monitor"] floating enable border normal 1
 for_window [class="Nm-connection-editor"] floating enable border normal 1
-for_window [class="Electrum"] floating enable
+for_window [class="Electrum"] floating enable border normal 1
+for_window [class="File-roller"] floating enable border normal 1
 for_window [class="Gpick"] floating enable border normal 1
 for_window [class="Xfburn"] floating enable border normal 1
 for_window [class="Arandr"] floating enable border normal 1
 for_window [class="Gnome-calendar"] floating enable border normal 1
 for_window [class="Gnome-calculator"] floating enable border normal 1
-for_window [class="flowbladesinglerender"] floating enable
+for_window [class="flowbladesinglerender"] floating enable border normal 1
 for_window [class="System-config-printer.py"] floating enable border normal 1
 for_window [class="sun-awt-X11-XWindowPeer"] floating enable
 for_window [class="Putty"] floating enable border normal 1
+for_window [class="Cheese"] floating enable border normal 1
 for_window [class="Hardinfo"] floating enable border normal 1
 for_window [class="Gucharmap"] floating enable border normal 1
 for_window [class="Pavucontrol"] floating enable border normal 1
 for_window [class="Deadbeef"] floating enable border normal 1
-for_window [class="Guvcview"] floating enable border normal 1
 for_window [class="guvcview"] floating enable border normal 1
 for_window [class="flameshot"] floating enable border normal 1
 for_window [class="Lastpass"] floating enable border normal 1
 for_window [class="Transmission-gtk"] floating enable border normal 1
+for_window [class="Blueman-manager"] floating enable border normal 1
+for_window [class="Gnome-usage"] floating enable border normal 1
 for_window [title="TeamViewer"] floating enable border none
 for_window [title="Open Hardware Monitor"] floating enable border normal 1
 for_window [class="URxvt" title="ncpamixer"] floating enable border normal 1
 for_window [class="Wine" title="WinBox v3.13 (Addresses)"] floating enable border normal 1
+for_window [class="zoom" title="Zoom - Free Account"] floating enable border normal 1
+for_window [class="zoom" title="Settings"] floating enable border normal 1
+for_window [class="Flowblade" title="Audio Mixer"] floating enable border normal 1
+for_window [class="Vysor" title="Mi 4c"] floating enable border normal 1
 
 # Disable Floating Mode for Specific Programs
 for_window [class="pavucontrol-qt"] floating disable
@@ -245,12 +257,13 @@ mode "resize" {
 # finds out, if available)
 
 set $bg-color 	      		#268BD2
-set $border-color		#268BD2
-set $inactive-bg-color   	#268BD2
+set $border-color		    #268BD2
+#set $inactive-bg-color   	#073642
+set $inactive-bg-color   	#1E6495
 set $text-color          	#FFFFFF
-set $inactive-text-color        #073642
-set $urgent-bg-color            #FFFFFF
-set $urgent-text-color		#268BD2
+set $inactive-text-color    #93A1A1
+set $urgent-bg-color        #FF0000
+set $urgent-text-color		#FFFFFF
 
 # window colors
 #                       border              background         text                 indicator
@@ -260,7 +273,8 @@ client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-co
 client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-color   #ffaf00
 
 # Hiding edge border indicator
-hide_edge_borders both
+# hide_edge_borders none|vertical|horizontal|both|smart
+hide_edge_borders smart
 
 # Window Border Settings
 # format : new_window normal|none|pixel
@@ -275,13 +289,15 @@ bindsym $mod+Shift+y border pixel 1
 
 # Enable Specific Window Border
 for_window [class="Wine"] border normal 1
+for_window [class="URxvt"] border pixel 1
 
 # i3bar Toggle between dock mode and hide mode
 bindsym $mod+F11 bar mode toggle
 
-# bar {
-#     status_command echo '{"version":1}[[],'; xtitle -s -f '[{"full_text": "%s"}],'
-# }
+# gaps inner|outer current|all set|plus|minus <px>
+gaps inner 3
+#gaps outer 0
+#smart_gaps on
 
 # bar {
 #   id bar-1
@@ -289,8 +305,8 @@ bindsym $mod+F11 bar mode toggle
 #   position top
 #   height 20 # this feature of i3-gaps
 #   # Bumblebee-Status on GitHub https://github.com/tobi-wan-kenobi/bumblebee-status
-#   status_command ~/.config/bumblebee-status/bumblebee-status -m title brightness pasink pasource memory sensors battery1 battery0 date profile -p date.format="0%w%y%m%d%H%M" -t gruvbox-powerline-bandit-blue-nosymbol
-#   #status_command i3blocks
+#   #status_command ~/.config/bumblebee-status/bumblebee-status -m title brightness pasink pasource memory sensors battery1 battery0 date profile -p date.format="0%w%y%m%d%H%M" -t gruvbox-powerline-bandit-blue-nosymbol
+#   status_command i3blocks -c ~/.i3blocks.conf
 #   font pango:xos4 Terminess Powerline 9
 #   bindsym button1 nop
 #
@@ -315,29 +331,29 @@ bindsym $mod+F11 bar mode toggle
 ################################################################################
 
 # For adding space and [] character on window title
-#for_window [class=".*"] title_format "[] %title -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
-for_window [class=".*"] title_format " [] %title "
+for_window [class=".*"] title_format " %title "
 
 # Background Color
 exec_always --no-startup-id xsetroot -solid "#002B36"
 
 # Background Wallpaper
-exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png
+exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11X.png
+# exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png
 
 # i3lock lockscreen
-bindsym $mod+Shift+x exec --no-startup-id i3lock -u --beep --color 002B36 -t -i /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png
+# (lock is script from nandavera | i3lock-color)
+# source: https://github.com/yuune/dotfiles/blob/master/.bin/lock
+bindsym $mod+Shift+x exec --no-startup-id /usr/bin/lock
 
-exec_always killall xautolock ; xautolock -time 30 -locker "i3lock -u --beep --color 002B36 -i /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11L.png" && systemctl suspend
-
-set $Locker i3lock -u --beep --color 002B36 -i /home/bandithijo/pix/Wallpaper/archWallpaper/Arch-Wallpaper-11L.png && systemctl suspend
+exec_always --no-startup-id killall xautolock ; xautolock -time 15 -locker "/usr/bin/lock" && systemctl suspend
 
 # Restart, Suspend, Shutdown, Logout Dialog
 bindsym $mod+End exec --no-startup-id ~/.local/bin/rofi-power "i3-msg exit"
 
 # Screenshot
-bindsym $mod+Print exec scrot 'Screenshot\ from\ %Y-%m-%d %H-%M-%S.png' -e 'mv *.png ~/pix/ScreenShot/'
-bindsym $mod+Alt+Print exec scrot -s 'Screenshot\ from\ %Y-%m-%d %H-%M-%S.png' -e 'mv *.png ~/pix/ScreenShot/'
-bindsym $mod+Ctrl+Print exec scrot -u 'Screenshot\ from\ %Y-%m-%d %H-%M-%S.png' -e 'mv *.png ~/pix/ScreenShot/'
+bindsym $mod+Print exec --no-startup-id scrot 'Screenshot\ from\ %Y-%m-%d %H-%M-%S.png' -e 'mv *.png ~/pix/ScreenShot/'
+bindsym $mod+Alt+Print exec --no-startup-id scrot -s 'Screenshot\ from\ %Y-%m-%d %H-%M-%S.png' -e 'mv *.png ~/pix/ScreenShot/'
+bindsym $mod+Ctrl+Print exec --no-startup-id scrot -u 'Screenshot\ from\ %Y-%m-%d %H-%M-%S.png' -e 'mv *.png ~/pix/ScreenShot/'
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer --increase 2
@@ -350,22 +366,22 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2
 
 # Network Manager Applet
-#exec killall nm-applet ; nm-applet
+#exec --no-startup-id killall nm-applet ; nm-applet
 
 # XFCE4-power-manager
-exec killall xfce4-power-manager ; xfce4-power-manager
+exec --no-startup-id killall xfce4-power-manager ; xfce4-power-manager
 
 # Firewalld
-#exec killall firewall-applet ; firewall-applet
+#exec --no-startup-id killall firewall-applet ; firewall-applet
 
 # KeePassXC
-#exec killall keepassxc ; keepassxc
+#exec --no-startup-id killall keepassxc ; keepassxc
 
 # clipmenu
 #bindsym $mod+p exec --no-startup-id clipmenu -i -fn hack:size=10 -nb '#002B36' -nf '#839496' -sb '#E4E4E4' -sf '#002B36'
 
 # Blueman Applet
-# exec_always killall blueman-applet ; blueman-applet
+# exec_always --no-startup-id killall blueman-applet ; blueman-applet
 
 # Caps Lock Indicator
 #bindsym Caps_Lock exec notify-send 'CAPS LOCK'
@@ -375,7 +391,7 @@ exec killall xfce4-power-manager ; xfce4-power-manager
 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 
 # Enable Tap to Click
-#exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 
 # Disable F1 Help Button
 #bindsym F1 exec --no-startup-id echo "help" > /dev/null
@@ -389,9 +405,9 @@ bindsym $mod+F8 exec --no-startup-id urxvt -e ncpamixer
 # redshift
 # for get the coordinates of places with http://www.geonames.org/
 # Jakarta
-#exec --no-startup-id redshift -l -6.21462:106.84513 -r
+#exec --no-startup-id redshift -l -6.21462:106.84513 -r -t 5700:3500
 # Balikpapan
-#exec --no-startup-id redshift -l -1.26753:116.82887 -r
+exec --no-startup-id redshift -l -1.26753:116.82887 -r -t 4500:4500
 
 # Polkit-GNOME
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -402,22 +418,29 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # Disable Middle Mouse Paste
 exec --no-startup-id xinput set-button-map "TPPS/2 IBM TrackPoint" 1 0 3
 
+# Speed up TrackPoint
+exec --no-startup-id echo 240 | sudo tee /sys/devices/platform/i8042/serio1/serio2/sensitivity
+
 # i3-msg border none
 exec --no-startup-id i3-msg border none
 
 # Start Conky
-#exec killall conky ; conky -c ~/.config/conky/conkyrc
+#exec --no-startup-id killall conky ; conky -c ~/.config/conky/conkyrc
 
 # Enable dnscrypt-proxy
 #exec --no-startup-id sudo systemctl start dnscrypt-proxy && sudo sed -i s/192.168.1.1/127.0.0.1/g /etc/resolv.conf
 #exec --no-startup-id $HOME/app/dnscrypt/linux-x86_64/dnscrypt-proxy start
 
 # Enable Compton for compositor
-exec_always killall compton ; compton -b --respect-prop-shadow --config ~/.config/compton/compton.conf
+#exec_always --no-startup-id killall compton ; compton -b --respect-prop-shadow --config ~/.config/compton/compton.conf
+#exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton.conf --blur-method kawase --blur-strength 20
+exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton.conf
 
 # Enable Dunst Notifications
-exec_always killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
+exec_always --no-startup-id killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
 
 # Enable Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+
 

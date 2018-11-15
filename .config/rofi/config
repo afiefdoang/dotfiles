@@ -1,8 +1,8 @@
 !------------------------------------------------------------------------------
 ! ROFI PREFERENCES
 !------------------------------------------------------------------------------
-rofi.combi-modi:    window,drun,ssh
+rofi.combi-modi:    window,drun,ssh,
 rofi.theme:         solarized-bandit
-rofi.font:          xos4 Terminess Powerline 10
-rofi.modi:          combi
+rofi.font:          Hack 10
+rofi.modi:          combi,run
 !------------------------------------------------------------------------------

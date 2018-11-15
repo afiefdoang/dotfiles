@@ -9,3 +9,4 @@ X-KDE-StartupNotify=false
 Categories=Utility
 InitialPreference=9
 Comment=GUI for managing Conky config files with options to browse and edit themes.
+NoDisplay=false

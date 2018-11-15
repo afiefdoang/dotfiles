@@ -3,7 +3,8 @@
 Name=Thunderbird
 Comment=Send and receive mail with Thunderbird
 #Exec=/usr/lib/thunderbird/thunderbird %u
-Exec=env GTK_THEME=Adwaita /usr/lib/thunderbird/thunderbird %u
+#Exec=env GTK_THEME=Adwaita /usr/lib/thunderbird/thunderbird %u
+Exec=env GTK_THEME=NumixSolarizedDarkBlue /usr/lib/thunderbird/thunderbird %u
 Terminal=false
 Type=Application
 Icon=thunderbird
@@ -14,8 +15,10 @@ Actions=ComposeMessage;OpenAddressBook;
 
 [Desktop Action ComposeMessage]
 Name=Write new message
-Exec=env GTK_THEME=Adwaita /usr/lib/thunderbird/thunderbird -compose
+#Exec=env GTK_THEME=Adwaita /usr/lib/thunderbird/thunderbird -compose
+Exec=env GTK_THEME=NumixSolarizedDarkBlue /usr/lib/thunderbird/thunderbird -compose
 
 [Desktop Action OpenAddressBook]
 Name=Open address book
-Exec=env GTK_THEME=Adwaita /usr/lib/thunderbird/thunderbird -addressbook
+#Exec=env GTK_THEME=Adwaita /usr/lib/thunderbird/thunderbird -addressbook
+Exec=env GTK_THEME=NumixSolarizedDarkBlue /usr/lib/thunderbird/thunderbird -addressbook
