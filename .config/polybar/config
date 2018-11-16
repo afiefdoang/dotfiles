@@ -62,7 +62,7 @@ font-2 = FontAwesome5Free:size=10:0;
 
 modules-left = profile i3 xwindow
 ;modules-center =
-modules-right =  netspdwlan netspdeth xkeyboard xbacklight sp1 volume sp2 filesystem sp1 memory sp1 cpu sp1 temperature sp2 battery1 battery0 sp2 date eth sp2 wlan eth
+modules-right = xkeyboard netspdwlan netspdeth sp2 xbacklight sp2 volume sp2 filesystem sp1 memory sp1 cpu sp1 temperature sp2 battery1 battery0 sp2 date eth sp2 wlan eth
 
 tray-position = right
 tray-padding = 0
@@ -180,8 +180,10 @@ label-song-ellipsis = true
 [module/xbacklight]
 type = internal/xbacklight
 
-format = "<label><bar>"
-label = "  "
+;format = "<label><bar>"
+;label = "  "
+format = "<label>"
+label = "  %percentage%%"
 label-foreground = ${colors.foreground-alt}
 label-background = ${colors.background-alt}
 ;label-underline = ${colors.foreground}
@@ -316,7 +318,7 @@ label-connected-background = ${colors.background-alt}
 
 format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
-label-disconnected = " OFF"
+label-disconnected = " DC"
 label-disconnected-foreground = ${colors.foreground-alt}
 
 ;ramp-signal-0 = 

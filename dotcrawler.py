@@ -111,7 +111,6 @@ cp -r ~/.config/conky {configDir}
 cp -r ~/.config/compton {configDir}
 cp -r ~/.config/dunst {configDir}
 cp -r ~/.config/i3 {configDir}
-cp -r ~/.config/mpd {configDir}
 cp -r ~/.config/ncmpcpp {configDir}
 cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/newsboat {configDir}
@@ -132,6 +131,10 @@ cp ~/.config/user-dirs.conf {configDir}
 mkdir -p {configDir}/mpv
 cp ~/.config/mpv/mpv.conf {configDir}/mpv
 cp ~/.config/mpv/input.conf {configDir}/mpv
+
+# MPD
+mkdir -p {configDir}/mpd
+cp ~/.config/mpd/mpd.conf {configDir}/mpd
 
 # MUTT
 mkdir -p {configDir}/mutt

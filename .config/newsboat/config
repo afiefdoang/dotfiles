@@ -33,10 +33,10 @@ bind-key $ delete-article
 
 color background         default   default
 color listnormal         default   default
-color listnormal_unread  white     default
-color listfocus          white     yellow
-color listfocus_unread   white     yellow bold
-color info               yellow   black
+color listnormal_unread  default   default bold
+color listfocus          black     yellow
+color listfocus_unread   black     yellow bold
+color info               yellow    black
 color article            default   default
 
 # highlights
