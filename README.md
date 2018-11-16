@@ -1,12 +1,12 @@
 ```
-      ██            ██     ████ ██  ██                
-     ░██           ░██    ░██░ ░░  ░██                
+      ██            ██     ████ ██  ██
+     ░██           ░██    ░██░ ░░  ░██
      ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
-  ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░ 
- ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████ 
+  ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░
+ ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████
 ░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
-░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████ 
- ░░░░░░  ░░░░░░     ░░    ░░   ░░ ░░░  ░░░░░░ ░░░░░░  
+░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████
+ ░░░░░░  ░░░░░░     ░░    ░░   ░░ ░░░  ░░░░░░ ░░░░░░
  ```
 
 # **dotfiles BanditHijo**
@@ -56,18 +56,24 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 ## RC/Conf Location
 | Apps | RC/Conf File | Destination Location |
 | :-- | :-- | :-- |
-| ZSH Shell | [.zshrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.zshrc) | ~/.zshrc |
-| Vim | [.vimrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.vimrc) | ~/.vimrc |
-| NeoVim | [init.vim](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/nvim/init.vim) | ~/.config/nvim/init.vim |
-| GTK+2.0 | [.gtkrc-2.0](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.gtkrc-2.0) | ~/.gtkrc-2.0 |
-| tmux | [.tmux.conf](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.tmux.conf) | ~/.tmux.conf |
-| i3-gaps| [config](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/config) | ~/.config/i3/config |
-| Dunst | [dunstrc](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.config/i3/dunstrc) | ~/.config/dunst/dunstrc |
-| Rofi | [config](https://github.com/bandithijo/dotfiles/raw/master/.config/rofi/config) | ~/.config/rofi/config |
-| Rofi-Power | [config](https://github.com/bandithijo/dotfiles/raw/master/.config/rofi-power/config) | ~/.config/rofi-power/config |
+| ZSH Shell | [.zshrc](https://github.com/bandithijo/dotfiles/blob/master/.zshrc) | ~/.zshrc |
+| Vim | [.vimrc](https://github.com/bandithijo/dotfiles/blob/master/.vimrc) | ~/.vimrc |
+| NeoVim | [init.vim](https://github.com/bandithijo/dotfiles/blob/master/.config/nvim/init.vim) | ~/.config/nvim/init.vim |
+| GTK+2.0 | [.gtkrc-2.0](https://github.com/bandithijo/dotfiles/blob/master/.gtkrc-2.0) | ~/.gtkrc-2.0 |
+| tmux | [.tmux.conf](https://github.com/bandithijo/dotfiles/blob/master/.tmux.conf) | ~/.tmux.conf |
+| i3-gaps| [config](https://github.com/bandithijo/dotfiles/blob/master/.config/i3/config) | ~/.config/i3/config |
+| Dunst | [dunstrc](https://github.com/bandithijo/dotfiles/blob/master/.config/dunst/dunstrc) | ~/.config/dunst/dunstrc |
+| ranger | [rc.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/ranger/rc.conf) | ~/.config/ranger/rc.conf |
+| Rofi | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/rofi/config) | ~/.config/rofi/config |
+| Rofi-Power | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/rofi-power/config) | ~/.config/rofi-power/config |
+| Polybar | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/polybar/config) | ~/.config/polybar/config |
+| MPD | [mpd.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/mpd/mpd.conf) | ~/.config/mpd/mpd.conf |
+| MPV | [mpv.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/mpv/mpv.conf) | ~/.config/mpv/mpv.conf |
+| neomutt | [muttrc](https://github.com/bandithijo/dotfiles/blob/master/.config/mutt/muttrc) | ~/.config/mutt/muttrc |
+| ncmpcpp | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/ncmpcpp/config) | ~/.config/ncmpcpp/config |
 | Compton | [compton.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/i3/compton.conf) | ~/.config/compton/compton.conf |
-| urxvt, uxterm, xterm | [.Xresources](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.Xresources) | ~/.Xresources |
+| urxvt, uxterm, xterm | [.Xresources](https://github.com/bandithijo/dotfiles/blob/master/.Xresources) | ~/.Xresources |
 | startx | [.xinitrc](https://wiki.archlinux.org/index.php/Xinit) | ~/.xinitrc |
-| Uniform look for Qt & GTK | [.profile](https://raw.githubusercontent.com/bandithijo/dotfiles/master/.profile) | ~/.profile |
+| Uniform look for Qt & GTK | [.profile](https://github.com/bandithijo/dotfiles/blob/master/.profile) | ~/.profile |
 
 
