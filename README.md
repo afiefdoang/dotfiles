@@ -61,7 +61,8 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | NeoVim | [init.vim](https://github.com/bandithijo/dotfiles/blob/master/.config/nvim/init.vim) | ~/.config/nvim/init.vim |
 | GTK+2.0 | [.gtkrc-2.0](https://github.com/bandithijo/dotfiles/blob/master/.gtkrc-2.0) | ~/.gtkrc-2.0 |
 | tmux | [.tmux.conf](https://github.com/bandithijo/dotfiles/blob/master/.tmux.conf) | ~/.tmux.conf |
-| i3-gaps| [config](https://github.com/bandithijo/dotfiles/blob/master/.config/i3/config) | ~/.config/i3/config |
+| i3-gaps | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/i3/config) | ~/.config/i3/config |
+| irssi | [config](https://github.com/bandithijo/dotfiles/blob/master/.irssi/config) | ~/.irssi/config |
 | Dunst | [dunstrc](https://github.com/bandithijo/dotfiles/blob/master/.config/dunst/dunstrc) | ~/.config/dunst/dunstrc |
 | ranger | [rc.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/ranger/rc.conf) | ~/.config/ranger/rc.conf |
 | Rofi | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/rofi/config) | ~/.config/rofi/config |

@@ -44,11 +44,10 @@ mainDir     = '~/git/dotfiles'
 etcDir      = '~/git/dotfiles/etc'
 usrDir      = '~/git/dotfiles/usr'
 configDir   = '~/git/dotfiles/.config'
+irssiDir   = '~/git/dotfiles/.irssi
 localDir    = '~/git/dotfiles/.local'
-urxvtDir    = '~/git/dotfiles/.urxvt'
 vimDir      = '~/git/dotfiles/.vim'
 ohMyZshDir  = '~/git/dotfiles/.oh-my-zsh'
-newsboatDir = '~/git/dotfiles/.newsboat'
 imageDir    = '~/git/dotfiles/images'
 
 # Proces Copy to GitHub Directory
@@ -193,6 +192,17 @@ cp ~/.oh-my-zsh/themes/avit-bandit.zsh-theme {ohMyZshDir}/themes
 cp ~/.oh-my-zsh/themes/bureau-bandit.zsh-theme {ohMyZshDir}/themes
 
 echo '[ DONE ] Copy dotfiles from ~/.oh-my-zsh user directory'
+# -----------------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------------
+##### Content from .irssi
+# -----------------------------------------------------------------------------
+mkdir -p {irssiDir}
+cp ~/.irssi/config
+cp ~/.irssi/solarized-bandit.theme
+
+echo '[ DONE ] Copy dotfiles from ~/.irssi user directory'
 # -----------------------------------------------------------------------------
 
 
