@@ -37,10 +37,11 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | Bar | [polybar](https://github.com/jaagr/polybar) |
 | Wallpaper | [feh](https://www.archlinux.org/packages/extra/x86_64/feh/) |
 | Login Manager | [lightdm](https://www.archlinux.org/packages/extra/x86_64/lightdm/) [(lightdm-slick-greeter)](https://aur.archlinux.org/packages/lightdm-slick-greeter) |
-| Lock Screen | [i3lock](https://www.archlinux.org/packages/community/x86_64/i3lock/) |
+| Lock Screen | [i3lock-color](https://aur.archlinux.org/packages/i3lock-color/) |
 | Auto Lock Screen | [xautolock](https://www.archlinux.org/packages/community/x86_64/xautolock/) |
 | Conky | [conky](https://www.archlinux.org/packages/extra/x86_64/conky/) |
-| Volume Button Control | [ncpamixer](https://github.com/fulhax/ncpamixer) |
+| Volume Mixer Control | [ncpamixer](https://github.com/fulhax/ncpamixer) |
+| Volume Button Control | [pamixer](https://www.archlinux.org/packages/community/x86_64/pamixer/) |
 | Brightness Button Control | [xbacklight](https://www.archlinux.org/packages/extra/x86_64/xorg-xbacklight/) (xorg-xbacklight) |
 | Network Manager Trayicon | [nm-applet](https://www.archlinux.org/packages/extra/x86_64/network-manager-applet/) (network-manager-applet) |
 | Power Management Control | [xfce4-power-manager](https://www.archlinux.org/packages/extra/x86_64/xfce4-power-manager/) |

@@ -156,9 +156,10 @@ echo '[ DONE ] Copy dotfiles from ~/.config user directory'
 # -----------------------------------------------------------------------------
 ##### Content from .local Directory
 # -----------------------------------------------------------------------------
-# ROFI-POWER
 mkdir -p {localDir}/bin
 cp ~/.local/bin/rofi-power {localDir}/bin
+cp ~/.local/bin/lock {localDir}/bin
+cp ~/.local/bin/postbanner {localDir}/bin
 
 # APPLICATION DESKTOP CONFIG FILES
 mkdir -p {localDir}/share
