@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=irssi
+Comment=Char with other people online
+Keywords=IM;Chat;
+Exec=urxvt -e irssi
+Icon=irssi
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Network;IRCClient;
+NoDisplay=false

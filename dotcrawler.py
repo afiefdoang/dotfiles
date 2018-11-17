@@ -44,7 +44,7 @@ mainDir     = '~/git/dotfiles'
 etcDir      = '~/git/dotfiles/etc'
 usrDir      = '~/git/dotfiles/usr'
 configDir   = '~/git/dotfiles/.config'
-irssiDir   = '~/git/dotfiles/.irssi
+irssiDir   = '~/git/dotfiles/.irssi'
 localDir    = '~/git/dotfiles/.local'
 vimDir      = '~/git/dotfiles/.vim'
 ohMyZshDir  = '~/git/dotfiles/.oh-my-zsh'
@@ -199,8 +199,8 @@ echo '[ DONE ] Copy dotfiles from ~/.oh-my-zsh user directory'
 ##### Content from .irssi
 # -----------------------------------------------------------------------------
 mkdir -p {irssiDir}
-cp ~/.irssi/config
-cp ~/.irssi/solarized-bandit.theme
+cp ~/.irssi/config {irssiDir}
+cp ~/.irssi/solarized-bandit.theme {irssiDir}
 
 echo '[ DONE ] Copy dotfiles from ~/.irssi user directory'
 # -----------------------------------------------------------------------------

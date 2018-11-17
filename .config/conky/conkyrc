@@ -95,6 +95,10 @@ ${voffset -250}
 ${font Hack:bold:size=124}${color #4A7580}${time %M}
 ${voffset -340}
 ${offset -4}${font Hack:bold:size=21}${color #4A7580}${time [%Y/%m/%d]}
+${voffset -25}
+${offset 26}${font Hack:bold:size=12}${color #4A7580}BANDITHIJO.COM
+${voffset -10}
+${offset 76}${font Hack:bold:size=12}${color #4A7580}+++
 
 #${image /home/bandithijo/.config/conky/archlogo.png -p 25,680 -s 149x40}
 

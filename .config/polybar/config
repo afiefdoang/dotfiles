@@ -183,7 +183,7 @@ type = internal/xbacklight
 ;format = "<label><bar>"
 ;label = "  "
 format = "<label>"
-label = "  %percentage%%"
+label = " %percentage%%"
 label-foreground = ${colors.foreground-alt}
 label-background = ${colors.background-alt}
 ;label-underline = ${colors.foreground}
@@ -291,7 +291,7 @@ type = internal/network
 interface = wlp4s0
 interval = 1.0
 format-connected = "<label-connected>"
-label-connected = " %downspeed:3% %upspeed:3% "
+label-connected = "%downspeed:3% %upspeed:3%"
 label-connected-foreground = ${colors.foreground-alt}
 label-connected-background = ${colors.background-alt}
 

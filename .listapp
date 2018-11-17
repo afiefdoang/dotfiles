@@ -281,7 +281,6 @@ mpd
 mpv
 msmtp
 mugshot
-mupdf
 mysql-workbench
 nano
 nbwmon
@@ -394,6 +393,7 @@ python-mccabe
 python-multidict
 python-neovim
 python-netifaces
+python-parsedatetime
 python-pip
 python-protobuf
 python-psutil
@@ -409,6 +409,7 @@ python-pyudev
 python-pywal
 python-raven
 python-virtualenv
+python-vobject
 python-wrapt
 python-xlib
 python-yaml
@@ -482,7 +483,6 @@ systemd-sysvcompat
 tamsyn-font
 tar
 telegram-desktop
-telegram-qt
 termcap
 termdown
 terminess-powerline-font-git
