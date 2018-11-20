@@ -3,6 +3,7 @@ Name=irssi
 Comment=Char with other people online
 Keywords=IM;Chat;
 Exec=urxvt -e irssi
+#Exec=urxvt -e screen irssi
 Icon=irssi
 Terminal=false
 Type=Application

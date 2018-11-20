@@ -32,9 +32,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Hack 9
-#font pango:xos4 Terminess Powerline 9
-#font pango:Menlo for Powerline 9
-#font pango:Misc Terminusmodx 9
+#font pango:Envy Code R for Powerline 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).let g:airline_theme='powelet g:airline_theme='powerlineish'
@@ -62,7 +60,7 @@ bindsym $mod+Shift+q kill
 # start rofi (a program launcher)
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 6 -width 400 -i -sort'
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -dmenu -lines 6 -width 400 -i -sort'
-#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn 'Ubuntu Mono derivative Powerline-12' -nb '#002B35' -nf '#93A1A1' -sb '#93A1A1' -sf '#002B36' -i -h '21'"
+#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn 'Hack-12' -nb '#002B35' -nf '#93A1A1' -sb '#93A1A1' -sf '#002B36' -i"
 
 # change focus
 bindsym $mod+h focus left
@@ -177,6 +175,7 @@ assign [class="Thunderbird"] $workspace7
 assign [class="Geary"] $workspace7
 assign [class="URxvt" title="neomutt"] $workspace7
 assign [class="URxvt" title="newsboat"] $workspace8
+assign [class="URxvt" title="irssi"] $workspace8
 assign [class="Wine" title="LINE"] $workspace6
 
 # Enable Floating Mode for Specific Programs
@@ -337,8 +336,8 @@ for_window [class=".*"] title_format " %title "
 exec_always --no-startup-id xsetroot -solid "#002B36"
 
 # Background Wallpaper
-#exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11X.png
-exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png
+exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11X.png
+#exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png
 
 # i3lock lockscreen
 # (lock is script from nandavera | i3lock-color)
@@ -407,7 +406,7 @@ bindsym $mod+F8 exec --no-startup-id urxvt -e ncpamixer
 # Jakarta
 #exec --no-startup-id redshift -l -6.21462:106.84513 -r -t 5700:3500
 # Balikpapan
-exec --no-startup-id redshift -l -1.26753:116.82887 -r -t 4500:4500
+exec --no-startup-id redshift -l -1.26753:116.82887 -r -t 4600:4600
 
 # Polkit-GNOME
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

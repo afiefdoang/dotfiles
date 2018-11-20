@@ -55,6 +55,7 @@ module-margin-left = 0
 module-margin-right = 0
 
 font-0 = Hack:pixelsize=9;3
+;font-0 = Envy Code R for Powerline:pixelsize=10;3
 font-1 = siji:pixelsize=10;3
 font-2 = FontAwesome5Free:size=10:0;
 
@@ -62,12 +63,12 @@ font-2 = FontAwesome5Free:size=10:0;
 
 modules-left = profile i3 xwindow
 ;modules-center =
-modules-right = xkeyboard netspdwlan netspdeth sp2 xbacklight sp2 volume sp2 filesystem sp1 memory sp1 cpu sp1 temperature sp2 battery1 battery0 sp2 date eth sp2 wlan eth
+modules-right = xkeyboard netspdwlan netspdeth sp2 xbacklight sp2 volume sp2 filesystem sp1 memory sp1 temperature sp2 battery1 battery0 sp2 date eth sp2 wlan eth
 
 tray-position = right
 tray-padding = 0
 tray-detached = false
-tray-maxsize = 16
+tray-maxsize = 14
 tray-transparent = false
 tray-scale = 1.0
 tray-background = ${colors.background-alt}
@@ -318,14 +319,9 @@ label-connected-background = ${colors.background-alt}
 
 format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
-label-disconnected = " DC"
+label-disconnected = " OFFLINE "
 label-disconnected-foreground = ${colors.foreground-alt}
 
-;ramp-signal-0 = 
-;ramp-signal-1 = 
-;ramp-signal-2 = 
-;ramp-signal-3 = 
-;ramp-signal-4 = 
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 

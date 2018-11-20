@@ -2,7 +2,7 @@
 Name=ncmpcpp
 Comment=Almost exact clone of ncmpc with some new features
 #Exec=termite -e ncmpcpp
-Exec=urxvt -e ncmpcpp
+Exec=mpd; urxvt -e ncmpcpp
 #Exec=env GTK_THEME=Adwaita urxvt -e ncmpcpp
 Terminal=false
 Type=Application

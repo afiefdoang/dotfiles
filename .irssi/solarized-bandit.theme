@@ -115,7 +115,9 @@ abstracts = {
   # %c = cyan
   # NOTE: %n doesn't work in irssi v0.8.15 for some reason.  So we have to end with the same color as line_start
   #channick_hilight = "%C$*%n";
-  channick_hilight = "%c$*%G";
+  #channick_hilight = "%c$*%G";
+  #channick_hilight = "%n$*%G";
+  channick_hilight = "$*%G";
   chanhost_hilight = "{nickhost $*}";
 
   # nick/host is printed (parts, quits, etc.)
@@ -124,18 +126,18 @@ abstracts = {
   chanhost = "{nickhost $*}";
 
   # highlighted channel name is printed
-  channelhilight = "%c$*%n";
+  channelhilight = "%y$*%n";
 
   # ban/ban exception/invite list mask is printed
   # %R = brightred (Solarized: orange)
-  ban = "%R$*%n";
+  ban = "%r$*%n";
 
   ##
   ## messages
   ##
 
   # the basic styling of how to print message, $0 = nick mode, $1 = nick
-  msgnick = "%_<%_$0$1-%_>%_ %|";
+  msgnick = "%_<%_$0$1-%_ >%_ %|";
 
   # message from you is printed. "msgownnick" specifies the styling of the
   # nick ($0 part in msgnick) and "ownmsgnick" specifies the styling of the
@@ -154,17 +156,18 @@ abstracts = {
   #  privmsgnick = "%K{msgnick  %R$*%K}%n";
 
   # $0 = nick mode, $1 = nick
-  ownmsgnick = "{msgnick $0 $1-}%b";
-  ownnick = "%b$*%n";
+  ownmsgnick = "{msgnick $0 $1-}";
+  #ownnick = "%y$*%n";
+  ownnick = "%N%_$*%_%n";
 
   # public message in channel, $0 = nick mode, $1 = nick
   pubmsgnick = "{msgnick $0 $1-}";
   pubnick = "%N%_$*%_%n";
 
   # public message in channel meant for me, $0 = nick mode, $1 = nick
-  pubmsgmenick = "{msgnick $0 $1-}";
+  pubmsgmenick = "{msgnick $0 $1-%y}";
   # %m = magenta
-  menick = "%m$*%n";
+  menick = "%y$*%n";
 
   # public highlighted message in channel
   # $0 = highlight color, $1 = nick mode, $2 = nick
@@ -173,12 +176,12 @@ abstracts = {
   # channel name is printed with message
   # This is printed whenever the channel name is printed for disambiguation, e.g.
   # while there is a query in the same window.  Example: <+funnyuser:#test> hello
-  msgchannel = "%G:%c$*%n";
+  msgchannel = "%G:%y$*%n";
 
   # private message, $0 = nick, $1 = host
   # TODO: To test for Solarized
   #privmsg = "[%m$0%K<%M$1-%K>%n] ";
-  privmsg = "[%m$0%G<%n$1-%G>%n] ";
+  privmsg = "[%y$0%G<%n$1-%G>%n] ";
 
   # private message from you, $0 = "msg", $1 = target nick
   # TODO: To test for Solarized
@@ -191,7 +194,7 @@ abstracts = {
 
   # private message in query
   # NOTE: for some reason, we gotta handle both the nick & msg on in this line
-  privmsgnick = "{msgnick  %m$*%n}%m";
+  privmsgnick = "{msgnick  %y$*%n}%y";
 
   ##
   ## Actions (/ME stuff)
@@ -215,7 +218,7 @@ abstracts = {
   # private action sent by others
   # TODO: To test for Solarized
   # %M = brightmagenta (Solarized: violet)
-  pvtaction = "%M (*) $*%n ";
+  pvtaction = "%y (*) $*%n ";
   pvtaction_query = "{action $*}";
 
   # public action sent by others
@@ -232,9 +235,9 @@ abstracts = {
   # notices
   # TODO: To adapt for Solarized
   ownnotice = "[%b$0%G(%b$1-%G)]%n ";
-  notice = "%G-%M$*%G-%n ";
-  pubnotice_channel = "%G:%m$*";
-  pvtnotice_host = "%G(%m$*%G)";
+  notice = "%G-%y$*%G-%n ";
+  pubnotice_channel = "%G:%y$*";
+  pvtnotice_host = "%G(%y$*%G)";
   servernotice = "%g!$*%n ";
 
   # CTCPs
@@ -243,9 +246,9 @@ abstracts = {
   ctcp = "%g$*%n";
 
   # wallops
-  wallop = "%c$*%n: ";
+  wallop = "%y$*%n: ";
   wallop_nick = "%n$*";
-  wallop_action = "%c * $*%n ";
+  wallop_action = "%y * $*%n ";
 
   # netsplits
   netsplit = "%r$*%n";
@@ -257,8 +260,8 @@ abstracts = {
   names_nick_op = "{names_nick $*}";
   names_nick_halfop = "{names_nick $*}";
   names_nick_voice = "{names_nick $*}";
-  names_users = "[%g$*%n]";
-  names_channel = "%c$*%n";
+  names_users = "[%n$*%n]";
+  names_channel = "%y$*%n";
 
   # DCC
   dcc = "%g$*%n";
@@ -268,9 +271,9 @@ abstracts = {
   #dccownmsg = "[%r$0%K($1-%K)%n] ";
   dccownmsg = "[%b$0%G($1-%G)%n] ";
   dccownnick = "%b$*%n";
-  dccownquerynick = "%c$*%n";
+  dccownquerynick = "%y$*%n";
   dccownaction = "{action $*}";
-  dccownaction_target = "{action_core $0}%G:%c$1%n ";
+  dccownaction_target = "{action_core $0}%G:%y$1%n ";
 
   # DCC chat, others
   #dccmsg = "[%G$1-%K(%g$0%K)%n] ";
@@ -336,7 +339,7 @@ abstracts = {
 
   # ',' separator between the window numbers
   # %g = green (same color as the active statusbar so we dont' see it)
-  sb_act_sep = "%g$*";
+  sb_act_sep = "%y$*";
   # normal text
   # This also affects the color of the window with activity in adv_windowlist
   sb_act_text = "%w$*";

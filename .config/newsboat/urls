@@ -50,9 +50,20 @@ http://feeds2.feedburner.com/tympanus "Tech News"
 https://hackernoon.com/feed "Tech News"
 https://www.smashingmagazine.com/feed/ "~Smashing Magazine" "Tech News"
 
+------------------------------------------------------------------------------
+PROGRAMMING_LANGUAGE
+------------------------------------------------------------------------------
+https://www.python.org/dev/peps/peps.rss/ "Language"
+
 # Islam
 ------------------------------------------------------------------------------
 MUSLIM_RSS
 ------------------------------------------------------------------------------
 http://muflihsafitra.com/feed/ "Islam"
 http://www.voa-islam.com/rss/all "Islam"
+
+# Animals Conservation
+------------------------------------------------------------------------------
+ANIMALS_CONSERVATION
+------------------------------------------------------------------------------
+http://orangutan.or.id/feed/ "~BOSF - Borneo Orangutan Survival Foundation" "Animals Conservaton"

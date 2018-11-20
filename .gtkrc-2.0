@@ -3,7 +3,7 @@
 
 include "/home/bandithijo/.gtkrc-2.0.mine"
 gtk-theme-name="NumixSolarizedDarkBlue"
-gtk-icon-theme-name="korla-dark"
+gtk-icon-theme-name="DarK"
 gtk-font-name="Hack 9"
 gtk-cursor-theme-name="ComixCursors-Opaque-White"
 gtk-cursor-theme-size=24
