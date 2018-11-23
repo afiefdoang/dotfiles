@@ -192,7 +192,6 @@ hardinfo
 hddtemp
 hdsentinel
 help2man
-hexchat
 htop
 httrack
 hwdetect
@@ -496,7 +495,6 @@ testdisk
 texinfo
 texlive-core
 thinkfinger
-thunderbird
 tiger
 tlp
 tmux
@@ -508,6 +506,7 @@ tpacpi-bat
 traceroute
 transmission-cli
 transmission-gtk
+trash-cli
 tree
 trimage
 ttf-anonymous-pro
