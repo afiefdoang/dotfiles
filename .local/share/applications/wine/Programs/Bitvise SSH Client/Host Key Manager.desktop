@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Host Key Manager
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/Public/Start\\ Menu/Programs/Bitvise\\ SSH\\ Client/Host\\ Key\\ Manager.lnk
+Type=Application
+StartupNotify=true
+Comment=Bitvise Global Host Key Management - manage the list of SSH server host keys you trust
+Path=/home/bandithijo/.wine/dosdevices/c:/Program Files (x86)/Bitvise SSH Client
+Icon=FA0B_BvSsh.3
+StartupWMClass=bvssh.exe

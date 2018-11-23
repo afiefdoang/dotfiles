@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Uninstall Bitvise SSH Client
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/Public/Start\\ Menu/Programs/Bitvise\\ SSH\\ Client/Uninstall\\ Bitvise\\ SSH\\ Client.lnk
+Type=Application
+StartupNotify=true
+Comment=Uninstall Bitvise SSH Client 8.19
+Path=/home/bandithijo/.wine/dosdevices/c:/Program Files (x86)/Bitvise SSH Client
+Icon=F7FB_uninst.0
+StartupWMClass=uninst.exe

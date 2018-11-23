@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Installed Resources
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/Public/Start\\ Menu/Programs/Bitvise\\ SSH\\ Client/Installed\\ Resources.lnk
+Type=Application
+StartupNotify=true
+Comment=Resources included in Bitvise SSH Client 8.19
+Path=/home/bandithijo/.wine/dosdevices/c:/Program Files (x86)/Bitvise SSH Client
+Icon=20FE_BscInstalledResources.0

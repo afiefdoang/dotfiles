@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Proxy Settings
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/Public/Start\\ Menu/Programs/Bitvise\\ SSH\\ Client/Proxy\\ Settings.lnk
+Type=Application
+StartupNotify=true
+Comment=Bitvise Global Proxy Settings - manage your SOCKS or HTTP CONNECT proxy settings for outgoing SSH connections
+Path=/home/bandithijo/.wine/dosdevices/c:/Program Files (x86)/Bitvise SSH Client
+Icon=FA0B_BvSsh.2
+StartupWMClass=bvssh.exe

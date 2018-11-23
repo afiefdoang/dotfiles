@@ -189,6 +189,9 @@ alias trackpoint-speedup="echo 240 | sudo tee /sys/devices/platform/i8042/serio1
 # ranger
 alias ranger='TERM=xterm-256color ranger'
 
+# jekyll build
+jekyll() { if [[ $@ == "b" ]]; then command JEKYLL_ENV=production jekyll build; else command jekyll "$@"; fi; }
+
 # POWERLINE ARCH
 #if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
 #  source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh

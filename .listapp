@@ -451,12 +451,14 @@ rust
 rxvt-unicode
 s-nail
 s-tui
+scrcpy
 screen
 screenfetch
 scrot
 seahorse
 sed
 seexpr-doc
+sevensquare-git
 shadow
 shantz-xwinwrap-bzr
 shotcut
@@ -554,7 +556,6 @@ virtualbox-sdk
 vtk
 vulkan-headers
 vulkan-intel
-vysor
 w3m
 wd719x-firmware
 weechat

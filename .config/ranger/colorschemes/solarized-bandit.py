@@ -106,6 +106,7 @@ class Solarized(ColorScheme):
                     fg = 160
                     bg = 235
             if context.loaded:
+                fg = 0
                 bg = self.progress_bar_color
 
         if context.text:
@@ -123,6 +124,7 @@ class Solarized(ColorScheme):
                 if context.selected:
                     fg = self.progress_bar_color
                 else:
+                    fg = 0
                     bg = self.progress_bar_color
 
         return fg, bg, attr

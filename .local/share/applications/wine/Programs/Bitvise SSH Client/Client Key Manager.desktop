@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Client Key Manager
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/Public/Start\\ Menu/Programs/Bitvise\\ SSH\\ Client/Client\\ Key\\ Manager.lnk
+Type=Application
+StartupNotify=true
+Comment=Bitvise Global Client Key Management - manage your SSH user authentication keypairs
+Path=/home/bandithijo/.wine/dosdevices/c:/Program Files (x86)/Bitvise SSH Client
+Icon=FA0B_BvSsh.4
+StartupWMClass=bvssh.exe

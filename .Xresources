@@ -58,8 +58,8 @@ URxvt.allow_bold:             true
 !URxvt.boldFont:               xft:xos4 Terminess Powerline:bold:pixelsize=16:antialias=true
 !URxvt.font:                   xft:Terminess Powerline:pixelsize=16:antialias=true
 !URxvt.boldFont:               xft:Terminess Powerline:bold:pixelsize=16:antialias=true
-URxvt.font:                   xft:Hack:pixelsize=16:antialias=true:hinting=true
-URxvt.boldFont:               xft:Hack:bold:pixelsize=16:antialias=true:hinting=true
+URxvt.font:                   xft:Hack:pixelsize=14:antialias=true:hinting=true
+URxvt.boldFont:               xft:Hack:bold:pixelsize=14:antialias=true:hinting=true
 !URxvt.font:                   xft:Ubuntu Mono derivative Powerline:pixelsize=16:antialias=true:hinting=true
 !URxvt.boldFont:               xft:Ubuntu Mono derivative Powerline:bold:pixelsize=16:antialias=true:hinting=true
 !URxvt.font:                   xft:Menlo for Powerline:pixelsize=14:antialias=true:hinting=true
