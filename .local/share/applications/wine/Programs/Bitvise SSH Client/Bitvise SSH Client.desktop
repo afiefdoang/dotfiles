@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Bitvise SSH Client
-Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/Public/Start\\ Menu/Programs/Bitvise\\ SSH\\ Client/Bitvise\\ SSH\\ Client.lnk
-Type=Application
-StartupNotify=true
-Comment=Bitvise SSH Client - a general-purpose SSH client: supports tunneling (manual and via integrated proxy), SFTP file transfer, bridging of FTP clients to SFTP, remote console access and remote administration for Bitvise SSH Server
-Path=/home/bandithijo/.wine/dosdevices/c:/Program Files (x86)/Bitvise SSH Client
-Icon=FA0B_BvSsh.0
-StartupWMClass=bvssh.exe
