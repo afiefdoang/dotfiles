@@ -178,7 +178,7 @@ assign [class="whatsapp-desktop"] $workspace9
 assign [class="Thunderbird"] $workspace7
 assign [class="Geary"] $workspace7
 assign [class="URxvt" title="neomutt"] $workspace7
-assign [class="URxvt" title="newsboat"] $workspace8
+assign [class="URxvt" title="newsboat"] $workspace6
 assign [class="URxvt" title="irssi"] $workspace8
 assign [class="Wine" title="LINE"] $workspace6
 
@@ -436,15 +436,12 @@ exec --no-startup-id i3-msg border none
 #exec --no-startup-id $HOME/app/dnscrypt/linux-x86_64/dnscrypt-proxy start
 
 # Enable Compton for compositor
-#exec_always --no-startup-id killall compton ; compton -b --respect-prop-shadow --config ~/.config/compton/compton.conf
-#exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton.conf --blur-method kawase --blur-strength 20
-exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton.conf
+exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton-kawase-blur.conf
+#exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton.conf
 
 # Enable Dunst Notifications
 exec_always --no-startup-id killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'
 
 # Enable Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-
 

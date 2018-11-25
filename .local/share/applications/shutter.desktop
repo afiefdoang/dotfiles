@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Shutter
 Comment=Capture, edit and share screenshots
-#Exec=shutter %F
-Exec=shutter
+Exec=shutter %F
+#Exec=shutter
 Icon=shutter
 Terminal=false
 Type=Application

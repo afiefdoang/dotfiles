@@ -12,6 +12,7 @@ Categories=Network;Email;
 MimeType=message/rfc822;x-scheme-handler/mailto;application/x-xpinstall;
 StartupNotify=true
 Actions=ComposeMessage;OpenAddressBook;
+NoDisplay=true
 
 [Desktop Action ComposeMessage]
 Name=Write new message

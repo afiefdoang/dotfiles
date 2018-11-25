@@ -230,6 +230,7 @@ export npm_config_prefix="$HOME/.node_modules"
 
 # URXVT Environment akan berpengaruh ke tmux color
 export TERM=rxvt-unicode
+#export TERM=tmux-256color
 
 # Local /bin
 PATH="$HOME/bin:$HOME/src:$HOME/.local/bin:$PATH"

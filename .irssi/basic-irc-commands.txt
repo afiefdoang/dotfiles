@@ -99,3 +99,5 @@ Just as you are able to surf the net with a few tricks to help make things easie
 When logging on after forcible disconnection, as in the case which prompted your question, you can have NickServ clean up your previous connection so that you can reclaim your nick, and this is done as:
 /msg nickserv ghost [nick] [password]
 /nick [nick]
+
+

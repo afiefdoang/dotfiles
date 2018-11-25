@@ -95,7 +95,7 @@ abstracts = {
 
   # nick host is printed
   # (that's the "email" address of a user)
-  nickhost = "<$*>";
+  nickhost = "[$*]";
 
   # server name is printed
   server = "%_$*%_";
@@ -171,7 +171,7 @@ abstracts = {
   # public message in channel meant for me, $0 = nick mode, $1 = nick
   pubmsgmenick = "{msgnick $0 $1-}";
   # %m = magenta
-  menick = "%y$*%n";
+  menick = "%N%_$*%_%n";
 
   # public highlighted message in channel
   # $0 = highlight color, $1 = nick mode, $2 = nick
@@ -190,11 +190,11 @@ abstracts = {
   # private message from you, $0 = "msg", $1 = target nick
   # TODO: To test for Solarized
   #ownprivmsg = "[%b$0%K<%B$1-%K>%n] ";
-  ownprivmsg = "[%b$0%G<%B$1-%G>%n] ";
+  ownprivmsg = "[%b$0%G<%n$1-%G>%n] ";
 
   # own private message in query
   ownprivmsgnick = "{msgnick  $*}%b";
-  ownprivnick = "%b$*%n";
+  ownprivnick = "%n$*%n";
 
   # private message in query
   # NOTE: for some reason, we gotta handle both the nick & msg on in this line

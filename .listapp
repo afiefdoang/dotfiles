@@ -192,11 +192,11 @@ hardinfo
 hddtemp
 hdsentinel
 help2man
+hexchat
 htop
 httrack
 hwdetect
 hwinfo
-i-nex
 i3-gaps
 i3blocks
 i3ipc-glib-git
@@ -219,6 +219,7 @@ iproute2
 iputils
 ipython
 irssi
+irssi-libnotify-git
 j4-dmenu-desktop
 jdk10-openjdk
 jdk8-openjdk
@@ -572,6 +573,7 @@ wkhtmltopdf
 wpa_actiond
 wpa_supplicant
 wxmaxima
+x11-ssh-askpass
 x264
 x86_energy_perf_policy
 xautolock

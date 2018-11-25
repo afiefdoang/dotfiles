@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=scrcpy
+Comment=Android Remote Control
+Exec=urxvt -e scrcpy
+Icon=vysor
+Type=Application
+Terminal=false
+Categories=Development;Emulator;
+StartupWMClass=scrcpy
+Keywords=Android;Emulator;
+NoDisplay=false

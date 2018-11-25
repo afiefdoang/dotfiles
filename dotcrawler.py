@@ -200,7 +200,11 @@ echo '[ DONE ] Copy dotfiles from ~/.oh-my-zsh user directory'
 ##### Content from .irssi
 # -----------------------------------------------------------------------------
 mkdir -p {irssiDir}
+mkdir -p {irssiDir}/scripts/autorun
 cp ~/.irssi/config {irssiDir}
+cp ~/.irssi/scripts/autorun/notify.pl {irssiDir}/scripts/autorun
+cp ~/.irssi/scripts/nicklist-portable.pl {irssiDir}/scripts
+cp ~/.irssi/scripts/notify.pl {irssiDir}/scripts
 cp ~/.irssi/solarized-bandit.theme {irssiDir}
 cp ~/.irssi/formats.txt {irssiDir}
 cp ~/.irssi/basic-irc-commands.txt {irssiDir}
