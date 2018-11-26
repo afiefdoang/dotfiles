@@ -29,13 +29,15 @@ class Solarized(ColorScheme):
                 fg = 0
             if context.media:
                 if context.image:
-                    fg = 136
+                    # fg = 136
+                    fg = 33
                 else:
                     fg = 166
             if context.container:
                 fg = 61
             if context.directory:
-                fg = 33
+                # fg = 33
+                fg = yellow
             elif context.executable and not \
                     any((context.media, context.container,
                         context.fifo, context.socket)):
@@ -68,25 +70,33 @@ class Solarized(ColorScheme):
                 attr |= bold
             if context.main_column:
                 if context.selected:
+                    fg = red
+                    bg = 0
                     attr |= bold
                 if context.marked:
                     attr |= bold
-                    bg = 237
+                    # bg = 237
+                    bg = yellow
+                    fg = 0
             if context.badinfo:
                 if attr & reverse:
-                    bg = magenta
+                    bg = yellow
                 else:
-                    fg = magenta
+                    fg = yellow
 
         elif context.in_titlebar:
-            attr |= bold
+            # attr |= bold
             if context.hostname:
-                fg = context.bad and 160 or 93
-                bg = context.bad and 235
+                # fg = context.bad and 160 or 93
+                fg = yellow
+                # bg = context.bad and 235
+                bg = 0
             elif context.directory:
-                fg = 33
+                # fg = 33
+                fg = red
             elif context.tab:
-                fg = 33 if context.good else default
+                # fg = 33 if context.good else default
+                fg = yellow if context.good else default
                 bg = default
             elif context.link:
                 fg = 33
@@ -94,9 +104,9 @@ class Solarized(ColorScheme):
         elif context.in_statusbar:
             if context.permissions:
                 if context.good:
-                    fg = 93
+                    fg = yellow
                 elif context.bad:
-                    fg = 160
+                    fg = red
             if context.marked:
                 attr |= bold | reverse
                 fg = 237

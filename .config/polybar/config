@@ -63,7 +63,7 @@ font-2 = FontAwesome5Free:size=10:0;
 
 modules-left = profile i3 xwindow
 ;modules-center =
-modules-right = xkeyboard netspdwlan netspdeth sp2 xbacklight sp2 volume sp2 filesystem sp1 memory sp1 temperature sp2 battery1 battery0 sp2 date eth sp2 wlan eth
+modules-right = xkeyboard netspdwlan netspdeth sp1 xbacklight sp2 volume sp2 filesystem sp1 memory sp1 temperature sp2 battery1 battery0 sp2 date eth sp2 wlan eth
 
 tray-position = right
 tray-padding = 0
@@ -292,7 +292,7 @@ type = internal/network
 interface = wlp4s0
 interval = 1.0
 format-connected = "<label-connected>"
-label-connected = "%downspeed:3% %upspeed:3%"
+label-connected = "%downspeed:3% %upspeed:3% |"
 label-connected-foreground = ${colors.foreground-alt}
 label-connected-background = ${colors.background-alt}
 
@@ -334,7 +334,7 @@ type = internal/network
 interface = enp0s31f6
 interval = 1.0
 format-connected = "<label-connected>"
-label-connected = " %downspeed:3% %upspeed:3% "
+label-connected = " %downspeed:3% %upspeed:3% |"
 label-connected-foreground = ${colors.foreground-alt}
 label-connected-background = ${colors.background-alt}
 

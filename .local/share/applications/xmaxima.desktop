@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=xmaxima
+Comment=A graphical interface for Maxima, a Computer Algebra System
+Exec=xmaxima
+Icon=maxima-new
+Type=Application
+Terminal=false
+Categories=Education;Math;
+Keywords=maths;cas;algebra;education;engineering;physics;
+NoDisplay=true

@@ -31,7 +31,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Hack 9
+font pango:Hack 10
 #font pango:Envy Code R for Powerline 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -63,8 +63,9 @@ bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu -lines 6 -width 400 -i -sort'
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -dmenu -lines 6 -width 400 -i -sort'
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu="dmenu -fn 'Hack-12' -nb '#002B35' -nf '#93A1A1' -sb '#93A1A1' -sf '#002B36' -i"
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -dmenu -lines 6 -width 400 -i -sort -p RUN'
+bindsym $mod+p exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -show window -lines 10 -width 35'
 
 # change focus
 bindsym $mod+h focus left
@@ -214,13 +215,13 @@ for_window [class="Blueman-manager"] floating enable border normal 1
 for_window [class="Gnome-usage"] floating enable border normal 1
 for_window [title="TeamViewer"] floating enable border none
 for_window [title="Open Hardware Monitor"] floating enable border normal 1
-for_window [class="URxvt" title="ncpamixer"] floating enable border normal 1
+for_window [class="URxvt" title="ncpamixer"] floating enable border normal 1 resize set 600 600,move right 200px,move down 20px
 for_window [class="Wine" title="WinBox v3.13 (Addresses)"] floating enable border normal 1
-for_window [class="zoom" title="Zoom - Free Account"] floating enable border normal 1
+for_window [class="zoom" title="Zoom - Free Account"] floating enable border normal 1 move right 470px,move down 0px
 for_window [class="zoom" title="Settings"] floating enable border normal 1
 for_window [class="Flowblade" title="Audio Mixer"] floating enable border normal 1
 for_window [class="Vysor" title="Mi 4c"] floating enable border none
-for_window [class="scrcpy" title="Mi-4c"] floating enable border none move right 450px,move down 0px
+for_window [class="scrcpy" title="Mi-4c"] floating enable border none move right 460px,move down 0px
 for_window [class="Tor Browser" title="Software Update"] floating enable border normal 1
 
 # Disable Floating Mode for Specific Programs
@@ -261,9 +262,9 @@ mode "resize" {
 # Start i3bar to display a workspace bar (plus the system information bumblebee-status
 # finds out, if available)
 
-set $bg-color 	      		#268BD2
-set $border-color		    #268BD2
-set $inactive-bg-color   	#2F6C96
+set $bg-color 	      		#B58900
+set $border-color		    #B58900
+set $inactive-bg-color   	#8F6D03
 set $text-color          	#FFFFFF
 set $inactive-text-color    #BCC3C3
 set $urgent-bg-color        #FF0000
@@ -436,8 +437,8 @@ exec --no-startup-id i3-msg border none
 #exec --no-startup-id $HOME/app/dnscrypt/linux-x86_64/dnscrypt-proxy start
 
 # Enable Compton for compositor
-exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton-kawase-blur.conf
-#exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton.conf
+#exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton-kawase-blur.conf
+exec_always --no-startup-id killall compton ; compton --dbus --config ~/.config/compton/compton.conf
 
 # Enable Dunst Notifications
 exec_always --no-startup-id killall dunst ; dunst -config '/home/bandithijo/.config/dunst/dunstrc'

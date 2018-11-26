@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=wxMaxima
+Comment=A graphical user interface that allows symbolic and numeric calculations using Maxima
+Exec=wxmaxima %f
+Icon=wxmaxima
+Type=Application
+Categories=Education;Math;Science;
+MimeType=text/x-wxmaxima-batch;text/x-wxmathml;text/x-maximasession;text/x-maxima-out;
+Keywords=maths;cas;algebra;education;engineering;physics;
+NoDisplay=true

@@ -10,3 +10,4 @@ Exec=env GTK2_RC_FILES=/usr/share/themes/Adwaita/gtk-2.0/gtkrc /opt/Enpass/bin/r
 MimeType=x-scheme-handler/enpass;x-scheme-handler/enpassextension;
 Categories=Utility;
 Comment=Enpass is a password management program to securely store passwords and other credentials.
+NoDisplay=true

@@ -17,3 +17,4 @@ X-GNOME-Bugzilla-Product=file-roller
 X-GNOME-Bugzilla-Component=general
 X-GNOME-Bugzilla-Version=3.24.1
 X-GNOME-UsesNotifications=true
+NoDisplay=true

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=preferences-desktop
+Exec=lxsession-edit
+Name=Desktop Session Settings
+Comment=Manage applications loaded in desktop session
+Categories=GTK;Settings;DesktopSettings;X-LXDE-Settings;
+OnlyShowIn=LXDE;
+NoDisplay=true

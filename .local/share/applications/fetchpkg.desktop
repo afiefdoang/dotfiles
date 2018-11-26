@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=FetchPKG
+Type=Application
+Comment=Manage Software
+Terminal=true
+Exec=fetchpkg
+Icon=fetchpkg
+Categories=ConsoleOnly;System;
+GenericName=FetchPKG
+NoDisplay=true

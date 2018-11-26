@@ -11,4 +11,4 @@ StartupNotify=false
 Terminal=false
 Type=Application
 MimeType=x-scheme-handler/bitcoin;
-
+NoDisplay=true
