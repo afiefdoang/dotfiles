@@ -2,8 +2,10 @@
 ! ROFI PREFERENCES
 !------------------------------------------------------------------------------
 rofi.combi-modi:    window,drun,ssh,
-rofi.theme:         solarized-bandit
 rofi.font:          Hack 10
-!rofi.font:          Envy Code R for Powerline 11
 rofi.modi:          combi,run
+! DARK
+rofi.theme:         solarized-dark-bandit
+! LIGHT
+!rofi.theme:         solarized-light-bandit
 !------------------------------------------------------------------------------

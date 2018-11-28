@@ -31,7 +31,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Hack 10
+font pango:Hack 9
 #font pango:Envy Code R for Powerline 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -215,7 +215,7 @@ for_window [class="Blueman-manager"] floating enable border normal 1
 for_window [class="Gnome-usage"] floating enable border normal 1
 for_window [title="TeamViewer"] floating enable border none
 for_window [title="Open Hardware Monitor"] floating enable border normal 1
-for_window [class="URxvt" title="ncpamixer"] floating enable border normal 1 resize set 600 600,move right 200px,move down 20px
+for_window [class="URxvt" title="ncpamixer"] floating enable border normal 1 resize set 500 600,move right 200px
 for_window [class="Wine" title="WinBox v3.13 (Addresses)"] floating enable border normal 1
 for_window [class="zoom" title="Zoom - Free Account"] floating enable border normal 1 move right 470px,move down 0px
 for_window [class="zoom" title="Settings"] floating enable border normal 1
@@ -223,6 +223,9 @@ for_window [class="Flowblade" title="Audio Mixer"] floating enable border normal
 for_window [class="Vysor" title="Mi 4c"] floating enable border none
 for_window [class="scrcpy" title="Mi-4c"] floating enable border none move right 460px,move down 0px
 for_window [class="Tor Browser" title="Software Update"] floating enable border normal 1
+for_window [class="jetbrains-studio" title="Android Studio Setup Wizard"] floating enable border normal 1
+for_window [class="jetbrains-studio" title="Welcome to Android Studio"] floating enable border normal 1
+for_window [title="Android Emulator - 4_WVGA_Nexus_S_API_22:5554"] floating enable border normal 1
 
 # Disable Floating Mode for Specific Programs
 for_window [class="pavucontrol-qt"] floating disable
@@ -338,17 +341,38 @@ smart_gaps on
 # For adding space and [] character on window title
 for_window [class=".*"] title_format " %title "
 
+# --------------------------------------------------------------------
 # Background Color
+# --------------------------------------------------------------------
+# DARK
 exec_always --no-startup-id xsetroot -solid "#002B36"
+# --------------------------------------------------------------------
+# LIGHT
+#exec_always --no-startup-id xsetroot -solid "#FDF6E3"
+# --------------------------------------------------------------------
 
+# --------------------------------------------------------------------
 # Background Wallpaper
-exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11X.png
-#exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11.png
+# --------------------------------------------------------------------
+# DARK
+exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11X-dark.png
+#exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11-dark.png
+# --------------------------------------------------------------------
+# LIGHT
+#exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11X-light.png
+#exec_always --no-startup-id feh --bg-fill -Z /home/bandithijo/pix/Wallpapers/archWallpaper/Arch-Wallpaper-11-light.png
+# --------------------------------------------------------------------
 
 # i3lock lockscreen
 # (lock is script from nandavera | i3lock-color)
 # source: https://github.com/yuune/dotfiles/blob/master/.bin/lock
-bindsym $mod+Shift+x exec --no-startup-id /usr/bin/lock
+# --------------------------------------------------------------------
+# DARK
+bindsym $mod+Shift+x exec --no-startup-id /usr/bin/lock-dark
+# --------------------------------------------------------------------
+# LIGHT
+#bindsym $mod+Shift+x exec --no-startup-id /usr/bin/lock-light
+# --------------------------------------------------------------------
 
 exec_always --no-startup-id killall xautolock ; xautolock -time 15 -locker "/usr/bin/lock" && systemctl suspend
 
@@ -412,7 +436,7 @@ bindsym $mod+F8 exec --no-startup-id urxvt -e ncpamixer
 # Jakarta
 #exec --no-startup-id redshift -l -6.21462:106.84513 -r -t 5700:3500
 # Balikpapan
-exec --no-startup-id redshift -l -1.26753:116.82887 -r -t 4600:4600
+exec --no-startup-id redshift -l -1.26753:116.82887 -r -t 5000:5000
 
 # Polkit-GNOME
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

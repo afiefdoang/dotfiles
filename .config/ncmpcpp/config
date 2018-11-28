@@ -1,6 +1,6 @@
 ## default sampel on : /usr/share/doc/ncmpcpp/config
 # % egrep -v '^#' ~/.config/ncmpcpp/config
-# mpd_music_dir = "~/snd/Al-Quran/Mishari_Rashid/"
+mpd_music_dir = "/home/bandithijo/snd/Al-Quran/Mishari_Rashid/"
 visualizer_in_stereo = "yes"
 visualizer_fifo_path = "/tmp/mpd.fifo"
 visualizer_output_name = "visualizer_feed"

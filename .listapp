@@ -9,6 +9,7 @@ aic94xx-firmware
 alsa-utils
 android-sdk
 android-sdk-platform-tools
+android-studio
 android-tools
 android-udev
 arandr
@@ -89,7 +90,6 @@ elementary-icon-theme
 elinks
 emma
 encfs
-eog
 ethtool
 ettercap
 evince
@@ -99,7 +99,6 @@ faenza-icon-theme
 fakeroot
 feh
 fetchmirrors
-fetchpkg
 ffmpegthumbnailer
 ffmulticonverter
 figlet
@@ -165,6 +164,7 @@ google-chrome
 gotop-bin
 gparted
 gpick
+gpicview-gtk3
 grep
 gsmartcontrol
 gst-libav

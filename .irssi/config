@@ -420,7 +420,8 @@ settings = {
     # Solarized
     theme = "solarized-bandit";
     hilight_color = "= %r";
-    autolog = "no";
+    autolog = "yes";
+    autolog_path = "~/.irclogs/%Y/$tag/$0.%m-%d.log";
   };
   "irc/core" = { alternate_nick = "bandithijo_"; };
 };

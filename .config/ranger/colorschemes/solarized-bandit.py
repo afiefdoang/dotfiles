@@ -17,7 +17,8 @@ class Solarized(ColorScheme):
             return default_colors
 
         elif context.in_browser:
-            fg = 244
+            # fg = 244
+            fg = default
             if context.selected:
                 attr = reverse
             else:
@@ -57,7 +58,8 @@ class Solarized(ColorScheme):
                 attr |= bold
             if context.link:
                 fg = context.good and 37 or 160
-                bg = context.bad and 235
+                # bg = context.bad and 235
+                bg = context.bad and default
                 attr |= bold
             if context.tag_marker and not context.selected:
                 attr |= bold

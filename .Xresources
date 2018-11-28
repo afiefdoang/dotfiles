@@ -58,8 +58,8 @@ URxvt.allow_bold:             true
 !URxvt.boldFont:               xft:xos4 Terminess Powerline:bold:pixelsize=16:antialias=true
 !URxvt.font:                   xft:Terminess Powerline:pixelsize=16:antialias=true
 !URxvt.boldFont:               xft:Terminess Powerline:bold:pixelsize=16:antialias=true
-URxvt.font:                   xft:Hack:pixelsize=16:antialias=true:hinting=true
-URxvt.boldFont:               xft:Hack:bold:pixelsize=16:antialias=true:hinting=true
+URxvt.font:                   xft:Hack:pixelsize=14:antialias=true:hinting=true
+URxvt.boldFont:               xft:Hack:bold:pixelsize=14:antialias=true:hinting=true
 
 ! Text
 URxvt.colorUL:                #879C00
@@ -202,7 +202,7 @@ UXTerm*background:             #002B36
 !
 ! URxvt*background:            S_base03
 
-*background:              [90]S_base03
+*background:              [97]S_base03
 *foreground:              S_base0
 !*fading:                  40
 *fadeColor:               S_base03

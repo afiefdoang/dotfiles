@@ -150,7 +150,7 @@ alias lampp-start="sudo /opt/lampp/lampp start"
 alias lampp-stop="sudo /opt/lampp/lampp stop"
 
 # POSTBANNER
-alias lolban="postbanner -t '-f 3d.flf' -l '-p 10'"
+alias lolban="postbanner -t '-f 3d.flf' -l '-p 5'"
 
 # key-mon fix
 alias key-mon="xhost +; key-mon"

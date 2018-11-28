@@ -65,13 +65,14 @@ echo '[ DONE ] Create main directory'
 ##### Content from $HOME Directory
 # -----------------------------------------------------------------------------
 cp ~/.gtkrc-2.0 {mainDir}
-cp ~/.tmux.conf {mainDir}
 cp ~/.mailcap {mainDir}
 cp ~/.ncpamixer.conf {mainDir}
-cp ~/.Xresources {mainDir}
-cp ~/.xinitrc {mainDir}
 cp ~/.profile {mainDir}
+cp ~/.tmux.conf {mainDir}
 cp ~/.vimrc {mainDir}
+cp ~/.xinitrc {mainDir}
+cp ~/.Xmodmap {mainDir}
+cp ~/.Xresources {mainDir}
 cp ~/.zshrc {mainDir}
 
 echo '[ DONE ] Copy dotfiles from /home user directory'
@@ -106,38 +107,45 @@ echo '[ DONE ] Copy dotfiles from /etc directory'
 # -----------------------------------------------------------------------------
 mkdir -p {configDir}
 
-cp -r ~/.config/conky {configDir}
 cp -r ~/.config/compton {configDir}
+cp -r ~/.config/conky {configDir}
 cp -r ~/.config/dunst {configDir}
 cp -r ~/.config/i3 {configDir}
 cp -r ~/.config/ncmpcpp {configDir}
 cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/newsboat {configDir}
+cp -r ~/.config/polybar {configDir}
 cp -r ~/.config/rofi {configDir}
 cp -r ~/.config/rofi-power {configDir}
-cp -r ~/.config/polybar {configDir}
+cp -r ~/.config/termite {configDir}
 cp -r ~/.config/urxvt {configDir}
+cp -r ~/.config/urxvtconfig {configDir}
 
-cp ~/.config/user-dirs.dirs {configDir}
+cp ~/.config/gtkrc {configDir}
+cp ~/.config/gtkrc-2.0 {configDir}
+cp ~/.config/mimeapps.list {configDir}
 cp ~/.config/user-dirs.conf {configDir}
+cp ~/.config/user-dirs.dirs {configDir}
+cp ~/.config/user-dirs.locale {configDir}
 
 # GTK3
 #mkdir -p {configDir}/gtk-3.0
 #cp ~/.config/gtk-3.0/bookmarks {configDir}/gtk-3.0
 #cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
 
+# MPD
+mkdir -p {configDir}/mpd
+cp ~/.config/mpd/mpd.conf {configDir}/mpd
+
 # MPV
 mkdir -p {configDir}/mpv
 cp ~/.config/mpv/mpv.conf {configDir}/mpv
 cp ~/.config/mpv/input.conf {configDir}/mpv
 
-# MPD
-mkdir -p {configDir}/mpd
-cp ~/.config/mpd/mpd.conf {configDir}/mpd
-
 # MUTT
 mkdir -p {configDir}/mutt
-cp -r ~/.config/mutt/mutt-colors-solarized {configDir}/mutt
+cp ~/.config/mutt/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc \
+{configDir}/mutt
 cp ~/.config/mutt/muttrc {configDir}/mutt
 
 # RANGER
@@ -147,7 +155,7 @@ cp ~/.config/ranger/commands.py {configDir}/ranger
 cp ~/.config/ranger/commands_full.py {configDir}/ranger
 cp ~/.config/ranger/rc.conf {configDir}/ranger
 cp ~/.config/ranger/rifle.conf {configDir}/ranger
-
+cp ~/.config/ranger/scope.sh {configDir}/ranger
 
 echo '[ DONE ] Copy dotfiles from ~/.config user directory'
 # -----------------------------------------------------------------------------
@@ -157,8 +165,9 @@ echo '[ DONE ] Copy dotfiles from ~/.config user directory'
 ##### Content from .local Directory
 # -----------------------------------------------------------------------------
 mkdir -p {localDir}/bin
+cp ~/.local/bin/lock-dark {localDir}/bin
+cp ~/.local/bin/lock-light {localDir}/bin
 cp ~/.local/bin/rofi-power {localDir}/bin
-cp ~/.local/bin/lock {localDir}/bin
 cp ~/.local/bin/postbanner {localDir}/bin
 
 # APPLICATION DESKTOP CONFIG FILES
@@ -179,7 +188,8 @@ mkdir -p {vimDir}/colors
 cp ~/.vim/colors/solarized-bandit.vim {vimDir}/colors
 
 mkdir -p {vimDir}/plugged/vim-airline-themes/autoload/airline/themes
-cp ~/.vim/plugged/vim-airline-themes/autoload/airline/themes/solarized_bandit.vim {vimDir}/plugged/vim-airline-themes/autoload/airline/themes
+cp ~/.vim/plugged/vim-airline-themes/autoload/airline/themes/solarized_bandit.\
+vim {vimDir}/plugged/vim-airline-themes/autoload/airline/themes
 
 echo '[ DONE ] Copy dotfiles from ~/.vim user directory'
 # -----------------------------------------------------------------------------
@@ -199,15 +209,14 @@ echo '[ DONE ] Copy dotfiles from ~/.oh-my-zsh user directory'
 # -----------------------------------------------------------------------------
 ##### Content from .irssi
 # -----------------------------------------------------------------------------
-mkdir -p {irssiDir}
 mkdir -p {irssiDir}/scripts/autorun
-cp ~/.irssi/config {irssiDir}
 cp ~/.irssi/scripts/autorun/notify.pl {irssiDir}/scripts/autorun
 cp ~/.irssi/scripts/nicklist-portable.pl {irssiDir}/scripts
 cp ~/.irssi/scripts/notify.pl {irssiDir}/scripts
+
+mkdir -p {irssiDir}
+cp ~/.irssi/config {irssiDir}
 cp ~/.irssi/solarized-bandit.theme {irssiDir}
-cp ~/.irssi/formats.txt {irssiDir}
-cp ~/.irssi/basic-irc-commands.txt {irssiDir}
 
 echo '[ DONE ] Copy dotfiles from ~/.irssi user directory'
 # -----------------------------------------------------------------------------
@@ -222,6 +231,14 @@ pacman -Qqe > .listapp
 
 
 # Print Output ----------------------------------------------------------------
+print(f'''
+d8888b.  .d88b.  d8b   db d88888b db
+88  `8D .8P  Y8. 888o  88 88'     88
+88   88 88    88 88V8o 88 88ooooo YP
+88   88 88    88 88 V8o88 88~~~~~
+88  .8D `8b  d8' 88  V888 88.     db
+Y8888D'  `Y88P'  VP   V8P Y88888P YP
+''')
 print('\n>> CRAWLING PROCESS COMPLETED !!')
 
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
