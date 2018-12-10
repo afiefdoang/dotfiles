@@ -280,6 +280,7 @@ mpc
 mpd
 mpv
 msmtp
+mtpfs
 mugshot
 mysql-workbench
 nano
@@ -529,6 +530,7 @@ ttf-monaco
 ttf-roboto
 ttf-roboto-slab
 ttf-sazanami
+ttf-ubuntu-font-family
 ttf-wps-fonts
 tty-clock
 tumbler
@@ -561,7 +563,6 @@ wd719x-firmware
 weechat
 wget
 which
-wifi-pumpkin-git
 wine
 wine-mono
 wine_gecko
@@ -584,6 +585,7 @@ xf86-input-libinput
 xf86-input-mouse
 xf86-input-wacom
 xf86-video-intel
+xfburn
 xfce-theme-greybird
 xfce4-power-manager
 xfsprogs
@@ -636,7 +638,7 @@ xtitle-git
 xzoom
 yaourt
 yarn
-yay
+yay-bin
 youtube-dl
 zeal
 zoom

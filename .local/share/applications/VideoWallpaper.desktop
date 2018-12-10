@@ -7,3 +7,4 @@ Terminal=false
 StartupNotify=false
 Type=Application
 Categories=System;Application;
+NoDisplay=true

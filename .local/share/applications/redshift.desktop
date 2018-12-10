@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Redshift
+Comment=Color temperature adjustment tool
+Exec=redshift
+Icon=redshift
+Terminal=true
+Type=Application
+Categories=Utility;
+NoDisplay=true
+NoDisplay=true

@@ -64,11 +64,11 @@ Tapi jangan khawatir, mungkin dilain waktu kamu datang lagi, repositori ini suda
 | tmux | [.tmux.conf](https://github.com/bandithijo/dotfiles/blob/master/.tmux.conf) | ~/.tmux.conf |
 | i3-gaps | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/i3/config) | ~/.config/i3/config |
 | irssi | [config](https://github.com/bandithijo/dotfiles/blob/master/.irssi/config) | ~/.irssi/config |
-| Dunst | [dunstrc](https://github.com/bandithijo/dotfiles/blob/master/.config/dunst/dunstrc) | ~/.config/dunst/dunstrc |
+| Dunst | [dunstrc](https://github.com/bandithijo/dotfiles/blob/master/.config/dunst/dunstrc-dark) | ~/.config/dunst/dunstrc-dark |
 | ranger | [rc.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/ranger/rc.conf) | ~/.config/ranger/rc.conf |
 | Rofi | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/rofi/config) | ~/.config/rofi/config |
 | Rofi-Power | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/rofi-power/config) | ~/.config/rofi-power/config |
-| Polybar | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/polybar/config) | ~/.config/polybar/config |
+| Polybar | [config](https://github.com/bandithijo/dotfiles/blob/master/.config/polybar/config-dark) | ~/.config/polybar/config-dark |
 | MPD | [mpd.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/mpd/mpd.conf) | ~/.config/mpd/mpd.conf |
 | MPV | [mpv.conf](https://github.com/bandithijo/dotfiles/blob/master/.config/mpv/mpv.conf) | ~/.config/mpv/mpv.conf |
 | neomutt | [muttrc](https://github.com/bandithijo/dotfiles/blob/master/.config/mutt/muttrc) | ~/.config/mutt/muttrc |

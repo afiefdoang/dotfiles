@@ -87,6 +87,8 @@ bind index,pager \Cn sidebar-next-new
 bind index,pager B sidebar-toggle-visible
 color sidebar_divider default default
 color sidebar_highlight black yellow
+color sidebar_new red default
+color sidebar_flagged yellow default
 
 source personal.muttrc
 source /home/bandithijo/.config/mutt/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc

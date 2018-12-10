@@ -40,7 +40,6 @@ Plug 'tpope/vim-vinegar'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rking/ag.vim'
 Plug 'skwp/greplace.vim'
 Plug 'airblade/vim-gitgutter'
@@ -52,7 +51,6 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'ervandew/supertab'
 Plug 'acoustichero/goldenrod.vim'
 Plug 'easymotion/vim-easymotion'
-"Plug 'nathanaelkane/vim-indent-guides'
 Plug 'andersoncustodio/vim-enter-indent'
 Plug 'hwartig/vim-seeing-is-believing'
 Plug 'dikiaap/minimalist'
@@ -65,7 +63,6 @@ Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-ragtag'
 Plug 'majutsushi/tagbar'
-"Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-dispatch'
@@ -73,7 +70,7 @@ Plug 'tpope/vim-rvm'
 Plug 'tpope/vim-haml'
 Plug 'Valloric/YouCompleteMe'
 Plug 'flazz/vim-colorschemes'
-Plug 'Lokaltog/powerline'
+"Plug 'Lokaltog/powerline'
 Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/sgmlendtag'
 Plug 'tpope/vim-unimpaired'
@@ -81,13 +78,14 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
 Plug 'python-mode/python-mode', {'branch': 'develop'}
-"Plug 'Raimondi/delimitMate'
 "Plug 'nikvdp/ejs-syntax'
 Plug 'briancollins/vim-jst'
 "Plug 'ryanoasis/vim-devicons'
 Plug 'SirVer/ultisnips'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'tpope/vim-liquid'
+Plug 'junegunn/goyo.vim'
+Plug 'PotatoesMaster/i3-vim-syntax'
 
 call plug#end()
 " }}}
@@ -298,6 +296,9 @@ vno <up> <Nop>
 " Code folding saved after exit vim
 autocmd BufWinLeave .* mkview
 autocmd BufWinEnter .* silent loadview
+
+" Goyo plugin makes text more readable when writing prose:
+map <leader>g :Goyo \| set linebreak<CR>
 " }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

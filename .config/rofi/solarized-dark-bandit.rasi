@@ -21,11 +21,11 @@
     selected-urgent-foreground:  rgba ( 218, 66, 129, 100 % );
     selected-urgent-background:  rgba ( 0, 54, 66, 100 % );
     alternate-normal-foreground: @foreground;
-    alternate-normal-background: rgba ( 0, 43, 55, 100 % );
+    alternate-normal-background: rgba ( 7, 54, 66, 100 % );
     alternate-active-foreground: @active-foreground;
-    alternate-active-background: rgba ( 0, 43, 55, 100 % );
+    alternate-active-background: rgba ( 7, 54, 66, 100 % );
     alternate-urgent-foreground: @urgent-foreground;
-    alternate-urgent-background: rgba ( 0, 43, 55, 100 % );
+    alternate-urgent-background: rgba ( 7, 54, 66, 100 % );
     red:                         rgba ( 220, 50, 47, 100 % );
     blue:                        rgba ( 38, 139, 210, 100 % );
     bordercolor:                 rgba ( 0, 43, 55, 100 % );

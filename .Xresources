@@ -202,7 +202,7 @@ UXTerm*background:             #002B36
 !
 ! URxvt*background:            S_base03
 
-*background:              [97]S_base03
+*background:              [95]S_base03
 *foreground:              S_base0
 !*fading:                  40
 *fadeColor:               S_base03

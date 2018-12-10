@@ -108,13 +108,10 @@ echo '[ DONE ] Copy dotfiles from /etc directory'
 mkdir -p {configDir}
 
 cp -r ~/.config/compton {configDir}
-cp -r ~/.config/conky {configDir}
-cp -r ~/.config/dunst {configDir}
 cp -r ~/.config/i3 {configDir}
 cp -r ~/.config/ncmpcpp {configDir}
 cp -r ~/.config/nvim {configDir}
 cp -r ~/.config/newsboat {configDir}
-cp -r ~/.config/polybar {configDir}
 cp -r ~/.config/rofi {configDir}
 cp -r ~/.config/rofi-power {configDir}
 cp -r ~/.config/termite {configDir}
@@ -127,6 +124,15 @@ cp ~/.config/mimeapps.list {configDir}
 cp ~/.config/user-dirs.conf {configDir}
 cp ~/.config/user-dirs.dirs {configDir}
 cp ~/.config/user-dirs.locale {configDir}
+
+# CONKY
+mkdir -p {configDir}/conky
+cp -r ~/.config/conky/conkyrc {configDir}conky
+
+# DUNST
+mkdir -p {configDir}/dunst
+cp ~/.config/dunst/dunstrc-dark {configDir}/dunst
+cp ~/.config/dunst/dunstrc-light {configDir}/dunst
 
 # GTK3
 #mkdir -p {configDir}/gtk-3.0
@@ -147,6 +153,12 @@ mkdir -p {configDir}/mutt
 cp ~/.config/mutt/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc \
 {configDir}/mutt
 cp ~/.config/mutt/muttrc {configDir}/mutt
+
+# POLYBAR
+mkdir -p {configDir}/polybar
+cp ~/.config/polybar/config-dark {configDir}/polybar
+cp ~/.config/polybar/config-light {configDir}/polybar
+cp ~/.config/polybar/launch.sh {configDir}/polybar
 
 # RANGER
 mkdir -p {configDir}/ranger

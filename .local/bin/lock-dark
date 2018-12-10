@@ -23,7 +23,7 @@ genwp () {
         # --indpos="$WIDTH-88:$HEIGHT-75" --timepos="$WIDTH/2:$HEIGHT/2+30" \
 runlock () {
     i3lock -n --beep --color 002B36 --force-clock -i $tmpwall \
-        --indpos="$WIDTH-88:$HEIGHT-75" --timepos="$WIDTH-1180:$HEIGHT-55" \
+        --indpos="$WIDTH-1274:$HEIGHT-75" --timepos="$WIDTH/2:$HEIGHT/2+30" \
         --insidevercolor=00000000 --insidewrongcolor=00000000 --insidecolor=00000000 \
         --ringvercolor=FFCC00aa --ringwrongcolor=ff0000aa --ringcolor=ededed77 \
         --keyhlcolor=ededed99 --bshlcolor=ededed99 --separatorcolor=00000000 \

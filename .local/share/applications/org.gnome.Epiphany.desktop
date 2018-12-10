@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Web
+Name=Epiphany
 Comment=Browse the web
 Keywords=web;browser;internet;
 Exec=epiphany %U
@@ -10,6 +10,7 @@ Icon=org.gnome.Epiphany
 Categories=Network;GNOME;GTK;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;multipart/related;application/x-mimearchive;message/rfc822;
 Actions=Incognito;
+NoDisplay=true
 
 [Desktop Action Incognito]
 Name=New Incognito Window

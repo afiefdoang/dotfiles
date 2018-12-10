@@ -12,3 +12,4 @@ Type=Application
 Categories=Network;News;
 Version=1.1
 MimeType=application/rss+xml;application/atom+xml;application/rdf+xml;x-scheme-handler/feed
+NoDisplay=true

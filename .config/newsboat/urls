@@ -1,7 +1,33 @@
+# Teman Blogging
+------------------------------------------------------------------------------
+DOTFRIENDS
+------------------------------------------------------------------------------
+https://ethanschoonover.com/index.xml "dotfriends"
+http://romisatriawahono.net/feed/atom/ "dotfriends"
+https://bandithijo.com/feed/blog.xml "~BanditHijo Blog" "dotfriends"
+https://bandithijo.com/feed/vlog.xml "~BanditHijo Vlog" "dotfriends"
+https://budrich.github.io/index.xml "dotfriends"
+https://theriyanto.wordpress.com/feed/ "~Tedi Heriyanto" "dotfriends"
+https://agung-setiawan.com/feed/ "Tech News"
+https://situsali.com/feed/ "Tech News"
+https://alunux.github.io/index.xml "~Alunux" "dotfriends"
+https://wonderneko.wordpress.com/feed/ "~Wonderneko.h" "dotfriends"
+http://www.himawan.nu/feeds/posts/default "~Himawan" "dotfriends"
+https://sucipto.net/atom.xml "Tech News"
+https://epsi-rns.github.io/feed.xml "~Epsi-RNS | GitHub" "dotfriends"
+https://epsi-rns.gitlab.io/index.xml "~Epsi-RNS | GitLab" "dotfriend"
+http://feeds.feedburner.com/fathurhoho "dotfriends"
+https://ngonfig.net/feed "~Ngonfig.net" "dotfriends"
+https://yuune.github.io/article/feed/ "~Nanda Okitavera" "dotfriends"
+https://addy-dclxvi.github.io/index.xml "~Addy" "dotfriends"
+https://blog.aflasio.com/atom.xml "~Aflasio Blog" "dotfriends"
+https://raniaamina.github.io/atom.xml "~Rania Amina" "dotfriends"
+
 # News
 ------------------------------------------------------------------------------
 LINUX_MAGAZINES
 ------------------------------------------------------------------------------
+https://blog.webjeda.com/feed.xml "~WebJeda | A Modern Web Development Blog" "Tech News"
 https://igurublog.wordpress.com/feed/ "Tech News"
 http://feeds.arstechnica.com/arstechnica/index "Tech News"
 http://www.linux-mag.com/feed/ "Tech News"
@@ -35,27 +61,10 @@ https://blog.cilsy.id/feed "Tech News"
 http://feeds2.feedburner.com/tympanus "Tech News"
 https://hackernoon.com/feed "Tech News"
 https://www.smashingmagazine.com/feed/ "~Smashing Magazine" "Tech News"
+https://blog.mozilla.org/feed/ "~ Mozilla Blog" "Tech News"
+https://blackarch.org/rss.xml "Tech News"
 
-------------------------------------------------------------------------------
-DOTFRIENDS
-------------------------------------------------------------------------------
-https://ethanschoonover.com/index.xml "dotfriends"
-http://romisatriawahono.net/feed/atom/ "dotfriends"
-https://bandithijo.com/feed/blog.xml "dotfriends"
-https://budrich.github.io/index.xml "dotfriends"
-https://theriyanto.wordpress.com/feed/ "~Tedi Heriyanto" "dotfriends"
-https://agung-setiawan.com/feed/ "Tech News"
-https://situsali.com/feed/ "Tech News"
-https://alunux.github.io/index.xml "~Alunux" "dotfriends"
-https://wonderneko.wordpress.com/feed/ "~Wonderneko.h" "dotfriends"
-http://www.himawan.nu/feeds/posts/default "~Himawan" "dotfriends"
-https://sucipto.net/atom.xml "Tech News"
-https://epsi-rns.github.io/feed.xml "~Epsi-RNS | GitHub" "dotfriends"
-https://epsi-rns.gitlab.io/index.xml "~Epsi-RNS | GitLab" "dotfriend"
-http://feeds.feedburner.com/fathurhoho "dotfriends"
-https://ngonfig.net/feed "~Ngonfig.net" "dotfriends"
-https://yuune.github.io/article/feed/ "~Nanda Okitavera" "dotfriends"
-
+# Programming Language
 ------------------------------------------------------------------------------
 PROGRAMMING_LANGUAGE
 ------------------------------------------------------------------------------
@@ -73,3 +82,8 @@ http://www.voa-islam.com/rss/all "Islam"
 ANIMALS_CONSERVATION
 ------------------------------------------------------------------------------
 http://orangutan.or.id/feed/ "~BOSF - Borneo Orangutan Survival Foundation" "Animals Conservaton"
+
+------------------------------------------------------------------------------
+THINKPAD
+------------------------------------------------------------------------------
+https://pcsupport.lenovo.com/id/en/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x260/20f5/20f5s0w206/pc0h7mkm?p=rss&source=psp

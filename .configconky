@@ -1,0 +1,92 @@
+conky.config = {
+
+    background = false,
+    use_xft = true,
+    font = 'Hack:pixelsize=10',
+    xftalpha = 0.8,
+    update_interval = 1,
+    total_run_times = 0,
+    own_window = true,
+    own_window_transparent = true,
+    own_window_type = 'override',
+    own_window_class = 'Conky',
+    own_window_argb_visual = true,
+    own_window_argb_value = 150,
+    own_window_colour = '#000000',
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    double_buffer = true,
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    draw_graph_borders = true,
+    stippled_borders = 0,
+    border_width = 0,
+    default_color = 'grey',
+    default_shade_color = 'grey',
+    default_outline_color = 'black',
+    alignment = 'top_left',
+    gap_x = 740,
+    gap_y = 68,
+    no_buffers = true,
+    cpu_avg_samples = 2,
+    net_avg_samples = 2,
+    override_utf8_locale = true,
+    use_spacer = 'true',
+    maximum_width = 1080,
+    minimum_height = 600,
+    uppercase = true,
+
+
+};
+
+conky.text = [[
+#leet chars: ┤┤└└┴┴┐┐││┘┘┌┌├├┬┬┼┼┴┴── ││ ▽▼△▲▵▴▾▿
+${alignr}${offset 250}--------------------------------
+${alignr}${offset 0}┌────────- ${nodename}${font} -────────
+${alignr}${offset -130}${uid_name 1000}${font} -──────┐
+${alignr}${offset -130}< ${exec lsb_release -ds | sed 's/"//g'} > Distro -─┤
+${alignr}${offset -130}< ${kernel} > Kernel -─┤
+${alignr}${offset -130}< ${exec /usr/bin/laptop-age } > Oldest -─┤
+${alignr}${offset -130}< ${uptime} > Uptime -─┘
+${alignr}${offset -30}┌──────────
+${alignr}${offset -90}│
+${alignr}${offset -90}< ${exec lspci | grep VGA | sed 's/00:02.0 VGA compatible controller: //g' | sed 's/ (rev 07)//g' | sed 's/Corporation Skylake GT2 \[//g' | sed 's/\]//g'} > GPU -────────────┘
+${alignr}${offset -180}< ${exec xdpyinfo | awk '/dimensions/{print $2}'} > Res
+
+
+${alignr}${offset -55}< ${exec cat /etc/locale.conf | grep "LANG=" | cut -d"\"" -f2 | sed 's/LANG=//g'} > Locale -─────────
+
+
+${alignr}${offset -145}< ${exec sensors | grep "fan1" | cut -d" " -f9-} > Fan Speed -──────────┐
+${alignr}${offset -145}│
+${alignr}${offset -145}│
+${alignr}${offset -145}┌──────- Temperatures -───────────────┤
+${alignr}${offset -259}├─- Core0 < ${execi 5 sensors|grep 'Core 0'| awk -F'+' '{print $2}' | awk -F'.' '{print $1}'} °C >${alignr}${offset -145}│
+${alignr}${offset -259}└─- Core1 < ${execi 5 sensors|grep 'Core 1'| awk -F'+' '{print $2}' | awk -F'.' '{print $1}'} °C >${alignr}${offset -145}│
+${alignr}${offset -145}│
+${alignr}${offset -145}┌─- < ${execi 1000 cat /proc/cpuinfo|grep 'model name'|sed -e 's/model name.*: //'| uniq | cut -c 1-25} > -──────────┤
+${alignr}${offset -415}│
+${alignr}${offset -331}└───- Processes
+${alignr}${offset -229}< ${top name 1}  ${top cpu 1} >
+${alignr}${offset -229}< ${top name 2}  ${top cpu 2} >
+
+
+${alignr}${offset -85}< $mem/$memmax >  < $memperc% > RAM -──────────
+
+
+${alignr}${offset -53}${wireless_essid wlp4s0} : SSID -───────────
+${alignr}${offset -120}UP < ${color #888888}${upspeedgraph wlp4s0 10,130 888888 888888}${color} >
+${alignr}${offset -120}DOWN < ${color #888888}${downspeedgraph wlp4s0 10,130 888888 888888}${color} >
+
+
+${alignr}${offset -150}Battery -──────
+${alignr}${offset -183}< ${battery_percent BAT0}% > BAT 0 < ${color #888888}${battery_bar 5,120 BAT0}${color} >
+${alignr}${offset -183}< ${battery_percent BAT1}% > BAT 1 < ${color #888888}${battery_bar 5,120 BAT1}${color} >
+
+
+
+${alignr}${offset -40}Hard Drive -───────────────
+${alignr}${offset -70}< ${fs_used_perc}% > Root < ${color #888888}${fs_bar 5,120 /}${color} >
+${alignr}${offset -70}< ${swapperc}% > Swap < ${color #888888}${swapbar 5,120}${color} >
+# ${alignr}${offset -640}volume: ${exec amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }'}
+]];
