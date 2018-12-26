@@ -1,9 +1,9 @@
 [Desktop Entry]
 Name=gVim
-GenericName=Text Editor
 Comment=Edit text files
-#TryExec=gvim
-Exec=gvim -f %F
+TryExec=gvim
+#Exec=gvim -f %F
+Exec=gvim -f
 Terminal=false
 Type=Application
 Keywords=Text;editor;

@@ -5,3 +5,4 @@ Type=Application
 StartupNotify=true
 Icon=7906_ARPPRODUCTICONFL8.0
 StartupWMClass=flash.exe
+NoDisplay=true

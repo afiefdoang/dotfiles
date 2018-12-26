@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=iTunes
+MimeType=application/vnd.rn-rn_music_package;
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine start /ProgIDOpen iTunes.rmp %f
+NoDisplay=true
+StartupNotify=true
+Icon=E8B9_iTunes.0

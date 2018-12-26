@@ -21,3 +21,4 @@ MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/pjpeg;image/png;image/ti
 #              Do NOT translate or localize the semicolons!
 #              The list MUST also end with a semicolon!
 Keywords=Picture;Slideshow;Graphics;
+NoDisplay=true

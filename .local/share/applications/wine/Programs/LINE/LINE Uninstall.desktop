@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=LINE Uninstall
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/bandithijo/Start\\ Menu/Programs/LINE/LINE\\ Uninstall.lnk
+Type=Application
+StartupNotify=true
+Path=/home/bandithijo/.wine/dosdevices/c:/users/bandithijo/Local Settings/Application Data/LINE/bin
+Icon=2D16_LineUnInst.0
+StartupWMClass=lineuninst.exe
+NoDisplay=true

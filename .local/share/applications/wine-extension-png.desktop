@@ -2,7 +2,7 @@
 Type=Application
 Name=Wine Internet Explorer
 MimeType=image/png;
-Exec=env WINEPREFIX="/home/bandithijo/.winbox/wine" wine start /ProgIDOpen pngfile %f
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine start /ProgIDOpen pngfile %f
 NoDisplay=true
 StartupNotify=true
 Icon=7596_iexplore.0

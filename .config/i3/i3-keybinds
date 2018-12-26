@@ -1,0 +1,36 @@
+mod+Enter       Terminal
+mod+Shift+end   System Dialog
+mod+Shift+q     Kill Window Focus
+mod+Shift+r     Restart i3 Config
+mod+d           Rofi: App Launcher
+mod+Tab         Rofi: Window Switcher
+mod+b           Split Horizontal
+mod+v           Spliit Vertical
+mod+f           Fullscreen Window [+]
+mod+r           Resize Window
+mod+s           Layout: Stacking
+mod+w           Layout: Tabbed
+mod+e           Layout: Split [+]
+mod+Shift+Plus  Sticky Window [+]
+mod+Shift+minus Scratchpad [+]
+mod+minus       Scratchpad Show [+]
+mod+Shift+Space Floating Window [+]
+mod+Space       Change Focus F | T [+]
+mod+a           Focus Parent
+mod+Shift+a     Focus Child
+mod+t           Border Normal 1
+mod+Shift+t     Border Normal 0
+mod+y           Border None
+mode+Shift+y    Border Pixel 1
+mod+o           Blank Space
+mod+F5          Blogging Mode Wallpaper
+mod+F6          Unixporn Mode Wallpaper
+mod+Shift+x     Lock Screen
+mod+Print       Screenshot Silently
+mod+Shfit+Print Screenshot GUI
+mod+p           Rofi: Clipboard
+mod+Shift+p     Clipboard Cleared
+mod+F7          Arandr
+mod+F8          Wifi Enable/Disable [+]
+
+

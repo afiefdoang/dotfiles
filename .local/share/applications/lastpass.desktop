@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=LastPass
+#Exec=lastpass
+Exec=env GTK2_RC_FILES=/usr/share/themes/NumixSolarizedLightYellow/gtk-2.0/gtkrc lastpass
+Icon=lastpass
+Comment=A password manager that makes web browsing easier and more secure
+Terminal=false
+Type=Application
+Categories=Utility;Security;
+MimeType=application/x-lastpass;
+NoDisplay=true

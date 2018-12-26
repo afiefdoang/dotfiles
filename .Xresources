@@ -37,12 +37,12 @@ Xcursor.size:32
 
 URxvt.termName:               rxvt-256color
 URxvt.depth:                  32
-URxvt.geometry:               110x35
 !URxvt.transparent:          true
+!URxvt.shading:              20
 !URxvt.fading:               0
-!URxvt.shading:              15
 !URxvt.urgentOnBell:         true
 !URxvt.visualBell:           true
+URxvt.geometry:               110x35
 URxvt.loginShell:             true
 URxvt.internalBorder:         0
 URxvt.buffered:               true
@@ -58,15 +58,20 @@ URxvt.allow_bold:             true
 !URxvt.boldFont:               xft:xos4 Terminess Powerline:bold:pixelsize=16:antialias=true
 !URxvt.font:                   xft:Terminess Powerline:pixelsize=16:antialias=true
 !URxvt.boldFont:               xft:Terminess Powerline:bold:pixelsize=16:antialias=true
-URxvt.font:                   xft:Hack:pixelsize=14:antialias=true:hinting=true
-URxvt.boldFont:               xft:Hack:bold:pixelsize=14:antialias=true:hinting=true
+URxvt.font:                   xft:Hack:pixelsize=14:antialias=true:hinting=true,\
+                              xft:DejaVu Sans Mono Book:antialias=false:size=14,\
+                              xft:FreeSerif:style=Regular
+URxvt.boldFont:               xft:Hack:bold:pixelsize=14:antialias=true:hinting=true,\
+                              xft:DejaVu Sans Mono Bold:antialias=false:size=14,
+                              xft:FreeSerif:style=Bold
+
 
 ! Text
 URxvt.colorUL:                #879C00
 URxvt.lineSpace:              0
 
 ! Fix font space
-URxvt.letterSpace:            -1
+URxvt.letterSpace:            0
 
 ! Scrollbar
 URxvt.scrollStyle:            rxvt
@@ -202,7 +207,7 @@ UXTerm*background:             #002B36
 !
 ! URxvt*background:            S_base03
 
-*background:              [95]S_base03
+*background:              S_base03
 *foreground:              S_base0
 !*fading:                  40
 *fadeColor:               S_base03

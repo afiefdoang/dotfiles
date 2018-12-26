@@ -62,7 +62,8 @@ info_eol = "false";
 
 # these characters are automatically replaced with specified color
 # (dark grey by default)
-replaces = { "[]=" = "%_$*%_"; };
+#replaces = { "[]=" = "%_$*%_"; };
+replaces = { "[]=" = "$*"; };
 
 abstracts = {
   ##
@@ -159,17 +160,17 @@ abstracts = {
   #  privmsgnick = "%K{msgnick  %R$*%K}%n";
 
   # $0 = nick mode, $1 = nick
-  ownmsgnick = "{msgnick $0 $1-}%n";
+  ownmsgnick = "{msgnick $0 $1-}%w";
   #ownnick = "%N$*%n";
   ownnick = "%N%_$*%_%n";
 
   # public message in channel, $0 = nick mode, $1 = nick
-  pubmsgnick = "{msgnick $0 $1-}";
+  pubmsgnick = "{msgnick $0 $1-}%w";
   #pubnick = "%N$*%n";
   pubnick = "%N%_$*%_%n";
 
   # public message in channel meant for me, $0 = nick mode, $1 = nick
-  pubmsgmenick = "{msgnick $0 $1-}";
+  pubmsgmenick = "{msgnick $0 $1-}%r";
   # %m = magenta
   menick = "%N%_$*%_%n";
 
@@ -185,20 +186,21 @@ abstracts = {
   # private message, $0 = nick, $1 = host
   # TODO: To test for Solarized
   #privmsg = "[%m$0%K<%M$1-%K>%n] ";
-  privmsg = "[%y$0%G<%n$1-%G>%n] ";
+  privmsg = "[%y$0%G<%n$1-%G>%w] ";
 
   # private message from you, $0 = "msg", $1 = target nick
   # TODO: To test for Solarized
   #ownprivmsg = "[%b$0%K<%B$1-%K>%n] ";
-  ownprivmsg = "[%b$0%G<%n$1-%G>%n] ";
+  ownprivmsg = "[%b$0%G<%n$1-%G>%w] ";
 
   # own private message in query
-  ownprivmsgnick = "{msgnick  $*}%b";
-  ownprivnick = "%n$*%n";
+  ownprivmsgnick = "{msgnick  $*}%w";
+  ownprivnick = "%N%_$*%_%n";
 
   # private message in query
   # NOTE: for some reason, we gotta handle both the nick & msg on in this line
-  privmsgnick = "{msgnick  %n$*%n}%n";
+  #privmsgnick = "{msgnick  %n$*%n}%n";
+  privmsgnick = "{msgnick  %N%_$*%_%n}%r";
 
   ##
   ## Actions (/ME stuff)
@@ -209,17 +211,17 @@ abstracts = {
 
   # generic one that's used by most actions
   #action = "{action_core %_$*%n} ";
-  action = "           %W* %|{action_core %n$*} ";
+  action = "           %y* %|{action_core %n$*} ";
 
   # own action, both private/public
   #ownaction = "{action_core %b$*%n} ";
-  ownaction = "{action $*}";
+  ownaction = "{action %y$*}";
 
   # own action with target, both private/public
   # NOTE: to test: /action NICK farted.  (This will tell NICK that you farted)
   #   This is like a /me but only you and NICK will see
   # TODO: To test for Solarized
-  ownaction_target = "{action_core $0}%G:%b$1%n ";
+  ownaction_target = "{action_core $0}%y:%y$1%n ";
 
   # private action sent by others
   # TODO: To test for Solarized
@@ -228,7 +230,7 @@ abstracts = {
   pvtaction_query = "{action $*}";
 
   # public action sent by others
-  pubaction = "{action $*}";
+  pubaction = "{action %y$*}";
 
 
   ##
@@ -302,10 +304,12 @@ abstracts = {
   # default backround for "default" statusbar group
   # NOTE: this impacts the statusbar of an inactive window and the edges of adv_windowlist
   # %7 = white (wich looks gray on a regular terminal with white bg)
-  sb_default_bg = "%k%7";
+  #sb_default_bg = "%k%7";
+  sb_default_bg = "%k%3";
 
   # background for topicbar at the top (defaults to sb_default_bg)
   sb_topic_bg = "%y%0";
+  # sb_topic_bg = "%k%3";
 
   # background for the statusbar of active window. You can also give
   # the foreground color.
@@ -353,7 +357,7 @@ abstracts = {
   sb_act_msg = "%k$*";
   # hilight (when people actually chat)
   # This also affects the color of the window with direct message in adv_windowlist
-  sb_act_hilight = "%r$*";
+  sb_act_hilight = "%r%_$*%_";
   # hilight with specified color, $0 = color, $1 = text
   sb_act_hilight_color = "$0$1-%n";
 

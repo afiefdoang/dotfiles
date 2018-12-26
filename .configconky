@@ -46,8 +46,8 @@ ${alignr}${offset 0}┌────────- ${nodename}${font} -───�
 ${alignr}${offset -130}${uid_name 1000}${font} -──────┐
 ${alignr}${offset -130}< ${exec lsb_release -ds | sed 's/"//g'} > Distro -─┤
 ${alignr}${offset -130}< ${kernel} > Kernel -─┤
-${alignr}${offset -130}< ${exec /usr/bin/laptop-age } > Oldest -─┤
-${alignr}${offset -130}< ${uptime} > Uptime -─┘
+${alignr}${offset -130}< ${exec /usr/bin/laptop-age } >   Life -─┤
+${alignr}${offset -130}< ${uptime_short} > Uptime -─┘
 ${alignr}${offset -30}┌──────────
 ${alignr}${offset -90}│
 ${alignr}${offset -90}< ${exec lspci | grep VGA | sed 's/00:02.0 VGA compatible controller: //g' | sed 's/ (rev 07)//g' | sed 's/Corporation Skylake GT2 \[//g' | sed 's/\]//g'} > GPU -────────────┘
@@ -65,13 +65,13 @@ ${alignr}${offset -259}├─- Core0 < ${execi 5 sensors|grep 'Core 0'| awk -F'+
 ${alignr}${offset -259}└─- Core1 < ${execi 5 sensors|grep 'Core 1'| awk -F'+' '{print $2}' | awk -F'.' '{print $1}'} °C >${alignr}${offset -145}│
 ${alignr}${offset -145}│
 ${alignr}${offset -145}┌─- < ${execi 1000 cat /proc/cpuinfo|grep 'model name'|sed -e 's/model name.*: //'| uniq | cut -c 1-25} > -──────────┤
-${alignr}${offset -415}│
+${alignr}${offset -409}│${offset 264}│
 ${alignr}${offset -331}└───- Processes
 ${alignr}${offset -229}< ${top name 1}  ${top cpu 1} >
 ${alignr}${offset -229}< ${top name 2}  ${top cpu 2} >
 
 
-${alignr}${offset -85}< $mem/$memmax >  < $memperc% > RAM -──────────
+${alignr}${offset -85}< $memperc% | $mem/$memmax ${color #888888}${membar 5,50}${color} > RAM -──────────
 
 
 ${alignr}${offset -53}${wireless_essid wlp4s0} : SSID -───────────
@@ -79,9 +79,9 @@ ${alignr}${offset -120}UP < ${color #888888}${upspeedgraph wlp4s0 10,130 888888 
 ${alignr}${offset -120}DOWN < ${color #888888}${downspeedgraph wlp4s0 10,130 888888 888888}${color} >
 
 
-${alignr}${offset -150}Battery -──────
-${alignr}${offset -183}< ${battery_percent BAT0}% > BAT 0 < ${color #888888}${battery_bar 5,120 BAT0}${color} >
-${alignr}${offset -183}< ${battery_percent BAT1}% > BAT 1 < ${color #888888}${battery_bar 5,120 BAT1}${color} >
+${alignr}${offset -148}Battery -─────────────
+${alignr}${offset -158}< ${exec /bin/bat0_cap} | ${battery_percent BAT0}% > BAT 0 < ${color #888888}${battery_bar 5,110 BAT0}${color} >
+${alignr}${offset -158}< ${exec /bin/bat1_cap} | ${battery_percent BAT1}% > BAT 1 < ${color #888888}${battery_bar 5,110 BAT1}${color} >
 
 
 

@@ -5,3 +5,4 @@ Type=Application
 StartupNotify=true
 Icon=97C0_EMARPPRODUCTICON.0
 StartupWMClass=extension manager.exe
+NoDisplay=true

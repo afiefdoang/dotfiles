@@ -1,7 +1,7 @@
 # Teman Blogging
-------------------------------------------------------------------------------
-DOTFRIENDS
-------------------------------------------------------------------------------
+----------------------------------------------------------------
+------------------------------------------------------DOTFRIENDS
+----------------------------------------------------------------
 https://ethanschoonover.com/index.xml "dotfriends"
 http://romisatriawahono.net/feed/atom/ "dotfriends"
 https://bandithijo.com/feed/blog.xml "~BanditHijo Blog" "dotfriends"
@@ -18,15 +18,18 @@ https://epsi-rns.github.io/feed.xml "~Epsi-RNS | GitHub" "dotfriends"
 https://epsi-rns.gitlab.io/index.xml "~Epsi-RNS | GitLab" "dotfriend"
 http://feeds.feedburner.com/fathurhoho "dotfriends"
 https://ngonfig.net/feed "~Ngonfig.net" "dotfriends"
-https://yuune.github.io/article/feed/ "~Nanda Okitavera" "dotfriends"
+https://okitavera.me/article/feed.xml "~Nanda Okitavera" "dotfriends"
 https://addy-dclxvi.github.io/index.xml "~Addy" "dotfriends"
 https://blog.aflasio.com/atom.xml "~Aflasio Blog" "dotfriends"
 https://raniaamina.github.io/atom.xml "~Rania Amina" "dotfriends"
+https://lukesmith.xyz/rss.xml "dotfriends"
+https://www.meutiarahmah.com/index.xml "dotfriends"
 
 # News
-------------------------------------------------------------------------------
-LINUX_MAGAZINES
-------------------------------------------------------------------------------
+----------------------------------------------------------------
+-------------------------------------------------LINUX_MAGAZINES
+----------------------------------------------------------------
+https://www.hackerone.com/blog.rss "Tech News"
 https://blog.webjeda.com/feed.xml "~WebJeda | A Modern Web Development Blog" "Tech News"
 https://igurublog.wordpress.com/feed/ "Tech News"
 http://feeds.arstechnica.com/arstechnica/index "Tech News"
@@ -53,7 +56,6 @@ https://www.linux.or.id/feed "Tech News"
 http://feeds.feedburner.com/Petruknisme "Tech News"
 http://www.linuxku.com/atom.xml?redirect=false&start-index=1&max-results=100 "~Linuxku.com" "Tech News"
 https://www.gimp.org/feeds/atom.xml "Tech News"
-https://rss.simplecast.com/podcasts/4543/rss "Tech News"
 https://shannonmorse.podbean.com/feed.xml "Tech News"
 https://tutorialinux.com/feed/ "Tech News"
 https://hub.packtpub.com/feed/ "Tech News"
@@ -62,28 +64,36 @@ http://feeds2.feedburner.com/tympanus "Tech News"
 https://hackernoon.com/feed "Tech News"
 https://www.smashingmagazine.com/feed/ "~Smashing Magazine" "Tech News"
 https://blog.mozilla.org/feed/ "~ Mozilla Blog" "Tech News"
-https://blackarch.org/rss.xml "Tech News"
 
-# Programming Language
-------------------------------------------------------------------------------
-PROGRAMMING_LANGUAGE
-------------------------------------------------------------------------------
+# Podcast
+----------------------------------------------------------------
+---------------------------------------------------------PODCAST
+----------------------------------------------------------------
+https://rss.simplecast.com/podcasts/4543/rss "Podcast"
+https://offtopical.net/pg/feed.xml "Podcast"
+
+# Programming Language & Framework
+----------------------------------------------------------------
+--------------------------------------------PROGRAMMING_LANGUAGE
+----------------------------------------------------------------
 https://www.python.org/dev/peps/peps.rss/ "Language"
+https://www.djangoproject.com/rss/weblog/ "Framework"
+https://jekyllrb.com/feed.xml "SSG"
 
 # Islam
-------------------------------------------------------------------------------
-MUSLIM_RSS
-------------------------------------------------------------------------------
+----------------------------------------------------------------
+------------------------------------------------------MUSLIM_RSS
+----------------------------------------------------------------
 http://muflihsafitra.com/feed/ "Islam"
 http://www.voa-islam.com/rss/all "Islam"
 
 # Animals Conservation
-------------------------------------------------------------------------------
-ANIMALS_CONSERVATION
-------------------------------------------------------------------------------
+----------------------------------------------------------------
+--------------------------------------------ANIMALS_CONSERVATION
+----------------------------------------------------------------
 http://orangutan.or.id/feed/ "~BOSF - Borneo Orangutan Survival Foundation" "Animals Conservaton"
 
-------------------------------------------------------------------------------
-THINKPAD
-------------------------------------------------------------------------------
+----------------------------------------------------------------
+--------------------------------------------------------THINKPAD
+----------------------------------------------------------------
 https://pcsupport.lenovo.com/id/en/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x260/20f5/20f5s0w206/pc0h7mkm?p=rss&source=psp

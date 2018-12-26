@@ -12,3 +12,4 @@ StartupWMClass=whatsapp
 Keywords=WhatsApp;Whats;
 Categories=Network;InstantMessaging;
 X-GNOME-UsesNotifications=true
+NoDisplay=true

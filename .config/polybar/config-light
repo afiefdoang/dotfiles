@@ -16,7 +16,7 @@ primary = #ffb52a
 secondary = #e60053
 alert = #FF0000
 
-[bar/example]
+[bar/barsatu]
 monitor = ${env:MONITOR:}
 width = 100%
 height = 22

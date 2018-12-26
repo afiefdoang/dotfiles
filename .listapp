@@ -1,6 +1,8 @@
 acpi
 acpi_call
 acpid
+adobe-source-han-sans-otc-fonts
+adobe-source-han-serif-otc-fonts
 adwaita-icon-theme
 adwaita-qt4
 adwaita-qt5
@@ -18,7 +20,9 @@ arc-icon-theme
 arc-solid-gtk-theme
 arch-audit
 aria2
+arj
 asciinema
+asp
 atomic-tweetdeck
 atool
 atop
@@ -30,6 +34,7 @@ baobab
 bash
 bash-pipes
 bat
+bettercap
 bison
 bleachbit
 blender
@@ -47,6 +52,7 @@ chromium
 clamav
 clamtk
 cli-visualizer
+clipnotify
 cmus
 cnijfilter-common
 code
@@ -64,7 +70,6 @@ cutter
 darkstat
 darktable
 dconf-editor
-deadbeef
 debtap
 devhelp
 device-mapper
@@ -82,6 +87,7 @@ docker
 downgrade
 dsniff
 dunst
+dunstify
 e2fsprogs
 easytag
 ecryptfs-utils
@@ -130,8 +136,6 @@ gcc-objc
 gcolor2
 gconf-editor
 geany
-gedit
-gedit-plugins
 geogebra
 geoip2-database
 geteltorito
@@ -152,7 +156,6 @@ gnome-logs
 gnome-nettool
 gnome-packagekit
 gnome-power-manager
-gnome-screenshot
 gnome-system-log
 gnome-system-monitor
 gnome-themes-extra
@@ -219,7 +222,6 @@ iproute2
 iputils
 ipython
 irssi
-irssi-libnotify-git
 j4-dmenu-desktop
 jdk10-openjdk
 jdk8-openjdk
@@ -233,12 +235,11 @@ key-mon
 keychain
 khal
 kismet
+kitty
 klavaro
-kmag
 lastpass-cli
 lastpass-pocket
 less
-libgnome-games-support
 libopenraw
 libpam-google-authenticator
 libpng14
@@ -247,17 +248,14 @@ libreoffice-extension-vrt-network-equipment
 libreoffice-still
 libvirt-python
 licenses
-light-locker
-light-locker-settings
-light-locker-shim-slock
 lightdm
 lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
-lightdm-slick-greeter
+lightdm-settings
 linux
 linux-headers
 logrotate
 lolcat
+lrzip
 lsb-release
 lshw
 lvm2
@@ -266,6 +264,8 @@ lxappearance
 lxsession-gtk3
 lynis
 lynx
+lzip
+lzop
 man-db
 man-pages
 mariadb
@@ -290,6 +290,7 @@ ncpamixer
 neofetch
 neomutt
 neovim
+neovim-symlinks
 netactview
 netctl
 nethogs
@@ -341,6 +342,7 @@ perl
 perl-anyevent-i3
 perl-async-interrupt
 perl-ev
+perl-glib-object-introspection
 perl-guard
 perl-image-exiftool
 perl-ipc-run
@@ -351,7 +353,6 @@ php
 pinta
 planner
 png++
-polkit-gnome
 polybar
 pop-gtk-theme-git
 postgresql
@@ -422,6 +423,7 @@ python2-jsonschema
 python2-neovim
 python2-pickleshare
 python2-pip
+python2-pylint
 python2-pyquery
 python2-raven
 python2-virtualenv
@@ -449,12 +451,13 @@ rofi
 rpmextract
 rts5227-dkms
 rust
-rxvt-unicode
+rxvt-unicode-patched
 s-nail
 s-tui
 scrcpy
 screen
 screenfetch
+screenkey
 scrot
 seahorse
 sed
@@ -471,6 +474,7 @@ smartmontools
 sniffit
 solarized-dark-themes
 soundconverter
+spectacle
 speedometer
 speedtest-cli
 spotify
@@ -492,6 +496,7 @@ terminess-powerline-font-git
 terminus-font
 terminus-font-ttf
 termite
+termite-terminfo
 termsyn-font
 testdisk
 texinfo
@@ -538,16 +543,18 @@ ufw
 uget
 uml_utilities
 unarchiver
+unarj
 unoconv
 unzip
+urlview
 urxvt-perls
 urxvt-resize-font-git
 usb_modeswitch
 usbutils
 util-linux
 vdirsyncer
-vi
 vicious
+vifm
 vinagre
 vino
 virtualbox
@@ -555,12 +562,12 @@ virtualbox-ext-oracle
 virtualbox-guest-iso
 virtualbox-host-modules-arch
 virtualbox-sdk
+vte3
 vtk
 vulkan-headers
 vulkan-intel
 w3m
 wd719x-firmware
-weechat
 wget
 which
 wine
@@ -573,6 +580,7 @@ wireshark-gtk
 wkhtmltopdf
 wpa_actiond
 wpa_supplicant
+wps-office
 wxmaxima
 x11-ssh-askpass
 x264

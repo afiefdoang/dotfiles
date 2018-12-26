@@ -4,3 +4,4 @@ Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\st
 Type=Application
 StartupNotify=true
 Icon=9B3C_READMESHORTCUTICON.0
+NoDisplay=true

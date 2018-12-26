@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=irssi
-Comment=Char with other people online
+Comment=Chat with other people online
 Keywords=IM;Chat;
-Exec=urxvt -e irssi
+Exec=termite -e irssi
 #Exec=urxvt -e screen irssi
-Icon=irssi
+Icon=hexchat
 Terminal=false
 Type=Application
 Encoding=UTF-8

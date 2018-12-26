@@ -49,6 +49,7 @@ localDir = '~/git/dotfiles/.local'
 vimDir = '~/git/dotfiles/.vim'
 ohMyZshDir = '~/git/dotfiles/.oh-my-zsh'
 imageDir = '~/git/dotfiles/images'
+mozillaDir = '~/git/dotfiles/.mozilla'
 
 # Proces Copy to GitHub Directory
 os.system(f'''
@@ -66,7 +67,9 @@ echo '[ DONE ] Create main directory'
 # -----------------------------------------------------------------------------
 cp ~/.gtkrc-2.0 {mainDir}
 cp ~/.mailcap {mainDir}
+cp ~/.msmtprc {mainDir}
 cp ~/.ncpamixer.conf {mainDir}
+cp ~/.offlineimaprc {mainDir}
 cp ~/.profile {mainDir}
 cp ~/.tmux.conf {mainDir}
 cp ~/.vimrc {mainDir}
@@ -108,6 +111,7 @@ echo '[ DONE ] Copy dotfiles from /etc directory'
 mkdir -p {configDir}
 
 cp -r ~/.config/compton {configDir}
+cp -r ~/.config/htop {configDir}
 cp -r ~/.config/i3 {configDir}
 cp -r ~/.config/ncmpcpp {configDir}
 cp -r ~/.config/nvim {configDir}
@@ -135,9 +139,8 @@ cp ~/.config/dunst/dunstrc-dark {configDir}/dunst
 cp ~/.config/dunst/dunstrc-light {configDir}/dunst
 
 # GTK3
-#mkdir -p {configDir}/gtk-3.0
-#cp ~/.config/gtk-3.0/bookmarks {configDir}/gtk-3.0
-#cp ~/.config/gtk-3.0/settings.ini {configDir}/gtk-3.0
+mkdir -p {configDir}/gtk-3.0
+cp ~/.config/gtk-3.0/gtk.css {configDir}/gtk-3.0
 
 # MPD
 mkdir -p {configDir}/mpd
@@ -148,7 +151,7 @@ mkdir -p {configDir}/mpv
 cp ~/.config/mpv/mpv.conf {configDir}/mpv
 cp ~/.config/mpv/input.conf {configDir}/mpv
 
-# MUTT
+# NEOMUTT
 mkdir -p {configDir}/mutt
 cp ~/.config/mutt/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc \
 {configDir}/mutt
@@ -162,9 +165,10 @@ cp ~/.config/polybar/launch.sh {configDir}/polybar
 
 # RANGER
 mkdir -p {configDir}/ranger
-cp -r ~/.config/ranger/colorschemes {configDir}/ranger
+mkdir -p {configDir}/ranger/colorschemes
+cp ~/.config/ranger/colorschemes/solarized-bandit.py {configDir}/ranger/\
+colorschemes
 cp ~/.config/ranger/commands.py {configDir}/ranger
-cp ~/.config/ranger/commands_full.py {configDir}/ranger
 cp ~/.config/ranger/rc.conf {configDir}/ranger
 cp ~/.config/ranger/rifle.conf {configDir}/ranger
 cp ~/.config/ranger/scope.sh {configDir}/ranger
@@ -177,10 +181,14 @@ echo '[ DONE ] Copy dotfiles from ~/.config user directory'
 ##### Content from .local Directory
 # -----------------------------------------------------------------------------
 mkdir -p {localDir}/bin
+cp ~/.local/bin/i3-keybinds {localDir}/bin
+cp ~/.local/bin/irssi-notifier.sh {localDir}/bin
+cp ~/.local/bin/laptop-age.sh {localDir}/bin
 cp ~/.local/bin/lock-dark {localDir}/bin
 cp ~/.local/bin/lock-light {localDir}/bin
+cp ~/.local/bin/notify-listener.py {localDir}/bin
+cp ~/.local/bin/rofi-clipmenu {localDir}/bin
 cp ~/.local/bin/rofi-power {localDir}/bin
-cp ~/.local/bin/postbanner {localDir}/bin
 
 # APPLICATION DESKTOP CONFIG FILES
 mkdir -p {localDir}/share
@@ -221,14 +229,28 @@ echo '[ DONE ] Copy dotfiles from ~/.oh-my-zsh user directory'
 # -----------------------------------------------------------------------------
 ##### Content from .irssi
 # -----------------------------------------------------------------------------
-mkdir -p {irssiDir}/scripts/autorun
-cp ~/.irssi/scripts/autorun/notify.pl {irssiDir}/scripts/autorun
+mkdir -p {irssiDir}/scripts
+cp ~/.irssi/scripts/beep_beep.pl {irssiDir}/scripts
+cp ~/.irssi/scripts/gnome_beep.opus {irssiDir}/scripts
 cp ~/.irssi/scripts/nicklist-portable.pl {irssiDir}/scripts
 cp ~/.irssi/scripts/notify.pl {irssiDir}/scripts
 
 mkdir -p {irssiDir}
 cp ~/.irssi/config {irssiDir}
 cp ~/.irssi/solarized-bandit.theme {irssiDir}
+
+cp ~/.irssi/basic-irc-commands.txt {irssiDir}
+cp ~/.irssi/formats.txt {irssiDir}
+cp ~/.irssi/startup.markdown {irssiDir}
+
+echo '[ DONE ] Copy dotfiles from ~/.irssi user directory'
+# -----------------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------------
+# MOZILLA FIREFOX
+# -----------------------------------------------------------------------------
+mkdir -p {mozillaDir}/firefox/user.default
 
 echo '[ DONE ] Copy dotfiles from ~/.irssi user directory'
 # -----------------------------------------------------------------------------
@@ -252,5 +274,6 @@ d8888b.  .d88b.  d8b   db d88888b db
 Y8888D'  `Y88P'  VP   V8P Y88888P YP
 ''')
 print('\n>> CRAWLING PROCESS COMPLETED !!')
+
 
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4

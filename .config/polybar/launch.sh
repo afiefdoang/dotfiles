@@ -9,11 +9,11 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # For multimonitor
 #if type "xrandr"; then
 #  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-#    MONITOR=$m polybar --reload example &
+#    MONITOR=$m polybar --reload barsatu &
 #  done
 #else
-#  polybar --reload example &
+#  polybar --reload barsatu &
 #fi
 
-# Launch example
-polybar example -r &
+# Launch barsatu
+polybar barsatu -r &

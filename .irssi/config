@@ -19,9 +19,8 @@ servers = (
     port = "6697";
     use_tls = "yes";
     tls_cert = "~/.irssi/irssi.pem";
-    tls_pass = "<irssi.pem_password>";
-    tls_verify = "yes";
     tls_capath = "/etc/ssl/certs";
+    tls_verify = "yes";
     autoconnect = "yes";
   },
   {
@@ -137,7 +136,6 @@ chatnets = {
 
 channels = (
   { name = "#lobby"; chatnet = "EsperNet"; autojoin = "No"; },
-  { name = "#freenode"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#irssi"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#gamesurge"; chatnet = "GameSurge"; autojoin = "No"; },
   { name = "#irssi"; chatnet = "IRCNet"; autojoin = "No"; },
@@ -145,11 +143,12 @@ channels = (
   { name = "#netfuze"; chatnet = "NetFuze"; autojoin = "No"; },
   { name = "#oftc"; chatnet = "OFTC"; autojoin = "No"; },
   { name = "silc"; chatnet = "SILC"; autojoin = "No"; },
-  { name = "#archlinux"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#python"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#django"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#jekyll"; chatnet = "Freenode"; autojoin = "Yes"; },
-  { name = "#i3"; chatnet = "Freenode"; autojoin = "Yes"; }
+  { name = "#freenode"; chatnet = "Freenode"; autojoin = "No"; },
+  { name = "#archlinux"; chatnet = "Freenode"; autojoin = "No"; },
+  { name = "#python"; chatnet = "Freenode"; autojoin = "No"; },
+  { name = "#django"; chatnet = "Freenode"; autojoin = "No"; },
+  { name = "#jekyll"; chatnet = "Freenode"; autojoin = "No"; },
+  { name = "#i3"; chatnet = "Freenode"; autojoin = "No"; }
 );
 
 aliases = {
@@ -335,7 +334,7 @@ statusbar = {
     #more = "-- more --";
 
     # Solarized
-    lag = "{sb Lag: %b$0-%n}";
+    lag = "{sb Lag: %w$0-%n}";
     act = "{sb Act: $0-}";
     more = "%k%3-- more --%n";
   };
@@ -411,7 +410,7 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "bandithijo.com";
+    real_name = "BANDITHIJO.COM";
     user_name = "bandithijo";
     nick = "bandithijo";
   };
@@ -420,11 +419,31 @@ settings = {
     # Solarized
     theme = "solarized-bandit";
     hilight_color = "= %r";
-    autolog = "yes";
-    autolog_path = "~/.irclogs/%Y/$tag/$0.%m-%d.log";
+    autolog = "no";
+    autolog_path = "~/.irclogs/freenode/irssi-log.log";
+    beep_msg_level = "MSGS DCC DCCMSGS HILIGHT NOTICES";
+    show_names_on_join = "no";
   };
   "irc/core" = { alternate_nick = "bandithijo_"; };
 };
 hilights = (
   { text = "bandithijo"; color = "%y"; nick = "yes"; word = "yes"; }
 );
+logs = {
+  "~/.irclogs/freenode/irssi-log.log" = {
+    auto_open = "yes";
+    level = "ALL";
+    items = (
+      { type = "target"; name = "#archlinux"; },
+    );
+  };
+  ALL = {
+    level = "ALL";
+    items = (
+      {
+        type = "target";
+        name = "~/.irclogs/freenode/irssi-log.log";
+      }
+    );
+  };
+};

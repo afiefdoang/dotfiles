@@ -2,7 +2,7 @@
 Name=ncpamixer
 Comment=Ncurses mixer for PulseAudio inspired by pavucontrol
 #Exec=termite -e ncpamixer
-Exec=urxvt -e ncpamixer
+Exec=termite -e ncpamixer
 #Exec=env GTK_THEME=Adwaita urxvt -e ncpamixer
 #Exec=env GTK_THEME=Adwaita xfce4-terminal -e ncpamixer
 Terminal=false

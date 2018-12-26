@@ -1,0 +1,27 @@
+[Desktop Entry]
+Name=Screenshot - Spectacle
+Categories=Qt;KDE;Utility;
+Exec=spectacle
+Icon=spectacle
+Type=Application
+Terminal=false
+StartupNotify=false
+Actions=FullScreenScreenShot;CurrentMonitorScreenShot;ActiveWindowScreenShot;RectangularRegionScreenShot;
+X-DBUS-StartupType=Multi
+X-DBUS-ServiceName=org.kde.Spectacle
+
+[Desktop Action FullScreenScreenShot]
+Name=Spectacle
+Exec=spectacle -f
+
+[Desktop Action CurrentMonitorScreenShot]
+Name=Spectale
+Exec=spectacle -m
+
+[Desktop Action ActiveWindowScreenShot]
+Name=Spectacle
+Exec=spectacle -a
+
+[Desktop Action RectangularRegionScreenShot]
+Name=Spectacle
+Exec=spectacle -r

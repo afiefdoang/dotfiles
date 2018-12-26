@@ -2,8 +2,8 @@
 Name=Htop
 Type=Application
 Comment=Show System Processes
-Terminal=true
-Exec=htop
+Terminal=false
+Exec=termite -e htop
 Icon=htop
 Categories=ConsoleOnly;System;
 Keywords=system;process;task

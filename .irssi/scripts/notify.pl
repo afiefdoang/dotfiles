@@ -38,7 +38,7 @@ sub sanitize {
 sub notify_linux {
     my ($server, $nodebugstr, $remote, $summary, $message) = @_;
     my $cmd = "EXEC " . $nodebugstr . "ssh -q " . $remote . " \"".
-	" /usr/bin/irssi-notifier".
+	" /usr/bin/irssi-notifier.sh".
 	" dbus-send --session /org/irssi/Irssi org.irssi.Irssi.IrssiNotify" .
 	" string:'" . $summary . "'" .
 	" string:'" . $message . "'\"";
@@ -70,7 +70,7 @@ sub notify {
 	$nodebugstr = '';
     }
     my $cmd = "EXEC " . $nodebugstr .
-	" /usr/bin/irssi-notifier " .
+	" /usr/bin/irssi-notifier.sh " .
 	"dbus-send --session /org/irssi/Irssi org.irssi.Irssi.IrssiNotify" .
 	" string:'" . $summary . "'" .
 	" string:'" . $message . "'";
@@ -105,7 +105,7 @@ sub message_private_notify {
     my ($server, $msg, $nick, $address) = @_;
 
     return if (!$server);
-    notify($server, "PM from ".$nick, $msg);
+    notify($server, "irssi: PM from ".$nick, $msg);
 }
 
 sub dcc_request_notify {
@@ -113,7 +113,7 @@ sub dcc_request_notify {
     my $server = $dcc->{server};
 
     return if (!$dcc);
-    notify($server, "DCC ".$dcc->{type}." request", $dcc->{nick});
+    notify($server, "irssi: DCC ".$dcc->{type}." request", $dcc->{nick});
 }
 
 Irssi::signal_add('print text', 'print_text_notify');

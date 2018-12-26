@@ -7,3 +7,4 @@ Comment=Browse Websites Mirrored by WebHTTrack
 Keywords=browse mirrored;
 Exec=webhttrack browse
 Icon=httrack
+NoDisplay=true

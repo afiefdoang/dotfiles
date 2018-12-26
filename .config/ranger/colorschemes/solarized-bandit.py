@@ -4,8 +4,15 @@
 # This is a modification of Roman Zimbelmann's default colorscheme.
 # This software is distributed under the terms of the GNU GPL version 3.
 
+from __future__ import (absolute_import, division, print_function)
+
 from ranger.gui.colorscheme import ColorScheme
-from ranger.gui.color import *
+from ranger.gui.color import (
+    black, blue, cyan, green, magenta, red, white, yellow, default,
+    normal, bold, reverse, dim, BRIGHT,
+    default_colors,
+)
+
 
 class Solarized(ColorScheme):
     progress_bar_color = yellow
@@ -26,8 +33,9 @@ class Solarized(ColorScheme):
             if context.empty or context.error:
                 fg = 235
                 bg = red
-            if context.border:
-                fg = 0
+            if context.border: # jai satu dengan r
+                # fg = 0
+                fg = default
             if context.media:
                 if context.image:
                     # fg = 136
@@ -68,7 +76,8 @@ class Solarized(ColorScheme):
                 else:
                     fg = red
             if not context.selected and (context.cut or context.copied):
-                fg = 234
+                #fg = 234
+                fg = red
                 attr |= bold
             if context.main_column:
                 if context.selected:
@@ -112,6 +121,10 @@ class Solarized(ColorScheme):
             if context.marked:
                 attr |= bold | reverse
                 fg = 237
+            if context.frozen:
+                attr |= bold | reverse
+                fg = 160
+                bg = 235
             if context.message:
                 if context.bad:
                     attr |= bold
@@ -120,6 +133,15 @@ class Solarized(ColorScheme):
             if context.loaded:
                 fg = 0
                 bg = self.progress_bar_color
+            if context.vcsinfo:
+                fg = yello
+                attr &= ~bold
+            if context.vcscommit:
+                fg = yellow
+                attr &= ~bold
+            if context.vcsdate:
+                fg = yello
+                attr &= ~bold
 
         if context.text:
             if context.highlight:
@@ -138,5 +160,38 @@ class Solarized(ColorScheme):
                 else:
                     fg = 0
                     bg = self.progress_bar_color
+
+# tambahan -------------------------------------------------------------------
+
+        if context.vcsfile and not context.selected:
+            attr &= ~bold
+            if context.vcsconflict:
+                fg = magenta
+            elif context.vcsuntracked:
+                fg = cyan
+            elif context.vcschanged:
+                fg = red
+            elif context.vcsunknown:
+                fg = red
+            elif context.vcsstaged:
+                fg = green
+            elif context.vcssync:
+                fg = green
+            elif context.vcsignored:
+                fg = default
+
+        elif context.vcsremote and not context.selected:
+            attr &= ~bold
+            if context.vcssync or context.vcsnone:
+                fg = green
+            elif context.vcsbehind:
+                fg = red
+            elif context.vcsahead:
+                fg = blue
+            elif context.vcsdiverged:
+                fg = magenta
+            elif context.vcsunknown:
+                fg = red
+
 
         return fg, bg, attr

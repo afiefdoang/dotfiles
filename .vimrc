@@ -68,9 +68,7 @@ Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-rvm'
 Plug 'tpope/vim-haml'
-Plug 'Valloric/YouCompleteMe'
 Plug 'flazz/vim-colorschemes'
-"Plug 'Lokaltog/powerline'
 Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/sgmlendtag'
 Plug 'tpope/vim-unimpaired'
@@ -78,10 +76,10 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
 Plug 'python-mode/python-mode', {'branch': 'develop'}
-"Plug 'nikvdp/ejs-syntax'
 Plug 'briancollins/vim-jst'
-"Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 Plug 'SirVer/ultisnips'
+Plug 'Valloric/YouCompleteMe'
 Plug 'tweekmonster/django-plus.vim'
 Plug 'tpope/vim-liquid'
 Plug 'junegunn/goyo.vim'
@@ -119,6 +117,7 @@ set ttyfast " i have a fast terminal
 set gdefault " global substitutions are default s/a/b/g
 set ttimeoutlen=50  " make Esc work faster
 set autoread " make vim monitor realtime changes to a file
+"set cryptmethod=blowfish2
 au CursorHold,CursorHoldI * checktime " auto update trigger when cursor stops moving
 au FocusGained,BufEnter * :checktime " auto update trigger on buffer change or terminal focus
 " }}}
@@ -180,6 +179,8 @@ set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
 autocmd Filetype php setlocal shiftwidth=4 tabstop=4
+" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
+set splitbelow splitright
 " }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -215,6 +216,21 @@ nmap <leader>W :StripWhitespace<cr>
 " open vertical split and switch to it
 nnoremap <leader>w <C-w>v<C-w>l
 
+" Goyo plugin makes text more readable when writing prose:
+map <leader>f :Goyo \| set linebreak<CR>
+
+" Map Ctrl-Backspace to delete the previous word in insert mode.
+imap <C-BS> <C-W>
+
+" Automatically deletes all trailing whitespace on save.
+autocmd BufWritePre * %s/\s\+$//e
+
+" Run xrdb whenever Xdefaults or Xresources are updated.
+autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
+
+" Remap exit from terminal mode
+tnoremap <Esc> <C-\><C-n>
+
 " for search
 nnoremap / /\v
 vnoremap / /\v
@@ -244,8 +260,8 @@ nmap <C-l> <C-w><C-l>
 cmap w!! w !sudo tee % >/dev/null
 
 " for page up & page down
-noremap <c-u> <c-u>zz
-noremap <c-d> <c-d>zz
+noremap <C-u> <C-u>zz
+noremap <C-d> <C-d>zz
 
 " toggle Tagbar plugin
 nmap <F8> :TagbarToggle<cr>
@@ -259,21 +275,6 @@ nmap <F10> :PymodeLintToggle<cr>
 " fzf.vim
 "nmap <leader>b :Buffers<cr>
 nmap <C-p> :Buffers<cr>
-
-" enable seeing-is-believing mappings only for Ruby
-augroup seeingIsBelievingSettings
-  autocmd!
-
-  autocmd FileType ruby nmap <buffer> <Enter> <Plug>(seeing-is-believing-mark-and-run)
-  autocmd FileType ruby xmap <buffer> <Enter> <Plug>(seeing-is-believing-mark-and-run)
-
-  autocmd FileType ruby nmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
-  autocmd FileType ruby xmap <buffer> <F4> <Plug>(seeing-is-believing-mark)
-  autocmd FileType ruby imap <buffer> <F4> <Plug>(seeing-is-believing-mark)
-
-  autocmd FileType ruby nmap <buffer> <F5> <Plug>(seeing-is-believing-run)
-  autocmd FileType ruby imap <buffer> <F5> <Plug>(seeing-is-believing-run)
-augroup END
 
 " disable arrow keys on insert mode and make up & down arrow as line bubbling
 "no <down> ddp
@@ -297,8 +298,6 @@ vno <up> <Nop>
 autocmd BufWinLeave .* mkview
 autocmd BufWinEnter .* silent loadview
 
-" Goyo plugin makes text more readable when writing prose:
-map <leader>g :Goyo \| set linebreak<CR>
 " }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -312,8 +311,10 @@ map <leader>g :Goyo \| set linebreak<CR>
 let NERDTreeHijackNetrw = 0
 "let g:NERDTreeDirArrowExpandable = '▸'
 "let g:NERDTreeDirArrowCollapsible = '▾'
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
+"let g:NERDTreeDirArrowExpandable = '+'
+"let g:NERDTreeDirArrowCollapsible = '-'
 " }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -373,7 +374,7 @@ let g:grep_cmd_opts = '--line-numbers --noheading'
 let g:syntastic_python_checkers = ['pylint']  "" or ['flake8', 'pylint'], etc
 let g:syntastic_python_pylint_args = '-E'
 "" to show it accepts a string of args, also:
-let g:syntastic_python_pylint_args = '--rcfile=/path/to/rc -E'
+" let g:syntastic_python_pylint_args = '--rcfile=/path/to/rc -E'
 " }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -434,10 +435,17 @@ let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_autoimport = 0
 let g:python_host_prog = "/usr/bin/python2"
 let g:python3_host_prog = "/usr/bin/python"
+"let g:pymode_lint_checkers = ['flake8', 'pylint']
+"let g:pymode_lint_checkers = ['pycodestyle']
+let g:pymode_lint_checkers = ['pyflakes', 'pep8']
 " }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
+" YouCompleteMe {{{
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"let g:loaded_youcompleteme = 1
+" }}}
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 

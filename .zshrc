@@ -96,9 +96,9 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-export SSH_KEY_PATH="~/.ssh/bandithijo"
-eval $(keychain --eval --quiet ~/.ssh/bandithijo)
+# Keychain for ssh
+#export SSH_KEY_PATH="~/.ssh/bandithijo"
+#eval $(keychain --eval --quiet --noask ~/.ssh/bandithijo)
 
 # For Remove username on oh-my-zsh
 #prompt_context() {}
@@ -119,6 +119,9 @@ prompt_context() {
 
 # Firefox with Tor
 alias fireprox="proxychains env GTK_THEME=Adwaita firefox --private-window"
+
+# Chromium with Tor
+alias chromeprox="chromium --proxy-server='socks5://127.0.0.1:9050'"
 
 # BACKUP ENTIRE SYSTEM
 alias devika!="sudo rsync -avAXP --delete --exclude=dev --exclude=proc --exclude=sys --exclude=tmp --exclude=run --exclude=mnt --exclude=home/.ecryptfs / /run/media/bandithijo/BACKUP-X260/BANDITHIJO-ARCH"
@@ -149,8 +152,9 @@ alias lampp="sudo /opt/lampp/lampp"
 alias lampp-start="sudo /opt/lampp/lampp start"
 alias lampp-stop="sudo /opt/lampp/lampp stop"
 
-# POSTBANNER
-alias lolban="postbanner -t '-f 3d.flf' -l '-p 5'"
+# TOILET & FIGLET
+alias t0ilet="toilet -t -d /usr/share/figlet -f 3d.flf"
+alias f1glet="figlet -t -d /usr/share/figlet -f 3d.flf -p"
 
 # key-mon fix
 alias key-mon="xhost +; key-mon"
@@ -183,20 +187,18 @@ alias macchanger-off="sudo mv /etc/systemd/network/00-default.link /etc/systemd/
 # nameserver dnscrypt
 alias dnscrypt-proxy-on="sudo systemctl start dnscrypt-proxy && sudo sed -i s/192.168.1.1/127.0.0.1/g /etc/resolv.conf"
 
-# speedup trackpoint
-alias trackpoint-speedup="echo 240 | sudo tee /sys/devices/platform/i8042/serio1/serio2/sensitivity"
+# Speedup TrackPoint
+alias trackpoint-speedup="echo 255 | sudo tee /sys/devices/platform/i8042/serio1/serio2/sensitivity"
+
+# Enable/Disable TouchPad
+alias touchpad-enable="xinput --enable 'SynPS/2 Synaptics TouchPad'"
+alias touchpad-disable="xinput --disable 'SynPS/2 Synaptics TouchPad'"
 
 # ranger
-alias ranger='TERM=xterm-256color ranger'
+#alias ranger='TERM=xterm-256color ranger'
 
 # jekyll build
 jekyll() { if [[ $@ == "b" ]]; then command JEKYLL_ENV=production jekyll build; else command jekyll "$@"; fi; }
-
-# POWERLINE ARCH
-#if [[ -r /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-#  source /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
-#fi
-
 
 # qt5ct
 export QT_QPA_PLATFORMTHEME=qt5ct
@@ -230,7 +232,7 @@ export npm_config_prefix="$HOME/.node_modules"
 
 # URXVT Environment akan berpengaruh ke tmux color
 #export TERM=rxvt-unicode
-export TERM=tmux-256color
+#export TERM=tmux-256color
 
 # Local /bin
 PATH="$HOME/bin:$HOME/src:$HOME/.local/bin:$PATH"

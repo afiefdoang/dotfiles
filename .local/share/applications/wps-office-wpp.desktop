@@ -15,4 +15,4 @@ X-KDE-Username=
 Icon=wps-office-wppmain
 InitialPreference=3
 StartupWMClass=wpp
-NoDisplay=true
+NoDisplay=false

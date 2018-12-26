@@ -208,6 +208,7 @@ function! airline#themes#solarized_bandit#refresh()
 
   let g:airline#themes#solarized_bandit#palette.tabline.airline_tabtype = [
         \ s:N2[0].g, s:N2[1].g, s:N2[0].t, s:N2[1].t, s:N2[2]]
+
 endfunction
 
 call airline#themes#solarized_bandit#refresh()

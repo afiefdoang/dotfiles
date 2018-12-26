@@ -6,3 +6,4 @@ StartupNotify=true
 Path=/home/bandithijo/.wine/dosdevices/c:/Program Files (x86)/Macromedia/Flash 8 Video Encoder/
 Icon=E96F_ARPPRODUCTICONFLV1.0
 StartupWMClass=flash 8 video encoder.exe
+NoDisplay=true

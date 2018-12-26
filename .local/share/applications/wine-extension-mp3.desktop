@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=iTunes
+MimeType=audio/mpeg;
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine start /ProgIDOpen iTunes.mp3 %f
+NoDisplay=true
+StartupNotify=true
+Icon=E8B9_iTunes.0

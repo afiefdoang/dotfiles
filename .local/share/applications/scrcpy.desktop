@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=scrcpy
 Comment=Android Remote Control
-Exec=urxvt -e scrcpy
+Exec=termite -e scrcpy
 Icon=vysor
 Type=Application
 Terminal=false

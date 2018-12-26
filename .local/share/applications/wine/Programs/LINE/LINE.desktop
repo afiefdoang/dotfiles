@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=LINE
+Exec=env WINEPREFIX="/home/bandithijo/.wine" wine C:\\\\windows\\\\command\\\\start.exe /Unix /home/bandithijo/.wine/dosdevices/c:/users/bandithijo/Start\\ Menu/Programs/LINE/LINE.lnk
+Type=Application
+StartupNotify=true
+Path=/home/bandithijo/.wine/dosdevices/c:/users/bandithijo/Local Settings/Application Data/LINE/bin
+Icon=9CB7_LineLauncher.0
+StartupWMClass=linelauncher.exe

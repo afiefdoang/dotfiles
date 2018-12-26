@@ -7,9 +7,26 @@ export QT_SCREEN_SCALE_FACTORS=1
 export QT_SCALE_FACTOR=1
 
 # URXVT Environment
-export TERM=rxvt-unicode
-alias xterm="urxvt"
+#export TERM=rxvt-unicode
+#alias xterm="urxvt"
+
+# Clipmenu Environment Variables
+export CM_LAUNCHER=rofi-clipmenu
+export CM_DIR=/tmp/clipmenu
+
+# Ranger define open with terminal
+export TERMCMD=termite
+
 
 # TimeZone
 #TZ='Asia/Jakarta'; export TZ
 TZ='Asia/Makassar'; export TZ
+
+# Ranger
+ranger() {
+    if [ -z "$RANGER_LEVEL" ]; then
+        /usr/bin/ranger "$@"
+    else
+        exit
+    fi
+}

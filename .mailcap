@@ -2,4 +2,5 @@
 #text/html;  elinks -dump %s; nametemplate=%s.html; copiousoutput
 
 #text/html; /usr/bin/w3m -T text/html '%s'; needsterminal; description=HTML Text; nametemplate=%s.html
-text/html; /usr/bin/surf 'file://%s'; nametemplate=%s.html
+#text/html; /usr/bin/surf 'file://%s'; nametemplate=%s.html
+text/html; /usr/bin/google-chrome-stable 'file://%s'; nametemplate=%s.html

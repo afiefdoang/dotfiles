@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=vifm
+Comment=Launches the vi file manager
+Icon=ranger
+Terminal=false
+Exec=termite -e vifm
+Categories=ConsoleOnly;System;FileTools;FileManager
+MimeType=inode/directory;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=st
+Comment=A simplek virtual terminal emulator for X
+Exec=$HOME/bin/st-solarized-dark
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=System;TerminalEmulator;
+NoDisplay=false
