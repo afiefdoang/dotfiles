@@ -72,6 +72,7 @@ cp ~/.ncpamixer.conf {mainDir}
 cp ~/.offlineimaprc {mainDir}
 cp ~/.profile {mainDir}
 cp ~/.tmux.conf {mainDir}
+cp ~/.urlview {mainDir}
 cp ~/.vimrc {mainDir}
 cp ~/.xinitrc {mainDir}
 cp ~/.Xmodmap {mainDir}
@@ -181,6 +182,7 @@ echo '[ DONE ] Copy dotfiles from ~/.config user directory'
 ##### Content from .local Directory
 # -----------------------------------------------------------------------------
 mkdir -p {localDir}/bin
+cp ~/.local/bin/bat_cap {localDir}/bin
 cp ~/.local/bin/i3-keybinds {localDir}/bin
 cp ~/.local/bin/irssi-notifier.sh {localDir}/bin
 cp ~/.local/bin/laptop-age.sh {localDir}/bin
@@ -242,6 +244,7 @@ cp ~/.irssi/solarized-bandit.theme {irssiDir}
 cp ~/.irssi/basic-irc-commands.txt {irssiDir}
 cp ~/.irssi/formats.txt {irssiDir}
 cp ~/.irssi/startup.markdown {irssiDir}
+cp ~/.irssi/irc_references.md {irssiDir}
 
 echo '[ DONE ] Copy dotfiles from ~/.irssi user directory'
 # -----------------------------------------------------------------------------

@@ -213,15 +213,15 @@ for_window [class="Deadbeef"] floating enable border normal 1
 for_window [class="guvcview"] floating enable border normal 1
 for_window [class="flameshot"] floating enable border normal 1
 for_window [class="Lastpass"] floating enable border normal 1
-for_window [class="Transmission-gtk"] floating enable border normal 1
 for_window [class="Blueman-manager"] floating enable border normal 1
 for_window [class="Gnome-usage"] floating enable border normal 1
 for_window [title="TeamViewer"] floating enable border none
 for_window [title="Open Hardware Monitor"] floating enable border normal 1
 for_window [class="Termite" title="ncpamixer"] floating enable border normal 1 resize set 500 600,move right 90px,move up 80px
+for_window [class="Termite" title="cmus"] floating enable border normal 1
 for_window [class="Wine" title="WinBox v3.13 (Addresses)"] floating enable border normal 1
-for_window [class="zoom" title="Zoom - Free Account"] floating enable border normal 1 move right 470px,move down 0px
-for_window [class="zoom" title="Settings"] floating enable border normal 1
+for_window [class="zoom" title="Zoom - Free Account"] floating enable border pixel 1 move right 470px,move down 0px
+for_window [class="zoom" title="Settings"] floating enable border pixel 1
 for_window [class="Flowblade" title="Audio Mixer"] floating enable border normal 1
 for_window [class="Vysor" title="Mi 4c"] floating enable border none
 for_window [class="scrcpy" title="Mi-4c"] floating enable border none move right 460px,move down 0px
@@ -249,16 +249,16 @@ mode "resize" {
   # Pressing right will grow the window’s width.
   # Pressing up will shrink the window’s height.
   # Pressing down will grow the window’s height.
-  bindsym h resize shrink width 1 px or 1 ppt
-  bindsym j resize grow height 1 px or 1 ppt
-  bindsym k resize shrink height 1 px or 1 ppt
-  bindsym l resize grow width 1 px or 1 ppt
+  bindsym h resize shrink width 1 px
+  bindsym j resize grow height 1 px
+  bindsym k resize shrink height 1 px
+  bindsym l resize grow width 1 px
 
   # same bindings, but for the arrow keys
-  bindsym Left resize shrink width 2 px or 2 ppt
-  bindsym Down resize grow height 2 px or 2 ppt
-  bindsym Up resize shrink height 2 px or 2 ppt
-  bindsym Right resize grow width 2 px or 2 ppt
+  bindsym Left resize shrink width 1 px or 1 ppt
+  bindsym Down resize grow height 1 px or 1 ppt
+  bindsym Up resize shrink height 1 px or 1 ppt
+  bindsym Right resize grow width 1 px or 1 ppt
 
   # back to normal: Enter or Escape
   bindsym Return mode "default"
@@ -300,14 +300,14 @@ bindsym $mod+Shift+y border pixel 1
 
 # Enable Specific Window Border
 for_window [class="Wine"] border normal 1
-for_window [class="Termite"] border pixel 1
+for_window [class="Termite" title="bandithijo@BanditHijo-X260: ~"] border pixel 1
 
 # i3bar Toggle between dock mode and hide mode
 #bindsym $mod+F11 bar mode toggle
 
 # gaps inner|outer current|all set|plus|minus <px>
 gaps inner 0
-#gaps outer 0
+gaps outer 0
 smart_gaps on
 
 # bar {
@@ -319,9 +319,14 @@ smart_gaps on
 ####################### DITAMBAHKAN OLEH BANDITHIJO ##########################
 ##############################################################################
 
+# Window title alignment
+# This option determines the window title’s text alignment. Default is left
+# Syntax: title_align left|center|right
+title_align left
+
 # For adding space and [] character on window title
-for_window [class=".*"] title_format " %title "
-#for_window [class=".*"] title_format " "
+for_window [class="^.*"] title_format " <b>> %title</b>"
+#for_window [class=".*"] title_format " %title [_] [+] [X] "
 
 # Opening the blank space "i3 open" or "i3-msg open"
 #bindsym $mod+o exec --no-startup-id i3-msg open
@@ -385,31 +390,19 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 2
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 2
 
-# Network Manager Applet
-#exec --no-startup-id killall nm-applet ; nm-applet
-
 # XFCE4-power-manager
 exec --no-startup-id killall xfce4-power-manager ; xfce4-power-manager
-
-# Firewalld
-#exec --no-startup-id killall firewall-applet ; firewall-applet
 
 # clipmenu
 exec --no-startup-id clipmenud
 bindsym $mod+p exec --no-startup-id clipmenu
 bindsym $mod+Shift+p exec --no-startup-id rm -rf /tmp/clipmenu/*
 
-# Blueman Applet
-# exec_always --no-startup-id killall blueman-applet ; blueman-applet
-
 # Disable TouchPad
 exec --no-startup-id xinput --disable "SynPS/2 Synaptics TouchPad"
 
 # Enable Tap to Click
 exec --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
-
-# Disable F1 Help Button
-#bindsym F1 exec --no-startup-id echo "help" > /dev/null
 
 # Arandr
 bindsym $mod+F7 exec --no-startup-id arandr
@@ -423,10 +416,7 @@ bindsym $mod+slash exec --no-startup-id dunstify "i3WM KEYBINDS:" "`tail -n 34 $
 # Redshift
 # for get the coordinates of places with http://www.geonames.org/
 #exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-exec --no-startup-id redshift -P -O 4000
-
-# Polkit-GNOME
-#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id redshift -P -O 4600
 
 # Polkit-lxsession
 exec --no-startup-id /usr/bin/lxpolkit

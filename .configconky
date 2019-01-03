@@ -80,8 +80,8 @@ ${alignr}${offset -120}DOWN < ${color #888888}${downspeedgraph wlp4s0 10,130 888
 
 
 ${alignr}${offset -148}Battery -─────────────
-${alignr}${offset -158}< ${exec /bin/bat0_cap} | ${battery_percent BAT0}% > BAT 0 < ${color #888888}${battery_bar 5,110 BAT0}${color} >
-${alignr}${offset -158}< ${exec /bin/bat1_cap} | ${battery_percent BAT1}% > BAT 1 < ${color #888888}${battery_bar 5,110 BAT1}${color} >
+${alignr}${offset -158}< ${exec /bin/bat_cap BAT0} | ${battery_percent BAT0}% > BAT 0 < ${color #888888}${battery_bar 5,110 BAT0}${color} >
+${alignr}${offset -158}< ${exec /bin/bat_cap BAT1} | ${battery_percent BAT1}% > BAT 1 < ${color #888888}${battery_bar 5,110 BAT1}${color} >
 
 
 

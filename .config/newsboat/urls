@@ -1,7 +1,5 @@
 # Teman Blogging
-----------------------------------------------------------------
 ------------------------------------------------------DOTFRIENDS
-----------------------------------------------------------------
 https://ethanschoonover.com/index.xml "dotfriends"
 http://romisatriawahono.net/feed/atom/ "dotfriends"
 https://bandithijo.com/feed/blog.xml "~BanditHijo Blog" "dotfriends"
@@ -24,11 +22,11 @@ https://blog.aflasio.com/atom.xml "~Aflasio Blog" "dotfriends"
 https://raniaamina.github.io/atom.xml "~Rania Amina" "dotfriends"
 https://lukesmith.xyz/rss.xml "dotfriends"
 https://www.meutiarahmah.com/index.xml "dotfriends"
+https://themsaid.com/feed "~Mohamed Said's Journal" "dotfriends"
+https://rizafahmi.com/rss.xml "dotfriends"
 
 # News
-----------------------------------------------------------------
 -------------------------------------------------LINUX_MAGAZINES
-----------------------------------------------------------------
 https://www.hackerone.com/blog.rss "Tech News"
 https://blog.webjeda.com/feed.xml "~WebJeda | A Modern Web Development Blog" "Tech News"
 https://igurublog.wordpress.com/feed/ "Tech News"
@@ -66,34 +64,25 @@ https://www.smashingmagazine.com/feed/ "~Smashing Magazine" "Tech News"
 https://blog.mozilla.org/feed/ "~ Mozilla Blog" "Tech News"
 
 # Podcast
-----------------------------------------------------------------
 ---------------------------------------------------------PODCAST
-----------------------------------------------------------------
 https://rss.simplecast.com/podcasts/4543/rss "Podcast"
 https://offtopical.net/pg/feed.xml "Podcast"
 
 # Programming Language & Framework
-----------------------------------------------------------------
 --------------------------------------------PROGRAMMING_LANGUAGE
-----------------------------------------------------------------
 https://www.python.org/dev/peps/peps.rss/ "Language"
 https://www.djangoproject.com/rss/weblog/ "Framework"
 https://jekyllrb.com/feed.xml "SSG"
 
 # Islam
-----------------------------------------------------------------
 ------------------------------------------------------MUSLIM_RSS
-----------------------------------------------------------------
-http://muflihsafitra.com/feed/ "Islam"
+http://muflihsafitra.com/feed/ "~Muflih Safitra" "Islam"
 http://www.voa-islam.com/rss/all "Islam"
 
 # Animals Conservation
-----------------------------------------------------------------
 --------------------------------------------ANIMALS_CONSERVATION
-----------------------------------------------------------------
-http://orangutan.or.id/feed/ "~BOSF - Borneo Orangutan Survival Foundation" "Animals Conservaton"
+http://orangutan.or.id/feed/ "~Borneo Orangutan Survival Foundation" "Animals Conservaton"
 
-----------------------------------------------------------------
+# ThinkPad
 --------------------------------------------------------THINKPAD
-----------------------------------------------------------------
 https://pcsupport.lenovo.com/id/en/products/laptops-and-netbooks/thinkpad-x-series-laptops/thinkpad-x260/20f5/20f5s0w206/pc0h7mkm?p=rss&source=psp

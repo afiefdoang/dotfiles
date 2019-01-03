@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Created by RIZQI NUR ASSYAUFI | bandithijo@gmail.com | https://bandithijo.com
+# 2018
+
+# RUMUS
+#
+#        energy full design
+# efdx = ------------------
+#               100
+#
+#       energy full
+# cap = -----------
+#          efdx
+
+bat=${1}
+efd=`(cat /sys/class/power_supply/$bat/energy_full_design)`
+efdx=$((efd/100))
+ef=`(cat /sys/class/power_supply/$bat/energy_full)`
+cap=$((ef/efdx))
+#echo 'energy full design = '$efd
+#echo 'energy full        = '$ef
+echo $cap%
+
+

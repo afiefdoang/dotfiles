@@ -6,6 +6,7 @@ $(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version)
 
 PROMPT2='%{$fg[$CARETCOLOR]%}%{$reset_color%} '
 
+
 RPROMPT='$(_vi_status)%{$(echotc UP 1)%}$(_git_time_since_commit) $(git_prompt_status) ${_return_status}%{$(echotc DO 1)%}'
 
 local _current_dir="%{$fg_bold[blue]%}%3~%{$reset_color%} "
@@ -81,7 +82,8 @@ function _git_time_since_commit() {
 if [[ $USER == "root" ]]; then
   CARETCOLOR="red"
 else
-  CARETCOLOR="white"
+  # CARETCOLOR="#BCC3C3"
+  CARETCOLOR="yellow"
 fi
 
 MODE_INDICATOR="%{$fg_bold[yellow]%}❮%{$reset_color%}%{$fg[yellow]%}❮❮%{$reset_color%}"

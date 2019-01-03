@@ -32,6 +32,7 @@ export ZSH=/home/bandithijo/.oh-my-zsh
 #ZSH_THEME="bureau-bandit"
 #ZSH_THEME="cobalt2"
 ZSH_THEME="avit-bandit"
+#ZSH_THEME="agnoster-bandit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -106,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # For Remove Location
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+    prompt_segment yellow black "%(!.%{%F{yellow}%}.)$USER"
   fi
 }
 
@@ -188,11 +189,14 @@ alias macchanger-off="sudo mv /etc/systemd/network/00-default.link /etc/systemd/
 alias dnscrypt-proxy-on="sudo systemctl start dnscrypt-proxy && sudo sed -i s/192.168.1.1/127.0.0.1/g /etc/resolv.conf"
 
 # Speedup TrackPoint
-alias trackpoint-speedup="echo 255 | sudo tee /sys/devices/platform/i8042/serio1/serio2/sensitivity"
+alias trackpoint-speedup="echo 240 | sudo tee /sys/devices/platform/i8042/serio1/serio2/sensitivity"
 
 # Enable/Disable TouchPad
 alias touchpad-enable="xinput --enable 'SynPS/2 Synaptics TouchPad'"
 alias touchpad-disable="xinput --disable 'SynPS/2 Synaptics TouchPad'"
+
+# cli-visualizer
+alias vis="vis -c ~/.config/vis/config"
 
 # ranger
 #alias ranger='TERM=xterm-256color ranger'

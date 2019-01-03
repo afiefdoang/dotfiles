@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Power Manager
+Name=XFCE4 Power Manager
 Comment=Settings for the Xfce Power Manager
 Exec=xfce4-power-manager-settings
 Icon=xfce4-power-manager-settings

@@ -44,6 +44,7 @@ fi
 # exec enlightenment_start
 # exec awesome
 # exec i3
+# exec sway
 exec /usr/local/bin/dwm
 # exec mate-session
 # exec xmonad

@@ -33,7 +33,7 @@ class Solarized(ColorScheme):
             if context.empty or context.error:
                 fg = 235
                 bg = red
-            if context.border: # jai satu dengan r
+            if context.border:  # jai satu dengan r
                 # fg = 0
                 fg = default
             if context.media:
@@ -76,7 +76,7 @@ class Solarized(ColorScheme):
                 else:
                     fg = red
             if not context.selected and (context.cut or context.copied):
-                #fg = 234
+                # fg = 234
                 fg = red
                 attr |= bold
             if context.main_column:
@@ -120,7 +120,8 @@ class Solarized(ColorScheme):
                     fg = red
             if context.marked:
                 attr |= bold | reverse
-                fg = 237
+                # fg = 237
+                fg = yellow
             if context.frozen:
                 attr |= bold | reverse
                 fg = 160
@@ -134,13 +135,13 @@ class Solarized(ColorScheme):
                 fg = 0
                 bg = self.progress_bar_color
             if context.vcsinfo:
-                fg = yello
+                fg = yellow
                 attr &= ~bold
             if context.vcscommit:
                 fg = yellow
                 attr &= ~bold
             if context.vcsdate:
-                fg = yello
+                fg = yellow
                 attr &= ~bold
 
         if context.text:
@@ -192,6 +193,5 @@ class Solarized(ColorScheme):
                 fg = magenta
             elif context.vcsunknown:
                 fg = red
-
 
         return fg, bg, attr

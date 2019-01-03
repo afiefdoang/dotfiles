@@ -10,7 +10,6 @@ adwaita-x-dark-and-light-theme
 aic94xx-firmware
 alsa-utils
 android-sdk
-android-sdk-platform-tools
 android-studio
 android-tools
 android-udev
@@ -47,6 +46,7 @@ breeze-icons
 bzip2
 calibre
 catfish
+ccid
 cheese
 chromium
 clamav
@@ -70,6 +70,7 @@ cutter
 darkstat
 darktable
 dconf-editor
+deadbeef
 debtap
 devhelp
 device-mapper
@@ -115,6 +116,7 @@ findutils
 firefox
 fish
 flashplugin
+flatpak-builder
 flex
 florence
 flowblade
@@ -148,7 +150,9 @@ gksu
 glances
 glibc
 gnome-battery-bench-git
+gnome-builder
 gnome-calculator
+gnome-code-assistance
 gnome-disk-utility
 gnome-font-viewer
 gnome-keyring
@@ -181,7 +185,6 @@ gtkparasite-git
 gtop
 gucharmap
 gutenprint
-guvcview
 gvfs
 gvfs-afc
 gvfs-gphoto2
@@ -228,6 +231,7 @@ jdk8-openjdk
 jfsutils
 john
 jp2a
+kamoso
 kbbi-qt
 kdenlive
 keepassxc
@@ -321,6 +325,7 @@ oneko
 openblas
 opencv-samples
 openhardwaremonitor
+opensc
 openssh
 orca
 otf-fantasque-sans-mono
@@ -335,6 +340,7 @@ pandoc-crossref
 pavucontrol
 pciutils
 pcmanfm-gtk3
+pcsc-tools
 pdfmod
 pencil
 pepper-flash
@@ -450,6 +456,7 @@ rlwrap
 rofi
 rpmextract
 rts5227-dkms
+rts_bpp-dkms-git
 rust
 rxvt-unicode-patched
 s-nail
@@ -465,7 +472,6 @@ seexpr-doc
 sevensquare-git
 shadow
 shantz-xwinwrap-bzr
-shotcut
 shotwell
 simple-scan
 simplescreenrecorder
@@ -532,6 +538,7 @@ ttf-hanazono
 ttf-inconsolata
 ttf-liberation
 ttf-monaco
+ttf-opensans
 ttf-roboto
 ttf-roboto-slab
 ttf-sazanami
@@ -555,8 +562,6 @@ util-linux
 vdirsyncer
 vicious
 vifm
-vinagre
-vino
 virtualbox
 virtualbox-ext-oracle
 virtualbox-guest-iso
@@ -581,7 +586,6 @@ wkhtmltopdf
 wpa_actiond
 wpa_supplicant
 wps-office
-wxmaxima
 x11-ssh-askpass
 x264
 x86_energy_perf_policy

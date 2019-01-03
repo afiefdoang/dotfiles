@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=cmus
+Comment=Small, fast and powerful console music player for Unix-like operating systems
+Exec=termite -e cmus
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Icon=music
+Categories=Audio;
+NoDisplay=false

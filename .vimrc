@@ -84,6 +84,7 @@ Plug 'tweekmonster/django-plus.vim'
 Plug 'tpope/vim-liquid'
 Plug 'junegunn/goyo.vim'
 Plug 'PotatoesMaster/i3-vim-syntax'
+"Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
 " }}}
@@ -178,7 +179,9 @@ set tabstop=4 " real tabs should be 4, and they will show with set list on
 set autoindent
 "set smartindent
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$' " Highlight VCS conflict markers"
-autocmd Filetype php setlocal shiftwidth=4 tabstop=4
+autocmd Filetype html setlocal shiftwidth=2 tabstop=2
+autocmd Filetype css setlocal shiftwidth=4 tabstop=4
+autocmd Filetype python setlocal shiftwidth=4 tabstop=4
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
 set splitbelow splitright
 " }}}
@@ -311,8 +314,8 @@ autocmd BufWinEnter .* silent loadview
 let NERDTreeHijackNetrw = 0
 "let g:NERDTreeDirArrowExpandable = '▸'
 "let g:NERDTreeDirArrowCollapsible = '▾'
-let g:NERDTreeDirArrowExpandable = ''
-let g:NERDTreeDirArrowCollapsible = ''
+let g:NERDTreeDirArrowExpandable = ' '
+let g:NERDTreeDirArrowCollapsible = ' '
 "let g:NERDTreeDirArrowExpandable = '+'
 "let g:NERDTreeDirArrowCollapsible = '-'
 " }}}
@@ -437,7 +440,8 @@ let g:python_host_prog = "/usr/bin/python2"
 let g:python3_host_prog = "/usr/bin/python"
 "let g:pymode_lint_checkers = ['flake8', 'pylint']
 "let g:pymode_lint_checkers = ['pycodestyle']
-let g:pymode_lint_checkers = ['pyflakes', 'pep8']
+"let g:pymode_lint_checkers = ['pyflakes', 'pep8']
+let g:pymode_lint_checkers = ['pep8']
 " }}}
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

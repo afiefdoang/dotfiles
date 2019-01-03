@@ -10,3 +10,4 @@ Type=Application
 Categories=Video;AudioVideo;
 X-GNOME-Gettext-Domain=guvcview
 StartupNotify=true
+NoDisplay=false

@@ -8,7 +8,8 @@ Type=Application
 Icon=easytag
 Categories=GTK;AudioVideo;AudioVideoEditing;Audio;
 MimeType=inode/directory;audio/x-mp3;audio/x-mpeg;audio/mpeg;application/ogg;audio/x-vorbis+ogg;audio/x-flac;audio/x-musepack;audio/x-ape;audio/x-speex+ogg;audio/x-opus+ogg;
+Exec=easytag %F
 #Exec=env GTK_THEME=Adwaita easytag %F
-Exec=env GTK_THEME=NumixSolarizedDarkBlue easytag %F
+#Exec=env GTK_THEME=NumixSolarizedDarkBlue easytag %F
 Terminal=false
 StartupNotify=true
